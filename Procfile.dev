@@ -1,0 +1,4 @@
+system_check: crystal script/system_check.cr
+web: lucky watch -r -w sse
+vite_server: bun vite
+vite_watcher: bun watch

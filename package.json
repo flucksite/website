@@ -1,0 +1,17 @@
+{
+  "license": "UNLICENSED",
+  "private": true,
+  "dependencies": {
+    "@rails/ujs": "^7.1.502",
+    "modern-normalize": "^2.0.0"
+  },
+  "scripts": {
+    "build": "bun run vite build",
+    "watch": "bun run vite build --watch"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.29.3",
+    "vite": "^7.1.7",
+    "vite-plugin-lucky": "^0.3.0"
+  }
+}

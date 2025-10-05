@@ -11,8 +11,8 @@ GitHub repo is just a mirror.
 This project is built with [Lucky Framework](https://luckyframework.org/), a
 web framework for the [Crystal Language](https://crystal-lang.org/). It's a
 database-less Lucky app, and blog posts are static markdown files in the repo.
-This essentially a static site, but it's compiled into a single binary, and it
-runs as a dynamic one.
+Essentially it's a static site, but it's compiled into a single binary, and it
+runs as a dynamic website.
 
 ## Setting up the project
 

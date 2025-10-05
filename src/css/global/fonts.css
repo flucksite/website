@@ -1,0 +1,41 @@
+@font-face {
+  font-family: "Untitled Serif";
+  font-style: normal;
+  font-weight: normal;
+  src: url("@fonts/untitled-serif-regular.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Untitled Serif";
+  font-style: italic;
+  font-weight: normal;
+  src: url("@fonts/untitled-serif-regular-italic.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Untitled Serif";
+  font-style: normal;
+  font-weight: bold;
+  src: url("@fonts/untitled-serif-medium.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "PP Fraktion Mono";
+  font-style: normal;
+  font-weight: normal;
+  src: url("@fonts/PPFraktionMono-Regular.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "PP Fraktion Mono";
+  font-style: italic;
+  font-weight: normal;
+  src: url("@fonts/PPFraktionMono-RegularItalic.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "PP Fraktion Mono";
+  font-style: normal;
+  font-weight: bold;
+  src: url("@fonts/PPFraktionMono-Bold.woff2") format("woff2");
+}

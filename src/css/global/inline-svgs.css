@@ -1,0 +1,10 @@
+[data-inline-svg] {
+  stroke: var(--text-color);
+  stroke-width: 1.5em;
+  fill: none;
+}
+
+[data-inline-svg="fluck-logo-dark-large-horizontal.svg"] {
+  stroke: none;
+  fill: var(--color-text);
+}

@@ -1,0 +1,157 @@
+
+:root {
+  /* Spaces */
+  /* @link https://utopia.fyi/space/calculator?c=320,15,1.2,1240,18,1.25,5,2,&s=0.75|0.5|0.25,1.5|2|3|4|6,s-l&g=s,l,xl,12 */
+
+  /* Space 3xs: 4px → 5px */
+  --space-3xs: clamp(0.25rem, 0.2283rem + 0.1087vw, 0.3125rem);
+  /* Space 2xs: 8px → 9px */
+  --space-2xs: clamp(0.5rem, 0.4783rem + 0.1087vw, 0.5625rem);
+  /* Space xs: 11px → 14px */
+  --space-xs: clamp(0.6875rem, 0.6223rem + 0.3261vw, 0.875rem);
+  /* Space s: 15px → 18px */
+  --space-s: clamp(0.9375rem, 0.8723rem + 0.3261vw, 1.125rem);
+  /* Space m: 23px → 27px */
+  --space-m: clamp(1.4375rem, 1.3505rem + 0.4348vw, 1.6875rem);
+  /* Space l: 30px → 36px */
+  --space-l: clamp(1.875rem, 1.7446rem + 0.6522vw, 2.25rem);
+  /* Space xl: 45px → 54px */
+  --space-xl: clamp(2.8125rem, 2.6168rem + 0.9783vw, 3.375rem);
+  /* Space 2xl: 60px → 72px */
+  --space-2xl: clamp(3.75rem, 3.4891rem + 1.3043vw, 4.5rem);
+  /* Space 3xl: 90px → 108px */
+  --space-3xl: clamp(5.625rem, 5.2337rem + 1.9565vw, 6.75rem);
+
+  /* One-up pairs */
+  /* Space 3xs-2xs: 4px → 9px */
+  --space-3xs-2xs: clamp(0.25rem, 0.1413rem + 0.5435vw, 0.5625rem);
+  /* Space 2xs-xs: 8px → 14px */
+  --space-2xs-xs: clamp(0.5rem, 0.3696rem + 0.6522vw, 0.875rem);
+  /* Space xs-s: 11px → 18px */
+  --space-xs-s: clamp(0.6875rem, 0.5353rem + 0.7609vw, 1.125rem);
+  /* Space s-m: 15px → 27px */
+  --space-s-m: clamp(0.9375rem, 0.6766rem + 1.3043vw, 1.6875rem);
+  /* Space m-l: 23px → 36px */
+  --space-m-l: clamp(1.4375rem, 1.1549rem + 1.413vw, 2.25rem);
+  /* Space l-xl: 30px → 54px */
+  --space-l-xl: clamp(1.875rem, 1.3533rem + 2.6087vw, 3.375rem);
+  /* Space xl-2xl: 45px → 72px */
+  --space-xl-2xl: clamp(2.8125rem, 2.2255rem + 2.9348vw, 4.5rem);
+  /* Space 2xl-3xl: 60px → 108px */
+  --space-2xl-3xl: clamp(3.75rem, 2.7065rem + 5.2174vw, 6.75rem);
+
+  /* Custom pairs */
+  /* Space s-l: 14px → 36px */
+  --space-s-l: clamp(-1.9375rem, 0.481rem + 2.2826vw, 2.25rem);
+
+  /* Steps */ /* @link https://utopia.fyi/type/calculator?c=319,15,1.2,1240,18,1.25,8,2,&s=0.75,1.5|2|3|4|6,s-l&g=s,l,xl,12 */
+
+  /* Step -2: 10.4167px → 11.52px */
+  --step--2: clamp(0.651rem, 0.6272rem + 0.1198vw, 0.72rem);
+  /* Step -1: 12.5px → 14.4px */
+  --step--1: clamp(0.7813rem, 0.7401rem + 0.2063vw, 0.9rem);
+  /* Step 0: 15px → 18px */
+  --step-0: clamp(0.9375rem, 0.8726rem + 0.3257vw, 1.125rem);
+  /* Step 1: 18px → 22.5px */
+  --step-1: clamp(1.125rem, 1.0276rem + 0.4886vw, 1.4063rem);
+  /* Step 2: 21.6px → 28.125px */
+  --step-2: clamp(1.35rem, 1.2087rem + 0.7085vw, 1.7578rem);
+  /* Step 3: 25.92px → 35.1563px */
+  --step-3: clamp(1.62rem, 1.4201rem + 1.0029vw, 2.1973rem);
+  /* Step 4: 31.104px → 43.9453px */
+  --step-4: clamp(1.944rem, 1.666rem + 1.3943vw, 2.7466rem);
+  /* Step 5: 37.3248px → 54.9316px */
+  --step-5: clamp(2.3328rem, 1.9517rem + 1.9117vw, 3.4332rem);
+  /* Step 6: 44.7898px → 68.6646px */
+  --step-6: clamp(2.7994rem, 2.2825rem + 2.5923vw, 4.2915rem);
+  /* Step 7: 53.7477px → 85.8307px */
+  --step-7: clamp(3.3592rem, 2.6647rem + 3.4835vw, 5.3644rem);
+  /* Step 8: 64.4973px → 107.2884px */
+  --step-8: clamp(4.0311rem, 3.1048rem + 4.6462vw, 6.7055rem);
+
+  /* Defaults */
+
+
+  /* Fonts */
+  --font-base: "Untitled Serif", 'Georgia Pro', Georgia, serif;
+  --font-mono: "PP Fraktion Mono", ui-monospace, Menlo, Consolas, 'DejaVu Sans Mono', monospace; 
+
+  /* Base colors */
+  --abyss: #044e63;
+  --cotton-candy: #fdb0c4;
+  --duck-egg: #a7d8d1;
+  --icterine: #eff55f;
+  --jade: #6ccd92;
+  --raspberry: #d70549;
+  --stone-dark: #313130;
+  --stone-light: #f8f4ed;
+
+  /* Raspberry blends with stone-light */
+  --raspberry-sl-1: #df4172;
+  --raspberry-sl-2: #e87d9b;
+  --raspberry-sl-3: #f0b8c4;
+
+  /* Raspberry blends with stone-dark */
+  --raspberry-sd-1: #ae1043;
+  --raspberry-sd-2: #841b3d;
+  --raspberry-sd-3: #5b2636;
+
+  /* Jade blends with stone-light */
+  --jade-sl-1: #8fd7a9;
+  --jade-sl-2: #b2e1c0;
+  --jade-sl-3: #d5ead6;
+
+  /* Jade blends with stone-dark */
+  --jade-sd-1: #5da67a;
+  --jade-sd-2: #4f7f61;
+  --jade-sd-3: #405849;
+
+  /* Abyss blends with stone-light */
+  --abyss-sl-1: #417886;
+  --abyss-sl-2: #7ea1a8;
+  --abyss-sl-3: #bbcbcb;
+
+  /* Abyss blends with stone-dark */
+  --abyss-sd-1: #0f4756;
+  --abyss-sd-2: #1b404a;
+  --abyss-sd-3: #26383d;
+
+  /* Cotton Candy blends with stone-light */
+  --cotton-candy-sl-1: #fcc1ce;
+  --cotton-candy-sl-2: #fbd2d9;
+  --cotton-candy-sl-3: #f9e3e3;
+
+  /* Cotton Candy blends with stone-dark */
+  --cotton-candy-sd-1: #ca909f;
+  --cotton-candy-sd-2: #97717a;
+  --cotton-candy-sd-3: #645155;
+
+  /* Duck Egg blends with stone-light */
+  --duck-egg-sl-1: #bbdfd8;
+  --duck-egg-sl-2: #d0e6df;
+  --duck-egg-sl-3: #e4ede6;
+
+  /* Duck Egg blends with stone-dark */
+  --duck-egg-sd-1: #8aaea9;
+  --duck-egg-sd-2: #6c8581;
+  --duck-egg-sd-3: #4f5b58;
+
+  /* Icterine blends with stone-light */
+  --icterine-sl-1: #f2f76b;
+  --icterine-sl-2: #f4f5a6;
+  --icterine-sl-3: #f6f4ca;
+
+  /* Icterine blends with stone-dark */
+  --icterine-sd-1: #c0c453;
+  --icterine-sd-2: #909348;
+  --icterine-sd-3: #61623c;
+
+  /* Core theme colours */
+  --base-light: var(--stone-light);
+  --base-dark: var(--stone-dark);
+  --text-light: var(--stone-dark);
+  --text-dark: var(--stone-light)
+  --shadow-light: rgba(0, 0, 0, 0.1);
+  --shadow-dark: rgba(0, 0, 0, 0.3);
+  --picture-opacity-dark: 0.85;
+}

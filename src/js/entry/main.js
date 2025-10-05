@@ -10,4 +10,14 @@ import.meta.glob([
 // Point to src/css/main.css
 import '@css/main.css'
 
-console.log('🚀️ Lucky Vite!')
+// Set up Alpine
+import Alpine from 'alpinejs'
+import { registerAlpineExtensions } from '../utils/alpine-extensions'
+window.Alpine = Alpine
+
+registerAlpineExtensions(
+  'data',
+  import.meta.glob('@js/components/**/*.js', { eager: true }),
+)
+
+Alpine.start()

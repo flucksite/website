@@ -1,0 +1,33 @@
+:root {
+  --color-text: var(--text-light);
+  --color-base: var(--base-light);
+  --color-shadow: var(--shadow-light);
+}
+
+[theme='dark'] {
+  --color-text: var(--text-dark);
+  --color-base: var(--base-dark);
+  --color-shadow: var(--shadow-dark);
+
+  picture {
+    opacity: var(--picture-opacity-dark);
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-text: var(--text-dark);
+    --color-base: var(--base-dark);
+    --color-shadow: var(--shadow-dark);
+  }
+
+  picture {
+    opacity: var(--picture-opacity-dark);
+  }
+
+  [theme='light'] {
+    --color-text: var(--text-light);
+    --color-base: var(--base-light);
+    --color-shadow: var(--shadow-light);
+  }
+}

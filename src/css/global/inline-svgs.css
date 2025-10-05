@@ -4,7 +4,7 @@
   fill: none;
 }
 
-[data-inline-svg="fluck-logo-dark-large-horizontal.svg"] {
+[data-inline-svg="fluck-logo-dark-large-horizontal-transparent.svg"] {
   stroke: none;
   fill: var(--color-text);
 }

@@ -3,7 +3,7 @@ class Shared::Header < BaseComponent
     header class: "header" do
       link to: Home::Index do
         span "Fluck", class: "visually-hidden"
-        inline_svg("fluck-logo-dark-large-horizontal.svg")
+        inline_svg("fluck-logo-dark-large-horizontal-transparent.svg")
       end
       nav do
         ul role: "list" do

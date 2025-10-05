@@ -10,6 +10,9 @@ import.meta.glob([
 // Point to src/css/main.css
 import '@css/main.css'
 
+// Set up HTMX
+import 'htmx.org'
+
 // Set up Alpine
 import Alpine from 'alpinejs'
 import { registerAlpineExtensions } from '../utils/alpine-extensions'

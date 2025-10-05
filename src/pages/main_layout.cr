@@ -24,7 +24,7 @@ abstract class MainLayout
         page_title: page_title,
         page_description: page_description
 
-      body do
+      body hx_boost: true do
         mount Shared::Header
         mount Shared::FlashMessages, context.flash
         content

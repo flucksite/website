@@ -14,5 +14,8 @@ abstract class BrowserAction < Lucky::Action
   # Remove this include if you want to use the FLoC tracking.
   include Lucky::SecureHeaders::DisableFLoC
 
+  # Set language from cookies or params
+  include SetLanguage
+
   accepted_formats [:html, :json], default: :html
 end

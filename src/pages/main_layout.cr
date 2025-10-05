@@ -9,16 +9,23 @@ abstract class MainLayout
   # Add a `page_title` method to pages to override it. You can also remove
   # This method so every page is required to have its own page title.
   def page_title
-    "Welcome"
+    r(".page_title").t
+  end
+
+  def page_description
+    r(".page_description").t
   end
 
   def render
     html_doctype
 
-    html lang: "en" do
-      mount Shared::LayoutHead, page_title: page_title
+    html lang: Rosetta.locale do
+      mount Shared::LayoutHead,
+        page_title: page_title,
+        page_description: page_description
 
       body do
+        mount Shared::Header
         mount Shared::FlashMessages, context.flash
         content
       end

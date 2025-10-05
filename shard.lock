@@ -52,6 +52,10 @@ shards:
     git: https://github.com/luckyframework/lucky_env.git
     version: 0.3.0
 
+  lucky_favicon:
+    git: https://github.com/wout/lucky_favicon.git
+    version: 1.0.0
+
   lucky_flow:
     git: https://github.com/luckyframework/lucky_flow.git
     version: 0.10.1
@@ -76,6 +80,10 @@ shards:
     git: https://github.com/luckyframework/pulsar.git
     version: 0.2.3
 
+  rosetta:
+    git: https://github.com/wout/rosetta.git
+    version: 0.12.0
+
   selenium:
     git: https://github.com/crystal-loot/selenium.cr.git
     version: 0.12.1
@@ -87,6 +95,10 @@ shards:
   splay_tree_map:
     git: https://github.com/wyhaines/splay_tree_map.cr.git
     version: 0.3.0
+
+  teeplate:
+    git: https://github.com/luckyframework/teeplate.git
+    version: 0.8.5
 
   webdrivers:
     git: https://github.com/crystal-loot/webdrivers.cr.git

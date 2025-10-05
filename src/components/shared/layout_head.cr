@@ -1,12 +1,17 @@
 class Shared::LayoutHead < BaseComponent
+  include LuckyFavicon::Tags
+
   needs page_title : String
+  needs page_description : String
 
   def render
     head do
       utf8_charset
-      title "My App - #{@page_title}"
+      title "#{@page_title} – FLUCK"
+      meta name: "description", content: @page_description
       csrf_meta_tags
       responsive_meta_tag
+      favicon_tags app_name: "FLUCK"
 
       # Development helper used with the `lucky watch` command.
       # Reloads the browser when files are updated.

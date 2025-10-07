@@ -13,5 +13,8 @@ start_server
 /node_modules
 yarn-error.log
 
+# Crystal
+/tmp
+
 # Vite
 /public/assets

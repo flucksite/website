@@ -28,6 +28,7 @@ abstract class MainLayout
         mount Shared::Header
         mount Shared::FlashMessages, context.flash
         content
+        mount Shared::Footer
       end
     end
   end

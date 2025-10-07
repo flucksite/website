@@ -6,7 +6,7 @@ class Shared::Header < BaseComponent
         inline_svg("fluck-logo-dark-large-horizontal-transparent.svg")
       end
       nav do
-        ul role: "list" do
+        ul role: "list", class: "header__menu" do
           li do
             link r("global.menu.item.about").t, to: About::Index
           end

@@ -3,9 +3,81 @@ en:
     index_page:
       page_title: About us.
       page_description: >-
-        We are a small team based in Valencia, Spain. We're independent and 100% self-funded, with the rather ambitious goal of making artists, designers, and makers less dependent on corporate platforms for their web presence.
+        We are a small team based in Valencia, Spain. We're independent and
+        100% self-funded, with the rather ambitious goal of making artists,
+        designers, and makers less dependent on corporate platforms for their
+        web presence.
   home:
     index_page:
       page_title: Websites for artists, designers, and makers.
       page_description: >-
-        Websites for artists, designers, and makers. Ditch corporate platforms and own your online presence.
+        Websites for artists, designers, and makers. Ditch corporate platforms
+        and own your online presence.
+      hero:
+        title: "&nbsp;Your shop, your rules"
+        text: >-
+          Websites for artists, designers, and makers. Ditch corporate
+          platforms and own your online presence.
+      usps:
+        artists:
+          title: By artists for artists
+          text: >-
+            Fluck is the website builder we always wished we had ourselves.
+            It's built for creatives, with all the tools you need in one place.
+        indie:
+          title: Indie and open-source
+          text: >-
+            You're an independent creator, so why not use an independent
+            website builder? We're 100% self-funded with no investors, and
+            we're open-sourcing our code so you're never locked in.
+        ownership:
+          title: You own everything
+          text: >-
+            Your domain, your content, your customers, everything is yours. No
+            commissions, no fees nibbling away at your profits when you make a
+            sale. And if you ever want to leave? Just export everything and go.
+      creative_culture:
+        title: Supporting creative culture
+        text: >-
+          We're committed to helping artists and designers make their work
+          sustainable. As we grow, we plan to distribute a portion of our
+          profits as grants to support artists and designers.
+
+          Fluck is just the beginning. Supporting the creative community is the
+          bigger goal.
+      features:
+        title: One package, no add-ons
+        text: >-
+          Everything you need, nothing you don't. Every Fluck site comes with
+          all the tools you need in one simple package.
+        blog:
+          title: Content creation
+          text: >-
+            Start a blog to build your audience, or create your own microblog
+            feed to share across socials.
+        portfolio:
+          title: Portfolio pages
+          text: >-
+            Showcase your work with dedicated portfolio pages for client
+            projects, personal work, or pieces for sale.
+        shop:
+          title: Built-in shop
+          text: >-
+            Sell your work directly with inventory management, multiple payment
+            options, tax handling, and flexible shipping.
+        languages:
+          title: Multiple languages
+          text: >-
+            Create multilingual sites to reach a wider audience. Translate
+            content manually or with the help of our built-in translation tool.
+        integrations:
+          title: Analytics & newsletters
+          text: >-
+            Get visitor insights with built-in analytics or connect to
+            Plausible, and integrate with lightweight newsletter services like
+            EmailOctopus or Buttondown.
+        builder:
+          title: Visual page builder
+          text: >-
+            Build and style your site with drag-and-drop editing. Pages work on
+            any screen size and are optimized for accessibility.

@@ -1,11 +1,16 @@
-@import 'global/reset.css';
-@import 'global/fonts.css';
-@import 'global/variables.css';
-@import 'global/theme.css';
-@import 'global/inline-svgs.css';
-@import 'global/global-styles.css';
+@import 'global/reset';
+@import 'global/fonts';
+@import 'global/variables';
+@import 'global/theme';
+@import 'global/inline-svgs';
+@import 'global/global-styles';
 
-@import 'compositions/switcher.css';
+@import 'compositions/grid';
+@import 'compositions/switcher';
 
-@import 'utilities/visually-hidden.css';
+@import 'utilities/visually-hidden';
+
+@import 'blocks/header';
+@import 'blocks/features';
+@import 'blocks/home/hero';
 

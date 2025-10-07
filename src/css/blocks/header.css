@@ -1,0 +1,26 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: var(--stroke-dotted);
+}
+
+.header__menu {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: var(--space-m);
+  font-family: var(--font-mono);
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.header__menu a {
+  text-decoration-thickness: 2px;
+  text-decoration-color: transparent;
+  transition-property: text-decoration-color;
+  transition-duration: var(--timing-fast);
+}
+
+.header__menu a:hover {
+  text-decoration-color: var(--color-text);
+}

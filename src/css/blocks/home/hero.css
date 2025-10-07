@@ -1,0 +1,5 @@
+.hero {
+  p {
+    font-size: var(--step-2);
+  }
+}

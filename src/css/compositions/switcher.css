@@ -14,24 +14,28 @@ needs to be to allow items to sit inline with each other
 --switcher-vertical-alignment (flex-start): How items should align vertically.
 Can be any acceptable flexbox alignment value.
 */
-.switcher {
+.el-switcher {
   display: flex;
   flex-wrap: wrap;
   gap: var(--gutter, var(--space-l));
   align-items: var(--switcher-vertical-alignment, flex-start);
 }
 
-.switcher > * {
+.el-switcher > * {
   flex-grow: 1;
   flex-basis: calc((var(--switcher-target-container-width, 40rem) - 100%) * 999);
 }
-.switcher[data-items='3'] {
-  --switcher-target-container-width: 30rem;
+
+/* Max 2 items,
+so anything greater than 2 is ful width */
+.el-switcher:not([data-limit]) > :nth-child(n + 3), 
+.el-switcher[data-limit='2'] > :nth-child(n + 3), 
+.el-switcher[data-limit='3'] > :nth-child(n + 4) {
+  flex-basis: 100%;
 }
 
 /* Max N items, so anything greater than N is full width */
-.switcher > :nth-child(n + 3),
-.switcher[data-items='3'] > :nth-child(n + 4) {
-  flex-basis: 100%;
+.el-switcher[data-limit='3'] {
+  --switcher-target-container-width: 30rem;
 }
 

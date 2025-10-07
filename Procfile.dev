@@ -1,4 +1,4 @@
 system_check: crystal script/system_check.cr
 web: lucky watch -r -w sse
-vite_server: bun vite
-vite_watcher: bun watch
+vite_server: vite
+vite_watcher: npm run watch

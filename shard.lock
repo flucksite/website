@@ -1,8 +1,20 @@
 version: 2.0
 shards:
+  ameba:
+    git: https://github.com/crystal-ameba/ameba.git
+    version: 1.6.4
+
+  avram:
+    git: https://github.com/luckyframework/avram.git
+    version: 1.4.2
+
   backtracer:
     git: https://github.com/sija/backtracer.cr.git
     version: 1.2.4
+
+  cadmium_transliterator:
+    git: https://github.com/cadmiumcr/transliterator.git
+    version: 0.1.0+git.commit.46c4c14594057dbcfaf27e7e7c8c164d3f0ce3f1
 
   carbon:
     git: https://github.com/luckyframework/carbon.git
@@ -19,6 +31,10 @@ shards:
   crystar:
     git: https://github.com/naqvis/crystar.git
     version: 0.3.1
+
+  db:
+    git: https://github.com/crystal-lang/crystal-db.git
+    version: 0.13.1
 
   dexter:
     git: https://github.com/luckyframework/dexter.git
@@ -75,6 +91,10 @@ shards:
   lucky_vite:
     git: https://github.com/wout/lucky_vite.git
     version: 0.2.0
+
+  pg:
+    git: https://github.com/will/crystal-pg.git
+    version: 0.29.0
 
   pulsar:
     git: https://github.com/luckyframework/pulsar.git

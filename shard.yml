@@ -9,6 +9,9 @@ dependencies:
   lucky:
     github: luckyframework/lucky
     version: ~> 1.4.0
+  avram:
+    github: luckyframework/avram
+    version: ~> 1.4.0
   carbon:
     github: luckyframework/carbon
     version: ~> 0.6.0
@@ -33,3 +36,5 @@ development_dependencies:
   lucky_flow:
     github: luckyframework/lucky_flow
     version: ~> 0.10.1
+  ameba:
+    github: crystal-ameba/ameba

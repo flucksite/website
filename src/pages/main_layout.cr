@@ -1,5 +1,6 @@
 abstract class MainLayout
   include Lucky::HTMLPage
+  include MarkdownToHTML
 
   abstract def content
   abstract def page_title

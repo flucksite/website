@@ -14,7 +14,7 @@ ideally, as a minimum.
 --grid-placement (auto-fill): Set either auto-fit or auto-fill
 to change how empty grid tracks are handled */
 
-.el-grid {
+.grid {
   display: grid;
   grid-template-columns: repeat(
     var(--grid-placement, auto-fill),
@@ -24,13 +24,13 @@ to change how empty grid tracks are handled */
 }
 
 /* A split 50/50 layout */
-.el-grid[data-layout='50-50'] {
+.grid[data-layout='50-50'] {
   --grid-placement: auto-fit;
   --grid-min-item-size: clamp(16rem, 50vw, 33rem);
 }
 
 /* Three column grid layout */
-.el-grid[data-layout='thirds'] {
+.grid[data-layout='thirds'] {
   --grid-placement: auto-fit;
   --grid-min-item-size: clamp(16rem, 33%, 24rem);
 }

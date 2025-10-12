@@ -5,12 +5,15 @@
 @import 'global/inline-svgs';
 @import 'global/global-styles';
 
+@import 'compositions/flow';
 @import 'compositions/grid';
 @import 'compositions/switcher';
+@import 'compositions/wrapper';
 
 @import 'utilities/visually-hidden';
 
 @import 'blocks/header';
 @import 'blocks/features';
 @import 'blocks/home/hero';
+@import 'blocks/prose';
 

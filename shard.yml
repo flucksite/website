@@ -31,6 +31,13 @@ dependencies:
   lucky_favicon:
     github: wout/lucky_favicon
     version: ~> 1.0.0
+  email_octopus:
+    codeberg: w0u7/email_octopus
+  prosopo:
+    codeberg: fluck/prosopo
+  cmark:
+    github: amauryt/cr-cmark-gfm
+    branch: master
 
 development_dependencies:
   lucky_flow:
@@ -38,3 +45,6 @@ development_dependencies:
     version: ~> 0.10.1
   ameba:
     github: crystal-ameba/ameba
+  webmock:
+    github: manastech/webmock.cr
+    version: ~> 0.14.0

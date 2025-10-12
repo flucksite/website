@@ -4,9 +4,12 @@ LuckyEnv.load?(".env")
 
 # Require your shards here
 require "lucky"
-require "avram"
+require "avram/lucky"
 require "carbon"
 
 require "lucky_favicon"
 require "lucky_vite"
 require "rosetta"
+require "email_octopus"
+require "prosopo"
+require "cmark"

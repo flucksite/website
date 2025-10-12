@@ -18,7 +18,7 @@ class Home::IndexPage < MainLayout
 
   private def render_usps
     section do
-      ul role: "list", class: "features | el-switcher", data_limit: 3 do
+      ul role: "list", class: "features | switcher", data_limit: 3 do
         {% for usp in %w[artists indie ownership] %}
           li do
             h2 r(".usps.{{usp.id}}.title").t
@@ -42,7 +42,7 @@ class Home::IndexPage < MainLayout
     section do
       h2 r(".features.title").t
       para r(".features.text").t
-      ul role: "list", class: "features | el-grid", data_layout: "thirds" do
+      ul role: "list", class: "features | grid", data_layout: "thirds" do
         {% for feature in %i[blog portfolio shop languages integrations builder] %}
           li do
             h3 r(".features.{{feature.id}}.title").t

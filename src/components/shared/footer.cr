@@ -12,7 +12,7 @@ class Shared::Footer < BaseComponent
   }
 
   def render
-    footer class: "el-switcher", data_limit: 3 do
+    footer class: "switcher", data_limit: 3 do
       render_info_menu
       render_social_menu
       mount Shared::SubscriptionForm, list: "newsletter"

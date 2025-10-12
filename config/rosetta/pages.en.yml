@@ -7,6 +7,11 @@ en:
         100% self-funded, with the rather ambitious goal of making artists,
         designers, and makers less dependent on corporate platforms for their
         web presence.
+  code_of_conduct:
+    index_page:
+      page_title: Code of Conduct.
+      page_description: >-
+        Something
   home:
     index_page:
       page_title: Websites for artists, designers, and makers.

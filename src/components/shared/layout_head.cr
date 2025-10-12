@@ -1,5 +1,6 @@
 class Shared::LayoutHead < BaseComponent
   include LuckyFavicon::Tags
+  include Prosopo::Tags
 
   needs page_title : String
   needs page_description : String
@@ -17,6 +18,7 @@ class Shared::LayoutHead < BaseComponent
       # Reloads the browser when files are updated.
       live_reload_connect_tag if LuckyEnv.development?
 
+      lucky_prosopo_script
       vite_client_tag
       vite_js_link "main.js", defer: true
       vite_css_links "main.js"

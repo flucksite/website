@@ -10,3 +10,22 @@ en:
     disclaimer: >-
       You'll receive monthly-ish emails related to the early access waitlist.
       No spam.
+  shared:
+    footer:
+      info:
+        title: Info
+        about: About us
+        brand: Brand assets
+        code_of_conduct: Code of conduct
+        contact: Contact us
+      social:
+        title: Social
+        bluesky: Bluesky
+        codeberg: Codeberg
+        discord: Discord
+        discourse: Community
+        email: Email
+        github: GitHub
+        linkedin: Linkedin
+        mastodon: Mastodon
+        rss: RSS

@@ -2,6 +2,7 @@
   --color-text: var(--text-light);
   --color-base: var(--base-light);
   --color-shadow: var(--shadow-light);
+  --color-translucent: var(--translucent-light);
   --color-accent-base: var(--duck-egg);
   --color-accent-text: var(--abyss);
   --color-highlight-base: var(--icterine);
@@ -12,10 +13,11 @@
   --color-failure-text: var(--stone-light);
 }
 
-[theme='dark'] {
+[data-theme='dark'] {
   --color-text: var(--text-dark);
   --color-base: var(--base-dark);
   --color-shadow: var(--shadow-dark);
+  --color-translucent: var(--translucent-dark);
   --color-accent-base: var(--abyss);
   --color-accent-text: var(--duck-egg);
   --color-highlight-base: var(--abyss);
@@ -30,36 +32,38 @@
   }
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --color-text: var(--text-dark);
-    --color-base: var(--base-dark);
-    --color-shadow: var(--shadow-dark);
-    --color-accent-base: var(--abyss);
-    --color-accent-text: var(--duck-egg);
-    --color-highlight-base: var(--abyss);
-    --color-highlight-text: var(--icterine);
-    --color-success-base: var(--jade);
-    --color-success-text: var(--stone-dark);
-    --color-failure-base: var(--cotton-candy);
-    --color-failure-text: var(--stone-dark);
-  }
+ @media (prefers-color-scheme: dark) { 
+   :root { 
+     --color-text: var(--text-dark); 
+     --color-base: var(--base-dark); 
+     --color-shadow: var(--shadow-dark); 
+     --color-translucent: var(--translucent-dark); 
+     --color-accent-base: var(--abyss); 
+     --color-accent-text: var(--duck-egg); 
+     --color-highlight-base: var(--abyss); 
+     --color-highlight-text: var(--icterine); 
+     --color-success-base: var(--jade); 
+     --color-success-text: var(--stone-dark); 
+     --color-failure-base: var(--cotton-candy); 
+     --color-failure-text: var(--stone-dark); 
+   } 
 
-  picture {
-    opacity: var(--picture-opacity-dark);
-  }
+   picture { 
+     opacity: var(--picture-opacity-dark); 
+   } 
 
-  [theme='light'] {
-    --color-text: var(--text-light);
-    --color-base: var(--base-light);
-    --color-shadow: var(--shadow-light);
-    --color-accent-base: var(--duck-egg);
-    --color-accent-text: var(--abyss);
-    --color-highlight-base: var(--icterine);
-    --color-highlight-text: var(--abyss);
-    --color-success-base: var(--stone-dark);
-    --color-success-text: var(--jade);
-    --color-failure-base: var(--raspberry);
-    --color-failure-text: var(--stone-light);
-  }
-}
+   [data-theme='light'] { 
+     --color-text: var(--text-light); 
+     --color-base: var(--base-light); 
+     --color-shadow: var(--shadow-light); 
+     --color-translucent: var(--translucent-light); 
+     --color-accent-base: var(--duck-egg); 
+     --color-accent-text: var(--abyss); 
+     --color-highlight-base: var(--icterine); 
+     --color-highlight-text: var(--abyss); 
+     --color-success-base: var(--stone-dark); 
+     --color-success-text: var(--jade); 
+     --color-failure-base: var(--raspberry); 
+     --color-failure-text: var(--stone-light); 
+   } 
+ } 

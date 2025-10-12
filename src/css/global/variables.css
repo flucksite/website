@@ -69,6 +69,9 @@
   --step-8: clamp(4.0311rem, 3.1048rem + 4.6462vw, 6.7055rem);
 
   /* Defaults */
+  --stroke: 1px solid var(--color-text);
+  --stroke-mid: 2px solid var(--color-text);
+  --stroke-thick: 3px solid var(--color-text);
   --stroke-dotted: 3px dotted var(--color-text);
   --timing-fast: 70ms;
   --leading-fine: 1.2;
@@ -153,8 +156,10 @@
   --base-light: var(--stone-light);
   --base-dark: var(--stone-dark);
   --text-light: var(--stone-dark);
-  --text-dark: var(--stone-light)
-  --shadow-light: rgba(0, 0, 0, 0.1);
-  --shadow-dark: rgba(0, 0, 0, 0.3);
+  --text-dark: var(--stone-light);
+  --shadow-light: rgb(0 0 0 / 0.1);
+  --shadow-dark: rgb(0 0 0 / 0.3);
+  --translucent-light: rgb(0 0 0 / 0.08);
+  --translucent-dark: rgb(255 255 255 / 0.15);
   --picture-opacity-dark: 0.85;
 }

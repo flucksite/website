@@ -91,3 +91,279 @@ q {
   font-style: italic;
 }
 
+ul:not([class]) {
+  padding-inline-start: 1.7ch;
+  list-style-type: disc;
+}
+
+ul:not([class]) > li {
+  padding-inline-start: var(--space-xs);
+}
+
+:is(ol, ul):not([class]) li + * {
+  margin-block-start: var(--flow-space, var(--space-xs));
+}
+
+ul ::marker {
+  font-size: 0.8lh;
+}
+
+ol ::marker {
+  font-size: 1em;
+  font-weight: bold;
+}
+
+[role='list'][class],
+[role='tablist'][class] {
+  margin-block: 0;
+  padding: 0;
+}
+
+dt {
+  font-weight: bold;
+}
+
+dt + dd {
+  margin-block-start: var(--space-xs);
+}
+
+dd + dt {
+  margin-block-start: var(--space-s);
+}
+
+dd {
+  margin-inline-start: 1.5ch;
+}
+
+blockquote {
+  margin-inline: 0;
+  color: var(--icterine-sd-1);
+}
+
+blockquote footer {
+  margin-block-start: var(--space-s);
+  color: var(--cotton-candy-sd-1);
+  font-size: var(--step-0);
+}
+
+blockquote q {
+  font-style: normal;
+}
+
+:is(video, iframe[src*='youtube'], iframe[src*='vimeo']) {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16/9;
+}
+
+img {
+  height: auto;
+  max-width: 100%;
+  display: block;
+}
+
+figcaption {
+  padding-block-start: 0.5em;
+  font-size: var(--step-0);
+  font-family: var(--font-mono);
+}
+
+table {
+  border: var(--stroke);
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th {
+  text-align: left;
+  font-weight: bold;
+  line-height: var(--leading-fine);
+}
+
+thead th {
+  padding-block: var(--space-s);
+}
+
+td,
+th {
+  padding: var(--space-xs) var(--space-s);
+}
+
+th:not(:only-of-type) {
+  border-block-end: var(--stroke);
+}
+
+th:only-of-type {
+  border-inline-end: var(--stroke);
+}
+
+:is(th, td) ~ :is(th, td) {
+  border-inline-start: var(--stroke);
+}
+
+tr + tr :is(th, td) {
+  border-block-start: var(--stroke);
+}
+
+caption {
+  caption-side: bottom;
+  margin-block-start: var(--space-s);
+}
+
+a:not([class]):hover {
+  text-underline-offset: 0.2lh;
+}
+
+:is(h1, h2, h3, h4) a:not([class]) {
+  text-decoration-thickness: 0.1ex;
+  text-underline-offset: 0.2ex;
+}
+
+:is(h1, h2, h3, h4) a:not([class]):hover {
+  text-underline-offset: 0.3ex;
+}
+
+:focus {
+  outline: none;
+}
+
+:focus-visible {
+  outline: 2px solid var(--focus-color, currentColor);
+  outline-offset: var(--focus-offset, 0.2lh);
+}
+
+/* Firefox is the only browser that doesn't outline the whole element unless you make it display: inline-block. That in itself causes multiple flow issues so we can detect it, using its own vendor prefix and reduce focus offset
+*/
+@supports (-moz-appearance: none) {
+  :root {
+    --focus-offset: 0.08em;
+  }
+}
+
+:target {
+  scroll-margin-block: 5lh;
+}
+
+::selection {
+  color: var(--color-accent-text);
+  background: var(--color-accent-base);
+}
+
+hr {
+  border: none;
+  border-block-start: var(--stroke);
+  margin-block: var(--flow-space, var(--space-xl));
+}
+
+svg:not([class]) {
+  width: auto;
+  height: 1lh;
+}
+
+svg {
+  flex-shrink: 0;
+}
+
+svg[role='img'][width][height] {
+  width: revert;
+  height: revert;
+  background: var(--color-text);
+  padding: var(--space-xs);
+}
+
+/* There's a .flow composition, but this prevents forms from having to have that applied where markup is harder to control in certain systems. It still uses the --flow-space variables though to make managing space easier */
+form > * + * {
+  margin-top: var(--flow-space, 1rem);
+}
+
+:is(input, select, textarea) {
+  accent-color: var(--color-accent-base);
+}
+
+:is(input:not([type='checkbox'], [type='radio'], [type='color']), select, textarea) {
+  padding: 0.5em 0.8em;
+  /* border-radius: var(--radius-s); */
+  border: none;
+  border-bottom: var(--stroke-thick);
+  background-color: var(--color-translucent);
+  color: var(--color-text);
+  width: 100%;
+
+  &::placeholder {
+    /* color: var(--color-mid); */
+    opacity: 1;
+  }
+}
+
+label {
+  line-height: var(--leading-fine);
+  font-weight: bold;
+  font-family: var(--font-mono);
+  text-transform: uppercase;
+}
+
+label::after {
+  content: '\A';
+  white-space: pre;
+}
+
+/* Usually label wraps checkbox and radio buttons, so we give ourselves more layout and text-flow control with flex */
+label:has(input) {
+  display: flex;
+  align-items: baseline;
+  gap: var(--space-s);
+  font-weight: normal;
+  font-family: var(--font-base);
+}
+
+label:has(input) + label:has(input) {
+  --flow-space: var(--space-s-m);
+}
+
+/* Slightly adjusts the vertical position of the check/radio */
+label:has(input) input {
+  transform: translateY(-0.1ex);
+}
+
+input:disabled {
+  background: repeating-linear-gradient(
+    -45deg,
+    var(--color-translucent),
+    var(--color-translucent) 3px,
+    transparent 3px,
+    transparent 6px
+  );
+}
+
+input:disabled,
+label input:disabled + * {
+  cursor: not-allowed;
+}
+
+fieldset {
+  border: var(--stroke);
+  padding: var(--space-s);
+}
+
+legend {
+  font-weight: bold;
+  padding-inline: var(--space-xs);
+}
+
+summary {
+  font-weight: bold;
+  cursor: pointer;
+}
+
+details[open] summary {
+  margin-block-end: var(--space-s);
+}
+
+
+
+
+
+
+
+

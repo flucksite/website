@@ -4,9 +4,8 @@ A common wrapper/container
 */
 .wrapper {
   margin-inline: auto;
-  max-width: var(--wrapper-max-width, 1360px);
-  padding-left: var(--gutter);
-  padding-right: var(--gutter);
+  max-width: var(--wrapper-max-width, var(--max-width-full));
+  padding-inline: var(--gutter, var(--gutter-wrapper-inline));
   position: relative;
 }
 

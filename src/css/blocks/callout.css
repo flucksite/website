@@ -1,0 +1,25 @@
+.callout {
+  max-width: var(--max-width-breakout);
+}
+
+.callout > *:first-child {
+  --switcher-target-container-width: 35rem;
+  background-color: var(--duck-egg);
+  color: var(--abyss);
+  align-items: center;
+}
+
+.callout h2 {
+  line-height: var(--leading-standard);
+}
+
+.callout h2 + div {
+  align-self: stretch;
+  flex-grow: 0;
+  border-block-start: var(--stroke-dotted);
+  border-inline-start: var(--stroke-dotted);
+}
+
+.callout h2 + div + div {
+  flex-grow: 10;
+}

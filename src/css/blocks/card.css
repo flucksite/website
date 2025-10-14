@@ -1,0 +1,18 @@
+.card {
+  &[data-underline] {
+    border-block-end: var(--stroke-dotted);
+  }
+
+  :is(h2, h3) {
+    font-size: var(--step-2);
+  }
+
+  p {
+    padding-block: var(--flow-space-default);
+    font-size: var(--step-0);
+  }
+}
+
+
+
+

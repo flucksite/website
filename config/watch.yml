@@ -4,3 +4,4 @@ port: 3000
 reload_port: 3001
 extra_watch_paths:
   - ./config/rosetta/**/*.yml
+  - ./src/svgs/**/*.svg

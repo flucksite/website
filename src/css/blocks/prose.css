@@ -8,7 +8,7 @@
 }
 
 .prose :is(p, li, dl, figcaption, blockquote) {
-  max-width: 60ch;
+  max-width: var(--max-width-prose);
   text-wrap: pretty;
 }
 

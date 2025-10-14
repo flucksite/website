@@ -26,9 +26,12 @@ abstract class MainLayout
         page_description: page_description
 
       body hx_boost: true do
+        inline_svg("clip-path-shapes-02.svg")
         mount Shared::Header
         mount Shared::FlashMessages, context.flash
-        content
+        main do
+          content
+        end
         mount Shared::Footer
       end
     end

@@ -1,13 +1,15 @@
 .header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  border-bottom: var(--stroke-dotted);
-
   svg {
-    height: auto;
+    height: 2.5em;
+    width: auto;
   }
 }
+
+.header [data-wrapper-type='inner'] {
+  border-block-end: var(--stroke-dotted);
+  padding-block-end: var(--space-s);
+}
+
 
 .header__menu {
   display: flex;
@@ -16,6 +18,10 @@
   font-family: var(--font-mono);
   font-weight: 600;
   text-transform: uppercase;
+}
+
+.header__menu li {
+  /* margin-top: var(--space-xs); */
 }
 
 .header__menu a {

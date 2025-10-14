@@ -1,0 +1,11 @@
+.cutout {
+  padding: var(--space-xl);
+}
+
+.cutout[data-shape='rect-01'] {
+  clip-path: url('#rect-01');
+}
+
+.cutout[data-shape='rect-02'] {
+  clip-path: url('#rect-02');
+}

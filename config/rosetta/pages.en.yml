@@ -27,8 +27,9 @@ en:
         artists:
           title: By artists for artists
           text: >-
-            Fluck is the website builder we always wished we had ourselves.
-            It's built for creatives, with all the tools you need in one place.
+            Fluck is built specifically for creatives. It's the website builder
+            we always wished we had ourselves. A comprehensible tool that gets
+            out of your way, without unnecessary fluff.
         indie:
           title: Indie and open-source
           text: >-
@@ -38,23 +39,21 @@ en:
         ownership:
           title: You own everything
           text: >-
-            Your domain, your content, your customers, everything is yours. No
-            commissions, no fees nibbling away at your profits when you make a
-            sale. And if you ever want to leave? Just export everything and go.
+            Your website, your content, your customers, everything is yours. No
+            commissions, no fees nibbling away at your profits. And freedom of
+            movement with a self-hosting option.
       creative_culture:
         title: Supporting creative culture
         text: >-
-          We're committed to helping artists and designers make their work
-          sustainable. As we grow, we plan to distribute a portion of our
-          profits as grants to support artists and designers.
-
-          Fluck is just the beginning. Supporting the creative community is the
-          bigger goal.
+          We want to help artists and designers make their work sustainable. As
+          we grow, we plan to distribute a portion of our profits as grants to
+          support artists and designers. Fluck is just the beginning.
+          Supporting the creative community is the bigger goal.
       features:
         title: One package, no add-ons
         text: >-
           Everything you need, nothing you don't. Every Fluck site comes with
-          all the tools you need in one simple package.
+          all the tools you need in a single package.
         blog:
           title: Content creation
           text: >-

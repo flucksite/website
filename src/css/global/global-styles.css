@@ -1,4 +1,5 @@
 body {
+  min-width: 360px;
   color: var(--color-text);
   background: var(--color-base);
   font-family: var(--font-base);
@@ -14,6 +15,10 @@ body {
   font-family: var(--font-mono);
   text-transform: uppercase;
   letter-spacing: var(--uppercase-kerning);
+}
+
+main > * + * {
+  margin-block-start: var(--flow-space-thick);
 }
 
 h1 {

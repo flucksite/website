@@ -1,12 +1,7 @@
-.features {
-  :is(h2, h3) {
-    font-size: var(--step-2);
-  }
-  p {
-    font-size: var(--step-0);
-  }
+.features__text {
+  max-width: var(--max-width-compact); 
 }
 
-
-
-
+.features ul {
+  margin-block-start: var(--space-xl) !important;
+}

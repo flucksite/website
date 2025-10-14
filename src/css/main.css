@@ -7,13 +7,18 @@
 
 @import 'compositions/flow';
 @import 'compositions/grid';
+@import 'compositions/repel';
 @import 'compositions/switcher';
 @import 'compositions/wrapper';
 
 @import 'utilities/visually-hidden';
 
-@import 'blocks/header';
+@import 'blocks/callout';
+@import 'blocks/card';
+@import 'blocks/cutout';
 @import 'blocks/features';
+@import 'blocks/header';
+@import 'blocks/hero';
 @import 'blocks/home/hero';
 @import 'blocks/prose';
 

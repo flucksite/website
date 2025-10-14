@@ -9,46 +9,54 @@ class Home::IndexPage < MainLayout
 
   private def render_hero
     section class: "hero" do
-      h1 do
-        raw r(".hero.title").t
+      div class: "wrapper flow" do
+        h1 do
+          raw r(".hero.title").t
+        end
+        para r(".hero.text").t
       end
-      para r(".hero.text").t
     end
   end
 
   private def render_usps
     section do
-      ul role: "list", class: "features | switcher", data_limit: 3 do
-        {% for usp in %w[artists indie ownership] %}
-          li do
-            h2 r(".usps.{{usp.id}}.title").t
-            para r(".usps.{{usp.id}}.text").t
-          end
-        {% end %}
+      div class: "wrapper" do
+        ul role: "list", class: "switcher ", data_limit: 3 do
+          {% for usp in %w[artists indie ownership] %}
+            li class: "card" do
+              h2 r(".usps.{{usp.id}}.title").t
+              para r(".usps.{{usp.id}}.text").t
+            end
+          {% end %}
+        end
       end
     end
   end
 
   private def render_callout
-    section do
-      div class: "callout" do
+    section class: "callout | wrapper" do
+      div class: "cutout | switcher", data_shape: "rect-01", data_limit: 3 do
         h2 r(".creative_culture.title").t
-        para r(".creative_culture.text").t
+        div
+        div r(".creative_culture.text").t
       end
     end
   end
 
   private def render_features
-    section do
-      h2 r(".features.title").t
-      para r(".features.text").t
-      ul role: "list", class: "features | grid", data_layout: "thirds" do
-        {% for feature in %i[blog portfolio shop languages integrations builder] %}
-          li do
-            h3 r(".features.{{feature.id}}.title").t
-            para r(".features.{{feature.id}}.text").t
-          end
-        {% end %}
+    section class: "features" do
+      div class: "wrapper flow" do
+        h2 r(".features.title").t
+        para r(".features.text").t, class: "features__text"
+
+        ul role: "list", class: "grid", data_layout: "thirds" do
+          {% for feature in %i[blog portfolio shop languages integrations builder] %}
+            li class: "card", data_underline: true do
+              h3 r(".features.{{feature.id}}.title").t
+              para r(".features.{{feature.id}}.text").t
+            end
+          {% end %}
+        end
       end
     end
   end

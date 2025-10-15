@@ -18,7 +18,12 @@ class Shared::Footer < BaseComponent
           render_info_menu
           render_social_menu
         end
-        mount Shared::SubscriptionForm, list: "newsletter"
+        div class: "flow" do
+          h2 r(".newsletter.title").t
+          para r(".newsletter.text").t
+          mount Shared::SubscriptionForm, list: "newsletter"
+          small r(".newsletter.disclaimer").t
+        end
       end
       render_small_print
     end

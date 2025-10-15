@@ -1,6 +1,5 @@
 .hero {
   --wrapper-max-width: var(--max-width-breakout);
-  padding-block-start: 7em;
 }
 
 .hero p {

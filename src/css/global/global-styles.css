@@ -17,6 +17,10 @@ body {
   letter-spacing: var(--uppercase-kerning);
 }
 
+main {
+  margin-block-start: 5em; 
+}
+
 main > * + * {
   margin-block-start: var(--flow-space-thick);
 }

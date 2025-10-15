@@ -70,7 +70,7 @@
 
   /* Defaults */
   --flow-space-default: var(--space-s);
-  --flow-space-thick: 8em;
+  --flow-space-thick: 10em;
   --gutter-wrapper-inline: var(--space-l);
   --leading-fine: 1.2;
   --leading-standard: 1.5;
@@ -91,6 +91,7 @@
   /* Tweaks */
   @media (max-width: 480px) {
     --gutter-wrapper-inline: var(--space-m);
+    --flow-space-thick: 7em;
   }
 
   /* Fonts */

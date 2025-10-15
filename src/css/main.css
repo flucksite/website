@@ -6,6 +6,7 @@
 @import 'global/global-styles';
 
 @import 'compositions/centered';
+@import 'compositions/couple';
 @import 'compositions/flow';
 @import 'compositions/grid';
 @import 'compositions/repel';
@@ -23,5 +24,6 @@
 @import 'blocks/header';
 @import 'blocks/hero';
 @import 'blocks/home/hero';
+@import 'blocks/menu';
 @import 'blocks/prose';
 

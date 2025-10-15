@@ -1,0 +1,12 @@
+/*
+COUPLE
+A pair of elements sticking side by side, no matter what.
+*/
+.couple {
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.couple > * {
+  flex-grow: 1;
+}

@@ -1,5 +1,9 @@
 .cutout {
-  padding: var(--space-2xl);
+  padding: var(--cutout-padding, var(--space-2xl));
+
+  @media (max-width: 480px) {
+    --cutout-padding: var(--space-l);
+  }
 }
 
 .cutout[data-shape='rect-01'] {

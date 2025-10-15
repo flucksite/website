@@ -1,4 +1,5 @@
 .centered {
+  --wrapper-max-width: var(--max-width-prose);
   padding-inline: var(--gutter, var(--gutter-wrapper-inline));
 }
 
@@ -9,10 +10,6 @@
 
 .centered[data-max-width='compact'] {
   --wrapper-max-width: var(--max-width-compact);
-}
-
-.centered[data-max-width='prose'] {
-  --wrapper-max-width: var(--max-width-prose);
 }
 
 .centered[data-max-width='breakout'] {

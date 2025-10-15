@@ -1,7 +1,9 @@
 class CodeOfConduct::IndexPage < MainLayout
   def content
-    article class: "prose wrapper flow" do
-      markdown r(".text")
+    article class: "centered" do
+      div class: "prose flow" do
+        markdown r(".text")
+      end
     end
   end
 end

@@ -1,5 +1,5 @@
 .cutout {
-  padding: var(--space-xl);
+  padding: var(--space-2xl);
 }
 
 .cutout[data-shape='rect-01'] {

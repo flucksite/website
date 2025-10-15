@@ -34,7 +34,7 @@ class Home::IndexPage < MainLayout
   end
 
   private def render_callout
-    section class: "callout | wrapper" do
+    section class: "callout | centered", data_max_width: "breakout" do
       div class: "cutout | switcher", data_shape: "rect-01", data_limit: 3 do
         h2 r(".creative_culture.title").t
         div
@@ -62,7 +62,7 @@ class Home::IndexPage < MainLayout
   end
 
   private def render_early_access
-    section do
+    section class: "centered", data_max_with: "prose" do
       mount EarlyAccess
     end
   end

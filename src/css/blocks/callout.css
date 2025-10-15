@@ -1,7 +1,3 @@
-.callout {
-  max-width: var(--max-width-breakout);
-}
-
 .callout > *:first-child {
   --switcher-target-container-width: 35rem;
   background-color: var(--duck-egg);

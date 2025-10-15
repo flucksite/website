@@ -5,6 +5,7 @@
 @import 'global/inline-svgs';
 @import 'global/global-styles';
 
+@import 'compositions/centered';
 @import 'compositions/flow';
 @import 'compositions/grid';
 @import 'compositions/repel';
@@ -16,6 +17,7 @@
 @import 'blocks/callout';
 @import 'blocks/card';
 @import 'blocks/cutout';
+@import 'blocks/early-access';
 @import 'blocks/features';
 @import 'blocks/header';
 @import 'blocks/hero';

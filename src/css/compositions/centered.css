@@ -1,0 +1,20 @@
+.centered > * {
+  margin-inline: auto;
+  max-width: var(--wrapper-max-width);
+}
+
+.centered[data-max-width='compact'] {
+  --wrapper-max-width: var(--max-width-compact);
+}
+
+.centered[data-max-width='prose'] {
+  --wrapper-max-width: var(--max-width-prose);
+}
+
+.centered[data-max-width='breakout'] {
+  --wrapper-max-width: var(--max-width-breakout);
+}
+
+.centered[data-max-width='full'] {
+  --wrapper-max-width: var(--max-width-full);
+}

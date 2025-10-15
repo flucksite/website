@@ -1,0 +1,4 @@
+.early-access {
+  max-width: var(--max-width-prose);
+  background-color: var(--cotton-candy);
+}

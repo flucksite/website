@@ -1,3 +1,7 @@
+.centered {
+  padding-inline: var(--gutter, var(--gutter-wrapper-inline));
+}
+
 .centered > * {
   margin-inline: auto;
   max-width: var(--wrapper-max-width);

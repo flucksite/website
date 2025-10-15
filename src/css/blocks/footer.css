@@ -1,0 +1,43 @@
+.footer {
+  margin-block-start: var(--flow-space-thick);
+  margin-block-end: var(--space-2xl);
+}
+
+.footer h2 {
+  font-size: var(--step-2);
+}
+
+.footer__menus {
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.footer__menus > * {
+  flex-grow: 1;
+}
+
+.footer__content,
+.footer__end {
+  border-block-start: var(--stroke-dotted);
+}
+
+.footer__end {
+  --gutter: 0;
+  font-size: var(--step-0);
+}
+
+.footer__content {
+  padding-block: var(--space-l);
+}
+
+.footer__content > * {
+  --switcher-target-container-width: 45rem;
+}
+
+.footer__end > p {
+  margin-block-start: var(--space-s);
+}
+
+.footer__menus > * {
+  --switcher-target-container-width: 20rem;
+}

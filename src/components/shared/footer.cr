@@ -12,10 +12,15 @@ class Shared::Footer < BaseComponent
   }
 
   def render
-    footer class: "switcher", data_limit: 3 do
-      render_info_menu
-      render_social_menu
-      mount Shared::SubscriptionForm, list: "newsletter"
+    footer class: "footer | wrapper" do
+      div class: "footer__content | switcher" do
+        div class: "footer__menus" do
+          render_info_menu
+          render_social_menu
+        end
+        mount Shared::SubscriptionForm, list: "newsletter"
+      end
+      render_small_print
     end
   end
 
@@ -42,6 +47,13 @@ class Shared::Footer < BaseComponent
           end
         {% end %}
       end
+    end
+  end
+
+  private def render_small_print
+    div class: "footer__end | repel" do
+      para r(".copyright").t
+      para r(".principles").t
     end
   end
 end

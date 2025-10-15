@@ -277,7 +277,7 @@ svg[role='img'][width][height] {
 }
 
 /* There's a .flow composition, but this prevents forms from having to have that applied where markup is harder to control in certain systems. It still uses the --flow-space variables though to make managing space easier */
-form > * + * {
+form > *:not(input[type='hidden']) + * {
   margin-top: var(--flow-space, 1rem);
 }
 

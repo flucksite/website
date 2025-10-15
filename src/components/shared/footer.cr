@@ -14,7 +14,7 @@ class Shared::Footer < BaseComponent
   def render
     footer class: "footer | wrapper" do
       div class: "footer__content | switcher" do
-        div class: "footer__menus" do
+        div class: "couple" do
           render_info_menu
           render_social_menu
         end
@@ -30,12 +30,14 @@ class Shared::Footer < BaseComponent
   end
 
   private def render_info_menu
-    nav do
+    nav class: "flow" do
       h2 r(".info.title").t
-      ul role: "list" do
+      ul class: "menu" do
         {% for item in %i[about code_of_conduct] %}
           li do
-            link r(".info.{{item.id}}").t, to: {{item.id.camelcase}}::Index
+            link to: {{item.id.camelcase}}::Index do
+              span r(".info.{{item.id}}").t
+            end
           end
         {% end %}
       end
@@ -43,12 +45,15 @@ class Shared::Footer < BaseComponent
   end
 
   private def render_social_menu
-    nav do
+    nav class: "flow" do
       h2 r(".social.title").t
-      ul do
+      ul class: "menu" do
         {% for key, url in Shared::Footer::SOCIAL_MENU %}
           li do
-            a r(".social.{{key.id}}").t, href: {{url}}
+            a href: {{url}} do
+              inline_svg("social/{{key.id}}.svg")
+              span r(".social.{{key.id}}").t
+            end
           end
         {% end %}
       end

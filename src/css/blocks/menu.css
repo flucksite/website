@@ -1,0 +1,43 @@
+.menu {
+  list-style: none;
+  padding-inline-start: 0;
+}
+
+.menu a {
+  display: flex;
+  align-items: center;
+}
+
+.menu li:has(svg) + li {
+  margin-block-start: var(--space-2xs);
+}
+
+.menu a {
+  text-decoration: none;
+}
+
+.menu a:hover {
+  text-decoration: underline;
+}
+
+.menu a svg {
+  width: 1.3em;
+  height: auto;
+  margin-inline-end: var(--space-2xs);
+  transition-property: transform;
+  transition-duration: var(--timing-medium);
+}
+
+.menu a:hover svg {
+  transform: scale(1.1) rotate(-3deg);
+}
+
+.menu a span {
+  transition-property: transform;
+  transition-duration: var(--timing-fast);
+}
+
+.menu a:hover span {
+  transform: translateX(3px);
+}
+

@@ -1,6 +1,6 @@
 [data-inline-svg] {
-  stroke: var(--text-color);
-  stroke-width: 1.5em;
+  stroke: var(--color-text);
+  stroke-width: 1.5;
   fill: none;
 }
 

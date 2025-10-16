@@ -36,7 +36,7 @@ class Shared::Field(T) < BaseComponent
   needs label_text : String?
 
   def render(&)
-    div do
+    div class: "field" do
       label_for attribute, label_text
 
       # You can add more default options here. For example:
@@ -48,7 +48,7 @@ class Shared::Field(T) < BaseComponent
         yield tag_builder
       end
 
-      mount Shared::FieldErrors, attribute, label_text
+      mount Shared::FieldErrors, attribute
     end
   end
 

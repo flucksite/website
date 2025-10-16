@@ -6,8 +6,10 @@ class EarlyAccess < BaseComponent
       para do
         strong r(".cta").t
       end
-      mount Shared::SubscriptionForm, list: "waitlist"
-      small r(".disclaimer").t
+      mount Shared::SubscriptionForm, tag: "waitlist"
+      small do
+        markdown r(".disclaimer").t
+      end
     end
   end
 end

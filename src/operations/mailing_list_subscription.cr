@@ -1,24 +1,27 @@
 class MailingListSubscription < Avram::Operation
-  attribute list : String
+  attribute tag : String
   attribute email : String
 
-  def run
+  before_run do
     validate_required email
     validate_format_of email, with: /\A[^@\s]+@[^@\s]+\.[^@\s]+\z/
-    validate_required list
+    validate_required tag
+    validate_inclusion_of tag, in: %w[newsletter waitlist]
+  end
 
+  def run
     subscribe_user
   end
 
   private def subscribe_user
     EmailOctopus::Contact.create_or_update(
-      api_client,
-      list_id: list.value.to_s,
-      email_address: email.value.to_s
+      list_id: list_id,
+      email_address: email.value.to_s,
+      tags: {tag.value.to_s => true}
     )
   end
 
-  private def api_client
-    EmailOctopus::Client.new(ENV.fetch("EMAIL_OCTOPUS_API_KEY"))
+  private def list_id
+    ENV.fetch("EMAIL_OCTOPUS_LIST_ID")
   end
 end

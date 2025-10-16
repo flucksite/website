@@ -21,7 +21,7 @@ class Shared::Footer < BaseComponent
         div class: "flow" do
           h2 r(".newsletter.title").t
           para r(".newsletter.text").t
-          mount Shared::SubscriptionForm, list: "newsletter"
+          mount Shared::SubscriptionForm, tag: "newsletter"
           small r(".newsletter.disclaimer").t
         end
       end

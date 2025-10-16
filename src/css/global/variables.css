@@ -69,6 +69,7 @@
   --step-8: clamp(4.0311rem, 3.1048rem + 4.6462vw, 6.7055rem);
 
   /* Defaults */
+  --border-thick: 3px;
   --flow-space-default: var(--space-s);
   --flow-space-thick: 10em;
   --gutter-wrapper-inline: var(--space-l);
@@ -79,9 +80,9 @@
   --max-width-breakout: 80ch;
   --max-width-prose: 65ch;
   --max-width-compact: 50ch;
-  --stroke-dotted: 3px dotted currentColor;
+  --stroke-dotted: var(--border-thick) dotted currentColor;
   --stroke-mid: 2px solid currentColor;
-  --stroke-thick: 3px solid currentColor;
+  --stroke-thick: var(--border-thick) solid currentColor;
   --stroke: 1px solid currentColor;
   --timing-fast: 70ms;
   --timing-medium: calc(var(--timing-fast) * 2);

@@ -2,3 +2,7 @@
   max-width: var(--max-width-prose);
   background-color: var(--cotton-candy);
 }
+
+.early-access small {
+  display: block;
+}

@@ -1,0 +1,20 @@
+.field > input:focus-visible {
+  --focus-offset: var(--border-thick);
+}
+
+.field:has(.field__error) > input {
+  border-color: var(--color-failure-base);
+}
+
+.field:has(.field__error) > input:focus-within {
+  --focus-color: var(--color-failure-base);
+}
+
+.field__error {
+  background: var(--color-failure-base);
+  color: var(--color-failure-text);
+  font-size: var(--step-0);
+  font-weight: bold;
+  padding: var(--space-3xs) var(--space-2xs);
+  margin-top: var(--border-thick);
+}

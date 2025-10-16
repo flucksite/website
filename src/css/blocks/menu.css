@@ -3,6 +3,12 @@
   padding-inline-start: 0;
 }
 
+.menu[data-direction='horizontal'] {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: var(--space-m);
+}
+
 .menu a {
   display: flex;
   align-items: center;
@@ -13,11 +19,13 @@
 }
 
 .menu a {
-  text-decoration: none;
+  text-decoration-color: transparent;
+  transition-property: text-decoration-color text-underline-offset;
+  transition-duration: var(--timing-fast);
 }
 
 .menu a:hover {
-  text-decoration: underline;
+  text-decoration-color: var(--color-text);
 }
 
 .menu a svg {

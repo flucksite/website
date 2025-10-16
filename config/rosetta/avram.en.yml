@@ -1,5 +1,7 @@
 en:
   avram:
+    attribute_variants:
+      email: email
     validate_acceptance_of: "must be accepted"
     validate_at_most_one_filled: "must be blank"
     validate_confirmation_of: "must match"

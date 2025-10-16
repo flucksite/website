@@ -46,7 +46,7 @@ shards:
 
   email_octopus:
     git: https://codeberg.org/w0u7/email_octopus.git
-    version: 0.1.0+git.commit.3a805643405b6c017214346a3933e067ae716d02
+    version: 0.2.0+git.commit.173f641cf9a1744c300f00fa7e3b22fa76b1f026
 
   exception_page:
     git: https://github.com/crystal-loot/exception_page.git
@@ -114,7 +114,7 @@ shards:
 
   rosetta:
     git: https://github.com/wout/rosetta.git
-    version: 0.12.0
+    version: 0.13.1
 
   selenium:
     git: https://github.com/crystal-loot/selenium.cr.git

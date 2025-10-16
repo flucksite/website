@@ -1,17 +1,19 @@
 class Shared::FieldErrors(T) < BaseComponent
   needs attribute : Avram::PermittedAttribute(T)
-  needs label_text : String?
 
   # Customize the markup and styles to match your application
   def render
-    unless attribute.valid?
-      div class: "error" do
-        text "#{label_text_with_fallback} #{attribute.errors.first}"
-      end
+    return if attribute.valid?
+
+    div class: "field__error" do
+      text "#{label_text} #{attribute.errors.first}"
     end
   end
 
-  def label_text_with_fallback
-    label_text || Wordsmith::Inflector.humanize(attribute.name.to_s)
+  def label_text
+    Rosetta.find(
+      "avram.attribute_variants",
+      Wordsmith::Inflector.humanize(attribute.name.to_s)
+    ).t(variant: attribute.name.to_s)
   end
 end

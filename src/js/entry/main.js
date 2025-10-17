@@ -13,19 +13,18 @@ import '@css/main.css'
 // Set up HTMX
 import 'htmx.org'
 
-document.addEventListener('htmx:beforeSwap', (event) => {
-  if (event.detail.xhr.status === 422)
-    event.detail.shouldSwap = true
+document.addEventListener('htmx:beforeSwap', event => {
+  if (event.detail.xhr.status === 422) event.detail.shouldSwap = true
 })
 
 // Set up Alpine
 import Alpine from 'alpinejs'
-import { registerAlpineExtensions } from '../utils/alpine-extensions'
+import {registerAlpineExtensions} from '../utils/alpine-extensions'
 window.Alpine = Alpine
 
 registerAlpineExtensions(
   'data',
-  import.meta.glob('@js/components/**/*.js', { eager: true }),
+  import.meta.glob('@js/components/**/*.js', {eager: true})
 )
 
 Alpine.start()

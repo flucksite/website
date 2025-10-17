@@ -1,6 +1,7 @@
 class MailingListSubscription < Avram::Operation
   attribute tag : String
   attribute email : String
+  attribute name : String
 
   before_run do
     validate_required email

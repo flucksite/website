@@ -1,5 +1,7 @@
 en:
   global:
+    labels:
+      honeypot: Please leave this blank
     menu:
       item:
         about: About

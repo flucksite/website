@@ -8,10 +8,14 @@ class Shared::SubscriptionForm < BaseComponent
     div id: dom_id, class: "subscription-form" do
       form_for MailingLists::Create, **hx_attrs do
         # lucky_prosopo_container
+        hidden_input op.tag
         div class: "couple" do
           mount Shared::Field, op.email
-          hidden_input(op.tag)
           render_button
+        end
+        div class: "field visually-hidden" do
+          label_for op.name, r("global.labels.honeypot").t
+          text_input op.name
         end
       end
     end

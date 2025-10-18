@@ -17,8 +17,5 @@ abstract class BrowserAction < Lucky::Action
   # Set language from cookies or params
   include SetLanguage
 
-  # Add HTMX convenience methods
-  include HTMX::ActionHelpers
-
   accepted_formats [:html, :json], default: :html
 end

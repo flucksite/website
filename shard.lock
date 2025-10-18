@@ -46,7 +46,7 @@ shards:
 
   email_octopus:
     git: https://codeberg.org/w0u7/email_octopus.git
-    version: 0.2.0+git.commit.173f641cf9a1744c300f00fa7e3b22fa76b1f026
+    version: 0.3.0
 
   exception_page:
     git: https://github.com/crystal-loot/exception_page.git
@@ -83,10 +83,6 @@ shards:
   lucky_flow:
     git: https://github.com/luckyframework/lucky_flow.git
     version: 0.10.1
-
-  lucky_htmx:
-    git: https://github.com/wout/lucky_htmx.git
-    version: 0.1.0+git.commit.adee2084e693d2d015070a1073fc7e88d2467932
 
   lucky_router:
     git: https://github.com/luckyframework/lucky_router.git

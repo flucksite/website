@@ -10,15 +10,11 @@ import.meta.glob([
 // Point to src/css/main.css
 import '@css/main.css'
 
-// Set up HTMX
-import 'htmx.org'
-import 'idiomorph/htmx'
-
-document.addEventListener('htmx:beforeSwap', event => {
-  if (event.detail.xhr.status === 422) event.detail.shouldSwap = true
-})
+// Turbo
+import * as Turbo from '@hotwired/turbo'
 
 // Set up Alpine
+import 'alpine-turbo-drive-adapter'
 import Alpine from 'alpinejs'
 import {registerAlpineExtensions} from '../utils/alpine-extensions'
 window.Alpine = Alpine

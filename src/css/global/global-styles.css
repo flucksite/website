@@ -18,7 +18,7 @@ body {
 }
 
 main {
-  margin-block-start: 5em; 
+  margin-block-start: 5em;
 }
 
 main > * + * {
@@ -289,7 +289,11 @@ form > *:not(input[type='hidden']) + * {
   accent-color: var(--color-accent-base);
 }
 
-:is(input:not([type='checkbox'], [type='radio'], [type='color'], [type='submit']), select, textarea) {
+:is(
+  input:not([type='checkbox'], [type='radio'], [type='color'], [type='submit']),
+  select,
+  textarea
+) {
   padding: 0.5em 0.8em;
   /* border-radius: var(--radius-s); */
   border: none;
@@ -368,10 +372,6 @@ details[open] summary {
   margin-block-end: var(--space-s);
 }
 
-
-
-
-
-
-
-
+turbo-frame {
+  display: block;
+}

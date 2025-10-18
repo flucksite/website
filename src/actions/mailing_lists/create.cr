@@ -6,7 +6,7 @@ class MailingLists::Create < BrowserAction
 
   post "/mailing_lists" do
     MailingListSubscription.run(params) do |op, results|
-      html MailingLists::CreatePage, op: op
+      html_with_status MailingLists::CreatePage, op.valid? ? 200 : 422, op: op
     end
   end
 

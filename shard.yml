@@ -33,7 +33,7 @@ dependencies:
     version: ~> 1.0.0
   email_octopus:
     codeberg: w0u7/email_octopus
-    branch: fix-return-value-in-contact-subscription
+    version: ~> 0.3.0
   prosopo:
     codeberg: fluck/prosopo
   cmark:

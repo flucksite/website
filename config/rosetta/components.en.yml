@@ -13,7 +13,7 @@ en:
   shared:
     footer:
       copyright: © 2025 Fearless Living Under Creative Knowledge S.L.
-      principles: Built in Spain – Hosted in the EU – No investors involved
+      principles: Built in Spain – Hosted in the EU – No investors, no AI
       info:
         title: Info
         about: About us
@@ -40,5 +40,8 @@ en:
           You'll receive monthly-ish emails. No tracking, no spam.
     subscription_form:
       button_variants:
-        newsletter: "Subscribe"
-        waitlist: "Sign up"
+        newsletter: 'Subscribe'
+        waitlist: 'Sign up'
+      success: >-
+        Thank you for subscribing! We've sent an email with a link to %{email}
+        to confirm your subscription.

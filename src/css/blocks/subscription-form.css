@@ -1,4 +1,4 @@
-.subscription-form input[type='submit']{
+.subscription-form input[type='submit'] {
   margin-block-start: 1.5em;
   max-height: 1.5em;
 }
@@ -16,15 +16,38 @@
   background-color: var(--abyss);
 }
 
-@keyframes shake {
-    0% { transform: translateX(0); }
-   10% { transform: translateX(0); }
-   20% { transform: translateX(5px); }
-   40% { transform: translateX(-5px); }
-   50% { transform: translateX(0); }
-   60% { transform: translateX(5px); }
-   80% { transform: translateX(-5px); }
-   90% { transform: translateX(0); }
-  100% { transform: translateX(0); }
+.subscription-form__success {
+  background-color: var(--color-success-base);
+  color: var(--color-success-text);
+  padding: var(--space-m);
 }
 
+@keyframes shake {
+  0% {
+    transform: translateX(0);
+  }
+  10% {
+    transform: translateX(0);
+  }
+  20% {
+    transform: translateX(5px);
+  }
+  40% {
+    transform: translateX(-5px);
+  }
+  50% {
+    transform: translateX(0);
+  }
+  60% {
+    transform: translateX(5px);
+  }
+  80% {
+    transform: translateX(-5px);
+  }
+  90% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}

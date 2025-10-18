@@ -4,7 +4,7 @@ version: 0.1.0
 targets:
   fluck_website:
     main: src/fluck_website.cr
-crystal: ">= 1.17.0"
+crystal: '>= 1.17.0'
 dependencies:
   lucky:
     github: luckyframework/lucky

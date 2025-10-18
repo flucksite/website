@@ -19,7 +19,7 @@ en:
         Websites for artists, designers, and makers. Ditch corporate platforms
         and own your online presence.
       hero:
-        title: "&nbsp;Your shop, your rules"
+        title: '&nbsp;Your shop, your rules'
         text: >-
           Websites for artists, designers, and makers. Ditch corporate
           platforms and own your online presence.
@@ -85,3 +85,7 @@ en:
           text: >-
             Build and style your site with drag-and-drop editing. Pages work on
             any screen size and are optimized for accessibility.
+  mailing_lists:
+    create_page:
+      page_title: Subscribe to mailinglist
+      page_description: You've successfully subscribed to our mailinglist.

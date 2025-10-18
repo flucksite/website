@@ -84,6 +84,10 @@ shards:
     git: https://github.com/luckyframework/lucky_flow.git
     version: 0.10.1
 
+  lucky_htmx:
+    git: https://github.com/wout/lucky_htmx.git
+    version: 0.1.0+git.commit.adee2084e693d2d015070a1073fc7e88d2467932
+
   lucky_router:
     git: https://github.com/luckyframework/lucky_router.git
     version: 0.6.1
@@ -114,7 +118,7 @@ shards:
 
   rosetta:
     git: https://github.com/wout/rosetta.git
-    version: 0.13.1
+    version: 0.13.4
 
   selenium:
     git: https://github.com/crystal-loot/selenium.cr.git

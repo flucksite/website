@@ -12,6 +12,7 @@ import '@css/main.css'
 
 // Set up HTMX
 import 'htmx.org'
+import 'idiomorph/htmx'
 
 document.addEventListener('htmx:beforeSwap', event => {
   if (event.detail.xhr.status === 422) event.detail.shouldSwap = true

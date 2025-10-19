@@ -24,8 +24,6 @@
   --color-highlight-text: var(--icterine);
   --color-success-base: var(--jade);
   --color-success-text: var(--stone-dark);
-  --color-failure-base: var(--cotton-candy);
-  --color-failure-text: var(--stone-dark);
 
   picture {
     opacity: var(--picture-opacity-dark);
@@ -44,8 +42,6 @@
     --color-highlight-text: var(--icterine);
     --color-success-base: var(--jade);
     --color-success-text: var(--stone-dark);
-    --color-failure-base: var(--cotton-candy);
-    --color-failure-text: var(--stone-dark);
   }
 
   picture {
@@ -63,7 +59,5 @@
     --color-highlight-text: var(--abyss);
     --color-success-base: var(--jade);
     --color-success-text: var(--stone-dark);
-    --color-failure-base: var(--raspberry);
-    --color-failure-text: var(--stone-light);
   }
 }

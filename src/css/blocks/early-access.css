@@ -1,6 +1,7 @@
 .early-access {
   max-width: var(--max-width-prose);
   background-color: var(--cotton-candy);
+  color: var(--stone-dark);
 }
 
 .early-access small {

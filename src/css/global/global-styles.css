@@ -295,7 +295,6 @@ form > *:not(input[type='hidden']) + * {
   textarea
 ) {
   padding: 0.5em 0.8em;
-  /* border-radius: var(--radius-s); */
   border: none;
   border-bottom: var(--stroke-thick);
   background-color: var(--color-translucent);
@@ -303,7 +302,6 @@ form > *:not(input[type='hidden']) + * {
   width: 100%;
 
   &::placeholder {
-    /* color: var(--color-mid); */
     opacity: 1;
   }
 }

@@ -13,7 +13,7 @@
 }
 
 .subscription-form:has(.field__error) input[type='submit']:hover {
-  background-color: var(--abyss);
+  background-color: var(--color-highlight-text);
 }
 
 .subscription-form__success {

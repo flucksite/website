@@ -18,6 +18,8 @@ class Shared::LayoutHead < BaseComponent
       # Reloads the browser when files are updated.
       live_reload_connect_tag if LuckyEnv.development?
 
+      turbo_morph_tag
+      turbo_view_transition_tag
       lucky_prosopo_script
       vite_client_tag
       vite_js_link "main.js", defer: true

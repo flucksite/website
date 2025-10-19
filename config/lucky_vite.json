@@ -1,10 +1,5 @@
 {
-  "aliases": [
-    "css",
-    "js",
-    "images",
-    "fonts"
-  ],
+  "aliases": ["css", "js", "images", "fonts"],
   "outDir": "public/assets",
   "entry": "entry",
   "host": "127.0.0.1",

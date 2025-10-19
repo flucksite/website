@@ -1,12 +1,12 @@
 class Shared::Footer < BaseComponent
   SOCIAL_MENU = {
-    bluesky:   "https://bsky.app/profile/fluck.site/",
-    mastodon:  "https://indieweb.social/@fluck/",
-    discord:   "https://discord.gg/aycaQz8AfF/",
-    discourse: "https://community.fluck.site/",
-    codeberg:  "https://codeberg.org/fluck/",
-    github:    "https://github.com/flucksite/",
-    email:     "mailto:info@fluck.site",
+    bluesky:  "https://bsky.app/profile/fluck.site/",
+    mastodon: "https://indieweb.social/@fluck/",
+    # discord:   "https://discord.gg/aycaQz8AfF/",
+    # discourse: "https://community.fluck.site/",
+    codeberg: "https://codeberg.org/fluck/",
+    github:   "https://github.com/flucksite/",
+    email:    "mailto:info@fluck.site",
     # linkedin: "???",
     # rss:      "https://fluck.site/rss",
   }
@@ -36,7 +36,7 @@ class Shared::Footer < BaseComponent
         {% for item in %i[about code_of_conduct] %}
           li do
             link to: {{item.id.camelcase}}::Index do
-              span r(".info.{{item.id}}").t
+              span r(".info.{{item.id}}").t, class: "shift"
             end
           end
         {% end %}
@@ -52,7 +52,7 @@ class Shared::Footer < BaseComponent
           li do
             a href: {{url}} do
               inline_svg("social/{{key.id}}.svg")
-              span r(".social.{{key.id}}").t
+              span r(".social.{{key.id}}").t, class: "shift"
             end
           end
         {% end %}

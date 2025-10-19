@@ -1,8 +1,14 @@
 .hero {
+  --wrapper-max-width: var(--max-width-prose);
+  margin-inline: auto;
+}
+
+.hero[data-layout='home'] {
   --wrapper-max-width: var(--max-width-breakout);
 }
 
-.hero p {
-  max-width: 45ch;
+.hero[data-layout='home'] p {
+  max-width: var(--max-width-compact);
   margin-inline: auto;
+  font-size: var(--step-2);
 }

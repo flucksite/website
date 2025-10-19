@@ -26,7 +26,7 @@ abstract class MainLayout
         page_description: page_description
 
       body data_bg: current_bg do
-        inline_svg("clip-path-shapes-02.svg")
+        inline_svg("clip-path-shapes-03.svg")
         mount Shared::Header
         mount Shared::FlashMessages, context.flash
         main do
@@ -38,6 +38,10 @@ abstract class MainLayout
   end
 
   private def current_bg
-    "home"
+    case {{@type.stringify}}
+    when "Home::IndexPage"  then "home"
+    when "About::IndexPage" then "about"
+    else                         "default"
+    end
   end
 end

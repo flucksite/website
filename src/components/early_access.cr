@@ -1,6 +1,9 @@
 class EarlyAccess < BaseComponent
   def render
-    aside class: "early-access cutout | flow", data_theme: "light", data_shape: "rect-02" do
+    aside class: "early-access cutout | flow",
+      data_theme: "light",
+      data_shape: "rect-02",
+      data_safe: true do
       h2 r(".title").t
       para r(".text").t
       para do

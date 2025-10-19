@@ -8,7 +8,7 @@ class Home::IndexPage < MainLayout
   end
 
   private def render_hero
-    section class: "hero" do
+    section class: "hero", data_layout: "home" do
       div class: "wrapper flow" do
         h1 do
           raw r(".hero.title").t
@@ -35,7 +35,10 @@ class Home::IndexPage < MainLayout
 
   private def render_callout
     section class: "callout | centered", data_max_width: "breakout" do
-      div class: "cutout | switcher", data_shape: "rect-01", data_limit: 3 do
+      div class: "cutout | switcher",
+        data_shape: "rect-01",
+        data_safe: true,
+        data_limit: 3 do
         h2 r(".creative_culture.title").t
         div
         div r(".creative_culture.text").t

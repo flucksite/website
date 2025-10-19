@@ -39,13 +39,3 @@
 .menu a:hover svg {
   transform: scale(1.1) rotate(-3deg);
 }
-
-.menu a span {
-  transition-property: transform;
-  transition-duration: var(--timing-fast);
-}
-
-.menu a:hover span {
-  transform: translateX(3px);
-}
-

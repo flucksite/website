@@ -19,7 +19,7 @@ en:
         Websites for artists, designers, and makers. Ditch corporate platforms
         and own your online presence.
       hero:
-        title: '&nbsp;Your shop, your rules'
+        title: '&nbsp;Your site, your rules'
         text: >-
           Websites for artists, designers, and makers. Ditch corporate
           platforms and own your online presence.
@@ -58,12 +58,13 @@ en:
           title: Content creation
           text: >-
             Start a blog to build your audience, or create your own microblog
-            feed to share across socials.
+            feed to share across socials. Build your following on your own
+            website.
         portfolio:
           title: Portfolio pages
           text: >-
-            Showcase your work with dedicated portfolio pages for client
-            projects, personal work, or pieces for sale.
+            Showcase commissioned work, project catalogues, look books, or
+            lifestyle galleries using one or multiple portfolio pages.
         shop:
           title: Built-in shop
           text: >-
@@ -83,8 +84,8 @@ en:
         builder:
           title: Visual page builder
           text: >-
-            Build and style your site with drag-and-drop editing. Pages work on
-            any screen size and are optimized for accessibility.
+            Build and style your site with drag-and-drop editing. Create pages
+            that work on any screen size and are optimized for accessibility.
   mailing_lists:
     create_page:
       page_title: Subscribe to mailinglist

@@ -1,0 +1,22 @@
+body[data-bg] {
+  background-size: max(100vw, 820px) auto;
+  background-position: center top;
+}
+
+body[data-bg='home'] {
+  background-image: url('@images/backgrounds/home-light.svg');
+}
+
+body[data-theme='dark'][data-bg='home'] {
+  background-image: url('@images/backgrounds/home-dark.svg');
+}
+
+@media (prefers-color-scheme: dark) {
+  body[data-bg='home'] {
+    background-image: url('@images/backgrounds/home-dark.svg');
+  }
+
+  body[data-theme='light'][data-bg='home'] {
+    background-image: url('@images/backgrounds/home-light.svg');
+  }
+}

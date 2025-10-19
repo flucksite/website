@@ -25,7 +25,7 @@ abstract class MainLayout
         page_title: page_title,
         page_description: page_description
 
-      body hx_boost: true, hx_ext: "morph" do
+      body data_bg: current_bg do
         inline_svg("clip-path-shapes-02.svg")
         mount Shared::Header
         mount Shared::FlashMessages, context.flash
@@ -35,5 +35,9 @@ abstract class MainLayout
         mount Shared::Footer
       end
     end
+  end
+
+  private def current_bg
+    "home"
   end
 end

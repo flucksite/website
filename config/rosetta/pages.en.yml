@@ -7,6 +7,71 @@ en:
         100% self-funded, with the rather ambitious goal of making artists,
         designers, and makers less dependent on corporate platforms for their
         web presence.
+      hero:
+        title: About us
+        text: >-
+          We are a small team based in Valencia, Spain. We're independent and
+          100% self-funded, with the rather ambitious goal of making artists,
+          designers, and makers less dependent on corporate platforms for their
+          web presence.
+      people:
+        mick:
+          title: Mick
+          text: >-
+            Mick is the creative director and user experience guardian of
+            Fluck. He holds a master's in semiotics and worked as a freelancer
+            for various agencies. He's also an artist and ran two art
+            galleries.
+          domain: mickmichel.com
+          alt: Black and white profile of Mick with a course halftone raster.
+        wout:
+          title: Wout
+          text: >-
+            Wout is the designer and lead developer of Fluck. His background is
+            in product design and software development, and he's been building
+            bespoke e-commerce software since 2004.
+          domain: wout.codes
+          alt: Black and white profile of Wout with a course halftone raster.
+      story:
+        title: Why we're building Fluck
+        text: >-
+          **For nearly a decade, we've carried this idea to create a better
+          website builder for artists and designers.** Every time we needed to
+          set up a website or online shop for a project, it felt harder than it
+          should. The tools were either too complex, too expensive, or simply
+          not the right fit. But each time we sat down to seriously evaluate
+          building a new platform, we bottled it. The effort seemed enormous,
+          and taking on the tech giants felt impossible.
+
+
+          Then things changed.
+
+
+          By 2025, Big Tech had stopped pretending to care. The mask slipped
+          completely, cosying up to authoritarians, accelerating inequality,
+          and turning creativity into content for their algorithms to sell more
+          ads. More and more people began looking for alternatives. That shift
+          in sentiment was our signal to finally build Fluck.
+
+
+          We reject everything Big Tech represents: black boxes, invasive
+          algorithms, prioritizing shareholders over users, and pure corporate
+          greed. We want to help reclaim the web that was once a place of
+          genuine discovery and opportunity, before it became an extraction
+          machine.
+
+
+          Is it still a massive undertaking? Absolutely. Do we still face
+          Goliath-sized competitors? Of course. But now there's something
+          different: a growing movement of creators who are fed up with being
+          exploited by platforms that don't understand or respect what they do.
+
+
+          It's still small, but it's real, and that's more than enough to fuel
+          this journey.
+
+
+          Mick and Wout
   code_of_conduct:
     index_page:
       page_title: Code of Conduct.

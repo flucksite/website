@@ -155,3 +155,15 @@ en:
     create_page:
       page_title: Subscribe to mailinglist
       page_description: You've successfully subscribed to our mailinglist.
+  waitlist:
+    index_page:
+      page_title: Join the waitlist
+      page_description: >-
+        We're planning to welcome our first users in late 2025 for a closed beta.
+        Active beta users who provide feedback will receive a lifetime free
+        account.
+      hero:
+        title: Join the waitlist
+        text: >-
+          By the end of 2025, we'll invite a select group op interested users 
+          into our closed beta phase.

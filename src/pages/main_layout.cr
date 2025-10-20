@@ -39,9 +39,10 @@ abstract class MainLayout
 
   private def current_bg
     case {{@type.stringify}}
-    when "Home::IndexPage"  then "home"
-    when "About::IndexPage" then "about"
-    else                         "default"
+    when "Home::IndexPage"     then "home"
+    when "About::IndexPage"    then "about"
+    when "Waitlist::IndexPage" then "waitlist"
+    else                            "default"
     end
   end
 end

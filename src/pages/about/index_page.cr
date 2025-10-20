@@ -8,9 +8,7 @@ class About::IndexPage < MainLayout
   def render_hero
     section class: "hero" do
       div class: "wrapper flow" do
-        h1 do
-          raw r(".hero.title").t
-        end
+        h1 r(".hero.title").t
         para r(".hero.text").t
       end
     end

@@ -12,7 +12,7 @@ class Shared::Header < BaseComponent
               link r("global.menu.item.about").t, to: About::Index
             end
             li do
-              link r("global.menu.item.waitlist").t, to: About::Index
+              link r("global.menu.item.waitlist").t, to: Waitlist::Index
             end
           end
         end

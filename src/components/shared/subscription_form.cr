@@ -20,6 +20,9 @@ class Shared::SubscriptionForm < BaseComponent
     form_for MailingLists::Create do
       # lucky_prosopo_container
       hidden_input op.tag
+      if tag == "waitlist"
+        mount Shared::Field, op.website, r("global.labels.website").t
+      end
       div class: "couple" do
         mount Shared::Field, op.email
         render_button

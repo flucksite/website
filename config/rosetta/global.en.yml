@@ -2,6 +2,7 @@ en:
   global:
     labels:
       honeypot: Please leave this blank
+      website: Website or social profile
     menu:
       item:
         about: About

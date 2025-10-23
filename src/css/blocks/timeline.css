@@ -1,0 +1,31 @@
+.timeline {
+  --wrapper-max-width: var(--max-width-prose);
+}
+
+.timeline__intro {
+  margin-block-end: var(--space-3xl);
+}
+
+.timeline__entry {
+  max-width: var(--max-width-compact);
+  margin-inline: auto;
+}
+
+.timeline__entry h3 {
+  margin-inline: auto;
+  text-align: center;
+}
+
+.timeline__entry::after {
+  content: '';
+  display: block;
+  width: 1px;
+  border-left: var(--stroke-dotted);
+  height: var(--space-3xl);
+  margin-block: var(--space-m);
+  margin-inline: auto;
+}
+
+.timeline__outro {
+  text-align: center;
+}

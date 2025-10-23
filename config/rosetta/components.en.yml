@@ -2,9 +2,9 @@ en:
   early_access:
     title: Want early access?
     text: >-
-      We're planning to welcome our first users in late 2025 for a closed beta.
-      Active beta users who provide feedback will receive a lifetime free
-      account.
+      We're planning to welcome our first users at the beginning of 2026 for a
+      closed beta. Active beta users who provide feedback will receive a
+      lifetime free account.
     cta: >-
       Interested? Sign up below to get on the waitlist for early access.
     disclaimer: >-
@@ -12,7 +12,7 @@ en:
       No spam.
   shared:
     footer:
-      copyright: © 2025 Fearless Living Under Creative Knowledge S.L.
+      copyright: © %{year} Fearless Living Under Creative Knowledge S.L.
       principles: Built in Spain – Hosted in the EU – No investors, no AI
       info:
         title: Info

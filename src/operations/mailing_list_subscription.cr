@@ -2,6 +2,7 @@ class MailingListSubscription < Avram::Operation
   attribute tag : String
   attribute email : String
   attribute name : String
+  attribute website : String
 
   before_run do
     validate_required email
@@ -18,6 +19,7 @@ class MailingListSubscription < Avram::Operation
     EmailOctopus::Contact.create_or_update(
       list_id: list_id,
       email_address: email.value.to_s,
+      fields: {"Website" => website.value.to_s},
       tags: {tag.value.to_s => true}
     )
   end

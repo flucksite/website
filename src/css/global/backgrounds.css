@@ -9,12 +9,18 @@ body[data-bg='home'] {
 body[data-bg='about'] {
   background-image: url('@images/backgrounds/about-light.svg');
 }
+body[data-bg='waitlist'] {
+  background-image: url('@images/backgrounds/waitlist-light.svg');
+}
 
 body[data-theme='dark'][data-bg='home'] {
   background-image: url('@images/backgrounds/home-dark.svg');
 }
 body[data-theme='dark'][data-bg='about'] {
   background-image: url('@images/backgrounds/about-dark.svg');
+}
+body[data-theme='dark'][data-bg='waitlist'] {
+  background-image: url('@images/backgrounds/waitlist-dark.svg');
 }
 
 @media (prefers-color-scheme: dark) {
@@ -24,11 +30,17 @@ body[data-theme='dark'][data-bg='about'] {
   body[data-bg='about'] {
     background-image: url('@images/backgrounds/about-dark.svg');
   }
+  body[data-bg='waitlist'] {
+    background-image: url('@images/backgrounds/waitlist-dark.svg');
+  }
 
   body[data-theme='light'][data-bg='home'] {
     background-image: url('@images/backgrounds/home-light.svg');
   }
   body[data-theme='light'][data-bg='about'] {
     background-image: url('@images/backgrounds/about-light.svg');
+  }
+  body[data-theme='light'][data-bg='waitlist'] {
+    background-image: url('@images/backgrounds/waitlist-light.svg');
   }
 }

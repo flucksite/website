@@ -159,11 +159,55 @@ en:
     index_page:
       page_title: Join the waitlist
       page_description: >-
-        We're planning to welcome our first users in late 2025 for a closed beta.
-        Active beta users who provide feedback will receive a lifetime free
-        account.
+        We're planning to welcome our first users at the beginning of 2026 for a
+        closed beta. Active beta users who provide feedback will receive a
+        lifetime free account.
       hero:
         title: Join the waitlist
         text: >-
-          By the end of 2025, we'll invite a select group op interested users 
-          into our closed beta phase.
+          By the end of 2025, we'll begin inviting the first people into our
+          closed beta. This won't be a mass rollout, we're starting small and
+          deliberate. We'll work with each person individually to help them get
+          set up, whether you're building a new site or moving from another
+          platform.
+      subscribe:
+        title: Interested?
+        text: >-
+          Subscribe here, and we'll notify you when we are ready to get you
+          settled in. Until then, you'll receive a monthly-ish newsletter for
+          early birds.
+      timeline:
+        title: What's next?
+        text: >-
+          Here's our rough timeline. These are targets, not promises, and dates
+          may shift as we go because we're a small team. The earlier you join,
+          the more influence you'll have on how Fluck develops. Active beta
+          users who provide feedback will also receive a lifetime free account.
+        winter_2025_2026:
+          title: 'January 2026'
+          text: >-
+            **Closed beta begins.** We'll start sending personal invitations to
+            the first people on the waitlist. Expect some bugs and features
+            that aren't fully polished yet.
+        spring_2026:
+          title: 'March 2026'
+          text: >-
+            **Ramping up invites.** We'll bring in more users, but still keep
+            the one-on-one onboarding process.
+        summer_2026:
+          title: 'May 2026'
+          text: >-
+            **Opening to the public.** The beta opens up, but signups will
+            still be batched so we can monitor our infrastructure and make sure
+            it holds up under load.
+        public_beta_2:
+          title: 'September 2026'
+          text: >-
+            **Bigger batches.** We'll increase the number of users we invite at
+            once as our systems prove stable.
+        version_1:
+          title: 'November 2026'
+          text: >-
+            **Version 1.0 launches.** Registration opens to everyone. The
+            self-hostable version becomes available, and Fluck goes fully open
+            source.

@@ -62,7 +62,7 @@ class Shared::Footer < BaseComponent
 
   private def render_small_print
     div class: "footer__end | repel" do
-      para r(".copyright").t
+      para r(".copyright").t(year: Time.local.year.to_s)
       para r(".principles").t
     end
   end

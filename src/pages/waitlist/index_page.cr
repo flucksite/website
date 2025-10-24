@@ -43,7 +43,7 @@ class Waitlist::IndexPage < MainLayout
                        ] %}
         div class: "timeline__entry | flow" do
           h3 r(".timeline.{{target.id}}.title").t
-          para do
+          div do
             markdown r(".timeline.{{target.id}}.text").t
           end 
         end

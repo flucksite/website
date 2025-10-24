@@ -24,7 +24,8 @@
   transition-duration: var(--timing-fast);
 }
 
-.menu a:hover {
+.menu a:hover,
+.menu a[aria-current='page'] {
   text-decoration-color: var(--color-text);
 }
 

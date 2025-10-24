@@ -35,7 +35,8 @@ class Shared::Footer < BaseComponent
       ul class: "menu" do
         {% for item in %i[about code_of_conduct] %}
           li do
-            link to: {{item.id.camelcase}}::Index do
+            link to: action = {{item.id.camelcase}}::Index,
+              aria_current: current_page?(action) ? "page" : "false" do
               span r(".info.{{item.id}}").t, class: "shift"
             end
           end

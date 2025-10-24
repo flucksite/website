@@ -28,7 +28,7 @@ dependencies:
     github: wout/lucky_vite
   rosetta:
     github: wout/rosetta
-    branch: add-key-nesting
+    version: ~> 1.0.0
   lucky_favicon:
     github: wout/lucky_favicon
     version: ~> 1.0.0

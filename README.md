@@ -2,7 +2,8 @@
 
 This is the repo for the [https://fluck.site](https://fluck.site) website.
 
-> [!NOTE]: The original repo is hosted at
+> [!NOTE]
+> The original repo is hosted at
 > [https://codeberg.org/fluck/website](https://codeberg.org/fluck/website). The
 > GitHub repo is just a mirror.
 

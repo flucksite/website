@@ -21,9 +21,21 @@ class Shared::LayoutHead < BaseComponent
       turbo_morph_tag
       turbo_view_transition_tag
       lucky_prosopo_script
-      vite_client_tag
+      plausible_script
+      vite_client_tag if LuckyEnv.production?
       vite_js_link "main.js", defer: true
       vite_css_links "main.js"
     end
+  end
+
+  private def plausible_script
+    script src: "https://plausible.io/js/plausible.js",
+      async: true,
+      defer: true,
+      data_domain: app_domain
+  end
+
+  private def app_domain
+    ENV.fetch("APP_DOMAIN", "fluck.site")
   end
 end

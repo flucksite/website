@@ -20,18 +20,20 @@ class About::IndexPage < MainLayout
         ul role: "list", class: "flow" do
           {% for person, index in %w[mick wout] %}
             li class: "person | switcher" do
+              div class: "person__image" do
+                {% for theme in %w[light dark] %}
+                  img src: asset("@images/people/{{person.id}}-{{theme.id}}-theme.png"),
+                    alt: r(".people.{{person.id}}.alt").t,
+                    class: "cutout",
+                    data_shape: "circle-0{{index + 1}}",
+                    data_for_theme: {{theme}}
+                {% end %}
+              end
               div class: "prose" do
                 h2 r(".people.{{person.id}}.title").t
                 para r(".people.{{person.id}}.text").t
                 person_link r(".people.{{person.id}}.domain").t
               end
-              {% for theme in %w[light dark] %}
-                img src: asset("@images/people/{{person.id}}-{{theme.id}}-theme.png"),
-                  alt: r(".people.{{person.id}}.alt").t,
-                  class: "cutout",
-                  data_shape: "circle-0{{index + 1}}",
-                  data_for_theme: {{theme}}
-              {% end %}
             end
           {% end %}
         end

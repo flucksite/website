@@ -1,5 +1,4 @@
 body {
-  min-width: 360px;
   color: var(--color-text);
   background: var(--color-base);
   font-family: var(--font-base);

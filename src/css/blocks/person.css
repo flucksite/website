@@ -1,20 +1,20 @@
 .person {
   --switcher-vertical-alignment: center;
-  --flow-space: var(--space-2xl);
+  --flow-space: 7em;
   max-width: var(--max-width-breakout);
   margin-inline: auto;
 }
 
 .person:nth-child(even) {
-  padding-inline-start: var(--space-3xl);
-}
-
-.person:nth-child(odd) {
   flex-direction: row-reverse;
-  padding-inline-end: var(--space-3xl);
 }
 
-.person img {
+.person__image {
+  display: flex;
+  justify-content: center;
+}
+
+.person__image img {
   max-width: 13em;
 }
 

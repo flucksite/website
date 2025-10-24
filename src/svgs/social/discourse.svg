@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" id="Discourse-Logo--Streamline-Ultimate" height="24" width="24">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" id="Discourse-Logo--Streamline-Ultimate" height="24" width="24" aria-hidden="true">
   <g>
     <path d="M23.25 12A11.25 11.25 0 0 1 12 23.25H0.75V12a11.25 11.25 0 0 1 22.5 0Z" fill="none" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"></path>
     <path d="M16.38 18.77a6.4 6.4 0 1 0 -9.64 -3l-1.37 2.86 3.17 -0.28a6.39 6.39 0 0 0 7.84 0.42Z" fill="none" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"></path>

@@ -24,13 +24,27 @@ class Shared::SubscriptionForm < BaseComponent
         mount Shared::Field, op.website, r("global.labels.website").t
       end
       div class: "couple" do
-        mount Shared::Field, op.email
+        email_field
         render_button
       end
-      div class: "field visually-hidden" do
-        label_for op.name, r("global.labels.honeypot").t
-        text_input op.name
-      end
+      honeypot_field
+    end
+  end
+
+  private def email_field
+    dom_id = "#{tag}_email"
+    div class: "field" do
+      label_for op.email, for: dom_id
+      email_input op.email, id: dom_id
+      mount Shared::FieldErrors, op.email
+    end
+  end
+
+  private def honeypot_field
+    div class: "field visually-hidden" do
+      dom_id = "#{tag}_name"
+      label_for op.name, r("global.labels.honeypot").t, for: dom_id
+      text_input op.name, id: dom_id
     end
   end
 

@@ -8,6 +8,14 @@ shards:
     git: https://github.com/luckyframework/avram.git
     version: 1.4.2
 
+  awscr-s3:
+    git: https://github.com/taylorfinnell/awscr-s3.git
+    version: 0.8.3
+
+  awscr-signer:
+    git: https://github.com/taylorfinnell/awscr-signer.git
+    version: 0.8.2
+
   backtracer:
     git: https://github.com/sija/backtracer.cr.git
     version: 1.2.4
@@ -123,6 +131,10 @@ shards:
   shell-table:
     git: https://github.com/luckyframework/shell-table.cr.git
     version: 0.9.3
+
+  sitemapper:
+    git: https://github.com/jwoertink/sitemapper.git
+    version: 0.9.0
 
   splay_tree_map:
     git: https://github.com/wyhaines/splay_tree_map.cr.git

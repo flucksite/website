@@ -43,6 +43,8 @@ dependencies:
   cmark:
     github: amauryt/cr-cmark-gfm
     branch: master
+  sitemapper:
+    github: jwoertink/sitemapper
 
 development_dependencies:
   lucky_flow:

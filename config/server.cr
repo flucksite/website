@@ -38,12 +38,12 @@ end
 Lucky::ForceSSLHandler.configure do |settings|
   # To force SSL in production, uncomment the lines below.
   # This will cause http requests to be redirected to https:
-  #
-  #    settings.enabled = LuckyEnv.production?
-  #    settings.strict_transport_security = {max_age: 1.year, include_subdomains: true}
-  #
+
+  settings.enabled = LuckyEnv.production?
+  settings.strict_transport_security = {max_age: 1.year, include_subdomains: true}
+
   # Or, leave it disabled:
-  settings.enabled = false
+  # settings.enabled = false
 end
 
 # Set a unique ID for each HTTP request.

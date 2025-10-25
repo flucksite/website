@@ -13,6 +13,7 @@ class Shared::LayoutHead < BaseComponent
       title "#{@page_title} – #{FLUCK}"
       meta name: "description", content: @page_description
       og_tags
+      twitter_card_tags
       csrf_meta_tags
       responsive_meta_tag
       favicon_tags app_name: FLUCK
@@ -32,7 +33,7 @@ class Shared::LayoutHead < BaseComponent
   end
 
   private def og_tags
-    meta property: "og:url", content: url_for(context.request.resource)
+    meta property: "og:url", content: current_url
     meta property: "og:site_name", content: FLUCK
     meta property: "og:title", content: @page_title
     meta property: "og:description", content: @page_description
@@ -45,6 +46,10 @@ class Shared::LayoutHead < BaseComponent
     asset "@images/social/fluck-og-image.png"
   end
 
+  private def twitter_card_tags
+    meta name: "twitter:card", content: "summary_large_image"
+  end
+
   private def plausible_script
     script src: "https://plausible.io/js/plausible.js",
       async: true,
@@ -52,8 +57,8 @@ class Shared::LayoutHead < BaseComponent
       data_domain: app_domain
   end
 
-  private def url_for(path)
-    "https://#{app_domain}#{path}"
+  private def current_url
+    "https://#{app_domain}#{context.request.resource}"
   end
 
   private def app_domain

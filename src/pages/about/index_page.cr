@@ -21,23 +21,30 @@ class About::IndexPage < MainLayout
           {% for person, index in %w[mick wout] %}
             li class: "person | switcher" do
               div class: "person__image" do
-                {% for theme in %w[light dark] %}
-                  img src: asset("@images/people/{{person.id}}-{{theme.id}}-theme.png"),
-                    alt: r(".people.{{person.id}}.alt").t,
-                    class: "cutout",
-                    data_shape: "circle-0{{index + 1}}",
-                    data_for_theme: {{theme}}
-                {% end %}
+                render_bio_image({{person}}, "light", {{index}})
+                render_bio_image({{person}}, "dark", {{index}})
               end
-              div class: "prose" do
-                h2 r(".people.{{person.id}}.title").t
-                para r(".people.{{person.id}}.text").t
-                person_link r(".people.{{person.id}}.domain").t
-              end
+              render_bio_text({{person}})
             end
           {% end %}
         end
       end
+    end
+  end
+
+  macro render_bio_image(person, theme, index)
+    img src: asset("@images/people/{{person.id}}-{{theme.id}}-theme.png"),
+      alt: r(".people.{{person.id}}.alt").t,
+      class: "cutout",
+      data_shape: "circle-0{{index + 1}}",
+      data_for_theme: {{theme}}
+  end
+
+  macro render_bio_text(person)
+    div class: "prose" do
+      h2 r(".people.{{person.id}}.title").t
+      para r(".people.{{person.id}}.text").t
+      person_link r(".people.{{person.id}}.domain").t
     end
   end
 

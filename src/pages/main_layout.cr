@@ -26,15 +26,20 @@ abstract class MainLayout
         page_description: page_description
 
       body data_bg: current_bg do
+        skip_link
         inline_svg("clip-path-shapes-03.svg")
         mount Shared::Header
         mount Shared::FlashMessages, context.flash
-        main do
+        main id: "main_content" do
           content
         end
         mount Shared::Footer
       end
     end
+  end
+
+  private def skip_link
+    a r("global.buttons.skip_link").t, href: "#main_content", id: "skip_link"
   end
 
   private def current_bg

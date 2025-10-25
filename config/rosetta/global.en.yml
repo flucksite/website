@@ -1,5 +1,7 @@
 en:
   global:
+    buttons:
+      skip_link: Skip to main content
     labels:
       honeypot: Please leave this blank
       website: Website or social profile

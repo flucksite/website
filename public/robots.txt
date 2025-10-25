@@ -2,3 +2,6 @@
 User-agent: *
 # 'Disallow' with an empty value allows all paths to be crawled
 Disallow:
+
+# Sitemap location
+Sitemap: https://fluck.site/sitemap.xml

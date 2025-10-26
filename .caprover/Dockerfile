@@ -18,7 +18,7 @@ RUN  shards install --production
 FROM node:alpine as frontend_build
 WORKDIR /frontend
 COPY . .
-RUN npm install && npm build
+RUN npm install && npm run build
 
 # Build the webserver binary
 FROM crystallang/crystal:$CRYSTAL_VERSION as lucky_binaries_build

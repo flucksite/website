@@ -12,6 +12,7 @@ class Shared::LayoutHead < BaseComponent
       utf8_charset
       title "#{@page_title} – #{FLUCK}"
       meta name: "description", content: @page_description
+      meta name: "robots", content: "noai, noimageai"
       canonical_link current_url
       og_tags
       twitter_card_tags

@@ -15,7 +15,7 @@ COPY shard.yml shard.lock ./
 RUN  shards install --production
 
 # Install the application Yarn dependencies, then compile production CSS/JS
-FROM node:alpine as frontend_build
+FROM node:22-alpine frontend_build
 WORKDIR /frontend
 COPY . .
 RUN npm install && npm run build

@@ -13,7 +13,7 @@
 }
 
 .prose :is(h1, h2, h3, h4) + *:not([class]) {
-  --flow-space: var(--space-m);
+  --flow-space: var(--space-xs);
 }
 
 /* Add more space on and around figures and tables */

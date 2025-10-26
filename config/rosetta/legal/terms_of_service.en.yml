@@ -1,0 +1,209 @@
+en:
+  terms_of_service:
+    index_page:
+      page_title: Terms of Service
+      page_description: >-
+        Our terms of service, written in plain language. What you can do with
+        Fluck, what we do with your data, and your rights as a user.
+      text: |
+        # Terms of Service
+
+        **Effective: 26 October 2025**
+
+        Welcome to Fluck. These are the rules for using our service. We've tried to keep them as straightforward and human-readable as possible.
+
+        By using Fluck, you agree to these terms. If you don't agree, please don't use our service.
+
+        ## Who we are
+
+        - **Company:** Fearless Living Under Creative Knowledge S.L.
+        - **Registration:** ES B22475495
+        - **Address:** Calle Carlos Cervera 14 bajo, 46006, Valencia, Spain
+        - **Contact:** info@fluck.site
+        - **Website:** https://fluck.site
+
+        ## Your account
+
+        ### Creating an account
+        To use Fluck, you need to create an account. You must:
+        - Be at least 16 years old
+        - Provide accurate information
+        - Keep your password secure
+        - Not share your account with others
+
+        You're responsible for everything that happens through your account.
+
+        ### Your subscription
+        We offer monthly and annual subscriptions. You can cancel anytime. If you cancel:
+        - You keep access until the end of your billing period
+        - We won't charge you again
+        - Your sites will be taken offline unless you export them or switch to self-hosting
+
+        We may change our pricing, but we'll give you at least 30 days notice and honour your current price for the remainder of your billing period.
+
+        ## What you can do
+
+        ### Build your website
+        You can create websites, portfolios, shops, and blogs using Fluck. You own all the content you create.
+
+        ### Export your data
+        You can export your entire site at any time. When we launch the self-hosting option (planned for late 2026), you can take your site and run it yourself.
+
+        ### Use our code
+        When Fluck goes open source (planned for late 2026), you can use, modify, and distribute our code under the terms of the open-source licence we choose. We'll announce the specific licence before launch.
+
+        ## What you can't do
+
+        Don't use Fluck to:
+        - Break the law
+        - Harm others
+        - Distribute malware or viruses
+        - Spam people
+        - Violate anyone's intellectual property rights
+        - Host content that's illegal, pornographic, or promotes violence or hate
+        - Scrape, reverse engineer, or attempt to hack our service
+        - Resell or redistribute Fluck without our explicit permission
+
+        We reserve the right to suspend or terminate accounts that violate these terms.
+
+        ## Your content
+
+        ### You own it
+        Everything you create with Fluck is yours. We don't claim any ownership over your content.
+
+        ### Our licence to your content
+        To provide the service, you grant us permission to:
+        - Store and display your content
+        - Backup your content
+        - Process it as needed to run the service
+
+        This licence ends when you delete your content or close your account.
+
+        ### Your responsibility
+        You're responsible for:
+        - Making sure you have the right to use any content you upload
+        - Complying with laws regarding your content
+        - Any legal issues arising from your content
+
+        We're not responsible for content you create or upload.
+
+        ## Payments
+
+        ### Processing
+        We use Mollie to process payments. By subscribing, you agree to their terms as well as ours.
+
+        ### Refunds
+        We offer a 30-day money-back guarantee for new subscriptions. After that, no refunds, but you can cancel anytime.
+
+        ### Taxes
+        Prices don't include VAT or other applicable taxes. These will be added at checkout based on your location.
+
+        ## Our service
+
+        ### Availability
+        We work hard to keep Fluck running smoothly, but we can't guarantee 100% uptime. We may need to suspend the service for:
+        - Maintenance
+        - Upgrades
+        - Emergency repairs
+        - Technical issues beyond our control
+
+        We'll try to minimize disruptions and give notice when possible.
+
+        ### Changes
+        We may:
+        - Add new features
+        - Remove or modify existing features
+        - Change how the service works
+
+        We'll notify you of significant changes, especially if they might affect your sites.
+
+        ### Backups
+        We back up your data regularly, but you should too. We're not liable for data loss, though we'll do everything possible to prevent it.
+
+        ## Intellectual property
+
+        ### Our stuff
+        Fluck's code, design, branding, and documentation are ours (or our licensors). You can't use them without permission, except as these terms allow.
+
+        ### Your stuff
+        Your content is yours. You're free to do whatever you want with it.
+
+        ### Open source
+        When we go open source, our code will be available under an open-source licence. Until then, all rights are reserved.
+
+        ## AI and scraping
+
+        We prohibit:
+        - Scraping content from Fluck or from websites built with Fluck
+        - Using scraped content to train AI models, language models, or machine learning systems
+        - Automated data collection without explicit permission
+
+        User websites built with Fluck may set their own policies via robots.txt and terms of service.
+
+        ## Termination
+
+        ### By you
+        You can close your account anytime through your account settings. Your data will be permanently deleted within 30 days.
+
+        ### By us
+        We may suspend or terminate your account if you:
+        - Violate these terms
+        - Use the service fraudulently
+        - Cause technical or security issues
+        - Don't pay your subscription
+
+        We'll try to warn you first, but we reserve the right to act immediately if necessary.
+
+        ## Disclaimers and limitations
+
+        ### No warranties
+        Fluck is provided "as is." We don't guarantee:
+        - Uninterrupted or error-free service
+        - That it'll meet all your needs
+        - That it's completely secure (though we try hard)
+        - That all features will work perfectly all the time
+
+        ### Limitation of liability
+        To the maximum extent permitted by law:
+        - We're not liable for indirect, incidental, or consequential damages
+        - Our total liability is limited to what you paid us in the last 12 months
+        - We're not liable for things outside our control
+
+        **This doesn't limit liability that can't be limited by law, such as for fraud, death, or personal injury caused by our negligence.**
+
+        ### Your responsibility
+        You're responsible for:
+        - How you use Fluck
+        - Your content and websites
+        - Compliance with laws
+        - Any damages resulting from your breach of these terms
+
+        ## General stuff
+
+        ### Changes to these terms
+        We may update these terms. If we make significant changes, we'll notify you by email at least 30 days in advance. Continued use after changes means you accept them.
+
+        ### Entire agreement
+        These terms, together with our Privacy Policy, constitute the entire agreement between us.
+
+        ### Severability
+        If any part of these terms is found unenforceable, the rest remains in effect.
+
+        ### No waiver
+        Our failure to enforce any right doesn't mean we've waived it.
+
+        ### Assignment
+        You can't transfer your rights under these terms. We can transfer ours if we need to restructure our business legally, but your rights won't be affected.
+
+        ### Contact
+        Questions? Email us at info@fluck.site. We're real people and happy to help.
+
+        ## Law and jurisdiction
+
+        These terms are governed by Spanish law. 
+
+        If you're a consumer, you keep any mandatory rights under the consumer protection laws of your country. Nothing here removes those rights.
+
+        For disputes:
+        - **Consumers:** You can bring legal action in the courts of your country or Spain
+        - **Businesses:** Disputes will be handled exclusively in the courts of Valencia, Spain

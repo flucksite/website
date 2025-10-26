@@ -1,5 +1,5 @@
 .prose {
-  --flow-space: var(--space-l);
+  --flow-space: var(--space-s);
 }
 
 .prose :is(h1, h2, h3) {
@@ -19,7 +19,7 @@
 /* Add more space on and around figures and tables */
 .prose :is(figure, table),
 .prose :is(figure, table) + * {
-  --flow-space: var(--space-2xl);
+  --flow-space: var(--space-xl);
 }
 
 /* Add more space to headings on block start */
@@ -29,7 +29,7 @@
 
 .prose :is(ul, ol):not([class]) li + li,
 .prose :is(ul, ol):not([class]) li > :is(ol, ul) {
-  --flow-space: var(--space-xs);
+  --flow-space: var(--space-3xs);
 }
 
 .prose hr {
@@ -39,7 +39,3 @@
 .prose :is(img, picture, video) {
   /* border: var(--stroke-solid); */
 }
-
-
-
-

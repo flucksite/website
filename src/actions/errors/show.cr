@@ -2,13 +2,16 @@
 #
 # https://luckyframework.org/guides/http-and-routing/error-handling
 class Errors::Show < Lucky::ErrorAction
-  DEFAULT_MESSAGE = "Something went wrong."
+  include Rosetta::Translatable
+
+  DEFAULT_MESSAGE = r(".something_wrong").t
+
   default_format :html
   dont_report [Lucky::RouteNotFoundError]
 
   def render(error : Lucky::RouteNotFoundError)
     if html?
-      error_html "Sorry, we couldn't find that page.", status: 404
+      error_html r(".not_found").t, status: 404
     else
       error_json "Not found", status: 404
     end
@@ -59,5 +62,6 @@ class Errors::Show < Lucky::ErrorAction
 
   private def report(error : Exception) : Nil
     # Send to Rollbar, send an email, etc.
+    Raven.capture(error)
   end
 end

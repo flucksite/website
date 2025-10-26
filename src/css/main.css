@@ -21,6 +21,7 @@
 @import 'blocks/card';
 @import 'blocks/cutout';
 @import 'blocks/early-access';
+@import 'blocks/error';
 @import 'blocks/features';
 @import 'blocks/field';
 @import 'blocks/footer';

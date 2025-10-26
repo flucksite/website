@@ -1,0 +1,5 @@
+en:
+  errors:
+    show:
+      not_found: We couldn't find that page.
+      something_wrong: Something went wrong.

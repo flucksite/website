@@ -4,6 +4,10 @@ shards:
     git: https://github.com/crystal-ameba/ameba.git
     version: 1.6.4
 
+  any_hash:
+    git: https://github.com/sija/any_hash.cr.git
+    version: 0.2.5
+
   avram:
     git: https://github.com/luckyframework/avram.git
     version: 1.4.2
@@ -119,6 +123,10 @@ shards:
   pulsar:
     git: https://github.com/luckyframework/pulsar.git
     version: 0.2.3
+
+  raven:
+    git: https://github.com/sija/raven.cr.git
+    version: 1.9.4
 
   rosetta:
     git: https://github.com/wout/rosetta.git

@@ -5,6 +5,8 @@ en:
     labels:
       honeypot: Please leave this blank
       website: Website or social profile
+    links:
+      back_home: ← Head back to home
     menu:
       item:
         about: About

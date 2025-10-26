@@ -72,6 +72,10 @@ en:
 
 
           Mick and Wout
+  errors:
+    show_page:
+      page_title: We've encountered a %{status_code} error
+      page_description: "This is not right, we've got an error: %{message}"
   home:
     index_page:
       page_title: Websites for artists, designers, and makers.

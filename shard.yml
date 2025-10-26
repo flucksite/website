@@ -45,6 +45,8 @@ dependencies:
     branch: master
   sitemapper:
     github: jwoertink/sitemapper
+  raven:
+    github: Sija/raven.cr
 
 development_dependencies:
   lucky_flow:

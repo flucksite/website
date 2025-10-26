@@ -12,6 +12,9 @@ body[data-bg='about'] {
 body[data-bg='waitlist'] {
   background-image: url('@images/backgrounds/waitlist-light.svg');
 }
+body[data-bg='error'] {
+  background-image: url('@images/backgrounds/error.svg');
+}
 
 body[data-theme='dark'][data-bg='home'] {
   background-image: url('@images/backgrounds/home-dark.svg');

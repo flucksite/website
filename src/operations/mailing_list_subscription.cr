@@ -22,6 +22,8 @@ class MailingListSubscription < Avram::Operation
       fields: {"Website" => website.value.to_s},
       tags: {tag.value.to_s => true}
     )
+  rescue ex : Exception
+    Raven.capture(ex)
   end
 
   private def list_id

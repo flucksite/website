@@ -1,0 +1,172 @@
+en:
+  privacy_policy:
+    index_page:
+      page_title: Privacy and Cookie Policy
+      page_description: >-
+        Your data, your rules. We collect the minimum, store it securely, and
+        never sell it. Our privacy and cookie policy, written for humans, not
+        lawyers.
+      text: |
+        # Privacy and Cookie Policy
+
+        **Effective: 26 October 2025**
+
+        We're Fluck (legally: Fearless Living Under Creative Knowledge S.L.), based in Valencia, Spain. We build website tools for artists, designers, and makers. This privacy policy explains how we handle your personal data.
+
+        This policy was written to be understood by humans, not just lawyers. But if anything is still unclear, please let us know.
+
+        ## The short version
+
+        We don't sell your data, nor do we track you, ever. We collect the absolute minimum needed to run the service. You can delete your account and all your data at any time.
+
+        ## Who we are
+
+        - **Company:** Fearless Living Under Creative Knowledge S.L.
+        - **Registration:** ES B22475495
+        - **Address:** Calle Carlos Cervera 14 bajo, 46006, Valencia, Spain
+        - **Data Protection Contact:** privacy@fluck.site
+        - **Website:** https://fluck.site
+
+        ## What we collect and why
+
+        ### Account information
+        When you create an account, we collect your email address and password. We need this to let you log in and to contact you about your account.
+
+        **Legal basis:** Performance of contract
+
+        ### Payment information
+        If you subscribe to a paid plan, our payment processor (Mollie) handles your payment details. We never see or store your full card number, only the last 4 digits as a reference, and we store it encrypted.
+
+        **Legal basis:** Performance of contract
+
+        ### Website content
+        When you build your website with Fluck, we store the content you create (text, images, etc.). This is literally what we do, we can't provide the service without it.
+
+        **Legal basis:** Performance of contract
+
+        ### Analytics
+        We use **Plausible Analytics**, a privacy-respecting, open-source tool. It doesn't use cookies and doesn't collect personal data. We use it to understand which features people use and how we can improve, without collecting any personally identifiable data.
+
+        **Legal basis:** Legitimate interest (improving our service)
+
+        ### Support communications
+        If you email us, we keep those emails to help you and improve our service.
+
+        **Legal basis:** Legitimate interest (customer support)
+
+        ### Waitlist
+        If you join our waitlist, we collect your email address to notify you when we're ready and to send occasional updates. You can unsubscribe anytime with a single click.
+
+        **Legal basis:** Consent
+
+        ## What we don't collect
+
+        - We don't track you across the web
+        - We don't create marketing profiles
+        - We don't use invasive analytics or advertising cookies
+        - We don't collect data we don't need
+
+        ## Who sees your data
+
+        ### Service providers
+        We work with a few trusted companies to run Fluck:
+
+        - **Mollie** – Payment processing
+          - Based in The Netherlands
+          - https://www.mollie.com/
+
+        - **EmailOctopus** – Newsletter emails
+          - Based in the United Kingdom
+          - https://emailoctopus.com/
+
+        - **Plausible** – Analytics
+          - Based in Estonia
+          - https://plausible.io/
+
+        - **Sweego** – Transactional emails
+          - Based in France
+          - https://www.sweego.io/
+
+        - **Hetzner** – Hosting
+          - Based in Germany
+          - https://www.hetzner.com/
+
+        These companies only access data necessary to provide their specific service. They're all GDPR-compliant and contractually obligated to protect your data.
+
+        ### Nobody else
+        We don't sell, rent, or share your data with advertisers, data brokers, or anyone else. Ever.
+
+        ### Legal requirements
+        We'll only disclose your data if legally required (e.g., valid court order). If possible, we'll notify you first.
+
+        ## Where we store your data
+
+        Your data is stored on servers in the European Union. Some service providers are located in the UK or other countries with adequate data protection standards recognized by the EU. If we ever need to transfer data outside these jurisdictions, we'll ensure adequate protections are in place (e.g., Standard Contractual Clauses).
+
+        ## How long we keep your data
+
+        - **Account data:** Until you delete your account
+        - **Deleted account data:** Permanently deleted within 30 days
+        - **Support emails:** Until no longer relevant for support purposes
+        - **Financial records:** 7 years (legal requirement)
+        - **Waitlist data:** Until you unsubscribe or we close the waitlist
+        - **Analytics data:** Aggregated and anonymized, retained indefinitely for service improvement
+
+        ## Your rights
+
+        Under GDPR, you can:
+
+        - **Access** your data – See what we have
+        - **Correct** your data – Fix anything inaccurate
+        - **Delete** your data – Remove everything (right to be forgotten)
+        - **Export** your data – Get a copy in a readable format (data portability)
+        - **Object** to processing – Stop us using your data for specific purposes
+        - **Restrict** processing – Limit how we use your data
+        - **Withdraw consent** – Change your mind about things you agreed to
+
+        To exercise any of these rights, email us at privacy@fluck.site. We'll respond within 30 days.
+
+        You can also complain to your local data protection authority (in Spain: Agencia Española de Protección de Datos https://www.aepd.es/).
+
+        ## Security
+
+        We take security seriously:
+
+        - Passwords are encrypted with modern hashing algorithms
+        - All sensitive information, such as personal information, client data, and sales data, is stored encrypted
+        - We use HTTPS everywhere
+        - Regular security updates and monitoring
+        - Limited employee access to data
+
+        That said, no system is 100% secure. We do our best, but we can't guarantee absolute security.
+
+        ## Cookies
+
+        We use essential cookies to:
+        - Keep you logged in to your account
+        - Remember your preferences (theme, language, etc.)
+
+        These are strictly necessary cookies that make the service work. Without them, you wouldn't be able to use Fluck.
+
+        We don't use:
+        - Tracking cookies
+        - Advertising cookies
+        - Third-party cookies (except those from our payment processor during checkout)
+
+        For analytics, Plausible doesn't use cookies at all.
+
+        ## Self-hosting
+
+        When our self-hostable version launches (late 2026), you'll be responsible for your own data protection if you choose to self-host. We'll provide documentation to help you do it properly.
+
+        ## Children
+
+        Fluck isn't intended for anyone under 16. If we discover we've collected data from someone under 16, we'll delete it.
+
+        ## Changes
+
+        If we change this policy, we'll post the updated version here and notify you by email if the changes are significant. The "Effective" date at the top shows when it was last updated.
+
+        ## Questions
+
+        Email us at privacy@fluck.site. We're real people, and we're happy to help.

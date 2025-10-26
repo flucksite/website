@@ -1,6 +1,12 @@
 en:
   code_of_conduct:
     index_page:
+      page_title: Code of Conduct.
+      page_description: >-
+        Our Code of Conduct outlines community standards for respectful
+        participation, including encouraged behaviors, restricted conduct,
+        reporting procedures, and enforcement guidelines to maintain a
+        welcoming, safe, and equitable environment for all members.
       text: |
         # Code of Conduct
 

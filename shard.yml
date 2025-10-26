@@ -3,7 +3,7 @@ name: fluck_website
 version: 0.1.0
 
 targets:
-  fluck_website:
+  app:
     main: src/fluck_website.cr
 
 crystal: '>= 1.17.0'

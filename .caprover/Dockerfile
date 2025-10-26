@@ -14,11 +14,11 @@ ENV SKIP_LUCKY_TASK_PRECOMPILATION=1
 COPY shard.yml shard.lock ./
 RUN  shards install --production
 
-# Install the application Yarn dependencies, then compile production CSS/JS
+# Install the application dependencies, then compile production CSS/JS
 FROM node:alpine as frontend_build
 WORKDIR /frontend
 COPY . .
-RUN npm install && npm build
+RUN npm install && npm run build
 
 # Build the webserver binary
 FROM crystallang/crystal:$CRYSTAL_VERSION as lucky_binaries_build

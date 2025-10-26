@@ -253,8 +253,8 @@ a:not([class]):hover {
 }
 
 ::selection {
-  color: var(--color-accent-text);
-  background: var(--color-accent-base);
+  color: var(--color-highlight-base);
+  background: var(--color-highlight-text);
 }
 
 hr {

@@ -19,6 +19,7 @@ class Shared::LayoutHead < BaseComponent
       csrf_meta_tags
       responsive_meta_tag
       favicon_tags app_name: FLUCK
+      preload_backgrounds
 
       # Development helper used with the `lucky watch` command.
       # Reloads the browser when files are updated.
@@ -50,6 +51,16 @@ class Shared::LayoutHead < BaseComponent
 
   private def twitter_card_tags
     meta name: "twitter:card", content: "summary_large_image"
+  end
+
+  macro preload_backgrounds
+    {% for background in %w[waitlist-light waitlist-dark error] %}
+      empty_tag "link",
+        rel: "preload",
+        as: "image",
+        type: "image/svg+xml",
+        href: asset("@images/backgrounds/{{background.id}}.svg")
+    {% end %}
   end
 
   private def plausible_script

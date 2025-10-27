@@ -25,7 +25,7 @@ jobs:
           outPath: deploy.tar
 
       - name: Deploy WebServer to Caprover
-        if: ${{ github.ref == 'refs/heads/production' }}
+        if: ${{ github.ref == 'refs/heads/staging' }}
         uses: caprover/deploy-from-github@v1.0.1
         with:
           server: '${{ secrets.CAPROVER_SERVER }}'

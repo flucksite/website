@@ -64,10 +64,13 @@ class Shared::LayoutHead < BaseComponent
   end
 
   private def plausible_script
-    script src: "https://plausible.io/js/plausible.js",
-      async: true,
-      defer: true,
-      data_domain: app_domain
+    script src: "https://plausible.io/js/pa-roV_OhYFz-nQv2vgDLUzq.js", async: true
+    script do
+      raw <<-JS
+      window.plausible=window.plausible||function(){(plausible.q=plausible.q||[]).push(arguments)},plausible.init=plausible.init||function(i){plausible.o=i||{}};
+      plausible.init()
+      JS
+    end
   end
 
   private def current_url

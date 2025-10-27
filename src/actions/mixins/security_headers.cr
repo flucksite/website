@@ -22,6 +22,7 @@ module SecurityHeaders
       io << "frame-ancestors 'none'; "
       io << "base-uri 'self'; "
       io << "form-action 'self'; "
+      io << "worker-src 'self' blob:; "
 
       if LuckyEnv.development?
         io << "script-src 'self' 'unsafe-inline' 'unsafe-eval' http://127.0.0.1:3010 http://fluck.localhost:3010 https://js.prosopo.io https://plausible.io; "

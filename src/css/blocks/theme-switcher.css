@@ -1,0 +1,26 @@
+.theme-switcher button {
+  all: unset;
+  display: flex;
+  align-items: baseline;
+  cursor: pointer;
+  transition-property: transform;
+  transition-duration: var(--timing-medium);
+}
+
+.theme-switcher button:hover {
+  transform: scale(1.2) rotate(-5deg);
+}
+
+.theme-switcher svg {
+  width: 1em;
+  height: auto;
+  stroke-width: 2px;
+}
+
+[data-theme='dark'] [data-inline-svg='theme/dark.svg'],
+[data-theme='auto'] [data-inline-svg='theme/dark.svg'] {
+  display: none;
+}
+[data-theme='light'] [data-inline-svg='theme/light.svg'] {
+  display: none;
+}

@@ -4,7 +4,6 @@ ARG LUCKY_ENV
 # Install the application Crystal dependencies
 FROM crystallang/crystal:$CRYSTAL_VERSION as crystal_dependencies
 WORKDIR /shards
-ENV LUCKY_ENV=$LUCKY_ENV
 RUN apt-get update -qq \
   && DEBIAN_FRONTEND=noninteractive apt-get install -yq --no-install-recommends \
   build-essential \
@@ -16,6 +15,8 @@ RUN  shards install --production
 
 # Install the application JS dependencies, then compile production CSS/JS
 FROM node:22-alpine as frontend_build
+ARG LUCKY_ENV
+ENV LUCKY_ENV=$LUCKY_ENV
 WORKDIR /frontend
 COPY . .
 RUN npm install && npm run build
@@ -27,6 +28,7 @@ RUN apt-get update -qq \
   && DEBIAN_FRONTEND=noninteractive apt-get install -yq --no-install-recommends \
   build-essential \
   gnupg2
+ARG LUCKY_ENV
 ENV LUCKY_ENV=$LUCKY_ENV
 COPY . .
 COPY --from=crystal_dependencies /shards/lib lib

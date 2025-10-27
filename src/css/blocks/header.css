@@ -1,26 +1,3 @@
-.header svg {
-  height: 2.5em;
-  width: auto;
-  display: block;
-  stroke: none;
-  fill: var(--color-text);
-}
-
-.header [data-inline-svg='fluck-logo-large-vertical-transparent.svg'] {
-  display: none;
-  height: 3.5em;
-}
-
-@media (max-width: 480px) {
-  .header [data-inline-svg='fluck-logo-large-horizontal-transparent.svg'] {
-    display: none;
-  }
-
-  .header [data-inline-svg='fluck-logo-large-vertical-transparent.svg'] {
-    display: block;
-  }
-}
-
 .header > div {
   border-block-end: var(--stroke-dotted);
   padding-block-end: var(--space-s);
@@ -41,4 +18,28 @@
 .header nav a[aria-current='page'] {
   text-decoration: underline;
   text-decoration-thickness: 2px;
+}
+
+.header__logo svg {
+  height: 2.5em;
+  width: auto;
+  display: block;
+  stroke: none;
+  fill: var(--color-text);
+}
+
+.header__logo [data-inline-svg='fluck-logo-large-vertical-transparent.svg'] {
+  display: none;
+  height: 3.5em;
+}
+
+@media (max-width: 480px) {
+  .header__logo
+    [data-inline-svg='fluck-logo-large-horizontal-transparent.svg'] {
+    display: none;
+  }
+
+  .header__logo [data-inline-svg='fluck-logo-large-vertical-transparent.svg'] {
+    display: block;
+  }
 }

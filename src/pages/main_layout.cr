@@ -25,7 +25,9 @@ abstract class MainLayout
         page_title: page_title,
         page_description: page_description
 
-      body data_bg: current_bg do
+      body data_bg: current_bg,
+        x_data: "theme(#{current_theme})",
+        ":data_theme": "theme" do
         skip_link
         inline_svg("clip-path-shapes-03.svg")
         mount Shared::Header
@@ -40,6 +42,12 @@ abstract class MainLayout
 
   private def skip_link
     a r("global.buttons.skip_link").t, href: "#main_content", id: "skip_link"
+  end
+
+  private def current_theme
+    theme = context.cookies.get_raw?("_fluck_preferred_theme")
+
+    theme ? "'#{theme.value}'" : "null"
   end
 
   private def current_bg

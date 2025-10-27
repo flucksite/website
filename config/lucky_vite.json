@@ -1,6 +1,6 @@
 {
   "aliases": ["css", "js", "images", "fonts"],
-  "outDir": "public/assets",
+  "outDir": "public",
   "entry": "entry",
   "host": "fluck.localhost",
   "port": 3010,

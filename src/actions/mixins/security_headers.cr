@@ -24,12 +24,12 @@ module SecurityHeaders
       io << "form-action 'self'; "
 
       if LuckyEnv.development?
-        io << "script-src 'self' 'unsafe-inline' http://127.0.0.1:3010 http://fluck.localhost:3010 https://js.prosopo.io https://plausible.io; "
+        io << "script-src 'self' 'unsafe-inline' 'unsafe-eval' http://127.0.0.1:3010 http://fluck.localhost:3010 https://js.prosopo.io https://plausible.io; "
         io << "font-src 'self' http://127.0.0.1:3010 http://fluck.localhost:3010; "
         io << "img-src 'self' data: https: http://127.0.0.1:3010 http://fluck.localhost:3010; "
         io << "connect-src 'self' ws://127.0.0.1:3010 http://127.0.0.1:3010 ws://fluck.localhost:3010 http://fluck.localhost:3010 ws://fluck.localhost:3001 http://fluck.localhost:3001; "
       else
-        io << "script-src 'self' https://js.prosopo.io https://plausible.io; "
+        io << "script-src 'self' 'unsafe-eval' https://js.prosopo.io https://plausible.io; "
         io << "font-src 'self'; "
         io << "img-src 'self' data: https:; "
         io << "connect-src 'self' https://plausible.io; "

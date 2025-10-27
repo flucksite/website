@@ -15,7 +15,7 @@ jobs:
     steps:
       - uses: actions/checkout@master
         with:
-          ref: refs/heads/production
+          ref: refs/heads/staging
 
       - uses: a7ul/tar-action@v1.1.0
         with:

@@ -4,8 +4,6 @@ ARG LUCKY_ENV
 # Install the application Crystal dependencies
 FROM crystallang/crystal:$CRYSTAL_VERSION as crystal_dependencies
 WORKDIR /shards
-ARG LUCKY_ENV
-ENV LUCKY_ENV=$LUCKY_ENV
 RUN apt-get update -qq \
   && DEBIAN_FRONTEND=noninteractive apt-get install -yq --no-install-recommends \
   build-essential \

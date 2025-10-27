@@ -3,7 +3,7 @@
   display: flex;
   align-items: baseline;
   cursor: pointer;
-  tansition-property: transform;
+  transition-property: transform;
   transition-duration: var(--timing-medium);
 }
 

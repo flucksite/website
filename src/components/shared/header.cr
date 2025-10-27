@@ -9,7 +9,9 @@ class Shared::Header < BaseComponent
   end
 
   private def render_logo
-    link to: Home::Index, aria_labelledby: "fluck_logo_label" do
+    link to: Home::Index,
+      class: "header__logo",
+      aria_labelledby: "fluck_logo_label" do
       span "Fluck", class: "visually-hidden", id: "fluck_logo_label"
       inline_svg("fluck-logo-large-horizontal-transparent.svg")
       inline_svg("fluck-logo-large-vertical-transparent.svg")
@@ -26,6 +28,9 @@ class Shared::Header < BaseComponent
               aria_current: current_page?(action) ? "page" : "false"
           end
         {% end %}
+        li do
+          mount ThemeSwitcher
+        end
       end
     end
   end

@@ -1,4 +1,7 @@
 .early-access {
+  --color-base: var(--stone-light);
+  --color-text: var(--stone-dark);
+  --color-translucent: var(--translucent-light);
   max-width: var(--max-width-prose);
   background-color: var(--cotton-candy);
   color: var(--stone-dark);

@@ -33,4 +33,5 @@
 @import 'blocks/shift';
 @import 'blocks/subscription-form';
 @import 'blocks/skip-link';
+@import 'blocks/theme-switcher';
 @import 'blocks/timeline';

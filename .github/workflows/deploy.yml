@@ -2,9 +2,9 @@ name: Deploy
 
 on:
   push:
-    branches: [production]
+    branches: [production, staging]
   pull_request:
-    branches: [production]
+    branches: [production, staging]
 
 jobs:
   deploy-staging:

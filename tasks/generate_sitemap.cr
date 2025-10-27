@@ -16,7 +16,10 @@ class GenerateSitemap < LuckyTask::Task
       builder.add(Home::Index.path, changefreq: "yearly", priority: 0.9)
       builder.add(About::Index.path, changefreq: "yearly", priority: 0.7)
       builder.add(Waitlist::Index.path, changefreq: "yearly", priority: 0.6)
+
       builder.add(CodeOfConduct::Index.path, changefreq: "yearly", priority: 0.5)
+      builder.add(PrivacyPolicy::Index.path, changefreq: "yearly", priority: 0.5)
+      builder.add(TermsOfService::Index.path, changefreq: "yearly", priority: 0.5)
     end
 
     Sitemapper.store(sitemaps, "./public")

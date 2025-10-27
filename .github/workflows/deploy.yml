@@ -7,7 +7,32 @@ on:
     branches: [production]
 
 jobs:
-  deploy:
+  deploy-staging:
+    runs-on: ubuntu-latest
+    if: github.ref == 'refs/heads/staging'
+    environment: staging
+
+    steps:
+      - uses: actions/checkout@master
+        with:
+          ref: refs/heads/production
+
+      - uses: a7ul/tar-action@v1.1.0
+        with:
+          command: c
+          cwd: ./
+          files: ./
+          outPath: deploy.tar
+
+      - name: Deploy WebServer to Caprover
+        if: ${{ github.ref == 'refs/heads/production' }}
+        uses: caprover/deploy-from-github@v1.0.1
+        with:
+          server: '${{ secrets.CAPROVER_SERVER }}'
+          app: '${{ secrets.APP_NAME }}'
+          token: '${{ secrets.APP_TOKEN }}'
+
+  deploy-production:
     runs-on: ubuntu-latest
     if: github.ref == 'refs/heads/production'
     environment: production

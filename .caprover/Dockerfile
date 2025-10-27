@@ -14,7 +14,7 @@ ENV SKIP_LUCKY_TASK_PRECOMPILATION=1
 COPY shard.yml shard.lock ./
 RUN  shards install --production
 
-# Install the application Yarn dependencies, then compile production CSS/JS
+# Install the application JS dependencies, then compile production CSS/JS
 FROM node:22-alpine as frontend_build
 WORKDIR /frontend
 COPY . .

@@ -33,14 +33,14 @@ class Shared::Footer < BaseComponent
     nav class: "flow" do
       h2 r(".info.title").t
       ul class: "menu" do
-        {% for item in %i[
-                         about
-                         waitlist
-                         code_of_conduct
-                         privacy_policy
-                         terms_of_service
-                       ] %}
-          li do
+        {% for item, subject in {
+                                  about:            "info",
+                                  waitlist:         "info",
+                                  code_of_conduct:  "legal",
+                                  privacy_policy:   "legal",
+                                  terms_of_service: "legal",
+                                } %}
+          li data_subject: {{subject}} do
             link to: action = {{item.id.camelcase}}::Index,
               aria_current: current_page?(action) ? "page" : "false" do
               span r(".info.{{item.id}}").t, class: "shift"

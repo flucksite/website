@@ -2,13 +2,13 @@ en:
   early_access:
     title: Want early access?
     text: >-
-      We're planning to welcome our first users at the beginning of 2026 for a
+      We’re planning to welcome our first users at the beginning of 2026 for a
       closed beta. Active beta users who provide feedback will receive a
       lifetime free account.
     cta: >-
       Interested? Sign up below to get on the waitlist for early access.
     disclaimer: >-
-      You'll receive monthly-ish emails related to the *early access waitlist*.
+      You’ll receive monthly-ish emails related to the *early access waitlist*.
       No spam.
   shared:
     footer:
@@ -40,11 +40,11 @@ en:
           Occasionally, we send out updates about progress and noteworthy
           updates. Concise, digestable emails.
         disclaimer: >-
-          You'll receive monthly-ish emails. No tracking, no spam.
+          You’ll receive monthly-ish emails. No tracking, no spam.
     subscription_form:
       button_variants:
         newsletter: 'Subscribe'
         waitlist: 'Sign up'
       success: >-
-        Thank you for subscribing! We've sent an email with a link to %{email}
+        Thank you for subscribing! We’ve sent an email with a link to %{email}
         to confirm your subscription.

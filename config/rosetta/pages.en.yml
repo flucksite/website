@@ -3,14 +3,14 @@ en:
     index_page:
       page_title: About us.
       page_description: >-
-        We are a small team based in Valencia, Spain. We're independent and
+        We are a small team based in Valencia, Spain. We’re independent and
         100% self-funded, with the rather ambitious goal of making artists,
         designers, and makers less dependent on corporate platforms for their
         web presence.
       hero:
         title: About us
         text: >-
-          We are a small team based in Valencia, Spain. We're independent and
+          We are a small team based in Valencia, Spain. We’re independent and
           100% self-funded, with the rather ambitious goal of making artists,
           designers, and makers less dependent on corporate platforms for their
           web presence.
@@ -19,8 +19,8 @@ en:
           title: Mick
           text: >-
             Mick is the creative director and user experience guardian of
-            Fluck. He holds a master's in semiotics and worked as a freelancer
-            for various agencies. He's also an artist and ran two art
+            Fluck. He holds a master’s in semiotics and worked as a freelancer
+            for various agencies. He’s also an artist and ran two art
             galleries.
           domain: mickmichel.com
           alt: Black and white profile of Mick with a course halftone raster.
@@ -28,14 +28,14 @@ en:
           title: Wout
           text: >-
             Wout is the designer and lead developer of Fluck. His background is
-            in product design and software development, and he's been building
+            in product design and software development, and he’s been building
             bespoke e-commerce software since 2004.
           domain: wout.codes
           alt: Black and white profile of Wout with a course halftone raster.
       story:
-        title: Why we're building Fluck
+        title: Why we’re building Fluck
         text: >-
-          **For nearly a decade, we've carried this idea to create a better
+          **For nearly a decade, we’ve carried this idea to create a better
           website builder for artists and designers.** Every time we needed to
           set up a website or online shop for a project, it felt harder than it
           should. The tools were either too complex, too expensive, or simply
@@ -62,20 +62,20 @@ en:
 
 
           Is it still a massive undertaking? Absolutely. Do we still face
-          Goliath-sized competitors? Of course. But now there's something
+          Goliath-sized competitors? Of course. But now there’s something
           different: a growing movement of creators who are fed up with being
-          exploited by platforms that don't understand or respect what they do.
+          exploited by platforms that don’t understand or respect what they do.
 
 
-          It's still small, but it's real, and that's more than enough to fuel
+          It’s still small, but it’s real, and that’s more than enough to fuel
           this journey.
 
 
           Mick and Wout
   errors:
     show_page:
-      page_title: We've encountered a %{status_code} error
-      page_description: "This is not right, we've got an error: %{message}"
+      page_title: We’ve encountered a %{status_code} error
+      page_description: 'This is not right, we’ve got an error: %{message}'
   home:
     index_page:
       page_title: Websites for artists, designers, and makers.
@@ -91,15 +91,15 @@ en:
         artists:
           title: By artists for artists
           text: >-
-            Fluck is built specifically for creatives. It's the website builder
+            Fluck is built specifically for creatives. It’s the website builder
             we always wished we had ourselves. A comprehensible tool that gets
             out of your way, without unnecessary fluff.
         indie:
           title: Indie and open-source
           text: >-
-            You're an independent creator, so why not use an independent
-            website builder? We're 100% self-funded with no investors, and
-            we're open-sourcing our code so you're never locked in.
+            You’re an independent creator, so why not use an independent
+            website builder? We’re 100% self-funded with no investors, and
+            we’re open-sourcing our code so you’re never locked in.
         ownership:
           title: You own everything
           text: >-
@@ -116,7 +116,7 @@ en:
       features:
         title: One package, no add-ons
         text: >-
-          Everything you need, nothing you don't. Every Fluck site comes with
+          Everything you need, nothing you don’t. Every Fluck site comes with
           all the tools you need in a single package.
         blog:
           title: Content creation
@@ -153,59 +153,59 @@ en:
   mailing_lists:
     create_page:
       page_title: Subscribe to mailinglist
-      page_description: You've successfully subscribed to our mailinglist.
+      page_description: You’ve successfully subscribed to our mailinglist.
   waitlist:
     index_page:
       page_title: Join the waitlist
       page_description: >-
-        We're planning to welcome our first users at the beginning of 2026 for a
+        We’re planning to welcome our first users at the beginning of 2026 for a
         closed beta. Active beta users who provide feedback will receive a
         lifetime free account.
       hero:
         title: Join the waitlist
         text: >-
-          At the start of 2026, we'll begin inviting the first people into our
-          closed beta. This won't be a mass rollout, we're starting small and
-          deliberate. We'll work with each person individually to help them get
-          set up, whether you're building a new site or moving from another
+          At the start of 2026, we’ll begin inviting the first people into our
+          closed beta. This won’t be a mass rollout, we’re starting small and
+          deliberate. We’ll work with each person individually to help them get
+          set up, whether you’re building a new site or moving from another
           platform.
       subscribe:
         title: Interested?
         text: >-
-          Subscribe here, and we'll notify you when we are ready to get you
-          settled in. Until then, you'll receive a monthly-ish newsletter for
+          Subscribe here, and we’ll notify you when we are ready to get you
+          settled in. Until then, you’ll receive a monthly-ish newsletter for
           early birds.
       timeline:
-        title: What's next?
+        title: What’s next?
         text: >-
-          Here's our rough timeline. These are targets, not promises, and dates
-          may shift as we go because we're a small team. The earlier you join,
-          the more influence you'll have on how Fluck develops. Active beta
+          Here’s our rough timeline. These are targets, not promises, and dates
+          may shift as we go because we’re a small team. The earlier you join,
+          the more influence you’ll have on how Fluck develops. Active beta
           users who provide feedback will also receive a lifetime free account.
         winter_2025_2026:
-          title: 'January 2026'
+          title: January 2026
           text: >-
-            **Closed beta begins.** We'll start sending personal invitations to
+            **Closed beta begins.** We’ll start sending personal invitations to
             the first people on the waitlist. Expect some bugs and features
-            that aren't fully polished yet.
+            that aren’t fully polished yet.
         spring_2026:
-          title: 'March 2026'
+          title: March 2026
           text: >-
-            **Ramping up invites.** We'll bring in more users, but still keep
+            **Ramping up invites.** We’ll bring in more users, but still keep
             the one-on-one onboarding process.
         summer_2026:
-          title: 'May 2026'
+          title: May 2026
           text: >-
             **Opening to the public.** The beta opens up, but signups will
             still be batched so we can monitor our infrastructure and make sure
             it holds up under load.
         public_beta_2:
-          title: 'September 2026'
+          title: September 2026
           text: >-
-            **Bigger batches.** We'll increase the number of users we invite at
+            **Bigger batches.** We’ll increase the number of users we invite at
             once as our systems prove stable.
         version_1:
-          title: 'November 2026'
+          title: November 2026
           text: >-
             **Version 1.0 launches.** Registration opens to everyone. The
             self-hostable version becomes available, and Fluck goes fully open

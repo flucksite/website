@@ -48,3 +48,5 @@ en:
       success: >-
         Thank you for subscribing! We’ve sent an email with a link to %{email}
         to confirm your subscription.
+  theme_switcher:
+    toggle: 'Toggle light or dark theme'

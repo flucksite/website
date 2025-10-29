@@ -27,7 +27,7 @@ class Shared::LayoutHead < BaseComponent
 
       turbo_morph_tag
       turbo_view_transition_tag
-      lucky_prosopo_script
+      # lucky_prosopo_script
       plausible_script
       vite_client_tag if LuckyEnv.production?
       vite_js_link "main.js", defer: true

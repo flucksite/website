@@ -32,7 +32,7 @@ Lucky::Server.configure do |settings|
   #       settings.asset_host = ""
   #     end
   #   end
-  settings.asset_host = "" # Lucky will serve assets
+  settings.asset_host = ENV.fetch("ASSET_HOST", "")
 end
 
 Lucky::ForceSSLHandler.configure do |settings|

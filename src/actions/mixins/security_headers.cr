@@ -17,24 +17,23 @@ module SecurityHeaders
 
   private def csp_guard_value : String
     String.build do |io|
+      if LuckyEnv.development?
+        asset_hosts = "http://127.0.0.1:3010 http://fluck.localhost:3010"
+        io << "connect-src 'self' #{asset_hosts} ws://127.0.0.1:3010 ws://fluck.localhost:3010 ws://fluck.localhost:3001 http://fluck.localhost:3001; "
+      else
+        asset_hosts = Lucky::Server.settings.asset_host
+        io << "connect-src 'self' https://plausible.io; "
+      end
+
       io << "default-src 'self'; "
-      io << "style-src 'self' 'unsafe-inline'; "
       io << "frame-ancestors 'none'; "
       io << "base-uri 'self'; "
       io << "form-action 'self'; "
       io << "worker-src 'self' blob:; "
-
-      if LuckyEnv.development?
-        io << "script-src 'self' 'unsafe-inline' 'unsafe-eval' http://127.0.0.1:3010 http://fluck.localhost:3010 https://js.prosopo.io https://plausible.io; "
-        io << "font-src 'self' http://127.0.0.1:3010 http://fluck.localhost:3010; "
-        io << "img-src 'self' data: https: http://127.0.0.1:3010 http://fluck.localhost:3010; "
-        io << "connect-src 'self' ws://127.0.0.1:3010 http://127.0.0.1:3010 ws://fluck.localhost:3010 http://fluck.localhost:3010 ws://fluck.localhost:3001 http://fluck.localhost:3001; "
-      else
-        io << "script-src 'self' 'unsafe-inline' 'unsafe-eval' #{Lucky::Server.settings.asset_host} https://js.prosopo.io https://plausible.io; "
-        io << "font-src 'self'; "
-        io << "img-src 'self' data: https:; "
-        io << "connect-src 'self' https://plausible.io; "
-      end
+      io << "script-src 'self' 'unsafe-inline' 'unsafe-eval' #{asset_hosts} https://js.prosopo.io https://plausible.io; "
+      io << "style-src 'self' 'unsafe-inline' #{asset_hosts}; "
+      io << "font-src 'self' #{asset_hosts}; "
+      io << "img-src 'self' data: #{asset_hosts}; "
     end
   end
 

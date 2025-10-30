@@ -110,7 +110,7 @@ shards:
 
   lucky_vite:
     git: https://github.com/wout/lucky_vite.git
-    version: 0.3.0
+    version: 0.3.1
 
   pg:
     git: https://github.com/will/crystal-pg.git
@@ -126,7 +126,7 @@ shards:
 
   raven:
     git: https://github.com/sija/raven.cr.git
-    version: 1.9.4
+    version: 1.9.5
 
   rosetta:
     git: https://github.com/wout/rosetta.git

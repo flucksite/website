@@ -126,7 +126,7 @@ shards:
 
   raven:
     git: https://github.com/sija/raven.cr.git
-    version: 1.9.5
+    version: 1.9.4
 
   rosetta:
     git: https://github.com/wout/rosetta.git

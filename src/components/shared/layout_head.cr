@@ -13,6 +13,7 @@ class Shared::LayoutHead < BaseComponent
       title "#{@page_title} – #{FLUCK}"
       meta name: "description", content: @page_description
       meta name: "robots", content: "noai, noimageai"
+      preconnect_tags
       canonical_link current_url
       og_tags
       twitter_card_tags
@@ -51,6 +52,12 @@ class Shared::LayoutHead < BaseComponent
 
   private def twitter_card_tags
     meta name: "twitter:card", content: "summary_large_image"
+  end
+
+  private def preconnect_tags
+    if asset_host = ENV["ASSET_HOST"]?
+      empty_tag "link", rel: "preconnect", href: asset_host
+    end
   end
 
   macro preload_backgrounds

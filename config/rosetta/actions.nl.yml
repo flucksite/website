@@ -1,0 +1,5 @@
+nl:
+  errors:
+    show:
+      not_found: We konden die pagina niet vinden.
+      something_wrong: Er ging iets mis.

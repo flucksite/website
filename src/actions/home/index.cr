@@ -1,5 +1,5 @@
 class Home::Index < BrowserAction
-  get "/" do
+  get "/", "/:locale" do
     html Home::IndexPage
   end
 end

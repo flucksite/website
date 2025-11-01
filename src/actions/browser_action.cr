@@ -6,7 +6,7 @@ abstract class BrowserAction < Lucky::Action
   include Lucky::EnforceUnderscoredRoute
 
   # Set language from cookies or params
-  include SetLanguage
+  include SetLocale
 
   # Security headers
   include SecurityHeaders

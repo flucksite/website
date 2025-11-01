@@ -1,0 +1,13 @@
+nl:
+  global:
+    buttons:
+      skip_link: Spring naar hoofdinhoud
+    labels:
+      honeypot: Laat dit veld alsjeblieft leeg
+      website: Website of sociaal profiel
+    links:
+      back_home: ← Terug naar home
+    menu:
+      item:
+        about: Over ons
+        waitlist: Wachtlijst

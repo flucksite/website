@@ -1,0 +1,220 @@
+nl:
+  about:
+    index_page:
+      page_title: Over ons.
+      page_description: >-
+        We zijn een klein team gevestigd in Valencia, Spanje. We zijn
+        onafhankelijk en 100% zelfgefinancierd, met het vrij ambitieuze doel om
+        kunstenaars, ontwerpers en makers minder afhankelijk te maken van
+        bedrijfsplatforms voor hun webpresentie.
+      hero:
+        title: Over ons
+        text: >-
+          We zijn een klein team gevestigd in Valencia, Spanje. We zijn
+          onafhankelijk en 100% zelfgefinancierd, met het vrij ambitieuze doel
+          om kunstenaars, ontwerpers en makers minder afhankelijk te maken van
+          bedrijfsplatforms voor hun webpresentie.
+      people:
+        mick:
+          title: Mick
+          text: >-
+            Mick is de creatief directeur en hoeder van de gebruikerservaring
+            van Fluck. Hij heeft een master in semiotiek en werkte als
+            freelancer voor verschillende bureaus. Hij is ook kunstenaar en
+            runde twee kunstgalerijen.
+          domain: mickmichel.com
+          alt: Zwart-wit profiel van Mick met een grof halftoonraster.
+        wout:
+          title: Wout
+          text: >-
+            Wout is de ontwerper en hoofdontwikkelaar van Fluck. Zijn
+            achtergrond ligt in productontwerp en softwareontwikkeling, en hij
+            bouwt al sinds 2004 maatwerk e-commercesoftware.
+          domain: wout.codes
+          alt: Zwart-wit profiel van Wout met een grof halftoonraster.
+      story:
+        title: Waarom we Fluck bouwen
+        text: >-
+          **Bijna een decennium lang hebben we dit idee gedragen om een betere
+          websitebouwer voor kunstenaars en ontwerpers te creëren.** Elke keer
+          dat we een website of webshop moesten opzetten voor een project,
+          voelde het moeilijker dan het zou moeten zijn. De tools waren óf te
+          complex, óf te duur, óf simpelweg niet geschikt. Maar telkens wanneer
+          we serieus gingen nadenken over het bouwen van een nieuw platform,
+          kregen we koude voeten. De inspanning leek enorm, en het opnemen
+          tegen de techgiganten voelde onmogelijk.
+
+
+          Toen veranderde alles.
+
+
+          Tegen 2025 had Big Tech gestopt met doen alsof ze erom gaven. Het
+          masker viel volledig af: ze vleiden autoritaire leiders, versnelden
+          ongelijkheid en veranderden creativiteit in content voor hun
+          algoritmes om meer advertenties te verkopen. Steeds meer mensen
+          begonnen naar alternatieven te zoeken. Die verschuiving in sentiment
+          was ons signaal om Fluck eindelijk te bouwen.
+
+
+          We verwerpen alles waar Big Tech voor staat: black boxes, invasieve
+          algoritmes, aandeelhouders boven gebruikers stellen, en pure
+          bedrijfshebzucht. We willen helpen het web terug te claimen dat ooit
+          een plek was van oprechte ontdekking en kansen, voordat het een
+          extractiemachine werd.
+
+
+          Is het nog steeds een enorme onderneming? Absoluut. Hebben we nog
+          steeds Goliath-achtige concurrenten? Natuurlijk. Maar nu is er iets
+          anders: een groeiende beweging van makers die het zat zijn om
+          uitgebuit te worden door platforms die niet begrijpen of respecteren
+          wat ze doen.
+
+
+          Het is nog klein, maar het is echt, en dat is meer dan genoeg om deze
+          reis te voeden.
+
+
+          Mick en Wout
+  errors:
+    show_page:
+      page_title: We hebben een %{status_code} fout aangetroffen
+      page_description: 'Dit klopt niet, we hebben een fout: %{message}'
+  home:
+    index_page:
+      page_title: Websites voor kunstenaars, ontwerpers en makers.
+      page_description: >-
+        Websites voor kunstenaars, ontwerpers en makers. Dump
+        bedrijfsplatforms en neem je online aanwezigheid in eigen hand.
+      hero:
+        title: '&nbsp;Jouw site jouw regels'
+        text: >-
+          Websites voor kunstenaars, ontwerpers en makers. Dump
+          bedrijfsplatforms en neem je online aanwezigheid in eigen hand.
+      usps:
+        artists:
+          title: Door kunstenaars voor kunstenaars
+          text: >-
+            Fluck is specifiek gebouwd voor creatievelingen. Het is de
+            websitebouwer die we zelf altijd al hadden gewild. Een
+            begrijpelijke tool die uit je weg blijft, zonder onnodige poespas.
+        indie:
+          title: Indie en open-source
+          text: >-
+            Jij bent een onafhankelijke maker, dus waarom geen onafhankelijke
+            websitebouwer gebruiken? We zijn 100% zelfgefinancierd zonder
+            investeerders, en we maken onze code open-source zodat je nooit
+            vastzit.
+        ownership:
+          title: Jij bent eigenaar van alles
+          text: >-
+            Jouw website, jouw content, jouw klanten, alles is van jou. Geen
+            commissies, geen kosten die aan je winst knabbelen. En
+            verhuisvrijheid met een self-hosting optie.
+      creative_culture:
+        title: Ondersteuning van creatieve cultuur
+        text: >-
+          We willen kunstenaars en ontwerpers helpen hun werk duurzaam te
+          maken. Naarmate we groeien, zijn we van plan een deel van onze winst
+          als subsidies te verdelen om kunstenaars en ontwerpers te
+          ondersteunen. Fluck is slechts het begin. Het ondersteunen van de
+          creatieve gemeenschap is het grotere doel.
+      features:
+        title: Eén pakket, geen add-ons
+        text: >-
+          Alles wat je nodig hebt, niets wat je niet nodig hebt. Elke
+          Fluck-site komt met alle tools die je nodig hebt in één enkel pakket.
+        blog:
+          title: Contentcreatie
+          text: >-
+            Start een blog om je publiek op te bouwen, of creëer je eigen
+            microblogfeed om te delen op sociale media. Bouw je volgersbestand
+            op je eigen website op.
+        portfolio:
+          title: Portfoliopagina's
+          text: >-
+            Toon opdrachtwerk, projectcatalogi, lookbooks of
+            lifestylegalerijen met één of meerdere portfoliopagina's.
+        shop:
+          title: Ingebouwde webshop
+          text: >-
+            Verkoop je werk rechtstreeks met voorraadbeheer, meerdere
+            betaalmogelijkheden, belastingafhandeling en flexibele verzending.
+        languages:
+          title: Meerdere talen
+          text: >-
+            Creëer meertalige sites om een breder publiek te bereiken. Vertaal
+            content handmatig of met hulp van onze ingebouwde vertaaltool.
+        integrations:
+          title: Analyses & nieuwsbrieven
+          text: >-
+            Krijg bezoekerinzichten met ingebouwde analyses of maak verbinding
+            met Plausible, en integreer met lichtgewicht nieuwsbriefdiensten
+            zoals EmailOctopus of Buttondown.
+        builder:
+          title: Visuele paginabouwer
+          text: >-
+            Bouw en style je site met drag-and-drop bewerking. Creëer pagina's
+            die op elk schermformaat werken en geoptimaliseerd zijn voor
+            toegankelijkheid.
+  mailing_lists:
+    create_page:
+      page_title: Inschrijven voor mailinglijst
+      page_description: Je bent succesvol ingeschreven op onze mailinglijst.
+  waitlist:
+    index_page:
+      page_title: Meld je aan voor de wachtlijst
+      page_description: >-
+        We zijn van plan om begin 2026 onze eerste gebruikers te verwelkomen
+        voor een gesloten bèta. Actieve bètagebruikers die feedback geven,
+        ontvangen een gratis account voor het leven.
+      hero:
+        title: Meld je aan voor de wachtlijst
+        text: >-
+          Begin 2026 beginnen we de eerste mensen uit te nodigen voor onze
+          gesloten bèta. Dit wordt geen massale uitrol, we beginnen klein en
+          weloverwogen. We werken individueel met elke persoon om hen te helpen
+          aan de slag te gaan, of je nu een nieuwe site bouwt of overstapt
+          vanaf een ander platform.
+      subscribe:
+        title: Geïnteresseerd?
+        text: >-
+          Schrijf je hier in, en we sturen je een bericht wanneer we klaar zijn
+          om je te verwelkomen. Tot die tijd ontvang je een ongeveer
+          maandelijkse nieuwsbrief voor early birds.
+      timeline:
+        title: Wat volgt er?
+        text: >-
+          Hier is onze grove tijdlijn. Dit zijn doelstellingen, geen beloftes,
+          en datums kunnen verschuiven omdat we een klein team zijn. Hoe
+          eerder je meedoet, hoe meer invloed je hebt op hoe Fluck zich
+          ontwikkelt. Actieve bètagebruikers die feedback geven, ontvangen ook
+          een gratis account voor het leven.
+        winter_2025_2026:
+          title: Januari 2026
+          text: >-
+            **Gesloten bèta begint.** We beginnen persoonlijke uitnodigingen te
+            sturen naar de eerste mensen op de wachtlijst. Verwacht enkele bugs
+            en functies die nog niet volledig afgewerkt zijn.
+        spring_2026:
+          title: Maart 2026
+          text: >-
+            **Uitnodigingen opschalen.** We verwelkomen meer gebruikers, maar
+            houden het één-op-één onboardingproces aan.
+        summer_2026:
+          title: Mei 2026
+          text: >-
+            **Opening voor het publiek.** De bèta gaat open, maar aanmeldingen
+            worden nog steeds in batches verwerkt zodat we onze infrastructuur
+            kunnen monitoren en ervoor zorgen dat deze standhoudt onder
+            belasting.
+        public_beta_2:
+          title: September 2026
+          text: >-
+            **Grotere batches.** We verhogen het aantal gebruikers dat we
+            tegelijk uitnodigen naarmate onze systemen stabiel blijken.
+        version_1:
+          title: November 2026
+          text: >-
+            **Versie 1.0 lanceert.** Registratie gaat open voor iedereen. De
+            self-hostbare versie wordt beschikbaar, en Fluck wordt volledig
+            open source.

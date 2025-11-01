@@ -1,0 +1,210 @@
+nl:
+  terms_of_service:
+    index_page:
+      page_title: Servicevoorwaarden
+      page_description: >-
+        Onze servicevoorwaarden, geschreven in begrijpelijke taal. Wat je kunt
+        doen met Fluck, wat wij doen met je gegevens, en jouw rechten als
+        gebruiker.
+      text: |
+        # Servicevoorwaarden
+
+        **Van kracht: 26 oktober 2025**
+
+        Welkom bij Fluck. Dit zijn de regels voor het gebruik van onze dienst. We hebben geprobeerd ze zo eenvoudig en menselijk leesbaar mogelijk te houden.
+
+        Door Fluck te gebruiken, ga je akkoord met deze voorwaarden. Als je niet akkoord gaat, gebruik dan alsjeblieft onze dienst niet.
+
+        ## Wie we zijn
+
+        - **Bedrijf:** Fearless Living Under Creative Knowledge S.L.
+        - **Registratie:** ES B22475495
+        - **Adres:** Calle Carlos Cervera 14 bajo, 46006, Valencia, Spanje
+        - **Contact:** info@fluck.site
+        - **Website:** https://fluck.site
+
+        ## Jouw account
+
+        ### Een account aanmaken
+        Om Fluck te gebruiken, moet je een account aanmaken. Je moet:
+        - Minstens 16 jaar oud zijn
+        - Nauwkeurige informatie verstrekken
+        - Je wachtwoord veilig houden
+        - Je account niet met anderen delen
+
+        Je bent verantwoordelijk voor alles wat er via je account gebeurt.
+
+        ### Jouw abonnement
+        We bieden maandelijkse en jaarlijkse abonnementen aan. Je kunt op elk moment opzeggen. Als je opzegt:
+        - Behoud je toegang tot het einde van je factureringsperiode
+        - Brengen we je geen kosten meer in rekening
+        - Worden je sites offline gehaald tenzij je ze exporteert of overschakelt naar self-hosting
+
+        We kunnen onze prijzen wijzigen, maar we geven je minstens 30 dagen kennisgeving en respecteren je huidige prijs voor de rest van je factureringsperiode.
+
+        ## Wat je kunt doen
+
+        ### Bouw je website
+        Je kunt websites, portfolio's, shops en blogs maken met Fluck. Je bent eigenaar van alle content die je creëert.
+
+        ### Exporteer je gegevens
+        Je kunt je volledige site op elk moment exporteren. Wanneer we de self-hosting optie lanceren (gepland voor eind 2026), kun je je site meenemen en zelf draaien.
+
+        ### Gebruik onze code
+        Wanneer Fluck open source wordt (gepland voor eind 2026), kun je onze code gebruiken, aanpassen en verspreiden onder de voorwaarden van de open-source licentie die we kiezen. We zullen de specifieke licentie vóór de lancering aankondigen.
+
+        ## Wat je niet kunt doen
+
+        Gebruik Fluck niet om:
+        - De wet te overtreden
+        - Anderen te schaden
+        - Malware of virussen te verspreiden
+        - Mensen te spammen
+        - Intellectuele eigendomsrechten van wie dan ook te schenden
+        - Illegale, pornografische content te hosten of content die geweld of haat bevordert
+        - Onze dienst te scrapen, reverse engineeren of te proberen te hacken
+        - Fluck door te verkopen of te herdistribueren zonder onze expliciete toestemming
+
+        We behouden ons het recht voor om accounts die deze voorwaarden schenden, te schorsen of te beëindigen.
+
+        ## Jouw content
+
+        ### Jij bent eigenaar
+        Alles wat je creëert met Fluck is van jou. We claimen geen eigendom over je content.
+
+        ### Onze licentie op je content
+        Om de dienst te leveren, geef je ons toestemming om:
+        - Je content op te slaan en weer te geven
+        - Back-ups te maken van je content
+        - Het te verwerken zoals nodig om de dienst te draaien
+
+        Deze licentie eindigt wanneer je je content verwijdert of je account sluit.
+
+        ### Jouw verantwoordelijkheid
+        Je bent verantwoordelijk voor:
+        - Ervoor zorgen dat je het recht hebt om content die je uploadt te gebruiken
+        - Naleving van wetten met betrekking tot je content
+        - Eventuele juridische problemen die voortvloeien uit je content
+
+        We zijn niet verantwoordelijk voor content die je creëert of uploadt.
+
+        ## Betalingen
+
+        ### Verwerking
+        We gebruiken Mollie om betalingen te verwerken. Door een abonnement te nemen, ga je ook akkoord met hun voorwaarden.
+
+        ### Terugbetalingen
+        We bieden een 30-dagen geld-terug-garantie voor nieuwe abonnementen. Daarna geen terugbetalingen, maar je kunt op elk moment opzeggen.
+
+        ### Belastingen
+        Prijzen zijn exclusief btw of andere toepasselijke belastingen. Deze worden bij het afrekenen toegevoegd op basis van je locatie.
+
+        ## Onze dienst
+
+        ### Beschikbaarheid
+        We werken hard om Fluck soepel te laten draaien, maar we kunnen geen 100% uptime garanderen. We moeten de dienst mogelijk onderbreken voor:
+        - Onderhoud
+        - Upgrades
+        - Noodreparaties
+        - Technische problemen buiten onze controle
+
+        We proberen onderbrekingen te minimaliseren en waar mogelijk van tevoren te melden.
+
+        ### Wijzigingen
+        We kunnen:
+        - Nieuwe functies toevoegen
+        - Bestaande functies verwijderen of aanpassen
+        - Veranderen hoe de dienst werkt
+
+        We stellen je op de hoogte van significante wijzigingen, vooral als ze je sites kunnen beïnvloeden.
+
+        ### Back-ups
+        We maken regelmatig back-ups van je gegevens, maar jij zou dat ook moeten doen. We zijn niet aansprakelijk voor gegevensverlies, hoewel we er alles aan doen om het te voorkomen.
+
+        ## Intellectueel eigendom
+
+        ### Onze spullen
+        De code, het ontwerp, de branding en de documentatie van Fluck zijn van ons (of onze licentiegevers). Je kunt ze niet gebruiken zonder toestemming, behalve zoals deze voorwaarden toestaan.
+
+        ### Jouw spullen
+        Jouw content is van jou. Je bent vrij om ermee te doen wat je wilt.
+
+        ### Open source
+        Wanneer we open source gaan, zal onze code beschikbaar zijn onder een open-source licentie. Tot die tijd zijn alle rechten voorbehouden.
+
+        ## AI en scraping
+
+        We verbieden:
+        - Het scrapen van content van Fluck of van websites gebouwd met Fluck
+        - Het gebruik van gescrapete content om AI-modellen, taalmodellen of machine learning-systemen te trainen
+        - Geautomatiseerde gegevensverzameling zonder expliciete toestemming
+
+        Gebruikerswebsites gebouwd met Fluck kunnen hun eigen beleid instellen via robots.txt en servicevoorwaarden.
+
+        ## Beëindiging
+
+        ### Door jou
+        Je kunt je account op elk moment sluiten via je accountinstellingen. Je gegevens worden binnen 30 dagen permanent verwijderd.
+
+        ### Door ons
+        We kunnen je account schorsen of beëindigen als je:
+        - Deze voorwaarden schendt
+        - De dienst frauduleus gebruikt
+        - Technische of beveiligingsproblemen veroorzaakt
+        - Je abonnement niet betaalt
+
+        We proberen je eerst te waarschuwen, maar behouden ons het recht voor om onmiddellijk te handelen indien nodig.
+
+        ## Disclaimers en beperkingen
+
+        ### Geen garanties
+        Fluck wordt "as is" geleverd. We garanderen niet:
+        - Ononderbroken of foutloze dienstverlening
+        - Dat het aan al je behoeften voldoet
+        - Dat het volledig veilig is (hoewel we ons best doen)
+        - Dat alle functies altijd perfect werken
+
+        ### Beperking van aansprakelijkheid
+        Voor zover maximaal toegestaan door de wet:
+        - Zijn we niet aansprakelijk voor indirecte, incidentele of gevolgschade
+        - Is onze totale aansprakelijkheid beperkt tot wat je ons in de afgelopen 12 maanden hebt betaald
+        - Zijn we niet aansprakelijk voor zaken buiten onze controle
+
+        **Dit beperkt geen aansprakelijkheid die wettelijk niet beperkt kan worden, zoals voor fraude, overlijden of persoonlijk letsel veroorzaakt door onze nalatigheid.**
+
+        ### Jouw verantwoordelijkheid
+        Je bent verantwoordelijk voor:
+        - Hoe je Fluck gebruikt
+        - Je content en websites
+        - Naleving van wetten
+        - Eventuele schade als gevolg van jouw schending van deze voorwaarden
+
+        ## Algemene zaken
+
+        ### Wijzigingen aan deze voorwaarden
+        We kunnen deze voorwaarden bijwerken. Als we significante wijzigingen aanbrengen, stellen we je minstens 30 dagen van tevoren per e-mail op de hoogte. Voortgezet gebruik na wijzigingen betekent dat je ze accepteert.
+
+        ### Volledige overeenkomst
+        Deze voorwaarden, samen met ons Privacybeleid, vormen de volledige overeenkomst tussen ons.
+
+        ### Deelbaarheid
+        Als een deel van deze voorwaarden niet-afdwingbaar wordt bevonden, blijft de rest van kracht.
+
+        ### Geen afstand van rechten
+        Ons nalaten om een recht af te dwingen betekent niet dat we ervan afstand hebben gedaan.
+
+        ### Overdracht
+        Je kunt je rechten onder deze voorwaarden niet overdragen. Wij kunnen de onze overdragen als we ons bedrijf juridisch moeten herstructureren, maar je rechten worden niet beïnvloed.
+
+        ### Contact
+        Vragen? E-mail ons op info@fluck.site. We zijn echte mensen en helpen je graag.
+
+        ## Wet en jurisdictie
+
+        Deze voorwaarden worden beheerst door Spaans recht.
+
+        Als je een consument bent, behoud je eventuele verplichte rechten onder de consumentenbeschermingswetten van jouw land. Niets hierin schrapt die rechten.
+
+        Voor geschillen:
+        - **Consumenten:** Je kunt rechtszaken aanspannen bij de rechtbanken van jouw land of Spanje
+        - **Bedrijven:** Geschillen worden uitsluitend behandeld door de rechtbanken van Valencia, Spanje

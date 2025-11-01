@@ -9,9 +9,12 @@ targets:
 crystal: '>= 1.17.0'
 
 dependencies:
+  # lucky:
+  #   github: luckyframework/lucky
+  #   version: ~> 1.4.0
   lucky:
-    github: luckyframework/lucky
-    version: ~> 1.4.0
+    github: wout/lucky
+    branch: add-route-path-aliases
   avram:
     github: luckyframework/avram
     version: ~> 1.4.0

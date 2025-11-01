@@ -1,0 +1,18 @@
+nl:
+  avram:
+    attribute_variants:
+      email: e-mailadres
+    validate_acceptance_of: 'moet worden geaccepteerd'
+    validate_at_most_one_filled: 'moet leeg zijn'
+    validate_confirmation_of: 'moet overeenkomen'
+    validate_exact_size_of: 'moet exact %{size} tekens lang zijn'
+    validate_exactly_one_filled: 'minstens één moet ingevuld zijn'
+    validate_format_of: 'is ongeldig'
+    validate_inclusion_of: 'is niet opgenomen in de lijst'
+    validate_max_size_of: 'mag niet meer dan %{size} tekens bevatten'
+    validate_min_size_of: 'moet minstens %{size} tekens bevatten'
+    validate_numeric_max: 'moet kleiner zijn dan %{size}'
+    validate_numeric_min: 'moet groter zijn dan %{size}'
+    validate_numeric_nil: 'mag niet leeg zijn'
+    validate_required: 'is verplicht'
+    validate_uniqueness_of: 'is al in gebruik'

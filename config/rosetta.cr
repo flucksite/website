@@ -1,7 +1,7 @@
 require "rosetta"
 
 @[Rosetta::DefaultLocale(:en)]
-@[Rosetta::AvailableLocales(:en)]
+@[Rosetta::AvailableLocales(:en, :nl)]
 module Rosetta
 end
 

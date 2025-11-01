@@ -1,5 +1,5 @@
 class About::Index < BrowserAction
-  get "/about" do
+  get "/about", "/:locale/about" do
     html About::IndexPage
   end
 end

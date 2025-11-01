@@ -1,0 +1,53 @@
+nl:
+  early_access:
+    title: Wil je vroege toegang?
+    text: >-
+      We zijn van plan om begin 2026 onze eerste gebruikers te verwelkomen voor
+      een gesloten bèta. Actieve bètagebruikers die feedback geven, ontvangen
+      een gratis account voor het leven.
+    cta: >-
+      Geïnteresseerd? Schrijf je hieronder in om op de wachtlijst voor vroege
+      toegang te komen.
+    disclaimer: >-
+      Je ontvangt ongeveer maandelijks e-mails met betrekking tot de
+      *wachtlijst voor vroege toegang*. Geen spam.
+  shared:
+    footer:
+      copyright: © %{year} Fearless Living Under Creative Knowledge S.L.
+      principles: Gebouwd in Spanje – Gehost in de EU – Geen investeerders, geen AI
+      info:
+        title: Info
+        about: Over ons
+        brand: Merkmateriaal
+        code_of_conduct: Gedragscode
+        contact: Contact
+        privacy_policy: Privacy- & Cookiebeleid
+        terms_of_service: Servicevoorwaarden
+        waitlist: De wachtlijst
+      social:
+        title: Sociaal
+        bluesky: Bluesky
+        codeberg: Codeberg
+        discord: Discord
+        discourse: Community
+        email: E-mail
+        github: GitHub
+        linkedin: LinkedIn
+        mastodon: Mastodon
+        rss: RSS
+      newsletter:
+        title: Nieuwsbrief
+        text: >-
+          Af en toe sturen we updates over voortgang en opmerkelijke
+          ontwikkelingen. Korte, overzichtelijke e-mails.
+        disclaimer: >-
+          Je ontvangt ongeveer maandelijks e-mails. Geen tracking, geen spam.
+    subscription_form:
+      button_variants:
+        newsletter: 'Inschrijven'
+        waitlist: 'Aanmelden'
+      success: >-
+        Bedankt voor je inschrijving! We hebben een e-mail met een link naar
+        %{email} gestuurd om je inschrijving te bevestigen.
+  theme_switcher:
+    toggle: 'Schakel tussen licht en donker thema'

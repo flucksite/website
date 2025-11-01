@@ -1,5 +1,5 @@
 class Waitlist::Index < BrowserAction
-  get "/waitlist" do
+  get "/waitlist", "/:locale/waitlist" do
     html Waitlist::IndexPage
   end
 end

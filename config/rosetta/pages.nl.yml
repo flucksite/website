@@ -4,62 +4,58 @@ nl:
       page_title: Over ons.
       page_description: >-
         We zijn een klein team gevestigd in Valencia, Spanje. We zijn
-        onafhankelijk en 100% zelfgefinancierd, met het vrij ambitieuze doel om
-        kunstenaars, ontwerpers en makers minder afhankelijk te maken van
-        bedrijfsplatforms voor hun webpresentie.
+        onafhankelijk en volledig zelfgefinancierd, met het ambitieuze doel om
+        kunstenaars, ontwerpers en makers minder afhankelijk te maken van grote
+        platforms voor hun plek online.
       hero:
         title: Over ons
-        text: >-
-          We zijn een klein team gevestigd in Valencia, Spanje. We zijn
-          onafhankelijk en 100% zelfgefinancierd, met het vrij ambitieuze doel
-          om kunstenaars, ontwerpers en makers minder afhankelijk te maken van
-          bedrijfsplatforms voor hun webpresentie.
+        text: '%r{about.index_page.page_description}'
       people:
         mick:
           title: Mick
           text: >-
-            Mick is de creatief directeur en hoeder van de gebruikerservaring
-            van Fluck. Hij heeft een master in semiotiek en werkte als
-            freelancer voor verschillende bureaus. Hij is ook kunstenaar en
-            runde twee kunstgalerijen.
+            Mick is de creative director en hoeder van de gebruikerservaring
+            bij Fluck. Hij heeft een master in semiotiek en werkte als
+            freelancer voor verschillende bureaus. Hij is ook kunstenaar en had
+            twee kunstgalerijen.
           domain: mickmichel.com
           alt: Zwart-wit profiel van Mick met een grof halftoonraster.
         wout:
           title: Wout
           text: >-
-            Wout is de ontwerper en hoofdontwikkelaar van Fluck. Zijn
-            achtergrond ligt in productontwerp en softwareontwikkeling, en hij
-            bouwt al sinds 2004 maatwerk e-commercesoftware.
+            Wout is de ontwerper en hoofdontwikkelaar van Fluck. Hij heeft een
+            achtergrond in productontwerp en softwareontwikkeling, en bouwt al
+            sinds 2004 e-commerce software op maat.
           domain: wout.codes
           alt: Zwart-wit profiel van Wout met een grof halftoonraster.
       story:
         title: Waarom we Fluck bouwen
         text: >-
-          **Bijna een decennium lang hebben we dit idee gedragen om een betere
-          websitebouwer voor kunstenaars en ontwerpers te creëren.** Elke keer
-          dat we een website of webshop moesten opzetten voor een project,
-          voelde het moeilijker dan het zou moeten zijn. De tools waren óf te
-          complex, óf te duur, óf simpelweg niet geschikt. Maar telkens wanneer
-          we serieus gingen nadenken over het bouwen van een nieuw platform,
-          kregen we koude voeten. De inspanning leek enorm, en het opnemen
-          tegen de techgiganten voelde onmogelijk.
+          **Bijna een decennium lang hebben we met het idee rondgelopen om een
+          betere websitebouwer voor kunstenaars en ontwerpers te creëren**. Elke
+          keer dat we een website of webshop moesten opzetten voor een project,
+          voelde het ingewikkelder dan het zou moeten zijn. De tools waren óf
+          te complex, óf te duur, óf simpelweg niet geschikt. Maar elke keer
+          dat we serieus gingen nadenken om een nieuw platform te bouwen, zagen
+          we ervan af. De inspanning leek enorm, en het opnemen tegen de
+          techgiganten voelde onmogelijk.
 
 
-          Toen veranderde alles.
+          Maar toen veranderde alles.
 
 
-          Tegen 2025 had Big Tech gestopt met doen alsof ze erom gaven. Het
-          masker viel volledig af: ze vleiden autoritaire leiders, versnelden
-          ongelijkheid en veranderden creativiteit in content voor hun
-          algoritmes om meer advertenties te verkopen. Steeds meer mensen
-          begonnen naar alternatieven te zoeken. Die verschuiving in sentiment
-          was ons signaal om Fluck eindelijk te bouwen.
+          In 2025 had Big Tech al lang gestopt met doen alsof ze erom gaven.
+          Het masker viel volledig af. Ze streelden autoritaire leiders naar de
+          mond, versnelden ongelijkheid en veranderden creativiteit in content
+          voor hun algoritmes om meer advertenties te verkopen. Steeds meer
+          mensen begonnen naar alternatieven te zoeken. Die verschuiving in
+          sentiment was ons signaal om eindelijk Fluck te bouwen.
 
 
-          We verwerpen alles waar Big Tech voor staat: black boxes, invasieve
+          We verwerpen alles waar Big Tech voor staat: black boxes, agressieve
           algoritmes, aandeelhouders boven gebruikers stellen, en pure
-          bedrijfshebzucht. We willen helpen het web terug te claimen dat ooit
-          een plek was van oprechte ontdekking en kansen, voordat het een
+          hebzucht. We willen meehelpen om het web terug te claimen dat ooit
+          een plek was van ontdekking en kansen, voordat het een
           extractiemachine werd.
 
 
@@ -70,8 +66,8 @@ nl:
           wat ze doen.
 
 
-          Het is nog klein, maar het is echt, en dat is meer dan genoeg om deze
-          reis te voeden.
+          Het is nog klein, maar het is sterk, en dat is meer dan genoeg om
+          ervoor te gaan.
 
 
           Mick en Wout
@@ -174,10 +170,10 @@ nl:
         title: Geïnteresseerd?
         text: >-
           Schrijf je hier in, en we sturen je een bericht wanneer we klaar zijn
-          om je te verwelkomen. Tot die tijd ontvang je een ongeveer
-          maandelijkse nieuwsbrief voor early birds.
+          om je te verwelkomen. Tot die tijd ontvang je ongeveer maandelijks 
+          een nieuwsbrief voor early birds.
       timeline:
-        title: Wat volgt er?
+        title: Wat zijn de volgende stappen?
         text: >-
           Hier is onze grove tijdlijn. Dit zijn doelstellingen, geen beloftes,
           en datums kunnen verschuiven omdat we een klein team zijn. Hoe
@@ -189,11 +185,11 @@ nl:
           text: >-
             **Gesloten bèta begint.** We beginnen persoonlijke uitnodigingen te
             sturen naar de eerste mensen op de wachtlijst. Verwacht enkele bugs
-            en functies die nog niet volledig afgewerkt zijn.
+            en functionaliteit die nog niet volledig afgewerkt is.
         spring_2026:
           title: Maart 2026
           text: >-
-            **Uitnodigingen opschalen.** We verwelkomen meer gebruikers, maar
+            **Meer uitnodigingen.** We verwelkomen meer gebruikers, maar
             houden het één-op-één onboardingproces aan.
         summer_2026:
           title: Mei 2026

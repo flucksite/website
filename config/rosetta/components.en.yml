@@ -10,6 +10,10 @@ en:
     disclaimer: >-
       You’ll receive monthly-ish emails related to the *early access waitlist*.
       No spam.
+  locale_switcher:
+    label: Language switcher
+  main_menu:
+    title: Main
   shared:
     footer:
       copyright: © %{year} Fearless Living Under Creative Knowledge S.L.
@@ -41,8 +45,6 @@ en:
           updates. Concise, digestable emails.
         disclaimer: >-
           You’ll receive monthly-ish emails. No tracking, no spam.
-    header:
-      title: Main
     subscription_form:
       button_variants:
         newsletter: 'Subscribe'

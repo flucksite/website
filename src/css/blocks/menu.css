@@ -1,13 +1,14 @@
 .menu {
   list-style: none;
   padding-inline-start: 0;
+  margin-block: 0;
 }
 
 .menu[data-direction='horizontal'] {
   display: flex;
   flex-wrap: nowrap;
   align-items: center;
-  gap: var(--space-m);
+  gap: var(--menu-gap, var(--space-m));
 }
 
 .menu a {

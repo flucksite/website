@@ -83,78 +83,75 @@ nl:
     index_page:
       page_title: Websites voor kunstenaars, ontwerpers en makers.
       page_description: >-
-        Websites voor kunstenaars, ontwerpers en makers. Dump
-        bedrijfsplatforms en neem je online aanwezigheid in eigen hand.
+        Websites voor kunstenaars, ontwerpers en makers. Vergeet onpersoonlijke
+        platforms en neem controle over je plek online.
       hero:
-        title: '&nbsp;Jouw site jouw regels'
-        text: >-
-          Websites voor kunstenaars, ontwerpers en makers. Dump
-          bedrijfsplatforms en neem je online aanwezigheid in eigen hand.
+        title: '&nbsp;&nbsp;Jouw site jouw regels'
+        text: '%r{home.index_page.page_description}'
       usps:
         artists:
-          title: Door kunstenaars voor kunstenaars
+          title: Voor en door kunstenaars
           text: >-
             Fluck is specifiek gebouwd voor creatievelingen. Het is de
-            websitebouwer die we zelf altijd al hadden gewild. Een
-            begrijpelijke tool die uit je weg blijft, zonder onnodige poespas.
+            websitebouwer die we zelf altijd al hadden gewild. Een eenvoudige
+            tool die uit je weg blijft, zonder onnodige poespas.
         indie:
           title: Indie en open-source
           text: >-
-            Jij bent een onafhankelijke maker, dus waarom geen onafhankelijke
-            websitebouwer gebruiken? We zijn 100% zelfgefinancierd zonder
-            investeerders, en we maken onze code open-source zodat je nooit
-            vastzit.
+            Jij bent een onafhankelijke maker, dus waarom niet een
+            onafhankelijke websitebouwer gebruiken? We zijn volledig
+            zelfgefinancierd zonder investeerders, en onze code is open-source
+            zodat je nooit vastzit.
         ownership:
-          title: Jij bent eigenaar van alles
+          title: Alles is van jou
           text: >-
-            Jouw website, jouw content, jouw klanten, alles is van jou. Geen
-            commissies, geen kosten die aan je winst knabbelen. En
-            verhuisvrijheid met een self-hosting optie.
+            Je website, je content, je klanten, jij bent de eigenaar. Geen
+            commissies, geen kosten die aan je winst knabbelen. En de vrijheid
+            om te verhuizen met een self-hosting-optie.
       creative_culture:
-        title: Ondersteuning van creatieve cultuur
+        title: Creatieve cultuur ondersteunen
         text: >-
-          We willen kunstenaars en ontwerpers helpen hun werk duurzaam te
-          maken. Naarmate we groeien, zijn we van plan een deel van onze winst
-          als subsidies te verdelen om kunstenaars en ontwerpers te
-          ondersteunen. Fluck is slechts het begin. Het ondersteunen van de
-          creatieve gemeenschap is het grotere doel.
+          We willen creatievelingen helpen om van hun werk te kunnen leven.
+          Naarmate we groeien, willen we een deel van onze winst verdelen als
+          grants voor kunstenaars en ontwerpers. Fluck is het begin. De
+          creatieve gemeenschap ondersteunen is ons grotere doel.
       features:
         title: Eén pakket, geen add-ons
         text: >-
-          Alles wat je nodig hebt, niets wat je niet nodig hebt. Elke
-          Fluck-site komt met alle tools die je nodig hebt in één enkel pakket.
+          Alles wat je nodig hebt, niets meer. Elke Fluck-site komt met alle
+          tools in één pakket.
         blog:
-          title: Contentcreatie
+          title: Content creëren
           text: >-
-            Start een blog om je publiek op te bouwen, of creëer je eigen
-            microblogfeed om te delen op sociale media. Bouw je volgersbestand
-            op je eigen website op.
+            Start een blog om je publiek op te bouwen, of maak je eigen
+            microblog-feed om te delen op socials. Bouw je volgers op via je
+            eigen website.
         portfolio:
           title: Portfoliopagina's
           text: >-
             Toon opdrachtwerk, projectcatalogi, lookbooks of
-            lifestylegalerijen met één of meerdere portfoliopagina's.
+            lifestyle-galerijen met één of meerdere portfoliopagina's.
         shop:
           title: Ingebouwde webshop
           text: >-
             Verkoop je werk rechtstreeks met voorraadbeheer, meerdere
-            betaalmogelijkheden, belastingafhandeling en flexibele verzending.
+            betaalopties, btw-afhandeling en flexibele verzending.
         languages:
           title: Meerdere talen
           text: >-
             Creëer meertalige sites om een breder publiek te bereiken. Vertaal
-            content handmatig of met hulp van onze ingebouwde vertaaltool.
+            content handmatig of met onze ingebouwde vertaaltool.
         integrations:
-          title: Analyses & nieuwsbrieven
+          title: Stats & nieuwsbrieven
           text: >-
-            Krijg bezoekerinzichten met ingebouwde analyses of maak verbinding
-            met Plausible, en integreer met lichtgewicht nieuwsbriefdiensten
-            zoals EmailOctopus of Buttondown.
+            Gebruik onze ingebouwde statistieken of verbind met Plausible, en
+            integreer met nieuwsbrievendiensten zoals EmailOctopus of
+            Buttondown.
         builder:
-          title: Visuele paginabouwer
+          title: Visuele editor
           text: >-
-            Bouw en style je site met drag-and-drop bewerking. Creëer pagina's
-            die op elk schermformaat werken en geoptimaliseerd zijn voor
+            Bouw je site met onze drag-and-drop editor. Creëer pagina's die op
+            elk schermformaat werken en geoptimaliseerd zijn voor
             toegankelijkheid.
   mailing_lists:
     create_page:
@@ -162,7 +159,7 @@ nl:
       page_description: Je bent succesvol ingeschreven op onze mailinglijst.
   waitlist:
     index_page:
-      page_title: Meld je aan voor de wachtlijst
+      page_title: Wil je er vroeg bij zijn?
       page_description: >-
         We zijn van plan om begin 2026 onze eerste gebruikers te verwelkomen
         voor een gesloten bèta. Actieve bètagebruikers die feedback geven,
@@ -170,11 +167,9 @@ nl:
       hero:
         title: Meld je aan voor de wachtlijst
         text: >-
-          Begin 2026 beginnen we de eerste mensen uit te nodigen voor onze
-          gesloten bèta. Dit wordt geen massale uitrol, we beginnen klein en
-          weloverwogen. We werken individueel met elke persoon om hen te helpen
-          aan de slag te gaan, of je nu een nieuwe site bouwt of overstapt
-          vanaf een ander platform.
+          Begin 2026 verwelkomen we onze eerste gebruikers voor een gesloten
+          bèta. Actieve bètagebruikers die feedback geven, ontvangen een
+          levenslang gratis account.
       subscribe:
         title: Geïnteresseerd?
         text: >-

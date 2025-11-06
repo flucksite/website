@@ -1,16 +1,15 @@
 nl:
   early_access:
-    title: Wil je vroege toegang?
+    title: Wil je er vroeg bij zijn?
     text: >-
-      We zijn van plan om begin 2026 onze eerste gebruikers te verwelkomen voor
-      een gesloten bèta. Actieve bètagebruikers die feedback geven, ontvangen
-      een gratis account voor het leven.
+      Begin 2026 verwelkomen we onze eerste gebruikers voor een gesloten bèta.
+      Actieve bètagebruikers die feedback geven, ontvangen een levenslang
+      gratis account.
     cta: >-
-      Geïnteresseerd? Schrijf je hieronder in om op de wachtlijst voor vroege
-      toegang te komen.
+      Geïnteresseerd? Schrijf je hieronder in voor de wachtlijst.
     disclaimer: >-
-      Je ontvangt ongeveer maandelijks e-mails met betrekking tot de
-      *wachtlijst voor vroege toegang*. Geen spam.
+      Ongeveer één keer per maand sturen we updates over de wachtlijst. Geen
+      spam.
   locale_switcher:
     label: Taal switcher
   main_menu:
@@ -42,10 +41,10 @@ nl:
       newsletter:
         title: Nieuwsbrief
         text: >-
-          Af en toe sturen we updates over voortgang en opmerkelijke
-          ontwikkelingen. Korte, overzichtelijke e-mails.
+          Elke maand sturen we een nieuwsbrief over de ontwikkelingen. Korte,
+          overzichtelijke e-mails.
         disclaimer: >-
-          Je ontvangt ongeveer maandelijks e-mails. Geen tracking, geen spam.
+          Geen tracking, geen spam.
     subscription_form:
       button_variants:
         newsletter: 'Inschrijven'

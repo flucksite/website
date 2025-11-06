@@ -40,9 +40,10 @@ class Shared::Footer < BaseComponent
                                   privacy_policy:   "legal",
                                   terms_of_service: "legal",
                                 } %}
+        {% action = "#{item.id.camelcase}::Index".id %}
           li data_subject: {{subject}} do
-            link to: action = {{item.id.camelcase}}::Index,
-              aria_current: current_page?(action) ? "page" : "false" do
+            localink to: {{action}},
+              aria_current: current_page?({{action}}) ? "page" : "false" do
               span r(".info.{{item.id}}").t, class: "shift"
             end
           end

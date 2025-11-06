@@ -28,3 +28,14 @@
 .footer__end > p {
   margin-block-start: var(--space-xs);
 }
+
+.footer__badges img {
+  width: 6em;
+  height: auto;
+  transform: rotate(-8deg);
+  transition-property: transform;
+  transition-duration: var(--timing-medium);
+}
+.footer__badges img:hover {
+  transform: rotate(-12deg) scale(1.1);
+}

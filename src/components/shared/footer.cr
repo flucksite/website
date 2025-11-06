@@ -7,7 +7,6 @@ class Shared::Footer < BaseComponent
     codeberg: "https://codeberg.org/fluck/",
     github:   "https://github.com/flucksite/",
     email:    "mailto:info@fluck.site",
-    # linkedin: "???",
     # rss:      "https://fluck.site/rss",
   }
 
@@ -24,6 +23,7 @@ class Shared::Footer < BaseComponent
           mount Shared::SubscriptionForm, tag: "newsletter"
           small r(".newsletter.disclaimer").t
         end
+        render_badges
       end
       render_small_print
     end
@@ -64,6 +64,20 @@ class Shared::Footer < BaseComponent
           end
         {% end %}
       end
+    end
+  end
+
+  private def render_badges
+    para class: "footer__badges | grid" do
+      {% for badge, url in {tem_values: "https://theethicalmove.org"} %}
+        a href: {{url}} do
+          {% for theme in %w[light dark] %}
+            img src: asset("@images/badges/{{badge.id}}-{{theme.id}}.png"),
+              data_for_theme: {{theme}},
+              alt: r("global.alts.{{badge.id}}").t
+          {% end %}
+        end
+      {% end %}
     end
   end
 

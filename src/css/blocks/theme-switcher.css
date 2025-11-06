@@ -11,6 +11,11 @@
   transform: scale(1.2) rotate(-5deg);
 }
 
+.theme-switcher button:focus-visible {
+  outline: var(--border-thick) solid var(--focus-color, currentColor);
+  outline-offset: var(--focus-offset, 0.2lh);
+}
+
 .theme-switcher svg {
   width: 1em;
   height: auto;

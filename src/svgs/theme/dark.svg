@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" id="Angled-Moon--Streamline-Sharp" height="24" width="24">
+<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" id="Angled-Moon--Streamline-Sharp" height="24" width="24" aria-hidden="true">
   <g id="angled-moon--astronomy-moon-science-space-crescent">
     <path id="Subtract" stroke="#313130" d="M22.3784 14.1353c-0.7269 0.1592 -1.4821 0.2431 -2.2568 0.2431 -5.799 0 -10.50002 -4.70097 -10.50002 -10.49996 0 -0.77474 0.08391 -1.5299 0.24314 -2.25686C5.15038 2.65416 1.62158 6.8542 1.62158 11.8784c0 5.799 4.70101 10.5 10.50002 10.5 5.0242 0 9.2243 -3.5288 10.2568 -8.2431Z" stroke-width="2"></path>
   </g>

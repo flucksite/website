@@ -1,5 +1,7 @@
 nl:
   global:
+    alts:
+      tem_values: De ethische stap - eerlijkheid + verantwoordelijkheid + vertrouwen + transparantie + integriteit + rechtvaardigheid
     buttons:
       skip_link: Spring naar hoofdinhoud
     labels:

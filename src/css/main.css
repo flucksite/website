@@ -27,8 +27,11 @@
 @import 'blocks/footer';
 @import 'blocks/header';
 @import 'blocks/hero';
+@import 'blocks/locale-switcher';
+@import 'blocks/main-menu';
 @import 'blocks/menu';
 @import 'blocks/person';
+@import 'blocks/preferences';
 @import 'blocks/prose';
 @import 'blocks/shift';
 @import 'blocks/subscription-form';

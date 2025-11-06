@@ -1,38 +1,13 @@
 .header {
+  --flow-space: var(--space-xs);
   margin-block-start: var(--space-l);
 }
 
-.header > div {
+.header > *:first-child {
   border-block-end: var(--stroke-dotted);
   padding-block-end: var(--space-m);
   flex-wrap: nowrap;
-}
-
-.header nav a {
-  font-family: var(--font-mono);
-  font-weight: 600;
-  text-transform: uppercase;
-  text-decoration-thickness: 2px;
-  line-height: var(--leading-fine);
-}
-
-.header nav a:hover {
-  text-underline-offset: auto;
-}
-
-.header nav a[aria-current='page'] {
-  text-decoration: underline;
-  text-decoration-thickness: 2px;
-}
-
-.header nav ul {
-  margin-block-start: 0;
-  margin-block-end: var(--space-2xs);
-}
-
-.header__actions {
-  display: flex;
-  justify-content: flex-end;
+  align-items: end;
 }
 
 .header__logo svg {

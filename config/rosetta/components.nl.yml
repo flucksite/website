@@ -11,6 +11,10 @@ nl:
     disclaimer: >-
       Je ontvangt ongeveer maandelijks e-mails met betrekking tot de
       *wachtlijst voor vroege toegang*. Geen spam.
+  locale_switcher:
+    label: Taal switcher
+  main_menu:
+    title: Hoofd
   shared:
     footer:
       copyright: © %{year} Fearless Living Under Creative Knowledge S.L.

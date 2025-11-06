@@ -1,4 +1,5 @@
 system_check: crystal script/system_check.cr
-web: lucky watch --error-trace --reload-browser
+# web: lucky watch --error-trace --reload-browser
+web: lucky watch --reload-browser
 vite_server: vite
 vite_watcher: npm run watch

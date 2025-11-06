@@ -29,7 +29,7 @@ abstract class MainLayout
         x_data: "theme(#{current_theme})",
         ":data_theme": "theme" do
         skip_link
-        div hidden: true do
+        div class: "visually-hidden" do
           inline_svg("clip-path-shapes-03.svg")
         end
         mount Shared::Header

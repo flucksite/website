@@ -1,6 +1,10 @@
+.header {
+  margin-block-start: var(--space-l);
+}
+
 .header > div {
   border-block-end: var(--stroke-dotted);
-  padding-block-end: var(--space-s);
+  padding-block-end: var(--space-m);
   flex-wrap: nowrap;
 }
 
@@ -9,6 +13,7 @@
   font-weight: 600;
   text-transform: uppercase;
   text-decoration-thickness: 2px;
+  line-height: var(--leading-fine);
 }
 
 .header nav a:hover {
@@ -18,6 +23,16 @@
 .header nav a[aria-current='page'] {
   text-decoration: underline;
   text-decoration-thickness: 2px;
+}
+
+.header nav ul {
+  margin-block-start: 0;
+  margin-block-end: var(--space-2xs);
+}
+
+.header__actions {
+  display: flex;
+  justify-content: flex-end;
 }
 
 .header__logo svg {

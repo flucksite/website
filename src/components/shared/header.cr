@@ -19,7 +19,7 @@ class Shared::Header < BaseComponent
   end
 
   private def render_nav
-    nav do
+    nav aria_labelledby: "main_nav_label" do
       ul class: "menu", data_direction: "horizontal" do
         {% for item in %i[about waitlist] %}
           li do
@@ -28,10 +28,11 @@ class Shared::Header < BaseComponent
               aria_current: current_page?(action) ? "page" : "false"
           end
         {% end %}
-        li do
-          mount ThemeSwitcher
-        end
       end
+      div class: "header__actions" do
+        mount ThemeSwitcher
+      end
+      span r(".title").t, hidden: true, id: "main_nav_label"
     end
   end
 end

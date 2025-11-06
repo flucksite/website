@@ -29,7 +29,9 @@ abstract class MainLayout
         x_data: "theme(#{current_theme})",
         ":data_theme": "theme" do
         skip_link
-        inline_svg("clip-path-shapes-03.svg")
+        div hidden: true do
+          inline_svg("clip-path-shapes-03.svg")
+        end
         mount Shared::Header
         mount Shared::FlashMessages, context.flash
         main id: "main_content" do

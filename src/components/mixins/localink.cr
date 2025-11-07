@@ -13,7 +13,8 @@ module Localink
       end
     %}
 
-    to = Rosetta.locale == Rosetta.default_locale ? {{to}} : {{localized_to.id}}
+    # to = Rosetta.locale == Rosetta.default_locale ? {{to}} : {{localized_to.id}}
+    to = {{to}}
 
     {% if block %}
       link to{% for a in args %}, {{a[0].id}}: {{a[1]}}{% end %} do

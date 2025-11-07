@@ -16,8 +16,8 @@ dependencies:
   #   github: wout/lucky
   #   branch: add-route-path-aliases
   lucky:
-    github: wout/lucky
-    branch: main
+    github: luckyframework/lucky
+    commit: 101d73b718afd6b42b265877d4f88b910bc667ca
   avram:
     github: luckyframework/avram
     version: ~> 1.4.0

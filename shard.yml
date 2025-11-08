@@ -14,7 +14,7 @@ dependencies:
   #   version: ~> 1.4.0
   lucky:
     github: luckyframework/lucky
-    branch: main
+    commit: 8f2082a7d93351e418d6eb3c381f99f717380f76
   avram:
     github: luckyframework/avram
     version: ~> 1.4.0

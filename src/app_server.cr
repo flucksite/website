@@ -10,9 +10,9 @@ class AppServer < Lucky::BaseAppServer
       Lucky::ErrorHandler.new(action: Errors::Show),
       Raven::Lucky::ErrorHandler.new,
       Lucky::RemoteIpHandler.new,
-      Lucky::RouteHandler.new,
       Lucky::StaticCompressionHandler.new("./public", file_ext: "gz", content_encoding: "gzip"),
       Lucky::StaticFileHandler.new("./public", fallthrough: false, directory_listing: false),
+      Lucky::RouteHandler.new,
       Lucky::RouteNotFoundHandler.new,
     ] of HTTP::Handler
   end

@@ -9,12 +9,9 @@ targets:
 crystal: '>= 1.17.0'
 
 dependencies:
-  # lucky:
-  #   github: luckyframework/lucky
-  #   version: ~> 1.4.0
   lucky:
     github: luckyframework/lucky
-    commit: 8f2082a7d93351e418d6eb3c381f99f717380f76
+    branch: main
   avram:
     github: luckyframework/avram
     version: ~> 1.4.0

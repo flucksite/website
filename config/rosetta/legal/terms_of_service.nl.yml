@@ -28,7 +28,7 @@ nl:
         ### Een account aanmaken
         Om Fluck te gebruiken, moet je een account aanmaken. Je moet:
         - Minstens 16 jaar oud zijn
-        - Nauwkeurige informatie verstrekken
+        - Juiste informatie verstrekken
         - Je wachtwoord veilig houden
         - Je account niet met anderen delen
 
@@ -37,46 +37,46 @@ nl:
         ### Jouw abonnement
         We bieden maandelijkse en jaarlijkse abonnementen aan. Je kunt op elk moment opzeggen. Als je opzegt:
         - Behoud je toegang tot het einde van je factureringsperiode
-        - Brengen we je geen kosten meer in rekening
-        - Worden je sites offline gehaald tenzij je ze exporteert of overschakelt naar self-hosting
+        - Rekenen we je niets meer aan
+        - Worden je sites offline gehaald, tenzij je ze exporteert of overschakelt naar self-hosting
 
-        We kunnen onze prijzen wijzigen, maar we geven je minstens 30 dagen kennisgeving en respecteren je huidige prijs voor de rest van je factureringsperiode.
+        We kunnen onze prijzen wijzigen, maar we geven je minstens 30 dagen van tevoren een melding en handhaven je huidige prijs voor de rest van je factureringsperiode.
 
         ## Wat je kunt doen
 
         ### Bouw je website
-        Je kunt websites, portfolio's, shops en blogs maken met Fluck. Je bent eigenaar van alle content die je creëert.
+        Je kunt websites, portfolio's, webshops en blogs maken met Fluck. Je bent eigenaar van alle content die je maakt.
 
         ### Exporteer je gegevens
-        Je kunt je volledige site op elk moment exporteren. Wanneer we de self-hosting optie lanceren (gepland voor eind 2026), kun je je site meenemen en zelf draaien.
+        Je kunt je volledige site op elk moment exporteren. Wanneer we de self-hosting optie lanceren (gepland voor eind 2026), kun je je site meenemen en zelf hosten.
 
         ### Gebruik onze code
-        Wanneer Fluck open source wordt (gepland voor eind 2026), kun je onze code gebruiken, aanpassen en verspreiden onder de voorwaarden van de open-source licentie die we kiezen. We zullen de specifieke licentie vóór de lancering aankondigen.
+        Wanneer Fluck open source wordt (gepland voor eind 2026), kun je onze code gebruiken, aanpassen en verspreiden onder de voorwaarden van de open-source licentie die we kiezen. We kondigen de specifieke licentie vóór de lancering aan.
 
-        ## Wat je niet kunt doen
+        ## Wat je niet mag doen
 
         Gebruik Fluck niet om:
         - De wet te overtreden
         - Anderen te schaden
         - Malware of virussen te verspreiden
         - Mensen te spammen
-        - Intellectuele eigendomsrechten van wie dan ook te schenden
+        - Intellectuele eigendomsrechten te schenden
         - Illegale, pornografische content te hosten of content die geweld of haat bevordert
         - Onze dienst te scrapen, reverse engineeren of te proberen te hacken
-        - Fluck door te verkopen of te herdistribueren zonder onze expliciete toestemming
+        - Fluck door te verkopen of te herdistribueren zonder onze uitdrukkelijke toestemming
 
-        We behouden ons het recht voor om accounts die deze voorwaarden schenden, te schorsen of te beëindigen.
+        We behouden ons het recht voor om accounts die deze voorwaarden schenden te schorsen of te beëindigen.
 
         ## Jouw content
 
         ### Jij bent eigenaar
-        Alles wat je creëert met Fluck is van jou. We claimen geen eigendom over je content.
+        Alles wat je maakt met Fluck is van jou. We claimen geen eigendom over je content.
 
         ### Onze licentie op je content
-        Om de dienst te leveren, geef je ons toestemming om:
+        Om de dienst te kunnen leveren, geef je ons toestemming om:
         - Je content op te slaan en weer te geven
         - Back-ups te maken van je content
-        - Het te verwerken zoals nodig om de dienst te draaien
+        - Het te verwerken zoals nodig om de dienst draaiende te houden
 
         Deze licentie eindigt wanneer je je content verwijdert of je account sluit.
 
@@ -86,7 +86,7 @@ nl:
         - Naleving van wetten met betrekking tot je content
         - Eventuele juridische problemen die voortvloeien uit je content
 
-        We zijn niet verantwoordelijk voor content die je creëert of uploadt.
+        We zijn niet verantwoordelijk voor content die je maakt of uploadt.
 
         ## Betalingen
 
@@ -94,7 +94,7 @@ nl:
         We gebruiken Mollie om betalingen te verwerken. Door een abonnement te nemen, ga je ook akkoord met hun voorwaarden.
 
         ### Terugbetalingen
-        We bieden een 30-dagen geld-terug-garantie voor nieuwe abonnementen. Daarna geen terugbetalingen, maar je kunt op elk moment opzeggen.
+        We bieden een 30-dagen geld-terug-garantie voor nieuwe abonnementen. Daarna geen terugbetalingen, maar je kunt wel op elk moment opzeggen.
 
         ### Belastingen
         Prijzen zijn exclusief btw of andere toepasselijke belastingen. Deze worden bij het afrekenen toegevoegd op basis van je locatie.
@@ -124,22 +124,22 @@ nl:
         ## Intellectueel eigendom
 
         ### Onze spullen
-        De code, het ontwerp, de branding en de documentatie van Fluck zijn van ons (of onze licentiegevers). Je kunt ze niet gebruiken zonder toestemming, behalve zoals deze voorwaarden toestaan.
+        De code, het ontwerp, de branding en de documentatie van Fluck zijn van ons (of onze licentiegevers). Je mag ze niet gebruiken zonder toestemming, behalve zoals deze voorwaarden toestaan.
 
         ### Jouw spullen
         Jouw content is van jou. Je bent vrij om ermee te doen wat je wilt.
 
         ### Open source
-        Wanneer we open source gaan, zal onze code beschikbaar zijn onder een open-source licentie. Tot die tijd zijn alle rechten voorbehouden.
+        Wanneer we open source gaan, is onze code beschikbaar onder een open-source licentie. Tot die tijd zijn alle rechten voorbehouden.
 
         ## AI en scraping
 
         We verbieden:
         - Het scrapen van content van Fluck of van websites gebouwd met Fluck
         - Het gebruik van gescrapete content om AI-modellen, taalmodellen of machine learning-systemen te trainen
-        - Geautomatiseerde gegevensverzameling zonder expliciete toestemming
+        - Geautomatiseerde gegevensverzameling zonder uitdrukkelijke toestemming
 
-        Gebruikerswebsites gebouwd met Fluck kunnen hun eigen beleid instellen via robots.txt en servicevoorwaarden.
+        Websites gebouwd met Fluck kunnen hun eigen beleid instellen via robots.txt en servicevoorwaarden.
 
         ## Beëindiging
 
@@ -179,7 +179,7 @@ nl:
         - Naleving van wetten
         - Eventuele schade als gevolg van jouw schending van deze voorwaarden
 
-        ## Algemene zaken
+        ## Algemene bepalingen
 
         ### Wijzigingen aan deze voorwaarden
         We kunnen deze voorwaarden bijwerken. Als we significante wijzigingen aanbrengen, stellen we je minstens 30 dagen van tevoren per e-mail op de hoogte. Voortgezet gebruik na wijzigingen betekent dat je ze accepteert.
@@ -197,14 +197,14 @@ nl:
         Je kunt je rechten onder deze voorwaarden niet overdragen. Wij kunnen de onze overdragen als we ons bedrijf juridisch moeten herstructureren, maar je rechten worden niet beïnvloed.
 
         ### Contact
-        Vragen? E-mail ons op info@fluck.site. We zijn echte mensen en helpen je graag.
+        Vragen? Mail ons op info@fluck.site. We zijn echte mensen en helpen je graag.
 
         ## Wet en jurisdictie
 
         Deze voorwaarden worden beheerst door Spaans recht.
 
-        Als je een consument bent, behoud je eventuele verplichte rechten onder de consumentenbeschermingswetten van jouw land. Niets hierin schrapt die rechten.
+        Als je een consument bent, behoud je eventuele verplichte rechten onder de consumentenbeschermingswetten van jouw land. Niets hierin ontneemt je die rechten.
 
         Voor geschillen:
-        - **Consumenten:** Je kunt rechtszaken aanspannen bij de rechtbanken van jouw land of Spanje
+        - **Consumenten:** Je kunt een rechtszaak aanspannen bij de rechtbanken van jouw land of Spanje
         - **Bedrijven:** Geschillen worden uitsluitend behandeld door de rechtbanken van Valencia, Spanje

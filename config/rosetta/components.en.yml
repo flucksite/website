@@ -45,6 +45,8 @@ en:
           updates. Concise, digestable emails.
         disclaimer: >-
           You’ll receive monthly-ish emails. No tracking, no spam.
+    header:
+      title: Main
     subscription_form:
       button_variants:
         newsletter: 'Subscribe'

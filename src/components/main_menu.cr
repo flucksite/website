@@ -8,7 +8,7 @@ class MainMenu < BaseComponent
         {% for item in MENU_ITEMS %}
           {% action = "#{item.id.camelcase}::Index".id %}
           li do
-            localink r("global.menu.item.{{item.id}}").t,
+            link r("global.menu.item.{{item.id}}").t,
               to: {{action}},
               aria_current: current_page?({{action}}) ? "page" : "false"
           end

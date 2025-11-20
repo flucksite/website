@@ -23,7 +23,7 @@ class Shared::Header < BaseComponent
 
   private def render_actions
     div class: "preferences" do
-      mount LocaleSwitcher
+      # mount LocaleSwitcher
       mount ThemeSwitcher
     end
   end

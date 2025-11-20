@@ -12,7 +12,7 @@ class Shared::Header < BaseComponent
   end
 
   private def render_logo
-    localink to: Home::Index,
+    link to: Home::Index,
       class: "header__logo",
       aria_labelledby: "fluck_logo_label" do
       span "Fluck", class: "visually-hidden", id: "fluck_logo_label"

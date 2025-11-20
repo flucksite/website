@@ -78,7 +78,7 @@ shards:
 
   lucky:
     git: https://github.com/luckyframework/lucky.git
-    version: 1.4.0
+    version: 1.4.0+git.commit.5922ff80be62e41ed302f88a603cc12380e8859e
 
   lucky_cache:
     git: https://github.com/luckyframework/lucky_cache.git
@@ -110,7 +110,7 @@ shards:
 
   lucky_vite:
     git: https://github.com/wout/lucky_vite.git
-    version: 0.3.2
+    version: 0.3.3
 
   pg:
     git: https://github.com/will/crystal-pg.git
@@ -130,7 +130,7 @@ shards:
 
   rosetta:
     git: https://github.com/wout/rosetta.git
-    version: 1.0.0
+    version: 1.0.1
 
   selenium:
     git: https://github.com/crystal-loot/selenium.cr.git

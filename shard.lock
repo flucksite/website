@@ -78,7 +78,7 @@ shards:
 
   lucky:
     git: https://github.com/luckyframework/lucky.git
-    version: 1.4.0+git.commit.5922ff80be62e41ed302f88a603cc12380e8859e
+    version: 1.4.0+git.commit.44a45a408c519e6a8dffde6f5baa53d9be95d8d0
 
   lucky_cache:
     git: https://github.com/luckyframework/lucky_cache.git

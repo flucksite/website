@@ -3,17 +3,13 @@ en:
     index_page:
       page_title: About us.
       page_description: >-
-        We are a small team based in Valencia, Spain. We’re independent and
-        100% self-funded, with the rather ambitious goal of making artists,
+        We are a small team based in Brighton, UK. We’re independent and 100%
+        self-funded, with the rather ambitious goal of making artists,
         designers, and makers less dependent on corporate platforms for their
         web presence.
       hero:
         title: About us
-        text: >-
-          We are a small team based in Valencia, Spain. We’re independent and
-          100% self-funded, with the rather ambitious goal of making artists,
-          designers, and makers less dependent on corporate platforms for their
-          web presence.
+        text: '%r{about.index_page.page_description}'
       people:
         mick:
           title: Mick

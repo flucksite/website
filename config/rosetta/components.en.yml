@@ -16,8 +16,8 @@ en:
     title: Main
   shared:
     footer:
-      copyright: © %{year} Fearless Living Under Creative Knowledge S.L.
-      principles: Built in Spain – Hosted in the EU – No investors, no AI
+      copyright: © %{year} FLUCK
+      principles: Built in Brighton – Hosted in the EU – No investors, no AI
       info:
         title: Info
         about: About us

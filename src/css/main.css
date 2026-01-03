@@ -14,6 +14,7 @@
 @import 'compositions/switcher';
 @import 'compositions/wrapper';
 
+@import 'utilities/reveal';
 @import 'utilities/visually-hidden';
 
 @import 'blocks/button';

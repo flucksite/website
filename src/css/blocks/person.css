@@ -1,6 +1,8 @@
 .person {
   --switcher-vertical-alignment: center;
   --flow-space: 7em;
+  --reveal-offset: 5em;
+  --reveal-speed: vat(--timing-snail);
   max-width: var(--max-width-breakout);
   margin-inline: auto;
 }

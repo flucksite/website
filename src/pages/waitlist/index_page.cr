@@ -1,4 +1,6 @@
 class Waitlist::IndexPage < MainLayout
+  include Revealable
+
   def content
     render_hero
     render_form
@@ -29,7 +31,7 @@ class Waitlist::IndexPage < MainLayout
 
   private def render_timeline
     section class: "timeline | wrapper" do
-      div class: "timeline__intro | flow" do
+      div **reveal_attr, class: "timeline__intro | flow reveal" do
         h2 r(".timeline.title").t
         para r(".timeline.text").t
       end
@@ -41,7 +43,7 @@ class Waitlist::IndexPage < MainLayout
                          public_beta_2
                          version_1
                        ] %}
-        div class: "timeline__entry | flow" do
+        div **reveal_attr, class: "timeline__entry | flow reveal" do
           h3 r(".timeline.{{target.id}}.title").t
           div do
             markdown r(".timeline.{{target.id}}.text").t
@@ -49,7 +51,7 @@ class Waitlist::IndexPage < MainLayout
         end
       {% end %}
 
-      div class: "timeline__outro" do
+      div **reveal_attr, class: "timeline__outro | reveal" do
         inline_svg("hurricane.svg")
       end
     end

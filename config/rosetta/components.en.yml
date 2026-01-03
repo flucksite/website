@@ -17,7 +17,7 @@ en:
   shared:
     footer:
       copyright: © %{year} FLUCK
-      principles: Built in Brighton – Hosted in the EU – No investors, no AI
+      principles: Built in Brighton – Hosted in the EU – No investors and AI-free
       info:
         title: Info
         about: About us

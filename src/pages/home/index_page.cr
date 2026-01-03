@@ -1,4 +1,9 @@
 class Home::IndexPage < MainLayout
+  include Revealable
+
+  FEATURES = %i[blog portfolio shop languages integrations builder]
+  USPS     = %w[artists indie ownership]
+
   def content
     render_hero
     render_usps
@@ -22,8 +27,9 @@ class Home::IndexPage < MainLayout
     section do
       div class: "wrapper" do
         ul role: "list", class: "switcher ", data_limit: 3 do
-          {% for usp in %w[artists indie ownership] %}
-            li class: "card" do
+          {% for usp, index in USPS %}
+            li **reveal_attr(start: "right", threshold: {{index * 50}}),
+              class: "card | reveal" do
               h2 r(".usps.{{usp.id}}.title").t
               para r(".usps.{{usp.id}}.text").t
             end
@@ -35,7 +41,8 @@ class Home::IndexPage < MainLayout
 
   private def render_callout
     section class: "callout | centered", data_max_width: "breakout" do
-      div class: "cutout | switcher",
+      div **reveal_attr(start: "down"),
+        class: "cutout | switcher reveal",
         data_shape: "rect-01",
         data_safe: true,
         data_limit: 3 do
@@ -48,25 +55,21 @@ class Home::IndexPage < MainLayout
 
   private def render_features
     section class: "features" do
-      div class: "wrapper flow" do
+      div **reveal_attr(start: "right"), class: "wrapper flow | reveal" do
         h2 r(".features.title").t
         para r(".features.text").t, class: "features__text"
 
         ul role: "list", class: "grid", data_layout: "thirds" do
-          {% for feature in %i[blog portfolio shop languages integrations builder] %}
-            li class: "card", data_underline: true do
+          {% for feature, index in FEATURES %}
+            li **reveal_attr(start: "right", threshold: {{index % 3 * 50}}),
+              class: "card | reveal",
+              data_underline: true do
               h3 r(".features.{{feature.id}}.title").t
               para r(".features.{{feature.id}}.text").t
             end
           {% end %}
         end
       end
-    end
-  end
-
-  private def render_early_access
-    section class: "centered", data_max_with: "prose" do
-      mount EarlyAccess
     end
   end
 end

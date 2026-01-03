@@ -115,7 +115,7 @@ en:
           Everything you need, nothing you don’t. Every Fluck site comes with
           all the tools you need in a single package.
         blog:
-          title: Content creation
+          title: Blog big or small
           text: >-
             Start a blog to build your audience, or create your own microblog
             feed to share across socials. Build your following on your own
@@ -131,10 +131,11 @@ en:
             Sell your work directly with inventory management, multiple payment
             options, tax handling, and flexible shipping.
         languages:
-          title: Multiple languages
+          title: Choose your language
           text: >-
-            Create multilingual sites to reach a wider audience. Translate
-            content manually or with the help of our built-in translation tool.
+            Build your site in the language you're most comfortable with, and
+            expand to other languages when you're ready to reach a wider
+            audience.
         integrations:
           title: Analytics & newsletters
           text: >-

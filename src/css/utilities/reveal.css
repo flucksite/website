@@ -8,11 +8,11 @@
   transition-timing-function: ease-out;
 }
 
-.reveal[data-speed='default'] {
-  --reveal-speed: var(--timing-slow);
-}
 .reveal[data-speed='turtle'] {
   --reveal-speed: var(--timing-turtle);
+}
+.reveal[data-speed='sloth'] {
+  --reveal-speed: var(--timing-sloth);
 }
 .reveal[data-speed='snail'] {
   --reveal-speed: var(--timing-snail);

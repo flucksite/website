@@ -28,7 +28,7 @@ class Home::IndexPage < MainLayout
       div class: "wrapper" do
         ul role: "list", class: "switcher ", data_limit: 3 do
           {% for usp, index in USPS %}
-            li **reveal_attr(start: "right", threshold: {{index * 50}}),
+            li **reveal_attr(start: "right", speed: RevealSpeed.from_value({{index + 1}})),
               class: "card | reveal" do
               h2 r(".usps.{{usp.id}}.title").t
               para r(".usps.{{usp.id}}.text").t
@@ -61,7 +61,7 @@ class Home::IndexPage < MainLayout
 
         ul role: "list", class: "grid", data_layout: "thirds" do
           {% for feature, index in FEATURES %}
-            li **reveal_attr(start: "right", threshold: {{index % 3 * 50}}),
+            li **reveal_attr(start: "right", speed: RevealSpeed.from_value({{index % 3 + 1}})),
               class: "card | reveal",
               data_underline: true do
               h3 r(".features.{{feature.id}}.title").t

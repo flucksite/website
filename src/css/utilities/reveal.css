@@ -29,8 +29,11 @@
 .reveal:not([data-state='visible'])[data-start='right'] {
   transform: translateX(var(--reveal-offset));
 }
-.reveal:not([data-state='visible'])[data-start='down'] {
+.reveal:not([data-state='visible'])[data-start='up'] {
   transform: translateY(calc(var(--reveal-offset) * -1));
+}
+.reveal:not([data-state='visible'])[data-start='down'] {
+  transform: translateY(var(--reveal-offset));
 }
 .reveal:not([data-state='visible'])[data-start='none'] {
   transform: none;

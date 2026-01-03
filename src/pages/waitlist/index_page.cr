@@ -1,4 +1,6 @@
 class Waitlist::IndexPage < MainLayout
+  include Revealable
+
   def content
     render_hero
     render_form
@@ -53,13 +55,5 @@ class Waitlist::IndexPage < MainLayout
         inline_svg("hurricane.svg")
       end
     end
-  end
-
-  private def reveal_attr
-    {
-      x_data:             "reveal",
-      "x-intersect.once": "show",
-      data_start:         "down",
-    }
   end
 end

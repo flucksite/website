@@ -1,8 +1,8 @@
 .reveal {
-  --reveal-offset: 3em;
+  --default-reveal-offset: 3em;
   --reveal-speed: var(--timing-sloth);
-  opacity: 0.25;
-  transform: translateY(var(--reveal-offset));
+  opacity: 0;
+  transform: translateY(var(--reveal-offset, var(--default-reveal-offset)));
   transition-property: opacity, transform;
   transition-duration: var(--reveal-speed);
   transition-timing-function: ease-out;
@@ -24,16 +24,20 @@
 }
 
 .reveal:not([data-state='visible'])[data-start='left'] {
-  transform: translateX(calc(var(--reveal-offset) * -1));
+  transform: translateX(
+    calc(var(--reveal-offset, var(--default-reveal-offset)) * -1)
+  );
 }
 .reveal:not([data-state='visible'])[data-start='right'] {
-  transform: translateX(var(--reveal-offset));
+  transform: translateX(var(--reveal-offset, var(--default-reveal-offset)));
 }
 .reveal:not([data-state='visible'])[data-start='up'] {
-  transform: translateY(calc(var(--reveal-offset) * -1));
+  transform: translateY(
+    calc(var(--reveal-offset, var(--default-reveal-offset)) * -1)
+  );
 }
 .reveal:not([data-state='visible'])[data-start='down'] {
-  transform: translateY(var(--reveal-offset));
+  transform: translateY(var(--reveal-offset, var(--default-reveal-offset)));
 }
 .reveal:not([data-state='visible'])[data-start='none'] {
   transform: none;

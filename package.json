@@ -4,7 +4,8 @@
   "dependencies": {
     "@hotwired/turbo": "^8.0.18",
     "alpine-turbo-drive-adapter": "^2.2.0",
-    "alpinejs": "^3.15.0"
+    "alpinejs": "^3.15.0",
+    "g": "^2.0.1"
   },
   "scripts": {
     "build": "vite build",
@@ -12,7 +13,7 @@
   },
   "devDependencies": {
     "prettier": "^3.2.5",
-    "vite": "^7.1.7",
+    "vite": "^7.3.0",
     "vite-plugin-lucky": "^0.6.0"
   }
 }

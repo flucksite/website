@@ -30,6 +30,7 @@ class Shared::LayoutHead < BaseComponent
       turbo_view_transition_tag
       # lucky_prosopo_script
       plausible_script
+      reveal_no_script
       vite_client_tag if LuckyEnv.production?
       vite_js_link "main.js", defer: true
       vite_css_links "main.js"
@@ -77,6 +78,12 @@ class Shared::LayoutHead < BaseComponent
       window.plausible=window.plausible||function(){(plausible.q=plausible.q||[]).push(arguments)},plausible.init=plausible.init||function(i){plausible.o=i||{}};
       plausible.init()
       JS
+    end
+  end
+
+  private def reveal_no_script
+    noscript do
+      style %(.reveal { opacity: 1; transform: none; })
     end
   end
 

@@ -87,6 +87,9 @@
   --timing-fast: 70ms;
   --timing-medium: calc(var(--timing-fast) * 2);
   --timing-slow: calc(var(--timing-fast) * 3);
+  --timing-turtle: 300ms;
+  --timing-sloth: 500ms;
+  --timing-snail: 700ms;
   --uppercase-kerning: 0.04ch;
 
   /* Tweaks */
@@ -96,8 +99,11 @@
   }
 
   /* Fonts */
-  --font-base: "Untitled Serif", "Libre Baskerville", 'Georgia Pro', Georgia, serif;
-  --font-mono: "PP Fraktion Mono", ui-monospace, Menlo, Consolas, 'DejaVu Sans Mono', monospace; 
+  --font-base:
+    'Untitled Serif', 'Libre Baskerville', 'Georgia Pro', Georgia, serif;
+  --font-mono:
+    'PP Fraktion Mono', ui-monospace, Menlo, Consolas, 'DejaVu Sans Mono',
+    monospace;
 
   /* Base colors */
   --abyss: #044e63;

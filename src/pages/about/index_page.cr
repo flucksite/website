@@ -19,16 +19,23 @@ class About::IndexPage < MainLayout
       div class: "wrapper" do
         ul role: "list", class: "flow" do
           {% for person, index in %w[mick wout] %}
-            li class: "person | switcher" do
-              div class: "person__image" do
-                render_bio_image({{person}}, "light", {{index}})
-                render_bio_image({{person}}, "dark", {{index}})
-              end
-              render_bio_text({{person}})
-            end
+            render_bio({{person}}, {{index}})
           {% end %}
         end
       end
+    end
+  end
+
+  macro render_bio(person, index)
+    li class: "person | switcher" do
+      div class: "person__image | reveal",
+        x_data: "reveal",
+        "x-intersect.once": "show",
+        data_start: {{index}}.odd? ? "right" : "left" do
+        render_bio_image({{person}}, "light", {{index}})
+        render_bio_image({{person}}, "dark", {{index}})
+      end
+      render_bio_text({{person}}, {{index}})
     end
   end
 
@@ -40,8 +47,12 @@ class About::IndexPage < MainLayout
       data_for_theme: {{theme}}
   end
 
-  macro render_bio_text(person)
-    div class: "prose" do
+  macro render_bio_text(person, index)
+    div class: "prose | reveal",
+        x_data: "reveal",
+      "x-intersect.once": "show",
+        data_start: {{index}}.odd? ? "left" : "right",
+        data_speed: "snail" do
       h2 r(".people.{{person.id}}.title").t
       para r(".people.{{person.id}}.text").t
       person_link r(".people.{{person.id}}.domain").t

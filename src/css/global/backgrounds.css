@@ -52,6 +52,8 @@ body[data-theme='dark'][data-bg='waitlist'] {
   body[data-bg] {
     forced-color-adjust: none;
     -webkit-forced-color-adjust: none;
+    filter: none !important;
+    -webkit-filter: none !important;
   }
 }
 

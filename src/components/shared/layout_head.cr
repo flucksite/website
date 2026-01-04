@@ -22,7 +22,6 @@ class Shared::LayoutHead < BaseComponent
       favicon_tags app_name: FLUCK
       preload_backgrounds
       meta name: "color-scheme", content: "light dark"
-      meta name: "darkreader-lock"
 
       # Development helper used with the `lucky watch` command.
       # Reloads the browser when files are updated.

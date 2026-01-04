@@ -47,3 +47,16 @@ body[data-theme='dark'][data-bg='waitlist'] {
     background-image: url('@images/backgrounds/waitlist-light.svg');
   }
 }
+
+@media (forced-colors: none) {
+  body[data-bg] {
+    forced-color-adjust: none;
+    -webkit-forced-color-adjust: none;
+  }
+}
+
+@media (forced-colors: active) {
+  body[data-bg] {
+    background-image: none !important;
+  }
+}

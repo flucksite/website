@@ -26,7 +26,7 @@ shards:
 
   cadmium_transliterator:
     git: https://github.com/cadmiumcr/transliterator.git
-    version: 0.1.0+git.commit.46c4c14594057dbcfaf27e7e7c8c164d3f0ce3f1
+    version: 0.1.0+git.commit.0dcedb98cbac7dd5827f204a0714b62f25c6515a
 
   carbon:
     git: https://github.com/luckyframework/carbon.git
@@ -78,7 +78,7 @@ shards:
 
   lucky:
     git: https://github.com/luckyframework/lucky.git
-    version: 1.4.0+git.commit.44a45a408c519e6a8dffde6f5baa53d9be95d8d0
+    version: 1.4.0+git.commit.07a3ca9014c635f70ec81170b44a185494238cc5
 
   lucky_cache:
     git: https://github.com/luckyframework/lucky_cache.git
@@ -95,6 +95,10 @@ shards:
   lucky_flow:
     git: https://github.com/luckyframework/lucky_flow.git
     version: 0.10.1
+
+  lucky_honeypot:
+    git: https://codeberg.org/fluck/lucky_honeypot.git
+    version: 0.3.0+git.commit.d33d9fe7855d62875cf8e974e70d6085eadd9a2a
 
   lucky_router:
     git: https://github.com/luckyframework/lucky_router.git

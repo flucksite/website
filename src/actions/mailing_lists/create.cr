@@ -1,24 +1,13 @@
 class MailingLists::Create < BrowserAction
   include Lucky::RateLimit
+  include LuckyHoneypot::Pipe
 
   rate_limit to: 5, within: 1.minute
-  before reject_filled_honeypot
+  honeypot "mailing_list_subscription:name"
 
   post "/mailing_lists" do
     MailingListSubscription.run(params) do |op, results|
       html_with_status MailingLists::CreatePage, op.valid? ? 200 : 422, op: op
     end
-  end
-
-  private def reject_filled_honeypot
-    if honeypot_param.try(&.presence)
-      head 200
-    else
-      continue
-    end
-  end
-
-  private def honeypot_param
-    params.get("mailing_list_subscription:name")
   end
 end

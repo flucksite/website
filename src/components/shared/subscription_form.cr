@@ -1,5 +1,6 @@
 class Shared::SubscriptionForm < BaseComponent
   include Prosopo::Tags
+  include LuckyHoneypot::Tag
 
   needs tag : String
   needs op : MailingListSubscription = MailingListSubscription.new(tag: tag)
@@ -27,7 +28,9 @@ class Shared::SubscriptionForm < BaseComponent
         email_field
         render_button
       end
-      honeypot_field
+      honeypot_input "mailing_list_subscription:name",
+        class: "visually-hidden",
+        id: "#{tag}_name"
     end
   end
 
@@ -37,14 +40,6 @@ class Shared::SubscriptionForm < BaseComponent
       label_for op.email, for: dom_id
       email_input op.email, id: dom_id
       mount Shared::FieldErrors, op.email
-    end
-  end
-
-  private def honeypot_field
-    div class: "field visually-hidden" do
-      dom_id = "#{tag}_name"
-      label_for op.name, r("global.labels.honeypot").t, for: dom_id
-      text_input op.name, id: dom_id
     end
   end
 

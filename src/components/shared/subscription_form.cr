@@ -19,6 +19,7 @@ class Shared::SubscriptionForm < BaseComponent
 
   private def render_form
     form_for MailingLists::Create do
+      honeypot_signals "mailing_list_subscription:signals"
       # lucky_prosopo_container
       hidden_input op.tag
       if tag == "waitlist"
@@ -28,9 +29,7 @@ class Shared::SubscriptionForm < BaseComponent
         email_field
         render_button
       end
-      honeypot_input "mailing_list_subscription:name",
-        class: "visually-hidden",
-        id: "#{tag}_name"
+      honeypot_input "mailing_list_subscription:name", class: "visually-hidden"
     end
   end
 

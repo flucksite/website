@@ -98,7 +98,7 @@ shards:
 
   lucky_honeypot:
     git: https://codeberg.org/fluck/lucky_honeypot.git
-    version: 0.3.0+git.commit.d33d9fe7855d62875cf8e974e70d6085eadd9a2a
+    version: 0.4.0
 
   lucky_router:
     git: https://github.com/luckyframework/lucky_router.git

@@ -72,7 +72,7 @@ class Shared::Footer < BaseComponent
       {% for badge, url in {tem_values: "https://theethicalmove.org"} %}
         a href: {{url}} do
           {% for theme in %w[light dark] %}
-            img src: asset("@images/badges/{{badge.id}}-{{theme.id}}.png"),
+            img src: asset("images/badges/{{badge.id}}-{{theme.id}}.png"),
               data_for_theme: {{theme}},
               alt: r("global.alts.{{badge.id}}").t
           {% end %}

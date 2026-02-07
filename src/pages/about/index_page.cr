@@ -40,7 +40,7 @@ class About::IndexPage < MainLayout
   end
 
   macro render_bio_image(person, theme, index)
-    img src: asset("@images/people/{{person.id}}-{{theme.id}}-theme.png"),
+    img src: asset("images/people/{{person.id}}-{{theme.id}}-theme.png"),
       alt: r(".people.{{person.id}}.alt").t,
       class: "cutout",
       data_shape: "circle-0{{index + 1}}",

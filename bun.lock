@@ -1,0 +1,35 @@
+{
+  "lockfileVersion": 1,
+  "configVersion": 1,
+  "workspaces": {
+    "": {
+      "dependencies": {
+        "@alpinejs/intersect": "^3.15.3",
+        "@hotwired/turbo": "^8.0.18",
+        "alpine-turbo-drive-adapter": "^2.2.0",
+        "alpinejs": "^3.15.0",
+        "g": "^2.0.1",
+      },
+      "devDependencies": {
+        "prettier": "^3.2.5",
+      },
+    },
+  },
+  "packages": {
+    "@alpinejs/intersect": ["@alpinejs/intersect@3.15.8", "", {}, "sha512-iDrv7rFLp48lXcQkpsojLXrDDWhYKF3NAaem0piiwRs7xBOix5UAOCd/Uj8+PLhV/fuv+itqU1qKxKal9Z0Jaw=="],
+
+    "@hotwired/turbo": ["@hotwired/turbo@8.0.23", "", {}, "sha512-GZ7cijxEZ6Ig71u7rD6LHaRv/wcE/hNsc+nEfiWOkLNqUgLOwo5MNGWOy5ZV9ZUDSiQx1no7YxjTNnT4O6//cQ=="],
+
+    "@vue/reactivity": ["@vue/reactivity@3.1.5", "", { "dependencies": { "@vue/shared": "3.1.5" } }, "sha512-1tdfLmNjWG6t/CsPldh+foumYFo3cpyCHgBYQ34ylaMsJ+SNHQ1kApMIa8jN+i593zQuaw3AdWH0nJTARzCFhg=="],
+
+    "@vue/shared": ["@vue/shared@3.1.5", "", {}, "sha512-oJ4F3TnvpXaQwZJNF3ZK+kLPHKarDmJjJ6jyzVNDKH9md1dptjC7lWR//jrGuLdek/U6iltWxqAnYOu8gCiOvA=="],
+
+    "alpine-turbo-drive-adapter": ["alpine-turbo-drive-adapter@2.2.0", "", {}, "sha512-mf3blh3VE9Gz7XP7c3dhJxSYa34bcNxZq8fFSN9rOoJLp12q0lhnG3TpzyC6lt696xnC37B2p2yKwRRRdHF49A=="],
+
+    "alpinejs": ["alpinejs@3.15.8", "", { "dependencies": { "@vue/reactivity": "~3.1.1" } }, "sha512-zxIfCRTBGvF1CCLIOMQOxAyBuqibxSEwS6Jm1a3HGA9rgrJVcjEWlwLcQTVGAWGS8YhAsTRLVrtQ5a5QT9bSSQ=="],
+
+    "g": ["g@2.0.1", "", {}, "sha512-Fi6Ng5fZ/ANLQ15H11hCe+09sgUoNvDEBevVgx3KoYOhsH5iLNPn54hx0jPZ+3oSWr+xajnp2Qau9VmPsc7hTA=="],
+
+    "prettier": ["prettier@3.8.1", "", { "bin": { "prettier": "bin/prettier.cjs" } }, "sha512-UOnG6LftzbdaHZcKoPFtOcCKztrQ57WkHDeRD9t/PTQtmT0NHSeWWepj6pS0z/N7+08BHFDQVUrfmfMRcZwbMg=="],
+  }
+}

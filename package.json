@@ -9,12 +9,10 @@
     "g": "^2.0.1"
   },
   "scripts": {
-    "build": "vite build",
-    "watch": "vite build --watch"
+    "build": "bun src/bun/bake.js",
+    "dev": "bun src/bun/bake.js --dev"
   },
   "devDependencies": {
-    "prettier": "^3.2.5",
-    "vite": "^7.3.0",
-    "vite-plugin-lucky": "^0.6.0"
+    "prettier": "^3.2.5"
   }
 }

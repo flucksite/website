@@ -14,12 +14,14 @@ COPY shard.yml shard.lock ./
 RUN  shards install --production
 
 # Install the application JS dependencies, then compile production CSS/JS
-FROM node:22-alpine as frontend_build
+FROM oven/bun:1 as frontend_build
 ARG LUCKY_ENV
 ENV LUCKY_ENV=$LUCKY_ENV
 WORKDIR /frontend
+COPY package.json bun.lock ./
+RUN bun install --frozen-lockfile
 COPY . .
-RUN npm install && npm run build
+RUN bun run build
 
 # Build the webserver binary
 FROM crystallang/crystal:$CRYSTAL_VERSION as lucky_binaries_build
@@ -80,4 +82,3 @@ CMD ["./release"]
 HEALTHCHECK \
   --interval=20s --retries=5 \
   CMD ./healthcheck || exit 1
-

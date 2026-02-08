@@ -13,13 +13,11 @@ import 'alpine-turbo-drive-adapter'
 import Alpine from 'alpinejs'
 import intersect from '@alpinejs/intersect'
 import {registerAlpineExtensions} from './utils/alpine-extensions'
-window.Alpine = Alpine
+import * as components from './components/index.js'
 
+window.Alpine = Alpine
 Alpine.plugin(intersect)
 
-registerAlpineExtensions(
-  'data',
-  import.meta.glob('./components/**/*.js', {eager: true})
-)
+registerAlpineExtensions('data', components)
 
 Alpine.start()

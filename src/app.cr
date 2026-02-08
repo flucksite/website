@@ -1,8 +1,9 @@
 require "./shards"
 
+require "./bun/asset_helper"
+
 # Load the asset manifest
-# Lucky::AssetHelpers.load_manifest "public/mix-manifest.json"
-LuckyVite::AssetHelpers.load_manifest
+Lucky::AssetHelpers.load_manifest
 
 require "../config/server"
 require "../config/**"

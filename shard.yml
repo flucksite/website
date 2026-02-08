@@ -27,8 +27,6 @@ dependencies:
   lucky_task:
     github: luckyframework/lucky_task
     version: ~> 0.3.0
-  lucky_vite:
-    github: wout/lucky_vite
   rosetta:
     github: wout/rosetta
     version: ~> 1.0.0

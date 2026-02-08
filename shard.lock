@@ -112,10 +112,6 @@ shards:
     git: https://github.com/luckyframework/lucky_template.git
     version: 0.2.0
 
-  lucky_vite:
-    git: https://github.com/wout/lucky_vite.git
-    version: 0.3.3
-
   pg:
     git: https://github.com/will/crystal-pg.git
     version: 0.29.0

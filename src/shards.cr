@@ -8,7 +8,6 @@ require "avram/lucky"
 require "carbon"
 
 require "lucky_favicon"
-require "lucky_vite"
 require "rosetta"
 require "email_octopus"
 require "prosopo"

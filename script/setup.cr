@@ -9,8 +9,8 @@ print_done
 notice "Installing node dependencies"
 run_command "bun", "install", "--no-progress"
 
-notice "Compiling assets"
-run_command "bun", "run", "vite", "build"
+notice "Installing Bun dependencies"
+run_command "bun", "install"
 
 print_done
 

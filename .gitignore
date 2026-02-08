@@ -7,11 +7,8 @@ start_server
 *.dwarf
 *.local.cr
 .env
-/tmp/public/js
-/public/css
-/public/mix-manifest.json
+.env*
 /node_modules
-yarn-error.log
 
 # Crystal
 /tmp

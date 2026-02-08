@@ -15,8 +15,6 @@ RUN  shards install --production
 
 # Install the application JS dependencies, then compile production CSS/JS
 FROM oven/bun:1 as frontend_build
-ARG LUCKY_ENV
-ENV LUCKY_ENV=$LUCKY_ENV
 WORKDIR /frontend
 COPY package.json bun.lock ./
 RUN bun install --frozen-lockfile

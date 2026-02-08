@@ -21,6 +21,19 @@ const LuckyBun = {
   dev: process.argv.includes('--dev'),
   wsClients: new Set(),
 
+  // Plugin for Bun to allow using a `$` root alias to reference assets in CSS.
+  cssAliasPlugin: {
+    name: 'css-alias',
+    setup(build) {
+      build.onLoad({filter: /\.css$/}, async args => {
+        let content = await Bun.file(args.path).text()
+        const srcDir = join(process.cwd(), 'src')
+        content = content.replace(/url\(['"]?\$\//g, `url('${srcDir}/`)
+        return {contents: content, loader: 'css'}
+      })
+    }
+  },
+
   // Safely load config file and fall back to defaults.
   loadConfig() {
     try {
@@ -69,6 +82,7 @@ const LuckyBun = {
       const result = await Bun.build({
         entrypoints: [entryPath],
         minify: !this.dev,
+        plugins: [this.cssAliasPlugin],
         ...options
       })
 

@@ -1,5 +1,10 @@
-require "./config"
-
+# Methods for returning the path to assets
+#
+# These methods will return fingerprinted paths, check assets at compile time,
+# and allow for setting a CDN.
+#
+# For an in-depth guide check: https://luckyframework.org/guides/frontend/asset-handling
+#
 module Lucky::AssetHelpers
   # ASSET_MANIFEST = {} of String => String
   # CONFIG         = {has_loaded_manifest: false}
@@ -7,56 +12,83 @@ module Lucky::AssetHelpers
   # Loads the asset manifest at compile time.
   #
   # Call this once in src/app.cr:
+  #
   # ```
+  # # For Bun (default):
   # Lucky::AssetHelpers.load_manifest
+  #
+  # # For Laravel Mix (legacy):
+  # Lucky::AssetHelpers.load_manifest(legacy: true)
+  #
+  # # For Vite:
+  # Lucky::AssetHelpers.load_manifest(use_vite: true)
+  #
+  # # Laravel Mix with custom manifest path:
+  # Lucky::AssetHelpers.load_manifest("public/custom-manifest.json", legacy: true)
   # ```
-  macro load_manifest(config_path = "")
-    {{ run "./asset_manifest_builder", config_path }}
+  #
+  macro load_manifest(manifest_file = "", legacy = false, use_vite = false)
+    {% if legacy || use_vite %}
+      {{ run "../run_macros/asset_manifest_builder_for_mix", manifest_file, use_vite }}
+    {% else %}
+      {{ run "./asset_manifest_builder_for_bun" }}
+    {% end %}
     {% CONFIG[:has_loaded_manifest] = true %}
   end
 
-  # Returns the path to an asset with fingerprinting.
+  # Return the string path to an asset
   #
   # ```
   # # In a page or component:
+  # # Will find the asset in `public/assets/images/logo.png`
   # img src: asset("images/logo.png")
+  #
+  # # For Bun assets (default):
   # script src: asset("js/app")
   # css_link asset("css/app")
+  #
+  # # For Laravel Mix and Vite assets (legacy mode):
+  # script src: asset("js/app.js")
+  # css_link asset("css/app.css")
   # ```
   #
-  # Assets are checked at compile time. If not found, you'll get a
-  # helpful error with suggestions.
+  # Note that assets are checked at compile time so if it is not found, Lucky
+  # will let you know. It will also let you know if you had a typo and suggest an
+  # asset that is close to what you typed.
   #
-  # NOTE: This macro requires a `StringLiteral`. For dynamic paths,
-  # use `dynamic_asset` instead.
+  # NOTE: This macro requires a `StringLiteral`. That means you cannot
+  # interpolate strings like this: `asset("images/icon-#{service_name}.png")`.
+  # instead use `dynamic_asset` if you need string interpolation.
   macro asset(path)
     {% unless CONFIG[:has_loaded_manifest] %}
       {% raise "No manifest loaded. Call 'Lucky::AssetHelpers.load_manifest'" %}
     {% end %}
 
     {% if path.is_a?(StringLiteral) %}
-      {% if Lucky::AssetHelpers::ASSET_MANIFEST[path] %}
-        Lucky::Server.settings.asset_host + {{ Lucky::AssetHelpers::ASSET_MANIFEST[path] }}
+      {% if ::Lucky::AssetHelpers::ASSET_MANIFEST[path] %}
+        Lucky::Server.settings.asset_host + {{ ::Lucky::AssetHelpers::ASSET_MANIFEST[path] }}
       {% else %}
-        {% asset_paths = Lucky::AssetHelpers::ASSET_MANIFEST.keys.join(",") %}
-        {{ run "./missing_asset", path, asset_paths }}
+        {% asset_paths = ::Lucky::AssetHelpers::ASSET_MANIFEST.keys.join(",") %}
+        {{ run "../run_macros/missing_asset", path, asset_paths }}
       {% end %}
     {% elsif path.is_a?(StringInterpolation) %}
       {% raise <<-ERROR
+      \n
+      The 'asset' macro doesn't work with string interpolation
 
-      The 'asset' macro doesn't work with string interpolation.
+      Try this...
 
-      Try this:
         ▸ Use the 'dynamic_asset' method instead
 
       ERROR
       %}
     {% else %}
       {% raise <<-ERROR
+      \n
+      The 'asset' macro requires a literal string like "my-logo.png", instead got: #{path}
 
-      The 'asset' macro requires a literal string like "js/app", instead got: #{path}
+      Try this...
 
-      Try this:
         ▸ If you're using a variable, switch to a literal string
         ▸ If you can't use a literal string, use the 'dynamic_asset' method instead
 
@@ -65,13 +97,20 @@ module Lucky::AssetHelpers
     {% end %}
   end
 
-  # Returns the path to an asset (allows string interpolation).
+  # Return the string path to an asset (allows string interpolation)
   #
   # ```
-  # img src: dynamic_asset("images/icon-#{icon_name}.png")
+  # # In a page or component
+  # # Will find the asset in `public/assets/images/logo.png`
+  # img src: asset("images/logo.png")
+  #
+  # # Can also be used elsewhere by prepending Lucky::AssetHelpers
+  # Lucky::AssetHelpers.asset("images/logo.png")
   # ```
   #
-  # NOTE: This method does NOT check assets at compile time.
+  # NOTE: This method does *not* check assets at compile time. The asset path
+  # is found at runtime so it is possible the asset does not exist. Be sure to
+  # manually test that the asset is returned as expected.
   def dynamic_asset(path : String) : String
     fingerprinted = Lucky::AssetHelpers::ASSET_MANIFEST[path]?
 
@@ -87,6 +126,7 @@ module Lucky::AssetHelpers
   # ```
   # Lucky::AssetHelpers.dynamic_asset("images/logo.png")
   # ```
+  #
   def self.dynamic_asset(path : String) : String
     fingerprinted = ASSET_MANIFEST[path]?
 
@@ -98,7 +138,7 @@ module Lucky::AssetHelpers
   end
 
   # Returns all the CSS entrypoints from the manifest.
-  def self.css_entry_points
+  def self.css_entry_points : Array(String)
     ASSET_MANIFEST.keys.select(&.ends_with?(".css"))
   end
 end

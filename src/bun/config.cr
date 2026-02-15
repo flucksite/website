@@ -7,6 +7,9 @@ module Lucky::Bun
 
     CONFIG_PATH = "./config/bun.json"
 
+    @[JSON::Field(key: "manifestName")]
+    getter manifest_name : String = "manifest.json"
+
     @[JSON::Field(key: "outDir")]
     getter out_dir : String = "public/assets"
 

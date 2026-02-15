@@ -9,8 +9,9 @@
     "g": "^2.0.1"
   },
   "scripts": {
+    "dev": "bun src/bun/bake.js --dev",
     "build": "bun src/bun/bake.js",
-    "dev": "bun src/bun/bake.js --dev"
+    "prod": "bun src/bun/bake.js --prod"
   },
   "devDependencies": {
     "prettier": "^3.2.5"

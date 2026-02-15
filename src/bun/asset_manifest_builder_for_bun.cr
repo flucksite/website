@@ -21,7 +21,7 @@ struct Lucky::AssetManifestBuilder
   end
 
   private def resolve_manifest_path
-    File.expand_path(File.join(config.out_dir, "manifest.json"))
+    File.expand_path(File.join(config.out_dir, config.manifest_name))
   end
 
   private def retry_or_raise_error
@@ -34,19 +34,13 @@ struct Lucky::AssetManifestBuilder
 
   private def build_manifest
     parse_manifest.each do |key, value|
-      asset_path = expand_asset_path(value.as_s)
-      manifest_key = normalize_key(key)
-
-      puts %({% Lucky::AssetHelpers::ASSET_MANIFEST["#{manifest_key}"] = "#{asset_path}" %})
+      path = expand_asset_path(value.as_s)
+      puts %({% Lucky::AssetHelpers::ASSET_MANIFEST["#{key}"] = "#{path}" %})
     end
   end
 
   private def expand_asset_path(file : String) : String
     File.join(config.public_path, file)
-  end
-
-  private def normalize_key(key : String) : String
-    key
   end
 
   private def parse_manifest

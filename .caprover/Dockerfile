@@ -19,7 +19,7 @@ WORKDIR /frontend
 COPY package.json bun.lock ./
 RUN bun install --frozen-lockfile
 COPY . .
-RUN bun run build
+RUN bun run prod
 
 # Build the webserver binary
 FROM crystallang/crystal:$CRYSTAL_VERSION as lucky_binaries_build

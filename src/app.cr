@@ -1,7 +1,5 @@
 require "./shards"
 
-require "./bun/asset_helper"
-
 # Load the asset manifest
 Lucky::AssetHelpers.load_manifest
 

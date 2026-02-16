@@ -23,9 +23,12 @@ class Shared::LayoutHead < BaseComponent
       preload_backgrounds
       meta name: "color-scheme", content: "light dark"
 
-      # Development helper used with the `lucky watch` command.
-      # Reloads the browser when files are updated.
+      # Development helper used with the `lucky watch` command. Reloads the
+      # browser when files are updated.
       live_reload_connect_tag if LuckyEnv.development?
+
+      # Development helper used with Bun. It uses HMR to reload CSS files, and
+      # triggers a full page reload with other assets.
       bun_reload_connect_tag
 
       turbo_morph_tag
@@ -94,46 +97,5 @@ class Shared::LayoutHead < BaseComponent
 
   private def app_domain
     ENV.fetch("APP_DOMAIN", "fluck.site")
-  end
-
-  private def bun_reload_connect_tag
-    return unless LuckyEnv.development?
-
-    config = Lucky::Bun::Config.load
-    css_files = Lucky::AssetHelpers.css_entry_points
-      .map { |key| File.join(config.public_path, key) }
-
-    script do
-      raw <<-JS
-      (() => {
-        const cssPaths = #{css_files.to_json};
-        const ws = new WebSocket('#{config.dev_server.ws_url}')
-
-        ws.onmessage = (event) => {
-          const data = JSON.parse(event.data)
-
-          if (data.type === 'css') {
-            document.querySelectorAll('link[rel="stylesheet"]').forEach(link => {
-              const linkPath = new URL(link.href).pathname.split('?')[0]
-              if (cssPaths.some(p => linkPath.startsWith(p))) {
-                const url = new URL(link.href)
-                url.searchParams.set('r', Date.now())
-                link.href = url.toString()
-              }
-            })
-            console.log('▸ CSS reloaded')
-          } else if (data.type === 'error') {
-            console.error('✖ Build error:', data.message)
-          } else {
-            console.log('▸ Reloading...')
-            location.reload()
-          }
-        }
-
-        ws.onopen = () => console.log('▸ Live reload connected')
-        ws.onclose = () => setTimeout(() => location.reload(), 2000)
-      })()
-      JS
-    end
   end
 end

@@ -2,7 +2,7 @@ ARG CRYSTAL_VERSION=1.19.1
 ARG LUCKY_ENV
 
 # Install the application Crystal dependencies
-FROM crystallang/crystal:$CRYSTAL_VERSION as crystal_dependencies
+FROM crystallang/crystal:$CRYSTAL_VERSION AS crystal_dependencies
 WORKDIR /shards
 RUN apt-get update -qq \
   && DEBIAN_FRONTEND=noninteractive apt-get install -yq --no-install-recommends \
@@ -13,8 +13,17 @@ ENV SKIP_LUCKY_TASK_PRECOMPILATION=1
 COPY shard.yml shard.lock ./
 RUN  shards install --production
 
-# Build bun and the webserver binary
-FROM crystallang/crystal:$CRYSTAL_VERSION as bun_and_lucky_build
+# Install the application JS dependencies, then compile production CSS/JS
+FROM oven/bun:1 AS frontend_build
+WORKDIR /frontend
+COPY package.json bun.lock ./
+COPY --from=crystal_dependencies /shards/lib/lucky/src/bun/bake.js lib/lucky/src/bun/bake.js
+RUN bun install --frozen-lockfile
+COPY . .
+RUN bun run prod
+
+# Build the webserver binary
+FROM crystallang/crystal:$CRYSTAL_VERSION AS lucky_binaries_build
 WORKDIR /binaries_build
 RUN apt-get update -qq \
   && DEBIAN_FRONTEND=noninteractive apt-get install -yq --no-install-recommends \
@@ -22,17 +31,15 @@ RUN apt-get update -qq \
   gnupg2
 ARG LUCKY_ENV
 ENV LUCKY_ENV=$LUCKY_ENV
-COPY --from=oven/bun:latest /usr/local/bin/bun /usr/local/bin/bun
 COPY . .
 COPY --from=crystal_dependencies /shards/lib lib
-RUN bun install --frozen-lockfile
-RUN bun run prod
+COPY --from=frontend_build /frontend/public public
 RUN shards build --production --release \
   && mv ./bin/app /usr/local/bin/webserver \
   && chmod +x /usr/local/bin/webserver
 
 # Create the release scripts
-FROM alpine:3.20 as release_script_build
+FROM alpine:3.20 AS release_script_build
 RUN echo "#!/bin/sh" >> /usr/local/bin/release \
   && echo "./webserver" >> /usr/local/bin/release \
   && chmod +x /usr/local/bin/release
@@ -41,7 +48,7 @@ RUN echo "#!/bin/sh" >> /usr/local/bin/healthcheck \
   && chmod +x /usr/local/bin/healthcheck
 
 # Serve the application binary
-FROM ubuntu:24.04 as webserver
+FROM ubuntu:24.04 AS webserver
 RUN apt-get update -qq \
   && DEBIAN_FRONTEND=noninteractive apt-get install -yq --no-install-recommends \
   build-essential \
@@ -65,8 +72,8 @@ RUN apt-get update -qq \
 WORKDIR /app
 COPY --from=release_script_build /usr/local/bin/release release
 COPY --from=release_script_build /usr/local/bin/healthcheck healthcheck
-COPY --from=bun_and_lucky_build /usr/local/bin/webserver webserver
-COPY --from=bun_and_lucky_build /frontend/public public
+COPY --from=lucky_binaries_build /usr/local/bin/webserver webserver
+COPY --from=frontend_build /frontend/public public
 COPY ./config/watch.yml config/
 CMD ["./release"]
 

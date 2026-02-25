@@ -16,7 +16,8 @@ RUN  shards install --production
 # Install the application JS dependencies, then compile production CSS/JS
 FROM oven/bun:1 as frontend_build
 WORKDIR /frontend
-COPY package.json bun.lock ./
+# COPY package.json bun.lock ./
+COPY . .
 COPY --from=crystal_dependencies /shards/lib/lucky/src/bun lib/lucky/src/bun
 RUN bun install --frozen-lockfile \
   && bun run prod

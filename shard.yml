@@ -10,8 +10,10 @@ crystal: '>= 1.17.0'
 
 dependencies:
   lucky:
-    github: luckyframework/lucky
-    branch: main
+    # github: luckyframework/lucky
+    # branch: main
+    github: wout/lucky
+    branch: fix-bug-in-bun-manifest-path
   avram:
     github: luckyframework/avram
     version: ~> 1.4.0

@@ -33,7 +33,7 @@ ARG LUCKY_ENV
 ENV LUCKY_ENV=$LUCKY_ENV
 COPY . .
 COPY --from=crystal_dependencies /shards/lib lib
-# COPY --from=frontend_build /frontend/public public
+COPY --from=frontend_build /frontend/public public
 RUN shards build --production --release \
   && mv ./bin/app /usr/local/bin/webserver \
   && chmod +x /usr/local/bin/webserver

@@ -16,11 +16,9 @@ RUN  shards install --production
 # Install the application JS dependencies, then compile production CSS/JS
 FROM oven/bun:1 as frontend_build
 WORKDIR /frontend
-# COPY package.json bun.lock ./
 COPY . .
-COPY --from=crystal_dependencies /shards/lib/lucky/src/bun lib/lucky/src/bun
-RUN bun install --frozen-lockfile \
-  && bun run prod
+RUN bun install --frozen-lockfile
+RUN bun run prod
 
 # Build the webserver binary
 FROM crystallang/crystal:$CRYSTAL_VERSION as lucky_binaries_build

@@ -18,9 +18,8 @@ FROM oven/bun:1 as frontend_build
 WORKDIR /frontend
 COPY package.json bun.lock ./
 COPY --from=crystal_dependencies /shards/lib/lucky/src/bun lib/lucky/src/bun
-RUN bun install --frozen-lockfile
-COPY . .
-RUN bun run prod
+RUN bun install --frozen-lockfile \
+  && bun run prod
 
 # Build the webserver binary
 FROM crystallang/crystal:$CRYSTAL_VERSION as lucky_binaries_build
@@ -33,7 +32,7 @@ ARG LUCKY_ENV
 ENV LUCKY_ENV=$LUCKY_ENV
 COPY . .
 COPY --from=crystal_dependencies /shards/lib lib
-COPY --from=frontend_build /frontend/public public
+# COPY --from=frontend_build /frontend/public public
 RUN shards build --production --release \
   && mv ./bin/app /usr/local/bin/webserver \
   && chmod +x /usr/local/bin/webserver

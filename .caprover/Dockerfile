@@ -17,7 +17,7 @@ RUN  shards install --production
 FROM oven/bun:1 as frontend_build
 WORKDIR /frontend
 COPY package.json bun.lock ./
-COPY --from=crystal_dependencies /shards/lib/lucky/src/bun/bake.js lib/lucky/src/bun/bake.js
+COPY --from=crystal_dependencies /shards/lib/lucky/src/bun lib/lucky/src/bun
 RUN bun install --frozen-lockfile
 COPY . .
 RUN bun run prod

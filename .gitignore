@@ -15,4 +15,4 @@ start_server
 
 # Bun
 /public/assets
-/public/bin-manifest.json
+/public/bun-manifest.json

@@ -13,15 +13,8 @@ ENV SKIP_LUCKY_TASK_PRECOMPILATION=1
 COPY shard.yml shard.lock ./
 RUN  shards install --production
 
-# Install the application JS dependencies, then compile production CSS/JS
-FROM oven/bun:1 as frontend_build
-WORKDIR /frontend
-COPY . .
-RUN bun install --frozen-lockfile
-RUN bun run prod
-
-# Build the webserver binary
-FROM crystallang/crystal:$CRYSTAL_VERSION as lucky_binaries_build
+# Build bun and the webserver binary
+FROM crystallang/crystal:$CRYSTAL_VERSION as bun_and_lucky_build
 WORKDIR /binaries_build
 RUN apt-get update -qq \
   && DEBIAN_FRONTEND=noninteractive apt-get install -yq --no-install-recommends \
@@ -29,9 +22,11 @@ RUN apt-get update -qq \
   gnupg2
 ARG LUCKY_ENV
 ENV LUCKY_ENV=$LUCKY_ENV
+COPY --from=oven/bun:latest /usr/local/bin/bun /usr/local/bin/bun
 COPY . .
 COPY --from=crystal_dependencies /shards/lib lib
-COPY --from=frontend_build /frontend/public public
+RUN bun install --frozen-lockfile
+RUN bun run prod
 RUN shards build --production --release \
   && mv ./bin/app /usr/local/bin/webserver \
   && chmod +x /usr/local/bin/webserver
@@ -70,8 +65,8 @@ RUN apt-get update -qq \
 WORKDIR /app
 COPY --from=release_script_build /usr/local/bin/release release
 COPY --from=release_script_build /usr/local/bin/healthcheck healthcheck
-COPY --from=lucky_binaries_build /usr/local/bin/webserver webserver
-COPY --from=frontend_build /frontend/public public
+COPY --from=bun_and_lucky_build /usr/local/bin/webserver webserver
+COPY --from=bun_and_lucky_build /frontend/public public
 COPY ./config/watch.yml config/
 CMD ["./release"]
 

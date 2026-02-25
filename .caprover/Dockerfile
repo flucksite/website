@@ -1,4 +1,4 @@
-ARG CRYSTAL_VERSION=1.18.2
+ARG CRYSTAL_VERSION=1.19.1
 ARG LUCKY_ENV
 
 # Install the application Crystal dependencies
@@ -17,9 +17,10 @@ RUN  shards install --production
 FROM oven/bun:1 as frontend_build
 WORKDIR /frontend
 COPY package.json bun.lock ./
+COPY --from=crystal_dependencies /shards/lib/lucky/src/bun/bake.js lib/lucky/src/bun/bake.js
 RUN bun install --frozen-lockfile
 COPY . .
-RUN bun run build
+RUN bun run prod
 
 # Build the webserver binary
 FROM crystallang/crystal:$CRYSTAL_VERSION as lucky_binaries_build

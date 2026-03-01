@@ -11,6 +11,7 @@ class AppServer < Lucky::BaseAppServer
       Raven::Lucky::ErrorHandler.new,
       Lucky::RemoteIpHandler.new,
       Lucky::RouteHandler.new,
+      Lucky::DevAssetCacheHandler.new(enabled: LuckyEnv.development?),
       Lucky::StaticCompressionHandler.new("./public", file_ext: "gz", content_encoding: "gzip"),
       Lucky::StaticFileHandler.new("./public", fallthrough: false, directory_listing: false),
       Lucky::RouteNotFoundHandler.new,

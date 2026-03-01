@@ -1,41 +1,4 @@
-@import 'global/reset';
-@import 'global/fonts';
-@import 'global/variables';
-@import 'global/theme';
-@import 'global/backgrounds';
-@import 'global/inline-svgs';
-@import 'global/global-styles';
-
-@import 'compositions/centered';
-@import 'compositions/couple';
-@import 'compositions/flow';
-@import 'compositions/grid';
-@import 'compositions/repel';
-@import 'compositions/switcher';
-@import 'compositions/wrapper';
-
-@import 'utilities/reveal';
-@import 'utilities/visually-hidden';
-
-@import 'blocks/button';
-@import 'blocks/callout';
-@import 'blocks/card';
-@import 'blocks/cutout';
-@import 'blocks/early-access';
-@import 'blocks/error';
-@import 'blocks/features';
-@import 'blocks/field';
-@import 'blocks/footer';
-@import 'blocks/header';
-@import 'blocks/hero';
-@import 'blocks/locale-switcher';
-@import 'blocks/main-menu';
-@import 'blocks/menu';
-@import 'blocks/person';
-@import 'blocks/preferences';
-@import 'blocks/prose';
-@import 'blocks/shift';
-@import 'blocks/subscription-form';
-@import 'blocks/skip-link';
-@import 'blocks/theme-switcher';
-@import 'blocks/timeline';
+@import 'global/**/*';
+@import 'compositions/**/*';
+@import 'utilities/**/*';
+@import 'blocks/**/*';

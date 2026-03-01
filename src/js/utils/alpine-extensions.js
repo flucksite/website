@@ -1,21 +1,24 @@
 import Alpine from 'alpinejs'
 
 /**
- * Register Alpine.js extensions from a module object.
+ * Registers Alpine.js extensions from a glob object.
  * @param {string} type - Alpine method (data, store, etc.)
- * @param {object} modules - Object of {name: component}
+ * @param {object} modules - Object of {path: component}
+ * @param {function} transform - Function to modify path.
+ * @returns {void}
  */
-export const registerAlpineExtensions = (type, modules) => {
-  for (const [name, component] of Object.entries(modules))
-    Alpine[type](toCamelCase(name), component)
+export const registerAlpineExtensions = (type, modules, transform = s => s) => {
+  for (const [path, component] of Object.entries(modules))
+    Alpine[type](pathToAlpineComponentName(path, transform), component)
 }
 
 /**
- * Converts kebab-case or snake_case to camelCase.
- * @param {string} string
+ * Converts a file path to a camelCased component name.
+ * @param {string} path - File path.
+ * @param {function} transform - Function to modify path.
  * @returns {string}
  */
-const toCamelCase = string =>
-  string
+const pathToAlpineComponentName = (path, transform) =>
+  transform(path)
     .replace(/_|\//g, '-')
     .replace(/-([a-z])/g, (_, letter) => letter.toUpperCase())

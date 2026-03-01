@@ -3,6 +3,10 @@
     "js": ["src/js/main.js"],
     "css": ["src/css/main.css"]
   },
+  "plugins": {
+    "css": ["cssAliases", "cssGlobs"],
+    "js": ["jsGlobs"]
+  },
   "staticDirs": ["src/images", "src/fonts"],
   "outDir": "public/assets",
   "publicPath": "/assets",

@@ -13,7 +13,7 @@ dependencies:
     # github: luckyframework/lucky
     # branch: main
     github: wout/lucky
-    branch: fix-bug-in-bun-manifest-path
+    branch: add-plugin-system-for-bun
   avram:
     github: luckyframework/avram
     version: ~> 1.4.0

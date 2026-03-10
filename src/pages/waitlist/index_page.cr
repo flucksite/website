@@ -36,13 +36,7 @@ class Waitlist::IndexPage < MainLayout
         para r(".timeline.text").t
       end
 
-      {% for target in %w[
-                         winter_2025_2026
-                         spring_2026
-                         summer_2026
-                         public_beta_2
-                         version_1
-                       ] %}
+      {% for target in %w[spring_2026 summer_2026 autumn_2026 winter_2026] %}
         div **reveal_attr, class: "timeline__entry | flow reveal" do
           h3 r(".timeline.{{target.id}}.title").t
           div do

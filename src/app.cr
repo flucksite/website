@@ -24,3 +24,6 @@ require "./components/**"
 require "./pages/**"
 require "../db/migrations/**"
 require "./app_server"
+
+# Load posts
+Blog::PostsQuery.load!

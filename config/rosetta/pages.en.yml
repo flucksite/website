@@ -68,6 +68,12 @@ en:
 
 
           Mick and Wout
+  blog:
+    index_page:
+      page_title: Blog.
+      page_description: >-
+        Updates, progress, new features, and general news. Everything you need
+        to know about Fluck's developments.
   errors:
     show_page:
       page_title: We’ve encountered a %{status_code} error

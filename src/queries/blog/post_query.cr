@@ -1,4 +1,4 @@
-class Blog::PostsQuery
+class Blog::PostQuery
   macro load!
     {%
       posts = run("../../run_macros/posts_parser")

@@ -26,4 +26,4 @@ require "../db/migrations/**"
 require "./app_server"
 
 # Load posts
-Blog::PostsQuery.load!
+Blog::PostQuery.load!

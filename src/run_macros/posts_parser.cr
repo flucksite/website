@@ -5,7 +5,7 @@ require "wordsmith"
 begin
   location = Time::Location.load("Europe/Madrid")
   time_format = "%Y%m%d"
-  date_regex = /^(?<date>\d{8}_(?<name>[^.]+))/
+  date_regex = /^(?<date>\d{8})_(?<name>[^.]+)/
   content_regex = /\A(?:-{3}\n(?<frontmatter>.*?)\n-{3}\n)?(?<body>.*)\z/m
 
   posts = Dir.glob("./data/posts/*.md").map do |filename|

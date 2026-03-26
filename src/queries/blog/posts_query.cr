@@ -4,11 +4,11 @@ class Blog::PostsQuery
       posts = run("../../run_macros/posts_parser")
 
       unless posts.starts_with?('[')
-        raise posts.stringify
+        raise "Failed to parse blog posts: " + posts
       end
     %}
 
-    POSTS = Array(Blog::Post).from_json(%({{ posts }}))
+    POSTS = Array(Blog::Post).from_json({{ posts.stringify }})
   end
 
   def initialize

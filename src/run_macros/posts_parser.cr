@@ -2,6 +2,7 @@ require "json"
 require "yaml"
 require "wordsmith"
 
+# Marquery
 begin
   location = Time::Location.load("Europe/Madrid")
   time_format = "%Y%m%d"
@@ -21,7 +22,7 @@ begin
     post = {} of String => Bool | Float64 | Int32 | String | Time
     post["title"] = Wordsmith::Inflector.humanize(filename_match["name"].to_s)
     post["date"] = Time.parse(filename_match["date"], time_format, location)
-    post["content"] = content_match["body"].strip.gsub(/\n/, "\\n")
+    post["content"] = content_match["body"].strip
 
     # Parse frontmatter
     if frontmatter = content_match["frontmatter"]?

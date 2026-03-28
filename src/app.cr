@@ -5,6 +5,7 @@ Lucky::AssetHelpers.load_manifest
 
 require "../config/server"
 require "../config/**"
+require "marquery"
 require "./models/base_model"
 require "./models/mixins/**"
 require "./models/**"
@@ -24,6 +25,3 @@ require "./components/**"
 require "./pages/**"
 require "../db/migrations/**"
 require "./app_server"
-
-# Load posts
-Blog::PostQuery.load!

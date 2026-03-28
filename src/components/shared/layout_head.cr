@@ -76,6 +76,8 @@ class Shared::LayoutHead < BaseComponent
   end
 
   private def plausible_script
+    return unless LuckyEnv.production?
+
     script src: "https://plausible.io/js/pa-roV_OhYFz-nQv2vgDLUzq.js", async: true
     script do
       raw <<-JS

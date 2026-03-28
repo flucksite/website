@@ -4,8 +4,8 @@
     "css": ["src/css/main.css"]
   },
   "plugins": {
-    "css": ["cssAliases", "cssGlobs"],
-    "js": ["jsGlobs"]
+    "css": ["aliases", "cssGlobs"],
+    "js": ["aliases", "jsGlobs"]
   },
   "staticDirs": ["src/images", "src/fonts"],
   "outDir": "public/assets",

@@ -114,7 +114,7 @@ shards:
 
   marquery:
     git: https://codeberg.org/fluck/marquery.git
-    version: 0.1.0
+    version: 0.1.0+git.commit.62f73b344ef13ede264a75cedc6f25e976e8310e
 
   pg:
     git: https://github.com/will/crystal-pg.git

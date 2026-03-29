@@ -2,6 +2,8 @@
 title: Second post
 description: >-
   This is the second post.
+tags:
+  - news
 ---
 
 I'm baby microdosing jianbing bitters cred, meditation shaman ramps DSA synth

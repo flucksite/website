@@ -2,6 +2,9 @@
 title: The very first post
 description: >-
   This is the first post.
+tags:
+  - news
+  - progess
 ---
 
 Celiac try-hard swag normcore microdosing dreamcatcher glossier neutral milk

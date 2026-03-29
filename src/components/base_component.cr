@@ -1,4 +1,4 @@
 abstract class BaseComponent < Lucky::BaseComponent
-  include MarkdownToHTML
+  include Marquery::MarkdownHelper
   include Turbo
 end

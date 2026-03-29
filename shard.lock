@@ -78,7 +78,7 @@ shards:
 
   lucky:
     git: https://github.com/wout/lucky.git
-    version: 1.4.0+git.commit.369d8ec5e0453690fd889ff38f6a971e26ab4b27
+    version: 1.4.0+git.commit.a187d4739ce5ca3950fcb5c820c2f0c103a791e6
 
   lucky_cache:
     git: https://github.com/luckyframework/lucky_cache.git
@@ -114,7 +114,7 @@ shards:
 
   marquery:
     git: https://codeberg.org/fluck/marquery.git
-    version: 0.1.0+git.commit.62f73b344ef13ede264a75cedc6f25e976e8310e
+    version: 0.2.0+git.commit.9694de7003003e224abbee4090c07a5f580ec927
 
   pg:
     git: https://github.com/will/crystal-pg.git

@@ -46,9 +46,6 @@ dependencies:
   marquery:
     codeberg: fluck/marquery
     branch: main
-  cmark:
-    github: amauryt/cr-cmark-gfm
-    branch: master
   sitemapper:
     github: jwoertink/sitemapper
   raven:

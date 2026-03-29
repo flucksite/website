@@ -1,4 +1,4 @@
-# FLUCK Website
+# Fluck Website
 
 This is the repo for the [https://fluck.site](https://fluck.site) website.
 

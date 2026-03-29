@@ -1,5 +1,6 @@
+@[Marquery::Dir("data")]
 class Blog::PostQuery
-  include Marquery
+  include Marquery::Query
 
   model Blog::Post
 end

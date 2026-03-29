@@ -39,3 +39,10 @@
 .footer__badges img:hover {
   transform: rotate(-12deg) scale(1.1);
 }
+
+body[data-bg='error'] .footer__badges img[data-for-theme='dark'] {
+  display: none;
+}
+body[data-bg='error'] .footer__badges img[data-for-theme='light'] {
+  display: initial;
+}

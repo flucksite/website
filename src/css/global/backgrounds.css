@@ -1,50 +1,40 @@
 body[data-bg] {
+  --bg-dark: var(--bg-light);
   background-size: max(100vw, 820px) auto;
   background-position: center top;
+  background-image: var(--bg-light);
 }
 
 body[data-bg='home'] {
-  background-image: url('$/src/images/backgrounds/home-light.svg');
+  --bg-light: url('$/src/images/backgrounds/home-light.svg');
+  --bg-dark: url('$/src/images/backgrounds/home-dark.svg');
+}
+body[data-bg='blog'] {
+  --bg-light: url('$/src/images/backgrounds/blog-light.svg');
+  --bg-dark: url('$/src/images/backgrounds/blog-dark.svg');
 }
 body[data-bg='about'] {
-  background-image: url('$/src/images/backgrounds/about-light.svg');
+  --bg-light: url('$/src/images/backgrounds/about-light.svg');
+  --bg-dark: url('$/src/images/backgrounds/about-dark.svg');
 }
 body[data-bg='waitlist'] {
-  background-image: url('$/src/images/backgrounds/waitlist-light.svg');
+  --bg-light: url('$/src/images/backgrounds/waitlist-light.svg');
+  --bg-dark: url('$/src/images/backgrounds/waitlist-dark.svg');
 }
 body[data-bg='error'] {
-  background-image: url('$/src/images/backgrounds/error.svg');
+  --bg-light: url('$/src/images/backgrounds/error.svg');
 }
 
-body[data-theme='dark'][data-bg='home'] {
-  background-image: url('$/src/images/backgrounds/home-dark.svg');
-}
-body[data-theme='dark'][data-bg='about'] {
-  background-image: url('$/src/images/backgrounds/about-dark.svg');
-}
-body[data-theme='dark'][data-bg='waitlist'] {
-  background-image: url('$/src/images/backgrounds/waitlist-dark.svg');
+body[data-theme='dark'][data-bg] {
+  background-image: var(--bg-dark);
 }
 
 @media (prefers-color-scheme: dark) {
-  body[data-bg='home'] {
-    background-image: url('$/src/images/backgrounds/home-dark.svg');
+  body[data-bg] {
+    background-image: var(--bg-dark);
   }
-  body[data-bg='about'] {
-    background-image: url('$/src/images/backgrounds/about-dark.svg');
-  }
-  body[data-bg='waitlist'] {
-    background-image: url('$/src/images/backgrounds/waitlist-dark.svg');
-  }
-
-  body[data-theme='light'][data-bg='home'] {
-    background-image: url('$/src/images/backgrounds/home-light.svg');
-  }
-  body[data-theme='light'][data-bg='about'] {
-    background-image: url('$/src/images/backgrounds/about-light.svg');
-  }
-  body[data-theme='light'][data-bg='waitlist'] {
-    background-image: url('$/src/images/backgrounds/waitlist-light.svg');
+  body[data-theme='light'][data-bg] {
+    background-image: var(--bg-light);
   }
 }
 

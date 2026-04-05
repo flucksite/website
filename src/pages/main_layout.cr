@@ -54,6 +54,7 @@ abstract class MainLayout
     case {{@type.stringify}}
     when "Home::IndexPage"     then "home"
     when "About::IndexPage"    then "about"
+    when "Blog::IndexPage"     then "blog"
     when "Waitlist::IndexPage" then "waitlist"
     when "Errors::ShowPage"    then "error"
     else                            "default"

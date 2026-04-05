@@ -72,8 +72,13 @@ en:
     index_page:
       page_title: Blog.
       page_description: >-
-        Updates, progress, new features, and general news. Everything you need
-        to know about Fluck's developments.
+        Here’s where we post more in-dept information about the developemnts
+        around Fluck. Follow us on
+        [Bluesky](https://bsky.app/profile/fluck.site), or subscribe to our
+        monthly newsletter or RSS feed to get notified about new posts.
+      hero:
+        title: Blog
+        text: '%r{blog.index_page.page_description}'
   errors:
     show_page:
       page_title: We’ve encountered a %{status_code} error

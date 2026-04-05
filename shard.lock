@@ -1,3 +1,4 @@
+# NOTICE: This lockfile contains some overrides from shard.override.yml
 version: 2.0
 shards:
   ameba:
@@ -8,9 +9,9 @@ shards:
     git: https://github.com/sija/any_hash.cr.git
     version: 0.2.5
 
-  avram:
+  avram: # Overridden
     git: https://github.com/luckyframework/avram.git
-    version: 1.4.2
+    version: 1.4.2+git.commit.4790149297823545e65fe3187b58036a16eb3693
 
   awscr-s3:
     git: https://github.com/taylorfinnell/awscr-s3.git
@@ -76,13 +77,13 @@ shards:
     git: https://github.com/naqvis/crystal-html5.git
     version: 0.5.1
 
-  lucky:
-    git: https://github.com/wout/lucky.git
-    version: 1.4.0+git.commit.a187d4739ce5ca3950fcb5c820c2f0c103a791e6
+  lucky: # Overridden
+    git: https://github.com/luckyframework/lucky.git
+    version: 1.4.0+git.commit.8dd7adc1e18c6f43bdf38d2465c5311805303fcd
 
-  lucky_cache:
+  lucky_cache: # Overridden
     git: https://github.com/luckyframework/lucky_cache.git
-    version: 0.1.1
+    version: 0.2.0
 
   lucky_env:
     git: https://github.com/luckyframework/lucky_env.git
@@ -98,7 +99,7 @@ shards:
 
   lucky_honeypot:
     git: https://codeberg.org/fluck/lucky_honeypot.git
-    version: 0.6.0
+    version: 0.6.1
 
   lucky_router:
     git: https://github.com/luckyframework/lucky_router.git
@@ -114,7 +115,7 @@ shards:
 
   marquery:
     git: https://codeberg.org/fluck/marquery.git
-    version: 0.2.0+git.commit.9694de7003003e224abbee4090c07a5f580ec927
+    version: 0.2.1+git.commit.db6cc2e1553b9617d2c9ef8a3569ece88e65d1fd
 
   pg:
     git: https://github.com/will/crystal-pg.git

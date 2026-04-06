@@ -79,7 +79,7 @@ shards:
 
   lucky: # Overridden
     git: https://github.com/luckyframework/lucky.git
-    version: 1.4.0+git.commit.8dd7adc1e18c6f43bdf38d2465c5311805303fcd
+    version: 1.4.0+git.commit.1399ce07f682aede964e0bfa91111024392a3c12
 
   lucky_cache: # Overridden
     git: https://github.com/luckyframework/lucky_cache.git
@@ -94,8 +94,8 @@ shards:
     version: 1.0.0
 
   lucky_flow:
-    git: https://github.com/luckyframework/lucky_flow.git
-    version: 0.10.1
+    git: https://github.com/wout/lucky_flow.git
+    version: 0.10.1+git.commit.38c8a82c689bf43265926282c22a03c8f4c6faef
 
   lucky_honeypot:
     git: https://codeberg.org/fluck/lucky_honeypot.git

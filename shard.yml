@@ -51,8 +51,10 @@ dependencies:
 
 development_dependencies:
   lucky_flow:
-    github: luckyframework/lucky_flow
-    version: ~> 0.10.1
+    # github: luckyframework/lucky_flow
+    # version: ~> 0.10.1
+    github: wout/lucky_flow
+    branch: fix-race-conditions
   ameba:
     github: crystal-ameba/ameba
   webmock:

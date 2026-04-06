@@ -2,8 +2,10 @@ require "../../spec_helper"
 
 describe PrivacyPolicy::Index do
   it "renders successfully" do
-    response = AppClient.new.exec(PrivacyPolicy::Index)
+    flow = BaseFlow.new
 
-    response.status_code.should eq(200)
+    flow.visit PrivacyPolicy::Index
+    flow.should have_element("h1")
+    flow.should have_current_path(PrivacyPolicy::Index)
   end
 end

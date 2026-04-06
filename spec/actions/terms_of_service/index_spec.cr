@@ -2,8 +2,10 @@ require "../../spec_helper"
 
 describe TermsOfService::Index do
   it "renders successfully" do
-    response = AppClient.new.exec(TermsOfService::Index)
+    flow = BaseFlow.new
 
-    response.status_code.should eq(200)
+    flow.visit TermsOfService::Index
+    flow.should have_element("h1")
+    flow.should have_current_path(TermsOfService::Index)
   end
 end

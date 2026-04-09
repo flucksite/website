@@ -70,15 +70,14 @@ en:
           Mick and Wout
   blog:
     index_page:
-      page_title: Blog.
-      page_description: >-
-        Here’s where we post more in-dept information about the developemnts
-        around Fluck. Follow us on
-        [Bluesky](https://bsky.app/profile/fluck.site), or subscribe to our
-        monthly newsletter or RSS feed to get notified about new posts.
       hero:
         title: Blog
-        text: '%r{blog.index_page.page_description}'
+        text: >-
+          Here’s where we post more in-dept information about the developemnts
+          around Fluck. Follow us on
+          [Bluesky](https://bsky.app/profile/fluck.site), or subscribe to our
+          monthly newsletter or [RSS feed](/blog.rss) to get notified about new
+          posts.
   errors:
     show_page:
       page_title: We’ve encountered a %{status_code} error

@@ -1,3 +1,5 @@
+require "marquery/asset_handler"
+
 class AppServer < Lucky::BaseAppServer
   # Learn about middleware with HTTP::Handlers:
   # https://luckyframework.org/guides/http-and-routing/http-handlers
@@ -14,6 +16,7 @@ class AppServer < Lucky::BaseAppServer
       Lucky::DevAssetCacheHandler.new(enabled: LuckyEnv.development?),
       Lucky::StaticCompressionHandler.new("./public", file_ext: "gz", content_encoding: "gzip"),
       Lucky::StaticFileHandler.new("./public", fallthrough: false, directory_listing: false),
+      Marquery::AssetHandler.new(Blog::PostQuery.dir),
       Lucky::RouteNotFoundHandler.new,
     ] of HTTP::Handler
   end

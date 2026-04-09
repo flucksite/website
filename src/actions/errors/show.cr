@@ -7,9 +7,9 @@ class Errors::Show < Lucky::ErrorAction
   DEFAULT_MESSAGE = r(".something_wrong").t
 
   default_format :html
-  dont_report [Lucky::RouteNotFoundError]
+  dont_report [Lucky::RouteNotFoundError, Marquery::EntryNotFound]
 
-  def render(error : Lucky::RouteNotFoundError)
+  def render(error : Marquery::EntryNotFound | Lucky::RouteNotFoundError)
     if html?
       error_html r(".not_found").t, status: 404
     else

@@ -1,7 +1,9 @@
 ---
 title: The very first post
 description: >-
-  This is the first post.
+  Put a bird on it wayfarers fixie gluten-free cliche shaman offal palo santo
+  umami same lo-fi. Kinfolk ennui solarpunk sartorial sriracha unicorn. Cronut
+  Brooklyn locavore, yes plz organic venmo subway tile DIY lumbersexual.
 tags:
   - news
   - progess

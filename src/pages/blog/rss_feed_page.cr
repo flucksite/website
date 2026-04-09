@@ -6,7 +6,7 @@ class Blog::RssFeedPage
 
   def to_xml : String
     XML.build(indent: "  ", encoding: "UTF-8") do |xml|
-      xml.element("rss", version: "2.0", "xmlns:atom": "http://www.w3.org/2005/Atom") do
+      xml.element("rss", version: "2.0", "xmlns:atom": "http://www.w3.org/2005/Atom", "xmlns:content": "http://purl.org/rss/1.0/modules/content/") do
         xml.element("channel") do
           channel(xml)
           items(xml)
@@ -34,6 +34,7 @@ class Blog::RssFeedPage
         if description = post.description
           xml.element("description") { xml.text description }
         end
+        xml.element("content:encoded") { xml.cdata post.to_html }
       end
     end
   end

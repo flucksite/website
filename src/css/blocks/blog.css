@@ -1,0 +1,20 @@
+.blog {
+  max-width: var(--max-width-breakout);
+  margin-inline: auto;
+}
+
+.blog__post {
+  padding-block: var(--space-xl);
+  border-bottom: var(--stroke-mid);
+
+  &:first-child {
+    border-top: var(--stroke-mid);
+  }
+
+  h2 {
+    max-width: none;
+    border-bottom: var(--stroke-dotted);
+    padding-bottom: var(--space-s);
+    margin-bottom: var(--space-s);
+  }
+}

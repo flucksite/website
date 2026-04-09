@@ -1,5 +1,5 @@
 class MainMenu < BaseComponent
-  MENU_ITEMS = %i[about waitlist]
+  MENU_ITEMS = %i[blog about waitlist]
 
   def render
     nav class: "main-menu", aria_labelledby: "main_nav_label" do

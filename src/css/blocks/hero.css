@@ -12,3 +12,11 @@
   margin-inline: auto;
   font-size: var(--step-2);
 }
+
+.hero[data-layout='blog'] {
+  ul {
+    margin-block-start: var(--space-m);
+    padding-block-start: var(--space-m);
+    border-top: var(--stroke-dotted);
+  }
+}

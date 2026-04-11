@@ -1,0 +1,26 @@
+.tag {
+  font-size: var(--step-0);
+  font-family: var(--font-mono);
+  font-weight: bold;
+  color: var(--color-text);
+  text-decoration: none;
+  border: var(--stroke-mid);
+  line-height: 1;
+  padding: 1px var(--space-2xs) 4px var(--space-2xs);
+  border-radius: var(--step-0);
+  border-color: var(--color-text);
+  transition-duration: var(--timing-fast);
+  transition-property: background-color, color;
+  display: block;
+
+  &[aria-current='true'],
+  &:hover {
+    background-color: var(--color-text);
+    color: var(--color-base);
+  }
+
+  &[aria-current='true']:hover {
+    text-decoration: line-through;
+    text-decoration-thickness: 2px;
+  }
+}

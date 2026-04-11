@@ -4,9 +4,11 @@ class Blog::Index < BrowserAction
   param tag : String? = nil
 
   get "/blog" do
-    return rss_feed if request.path.ends_with?(".rss")
-
-    html Blog::IndexPage, tag: tag, posts: posts, index: index
+    if accepts?(:rss)
+      rss_feed
+    else
+      html_page
+    end
   end
 
   private def rss_feed
@@ -14,13 +16,17 @@ class Blog::Index < BrowserAction
       content_type: "application/rss+xml; charset=utf-8"
   end
 
+  private def html_page
+    html Blog::IndexPage,
+      current_tag: tag,
+      posts: posts,
+      blog: Blog::PostQuery.index,
+      all_tags: Blog::PostQuery.new.tags
+  end
+
   private def posts
     filtered = Blog::PostQuery.new.filter(&.active?)
     filtered = filtered.filter(&.tags.includes?(tag)) if tag
     filtered.all
-  end
-
-  private def index
-    Blog::PostQuery.index
   end
 end

@@ -78,8 +78,8 @@ shards:
     version: 0.5.1
 
   lucky: # Overridden
-    git: https://github.com/luckyframework/lucky.git
-    version: 1.4.0+git.commit.1399ce07f682aede964e0bfa91111024392a3c12
+    git: https://github.com/wout/lucky.git
+    version: 1.4.0+git.commit.745c67d6898182526e4250e7d4523fb654b7d054
 
   lucky_cache: # Overridden
     git: https://github.com/luckyframework/lucky_cache.git
@@ -99,7 +99,7 @@ shards:
 
   lucky_honeypot:
     git: https://codeberg.org/fluck/lucky_honeypot.git
-    version: 0.6.1
+    version: 0.7.0
 
   lucky_router:
     git: https://github.com/luckyframework/lucky_router.git
@@ -115,7 +115,7 @@ shards:
 
   marquery:
     git: https://codeberg.org/fluck/marquery.git
-    version: 0.2.1+git.commit.db6cc2e1553b9617d2c9ef8a3569ece88e65d1fd
+    version: 0.4.1+git.commit.289565728d84a07a1654a1477cc3181bef54504d
 
   pg:
     git: https://github.com/will/crystal-pg.git

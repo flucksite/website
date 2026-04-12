@@ -6,8 +6,20 @@ class MailingLists::Create < BrowserAction
   honeypot "mailing_list_subscription:name"
 
   post "/mailing_lists" do
-    MailingListSubscription.run(params) do |op, results|
+    MailingListSubscription.run(
+      params,
+      signals: params.get(:form_signals)
+    ) do |op, results|
       html_with_status MailingLists::CreatePage, op.valid? ? 200 : 422, op: op
+    end
+  end
+
+  private def honeypot_signals(rating : Float64)
+    if rating < 0.4
+      Log.info { {rating: rating} }
+      head 204
+    else
+      continue
     end
   end
 end

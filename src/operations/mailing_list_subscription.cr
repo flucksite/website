@@ -34,6 +34,6 @@ class MailingListSubscription < Avram::Operation
   private def needs_review? : Bool
     return false unless json = signals.value.to_s
 
-    LuckyHoneypot::Signals.human_rating(json) < 0.5
+    LuckyHoneypot::Signals.human_rating(json) < 0.4
   end
 end

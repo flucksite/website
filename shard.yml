@@ -40,7 +40,7 @@ dependencies:
     codeberg: fluck/prosopo
   lucky_honeypot:
     codeberg: fluck/lucky_honeypot
-    version: ~> 0.6.0
+    version: ~> 0.7.0
   marquery:
     codeberg: fluck/marquery
     branch: main

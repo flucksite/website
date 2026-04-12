@@ -4,6 +4,7 @@ class Blog::IndexPage < MainLayout
 
   needs blog : Marquery::Index
   needs posts : Array(Blog::Post)
+  needs pages : Lucky::Paginator
   needs current_tag : String?
   needs all_tags : Array(String)
 
@@ -36,12 +37,15 @@ class Blog::IndexPage < MainLayout
           render_blog_post(post)
         end
       end
+      mount Shared::Paginator, pages
     end
   end
 
   private def render_blog_post(post)
     article class: "blog__post" do
-      h2 post.title
+      link to: Blog::Show.with(slug: post.slug) do
+        h2 post.title
+      end
       div class: "switcher", data_limit: 3 do
         render_blog_post_meta(post)
         div { }

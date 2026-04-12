@@ -11,6 +11,10 @@
     border-top: var(--stroke-mid);
   }
 
+  a:has(h2) {
+    text-decoration: none;
+  }
+
   h2 {
     max-width: none;
     border-bottom: var(--stroke-dotted);

@@ -45,6 +45,11 @@ en:
           updates. Concise, digestable emails.
         disclaimer: >-
           You’ll receive monthly-ish emails. No tracking, no spam.
+    paginator:
+      label: Blog pagination
+      next: Next
+      prefix: Page
+      previous: Previous
     subscription_form:
       button_variants:
         newsletter: 'Subscribe'

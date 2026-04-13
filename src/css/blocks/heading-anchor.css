@@ -1,0 +1,22 @@
+a.heading-anchor {
+  position: absolute;
+  left: -0.25ch;
+  font-size: var(--step-1);
+  color: currentColor;
+  padding: var(--space-xs) var(--space-3xs);
+  opacity: 0;
+  text-decoration: none;
+  transition-property: opacity, left;
+  transition-duration: var(--timing-slow);
+}
+
+:is(h1, h2, h3):has(a.heading-anchor) {
+  position: relative;
+
+  &:hover {
+    a.heading-anchor {
+      left: -1.75ch;
+      opacity: 0.5;
+    }
+  }
+}

@@ -24,8 +24,8 @@ page](/about) already says most of it:
 > help reclaim the web that was once a place of genuine discovery and
 > opportunity, before it became an extraction machine.
 
-The world keeps proving us right faster than we'd like. These past few months
-have made our case better than we could.
+The world keeps proving us right faster than we'd like: more platforms
+turning on their users, more AI creeping into tools that didn't need it.
 
 None of this is new, but it's getting harder to ignore. The platforms most
 artists rely on were never really built for them; they were built for
@@ -39,9 +39,9 @@ thing we're building.
 From the outside it might look like not much has happened. From the inside,
 quite a lot has been happening, actually.
 
-Most of the past few months went into terraforming: designing the interface,
-establishing the architecture, and writing the software parts we needed but
-couldn't find or that weren't a fit. Generally making sure the foundations were
+Most of the past few months went into terraforming: establishing the
+architecture and writing the software parts we needed but couldn't find or
+that weren't a fit. Generally making sure the foundations were
 solid before we started stacking things on top. It's the kind of work nobody
 sees, but it's the work that decides whether Fluck still runs smoothly, and
 still feels good to build on, a few years from now.
@@ -51,8 +51,8 @@ since the 1st of April, which sounds small but means we can finally
 stop treating this as a side project, and start treating it as the thing we
 actually do.
 
-Now we're building the app itself, properly, at a pace that genuinely surprises
-us some days. Soon we'll be able to share the first screenshots. They'll be rough and they
+Now we're building the app itself, properly, and it's finally starting to
+feel like the real thing. Soon we'll be able to share the first screenshots. They'll be rough and they
 won't be final, but they'll give you a good idea of where we're heading. More
 on that later in a follow-up post.
 

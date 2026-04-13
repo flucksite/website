@@ -34,12 +34,16 @@ class Blog::RssFeedPage
         if description = post.description
           xml.element("description") { xml.text description }
         end
-        xml.element("content:encoded") { xml.cdata post.to_html }
+        xml.element("content:encoded") { xml.cdata render_content(post) }
       end
     end
   end
 
   private def post_url(slug)
     Blog::Show.with(slug: slug).url
+  end
+
+  private def render_content(post : Blog::Post) : String
+    Marquery::Renderer.new.markdown_to_html(post.process_content(post.content))
   end
 end

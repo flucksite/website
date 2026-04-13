@@ -30,6 +30,16 @@ describe "Blog page" do
   end
 end
 
+describe "Blog RSS feed" do
+  it "renders post content without heading anchors" do
+    posts = Blog::PostQuery.new.filter(&.active?).all
+    xml = Blog::RssFeedPage.new(posts).to_xml
+
+    xml.should_not contain(%(class="heading-anchor"))
+    xml.should_not contain(%(href="#why-))
+  end
+end
+
 describe "Blog post page" do
   it "renders the post title, meta, and content" do
     flow = BaseFlow.new

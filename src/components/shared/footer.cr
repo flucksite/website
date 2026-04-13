@@ -34,6 +34,7 @@ class Shared::Footer < BaseComponent
       h2 r(".info.title").t
       ul class: "menu" do
         {% for item, subject in {
+                                  blog:             "info",
                                   about:            "info",
                                   waitlist:         "info",
                                   code_of_conduct:  "legal",

@@ -55,6 +55,7 @@ abstract class MainLayout
     when "Home::IndexPage"     then "home"
     when "About::IndexPage"    then "about"
     when "Blog::IndexPage"     then "blog"
+    when "Blog::ShowPage"      then "blog"
     when "Waitlist::IndexPage" then "waitlist"
     when "Errors::ShowPage"    then "error"
     else                            "default"

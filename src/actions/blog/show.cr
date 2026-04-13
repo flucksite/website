@@ -1,6 +1,8 @@
 class Blog::Show < BrowserAction
   get "/blog/:slug" do
-    html Blog::ShowPage, post: find_post
+    html Blog::ShowPage,
+      post: find_post,
+      query: Blog::PostQuery.new
   end
 
   private def find_post

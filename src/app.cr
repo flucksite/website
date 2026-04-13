@@ -6,6 +6,7 @@ Lucky::AssetHelpers.load_manifest
 require "../config/server"
 require "../config/**"
 require "marquery"
+require "./markdown/**"
 require "./models/base_model"
 require "./models/mixins/**"
 require "./models/**"

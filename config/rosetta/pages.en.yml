@@ -78,6 +78,11 @@ en:
           [Bluesky](https://bsky.app/profile/fluck.site), or subscribe to our
           [monthly newsletter](#subscription_form_newsletter) or [RSS
           feed](/blog.rss) to get notified about new posts.
+    show_page:
+      posted_in: Posted in
+      post_pagination: Post pagination
+      reading_time: '%{count}-minute read'
+      written_by: By
   errors:
     show_page:
       page_title: We’ve encountered a %{status_code} error

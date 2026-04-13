@@ -1,5 +1,4 @@
 class Blog::IndexPage < MainLayout
-  include Revealable
   include TagListable
 
   needs blog : Marquery::Index

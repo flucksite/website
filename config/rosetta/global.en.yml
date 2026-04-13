@@ -9,7 +9,10 @@ en:
       website: Website or social profile
     links:
       back_home: ← Head back to home
+      back_to_blog: ← Back to Blog
       read_more: Read more →
+      older: The post before »
+      newer: « The post after
     menu:
       item:
         about: About

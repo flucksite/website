@@ -19,7 +19,7 @@ class Blog::Index < BrowserAction
   end
 
   private def html_page
-    pages, posts = paginate_array(all_posts)
+    pages, posts = paginate_array(all_posts, per_page: 10)
     html Blog::IndexPage,
       current_tag: tag,
       posts: posts,

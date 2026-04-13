@@ -27,15 +27,15 @@ class About::IndexPage < MainLayout
   end
 
   macro render_bio(person, index)
-    li class: "person | switcher" do
+    li class: "person | switcher", id: {{ person.downcase }} do
       div class: "person__image | reveal",
         x_data: "reveal",
         "x-intersect.once": "show",
-        data_start: {{index}}.odd? ? "right" : "left" do
-        render_bio_image({{person}}, "light", {{index}})
-        render_bio_image({{person}}, "dark", {{index}})
+        data_start: {{ index }}.odd? ? "right" : "left" do
+        render_bio_image({{ person }}, "light", {{ index }})
+        render_bio_image({{ person }}, "dark", {{ index }})
       end
-      render_bio_text({{person}}, {{index}})
+      render_bio_text({{ person }}, {{ index }})
     end
   end
 

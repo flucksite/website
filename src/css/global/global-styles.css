@@ -144,8 +144,9 @@ dd {
 }
 
 blockquote {
-  margin-inline: 0;
-  color: var(--icterine-sd-1);
+  padding-inline-start: var(--space-s);
+  font-style: italic;
+  border-left: var(--stroke-thick);
 }
 
 blockquote footer {

@@ -12,6 +12,10 @@
   text-wrap: pretty;
 }
 
+.prose p:has(img) {
+  max-width: 100%;
+}
+
 .prose :is(h1, h2, h3, h4) + *:not([class]) {
   --flow-space: var(--space-xs);
 }

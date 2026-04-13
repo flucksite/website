@@ -9,7 +9,8 @@ body[data-bg='home'] {
   --bg-light: url('$/src/images/backgrounds/home-light.svg');
   --bg-dark: url('$/src/images/backgrounds/home-dark.svg');
 }
-body[data-bg='blog'] {
+body[data-bg='blog'],
+body[data-bg='post'] {
   --bg-light: url('$/src/images/backgrounds/blog-light.svg');
   --bg-dark: url('$/src/images/backgrounds/blog-dark.svg');
 }

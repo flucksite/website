@@ -4,7 +4,7 @@
 }
 
 .header > *:first-child {
-  border-block-end: var(--stroke-dotted);
+  border-block-end: var(--stroke-mid);
   padding-block-end: var(--space-m);
   flex-wrap: nowrap;
   align-items: end;

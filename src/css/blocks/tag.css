@@ -12,6 +12,7 @@
   transition-duration: var(--timing-fast);
   transition-property: background-color, color;
   display: block;
+  white-space: nowrap;
 
   &[aria-current='true'],
   &:hover {

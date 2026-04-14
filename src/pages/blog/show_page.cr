@@ -65,15 +65,15 @@ class Blog::ShowPage < MainLayout
       span r(".post_pagination").t, id: "pagination_label", class: "visually-hidden"
       ul class: "", role: "list" do
         li do
-          if next_post = query.next(post)
-            link r("global.links.newer").t, to: Blog::Show.with(slug: next_post.slug)
+          if newer_post = query.previous(post)
+            link r("global.links.newer").t, to: Blog::Show.with(slug: newer_post.slug)
           else
             link r("global.links.back_to_blog").t, to: Blog::Index
           end
         end
         li do
-          if previous_post = query.previous(post)
-            link r("global.links.older").t, to: Blog::Show.with(slug: previous_post.slug)
+          if older_post = query.next(post)
+            link r("global.links.older").t, to: Blog::Show.with(slug: older_post.slug)
           else
             nbsp
           end

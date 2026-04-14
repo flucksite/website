@@ -1,7 +1,7 @@
 ---
 subject: A quick update from Fluck
 description: >-
-  First newsletter. A new blog, the Ethical Move pledge, and a quick note
+  First newsletter. A new blog, The Ethical Move pledge, and a quick note
   about where we are behind the scenes.
 ---
 
@@ -9,19 +9,19 @@ A short one to catch you up on what's been happening over here.
 
 ## We've started a blog
 
-We've added a blog to the Fluck site for updates that need a bit more room
-than this newsletter gives us. The first post is up and already covers most
-of what's below in more detail.
+We've added a blog to the Fluck site for updates that need a bit more room than
+this newsletter gives us. The first two posts are up and the latest already
+covers most of what's below in more detail.
 
 [Read the blog →](https://fluck.site/blog)
 
-## We signed the Ethical Move pledge
+## We signed The Ethical Move pledge
 
 A public commitment to marketing that doesn't rely on tricks: no fake
-scarcity, no dark patterns, no manufactured urgency. It's how we already
-wanted to talk to people, and now our name is on it.
+scarcity, no dark patterns, no manufactured urgency. It's how we wanted to
+talk to people anyway, and now our name is on it.
 
-[The pledge →](https://theethicalmove.org/pledgees/page/2/)
+[Find our entry →](https://theethicalmove.org/pledgees/)
 
 ## Quiet on the outside, busy on the inside
 

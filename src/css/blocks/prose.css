@@ -43,3 +43,7 @@
 .prose :is(img, picture, video) {
   /* border: var(--stroke-solid); */
 }
+
+.prose blockquote > p + p {
+  margin-block-start: var(--space-2xs);
+}

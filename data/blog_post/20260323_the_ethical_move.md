@@ -5,7 +5,6 @@ description: >-
   manipulation. Here's our pledge.
 author: Wout
 tags:
-  - news
   - values
 ---
 

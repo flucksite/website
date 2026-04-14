@@ -5,7 +5,6 @@ description: >-
   properly registered and running, and the app itself is taking shape.
 author: Wout
 tags:
-  - news
   - progress
 ---
 

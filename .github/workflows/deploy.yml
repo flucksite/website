@@ -13,9 +13,10 @@ jobs:
     environment: staging
 
     steps:
-      - uses: actions/checkout@master
+      - uses: actions/checkout@v4
         with:
           ref: refs/heads/staging
+          lfs: true
 
       - uses: a7ul/tar-action@v1.1.0
         with:
@@ -38,9 +39,10 @@ jobs:
     environment: production
 
     steps:
-      - uses: actions/checkout@master
+      - uses: actions/checkout@v4
         with:
           ref: refs/heads/production
+          lfs: true
 
       - uses: a7ul/tar-action@v1.1.0
         with:

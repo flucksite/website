@@ -10,11 +10,14 @@ crystal: '>= 1.17.0'
 
 dependencies:
   lucky:
-    github: luckyframework/lucky
-    version: ~> 1.4.0
+    # github: luckyframework/lucky
+    # version: ~> 1.4.0
+    github: wout/lucky
+    branch: happy
   avram:
     github: luckyframework/avram
-    version: ~> 1.4.0
+    # version: ~> 1.4.0
+    branch: main
   carbon:
     github: luckyframework/carbon
     version: ~> 0.6.0
@@ -27,6 +30,9 @@ dependencies:
   lucky_task:
     github: luckyframework/lucky_task
     version: ~> 0.3.0
+  lucky_cache:
+    github: luckyframework/lucky_cache
+    version: ~> 0.2.0
   rosetta:
     github: wout/rosetta
     version: ~> 1.0.0

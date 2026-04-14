@@ -1,10 +1,10 @@
-dependencies:
-  lucky_cache:
-    github: luckyframework/lucky_cache
-    version: ~> 0.2.0
-  lucky:
-    github: wout/lucky
-    branch: happy
-  avram:
-    github: luckyframework/avram
-    branch: main
+# dependencies:
+#   lucky_cache:
+#     github: luckyframework/lucky_cache
+#     version: ~> 0.2.0
+#   lucky:
+#     github: wout/lucky
+#     branch: happy
+#   avram:
+#     github: luckyframework/avram
+#     branch: main

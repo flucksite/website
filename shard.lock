@@ -1,4 +1,3 @@
-# NOTICE: This lockfile contains some overrides from shard.override.yml
 version: 2.0
 shards:
   ameba:
@@ -9,7 +8,7 @@ shards:
     git: https://github.com/sija/any_hash.cr.git
     version: 0.2.5
 
-  avram: # Overridden
+  avram:
     git: https://github.com/luckyframework/avram.git
     version: 1.4.2+git.commit.4790149297823545e65fe3187b58036a16eb3693
 
@@ -77,11 +76,11 @@ shards:
     git: https://github.com/naqvis/crystal-html5.git
     version: 0.5.1
 
-  lucky: # Overridden
+  lucky:
     git: https://github.com/wout/lucky.git
     version: 1.4.0+git.commit.745c67d6898182526e4250e7d4523fb654b7d054
 
-  lucky_cache: # Overridden
+  lucky_cache:
     git: https://github.com/luckyframework/lucky_cache.git
     version: 0.2.0
 
@@ -115,7 +114,7 @@ shards:
 
   marquery:
     git: https://codeberg.org/fluck/marquery.git
-    version: 0.4.1+git.commit.6cb0263bd0a7412a97a809c3ac6a93bebbf186e5
+    version: 0.5.0+git.commit.fe542889ce7dab461f593b0fdc85c3029a1f4575
 
   pg:
     git: https://github.com/will/crystal-pg.git

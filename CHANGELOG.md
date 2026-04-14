@@ -1,11 +1,14 @@
 ## Unreleased
 
+## v0.7.0 - 2026-04-14
+
 ### Added
 
 - Newsletter section backed by Marquery, with the first issue published.
 - Blog with index page, tag filtering, pagination, individual post pages, and
   an RSS feed (anchor links excluded).
 - Heading anchors and styling for blog posts, plus blog backgrounds.
+- Post about the Ethical Move.
 - Linkable people on the about page.
 - Blog link in the main and footer menus.
 - Flow specs covering all actions and a basic HTTP test suite.
@@ -15,9 +18,13 @@
 - Reworked honeypot-protected forms to use the new `lucky_honeypot` API.
 - Switched markdown handling and queries to Marquery.
 - Updated to the latest Lucky and Crystal dependencies.
+- Tweaked spacing and max-widths across the site.
 
 ### Fixed
 
+- Reading length calculator.
+- Spacing between paragraphs in block quotes.
+- Pagination labels.
 - Ethical Move badge stays light on error pages.
 - Plausible script only renders in production.
 - CSS globs use the correct `.css` extension.

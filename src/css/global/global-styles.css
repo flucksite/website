@@ -27,17 +27,20 @@ main > * + * {
 
 h1 {
   font-size: var(--step-6);
-  max-width: 20ch;
+  /* max-width: 20ch; */
+  max-width: var(--max-width-prose);
 }
 
 h2 {
   font-size: var(--step-4);
-  max-width: 35ch;
+  /* max-width: 35ch; */
+  max-width: var(--max-width-prose);
 }
 
 h3 {
   font-size: var(--step-3);
-  max-width: 35ch;
+  /* max-width: 35ch; */
+  max-width: var(--max-width-prose);
 }
 
 :is(h4, h5, h6) {

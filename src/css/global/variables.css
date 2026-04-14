@@ -78,10 +78,10 @@
   --leading-fine: 1.2;
   --leading-standard: 1.5;
   --leading-thick: 1.8;
-  --max-width-full: 110ch;
-  --max-width-breakout: 80ch;
-  --max-width-prose: 65ch;
-  --max-width-compact: 50ch;
+  --max-width-full: 178rch;
+  --max-width-breakout: 130rch;
+  --max-width-prose: 105rch;
+  --max-width-compact: 80rch;
   --stroke-dotted: var(--border-mid) dotted currentColor;
   --stroke-mid: var(--border-mid) solid currentColor;
   --stroke-thick: var(--border-thick) solid currentColor;

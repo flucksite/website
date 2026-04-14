@@ -4,6 +4,7 @@
 }
 
 .blog__post {
+  --gutter: var(--space-m);
   padding-block: var(--space-xl);
   border-bottom: var(--stroke-mid);
 

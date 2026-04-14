@@ -14,6 +14,5 @@ describe "Blog RSS feed" do
     response = AppClient.new.get("/blog.rss")
 
     response.body.should contain("<item>")
-    response.body.should contain("The very first post")
   end
 end

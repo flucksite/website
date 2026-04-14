@@ -5,6 +5,6 @@ class Blog::PostQuery
   model Blog::Post
 
   def tags
-    filter(&.active?).all.map(&.tags).flatten.uniq.sort
+    filter(&.active?).all.flat_map(&.tags).uniq!.sort!
   end
 end

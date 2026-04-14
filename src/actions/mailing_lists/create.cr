@@ -9,7 +9,7 @@ class MailingLists::Create < BrowserAction
     MailingListSubscription.run(
       params,
       signals: params.get(:form_signals)
-    ) do |op, results|
+    ) do |op, _results|
       html_with_status MailingLists::CreatePage, op.valid? ? 200 : 422, op: op
     end
   end

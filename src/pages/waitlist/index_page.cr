@@ -41,7 +41,7 @@ class Waitlist::IndexPage < MainLayout
           h3 r(".timeline.{{target.id}}.title").t
           div do
             markdown r(".timeline.{{target.id}}.text").t
-          end 
+          end
         end
       {% end %}
 

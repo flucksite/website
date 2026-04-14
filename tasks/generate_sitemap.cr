@@ -2,10 +2,10 @@ require "sitemapper"
 
 APP_DOMAIN = ENV.fetch("APP_DOMAIN", "fluck.site")
 
-Sitemapper.configure do |c|
-  c.host = "https://#{APP_DOMAIN}"
-  c.use_index = false
-  c.compress = false
+Sitemapper.configure do |config|
+  config.host = "https://#{APP_DOMAIN}"
+  config.use_index = false
+  config.compress = false
 end
 
 class GenerateSitemap < LuckyTask::Task

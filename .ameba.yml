@@ -1,0 +1,8 @@
+Excluded:
+  - lib/**/*
+
+Lint/SpecFilename:
+  Enabled: false
+
+Lint/UselessAssign:
+  Enabled: false

@@ -7,7 +7,7 @@
   hyphens: auto;
 }
 
-.prose :is(p, li, dl, figcaption, blockquote) {
+.prose :is(p, ul, dl, figcaption, blockquote) {
   max-width: var(--max-width-prose);
   text-wrap: pretty;
 }

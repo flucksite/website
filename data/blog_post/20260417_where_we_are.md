@@ -30,7 +30,8 @@ is now done.
   styled, and sending.
 - File uploads work reliably and are ready for real use.
 - Payments via Mollie (a European processor) are ready to go live.
-- Newsletter integration with EmailOctopus is prepared and ready to connect.
+- Newsletter integration with EmailOctopus (also European) is prepared and
+  ready to connect.
 - Websites can be set up in English, Dutch, Spanish, French, Italian, or German
   from day one (more languages will follow).
 - Sensitive data is encrypted in the database.

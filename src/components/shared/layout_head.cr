@@ -66,13 +66,20 @@ class Shared::LayoutHead < BaseComponent
   end
 
   macro preload_backgrounds
-    {% for background in %w[waitlist-light waitlist-dark error] %}
-      empty_tag "link",
-        rel: "preload",
-        as: "image",
-        type: "image/svg+xml",
-        href: asset("images/backgrounds/{{background.id}}.svg")
+    {% for background in %w[waitlist about blog newsletter] %}
+      {% for theme in %w[light dark] %}
+        empty_tag "link",
+          rel: "preload",
+          as: "image",
+          type: "image/svg+xml",
+          href: asset("images/backgrounds/{{background.id}}-{{theme.id}}.svg")
+      {% end %}
     {% end %}
+    empty_tag "link",
+      rel: "preload",
+      as: "image",
+      type: "image/svg+xml",
+      href: asset("images/backgrounds/error.svg")
   end
 
   private def plausible_script

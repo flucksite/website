@@ -36,10 +36,6 @@
   --flow-space: var(--space-3xs);
 }
 
-.prose hr {
-  --flow-space: var(--space-2xl);
-}
-
 .prose :is(img, picture, video) {
   /* border: var(--stroke-solid); */
 }
@@ -49,6 +45,19 @@
 }
 
 .prose hr {
+  --flow-space: var(--space-2xl);
   border: none;
   border-top: var(--stroke-dotted);
+}
+
+.prose p > a:only-child {
+  display: inline-block;
+  text-underline-offset: auto;
+  font-weight: bold;
+  transition-property: transform;
+  transition-duration: var(--timing-fast);
+
+  &:hover {
+    transform: translateX(3px);
+  }
 }

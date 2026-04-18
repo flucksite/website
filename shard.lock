@@ -90,7 +90,7 @@ shards:
 
   lucky_flow:
     git: https://github.com/wout/lucky_flow.git
-    version: 0.10.1+git.commit.38c8a82c689bf43265926282c22a03c8f4c6faef
+    version: 0.10.1+git.commit.bf759a47d8e4d076e46d9f43b2dd451747189973
 
   lucky_honeypot:
     git: https://codeberg.org/fluck/lucky_honeypot.git

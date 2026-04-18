@@ -83,6 +83,13 @@ en:
       post_pagination: Post pagination
       reading_time: '%{count}-minute read'
       written_by: By
+  newsletter:
+    show_page:
+      pagination: Newsletter pagination
+      newer: « Next
+      older: Previous »
+      back_to_index: ← Back to archive
+      reading_time: '%{count}-minute read'
   errors:
     show_page:
       page_title: We’ve encountered a %{status_code} error

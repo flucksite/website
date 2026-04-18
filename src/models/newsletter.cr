@@ -1,7 +1,8 @@
-struct Newsletter
+struct Newsletter::Entry
   include Marquery::Model
 
-  getter subject : String
+  to_html ::Markdown::AnchoredRenderer
+
   getter sent : Time?
 
   def formatted_date : String

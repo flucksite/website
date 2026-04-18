@@ -52,13 +52,15 @@ abstract class MainLayout
 
   private def current_bg
     case {{@type.stringify}}
-    when "Home::IndexPage"     then "home"
-    when "About::IndexPage"    then "about"
-    when "Blog::IndexPage"     then "blog"
-    when "Blog::ShowPage"      then "blog"
-    when "Waitlist::IndexPage" then "waitlist"
-    when "Errors::ShowPage"    then "error"
-    else                            "default"
+    when "Home::IndexPage"       then "home"
+    when "About::IndexPage"      then "about"
+    when "Blog::IndexPage"       then "blog"
+    when "Blog::ShowPage"        then "blog"
+    when "Newsletter::IndexPage" then "newsletter"
+    when "Newsletter::ShowPage"  then "newsletter"
+    when "Waitlist::IndexPage"   then "waitlist"
+    when "Errors::ShowPage"      then "error"
+    else                              "default"
     end
   end
 end

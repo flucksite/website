@@ -19,17 +19,16 @@ en:
       copyright: © %{year} Fluck
       principles: Built in Spain – Hosted in the EU – No investors and AI-free
       info:
-        title: Info
-        blog: Blog
         about: About us
+        blog: Blog
         brand: Brand assets
         code_of_conduct: Code of conduct
         contact: Contact us
         privacy_policy: Privacy & Cookie Policy
         terms_of_service: Terms of Service
+        title: Info
         waitlist: The waitlist
       social:
-        title: Social
         bluesky: Bluesky
         codeberg: Codeberg
         discord: Discord
@@ -39,11 +38,14 @@ en:
         linkedin: Linkedin
         mastodon: Mastodon
         rss: RSS
+        title: Social
       newsletter:
         title: Newsletter
         text: >-
-          Occasionally, we send out updates about progress and noteworthy
-          updates. Concise, digestable emails.
+          Occasionally we send out updates about progress and noteworthy
+          updates. Concise, digestable emails. Have a look at the <a
+          href="%{link}">newsletter archive</a> to get an idea of what to
+          expect.
         disclaimer: >-
           You’ll receive monthly-ish emails. No tracking, no spam.
     paginator:

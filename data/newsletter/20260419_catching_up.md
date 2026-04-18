@@ -24,7 +24,7 @@ to people anyway, and now our name is on it.
 
 [Read our pledge →](/blog/the-ethical-move)
 
-## Quiet outside, busy inside
+## Where we are
 
 The foundations are done: sign-up, sign-in, payments, file uploads, emails,
 multiple languages, and more. Next up are the page builder in May, and first
@@ -34,6 +34,6 @@ invites to the waitlist in June.
 
 ---
 
-Next month: the first screenshots. See you then.
+**Next month**: the first screenshots. See you then.
 
 — Mick and Wout

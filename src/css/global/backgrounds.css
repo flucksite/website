@@ -14,10 +14,6 @@ body[data-bg='post'] {
   --bg-light: url('$/src/images/backgrounds/blog-light.svg');
   --bg-dark: url('$/src/images/backgrounds/blog-dark.svg');
 }
-body[data-bg='newsletter'] {
-  --bg-light: url('$/src/images/backgrounds/newsletter-light.svg');
-  --bg-dark: url('$/src/images/backgrounds/newsletter-dark.svg');
-}
 body[data-bg='about'] {
   --bg-light: url('$/src/images/backgrounds/about-light.svg');
   --bg-dark: url('$/src/images/backgrounds/about-dark.svg');

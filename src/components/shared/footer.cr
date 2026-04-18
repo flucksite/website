@@ -18,15 +18,21 @@ class Shared::Footer < BaseComponent
           render_social_menu
         end
         div class: "flow" do
-          h2 r(".newsletter.title").t
-          para r(".newsletter.text").t
-          mount Shared::SubscriptionForm, tag: "newsletter"
-          small r(".newsletter.disclaimer").t
+          render_newsletter_form
         end
         render_badges
       end
       render_small_print
     end
+  end
+
+  private def render_newsletter_form
+    h2 r(".newsletter.title").t
+    para do
+      raw r(".newsletter.text").t(link: Newsletter::Index.path)
+    end
+    mount Shared::SubscriptionForm, tag: "newsletter"
+    small r(".newsletter.disclaimer").t
   end
 
   private def render_info_menu

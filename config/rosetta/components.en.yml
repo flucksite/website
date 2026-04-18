@@ -43,9 +43,7 @@ en:
         title: Newsletter
         text: >-
           Occasionally we send out updates about progress and noteworthy
-          updates. Concise, digestable emails. Have a look at the <a
-          href="%{link}">newsletter archive</a> to get an idea of what to
-          expect.
+          updates. Concise, digestable emails.
         disclaimer: >-
           You’ll receive monthly-ish emails. No tracking, no spam.
     paginator:

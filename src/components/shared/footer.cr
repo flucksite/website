@@ -29,7 +29,7 @@ class Shared::Footer < BaseComponent
   private def render_newsletter_form
     h2 r(".newsletter.title").t
     para do
-      raw r(".newsletter.text").t(link: Newsletter::Index.path)
+      raw r(".newsletter.text").t
     end
     mount Shared::SubscriptionForm, tag: "newsletter"
     small r(".newsletter.disclaimer").t

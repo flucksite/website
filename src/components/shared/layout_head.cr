@@ -66,7 +66,7 @@ class Shared::LayoutHead < BaseComponent
   end
 
   macro preload_backgrounds
-    {% for background in %w[waitlist about blog newsletter] %}
+    {% for background in %w[waitlist about blog] %}
       {% for theme in %w[light dark] %}
         empty_tag "link",
           rel: "preload",

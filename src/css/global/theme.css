@@ -11,6 +11,9 @@
   --color-success-text: var(--stone-dark);
   --color-failure-base: var(--raspberry);
   --color-failure-text: var(--stone-light);
+  --color-accent-1: var(--color-accent-1-light);
+  --color-accent-2: var(--color-accent-2-light);
+  --color-accent-3: var(--color-accent-3-light);
   color-scheme: light dark;
 }
 
@@ -32,6 +35,9 @@
   --color-highlight-text: var(--icterine);
   --color-success-base: var(--jade);
   --color-success-text: var(--stone-dark);
+  --color-accent-1: var(--color-accent-1-dark);
+  --color-accent-2: var(--color-accent-2-dark);
+  --color-accent-3: var(--color-accent-3-dark);
 
   picture {
     opacity: var(--picture-opacity-dark);
@@ -66,6 +72,9 @@
     --color-highlight-text: var(--icterine);
     --color-success-base: var(--jade);
     --color-success-text: var(--stone-dark);
+    --color-accent-1: var(--color-accent-1-dark);
+    --color-accent-2: var(--color-accent-2-dark);
+    --color-accent-3: var(--color-accent-3-dark);
   }
 
   picture {
@@ -90,6 +99,9 @@
     --color-highlight-text: var(--abyss);
     --color-success-base: var(--jade);
     --color-success-text: var(--stone-dark);
+    --color-accent-1: var(--color-accent-1-light);
+    --color-accent-2: var(--color-accent-2-light);
+    --color-accent-3: var(--color-accent-3-light);
 
     [data-for-theme='light'] {
       display: initial;

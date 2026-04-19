@@ -188,4 +188,10 @@
   --translucent-light: rgb(0 0 0 / 0.08);
   --translucent-dark: rgb(255 255 255 / 0.15);
   --picture-opacity-dark: 0.85;
+  --color-accent-1-light: var(--icterine-sl-2);
+  --color-accent-1-dark: var(--icterine-sd-2);
+  --color-accent-2-light: var(--cotton-candy-sl-2);
+  --color-accent-2-dark: var(--cotton-candy-sd-2);
+  --color-accent-3-light: var(--duck-egg-sl-2);
+  --color-accent-3-dark: var(--duck-egg-sd-2);
 }

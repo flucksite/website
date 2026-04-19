@@ -14,14 +14,21 @@
   display: block;
   white-space: nowrap;
 
-  &[aria-current='true'],
-  &:hover {
-    background-color: var(--color-text);
-    color: var(--color-base);
-  }
-
   &[aria-current='true']:hover {
     text-decoration: line-through;
     text-decoration-thickness: 2px;
+  }
+
+  &[data-tag='progress'] {
+    background-color: var(--color-accent-1);
+  }
+  &[data-tag='values'] {
+    background-color: var(--color-accent-2);
+  }
+
+  &[data-tag][aria-current='true'],
+  &[data-tag]:hover {
+    background-color: var(--color-text);
+    color: var(--color-base);
   }
 }

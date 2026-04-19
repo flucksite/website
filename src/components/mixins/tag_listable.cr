@@ -8,6 +8,7 @@ module TagListable
           link tag,
             to: yield(tag == current_tag ? nil : tag, tag),
             class: "tag",
+            data_tag: Wordsmith::Inflector.parameterize(tag),
             aria_current: (tag == current_tag).to_s
         end
       end

@@ -4,10 +4,10 @@ class Shared::Footer < BaseComponent
     mastodon: "https://indieweb.social/@fluck/",
     # discord:   "https://discord.gg/aycaQz8AfF/",
     # discourse: "https://community.fluck.site/",
+    email:    "mailto:info@fluck.site",
+    rss:      Blog::Index.as_rss.path,
     codeberg: "https://codeberg.org/fluck/",
     github:   "https://github.com/flucksite/",
-    email:    "mailto:info@fluck.site",
-    # rss:      "https://fluck.site/rss",
   }
 
   def render

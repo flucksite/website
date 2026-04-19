@@ -40,3 +40,6 @@
 .menu li[data-subject='info'] + li[data-subject='legal'] {
   margin-block-start: var(--space-s);
 }
+.menu li:has(svg[data-inline-svg='social/codeberg.svg']) {
+  margin-block-start: var(--space-l);
+}

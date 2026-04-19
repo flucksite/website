@@ -1,11 +1,8 @@
 ---
 title: Where we are
 description: >-
-  A catch-up after a few quiet months: the foundations are done, Fluck is
+  A catch-up after a few quiet months. The foundations are done, Fluck is
   properly registered and running, and the app itself is taking shape.
-excerpt: >-
-  Quiet from the outside, busy on the inside. Here's where we are today, and
-  what's coming over the next few months.
 author: Wout
 tags:
   - progress
@@ -13,24 +10,24 @@ tags:
 
 Quiet on the outside, busy on the inside.
 
-This is the first proper update, and this blog is where they'll live from now
-on. A bit more depth than the newsletter.
+We added this blog for updates with more depth than the newsletter. Here's
+where things stand.
 
 The past few months went into foundations: sign-up and sign-in flows, emails,
 uploads, payment integration, all the unglamorous plumbing. Nobody sees this
 work. It's the work that decides whether Fluck still runs years from now.
 
-We also made it official: Fluck is a registered company as of 1 April. (Yes,
-that date. No, not a joke.) So it's no longer a side project.
+We also made it official. Fluck is a registered company as of 1 April. Yes,
+that date, no joke. So it's no longer a side project.
 
-Now we're starting on the part you'll actually see: the admin interface, the
-page builder, the bits that make your site feel like yours. Expect the first
-screenshots in next month's post.
+Now we're building the app and it's starting to feel real. First screenshots
+are coming in next month's post. Rough, not final, but enough to show you where
+we're heading.
 
-That's the gist. Keep reading for specifics: what's done, what ships
+That's the gist. Keep reading for specifics on what's done, what ships
 when, when beta opens.
 
-## On to the details
+## For the geeks
 
 ### What's working today
 

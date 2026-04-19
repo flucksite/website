@@ -11,63 +11,58 @@ tags:
   - progress
 ---
 
-It's been quiet from the outside, but quite busy on the inside.
+Quiet on the outside, busy on the inside.
 
-This blog is where we'll share updates from now on. A bit more depth than the
-newsletter, a bit more detail than what goes on socials. Here's where we are
-today.
+This is the first proper update, and this blog is where they'll live from now
+on. A bit more depth than the newsletter.
 
-## What's working today
+The past few months went into foundations: sign-up and sign-in flows, emails,
+uploads, payment integration, all the unglamorous plumbing. Nobody sees this
+work. It's the work that decides whether Fluck still runs years from now.
 
-Most of the past months went into the foundations. The bits nobody sees, but
-that decide whether Fluck still runs well a few years from now. A lot of that
-is now done.
+We also made it official: Fluck is a registered company as of 1 April. (Yes,
+that date. No, not a joke.) So it's no longer a side project.
 
-- You can sign up, activate your account, sign in, reset your password, and
-  turn on optional two-factor authentication. All the basics you'd expect on
-  any app.
-- The automatic emails (activations, password resets, receipts) are written,
+Now we're starting on the part you'll actually see: the admin interface, the
+page builder, the bits that make your site feel like yours. Expect the first
+screenshots in next month's post.
+
+That's the gist. Keep reading for specifics: what's done, what ships
+when, when beta opens.
+
+## On to the details
+
+### What's working today
+
+- Accounts: sign up, activate, sign in, reset password, optional 2FA.
+- Automatic emails (activations, password resets, receipts), all written,
   styled, and sending.
-- File uploads work reliably and are ready for real use.
-- Payments via Mollie (a European processor) are ready to go live.
-- Newsletter integration with EmailOctopus (also European) is prepared and
-  ready to connect.
-- Websites can be set up in English, Dutch, Spanish, French, Italian, or German
-  from day one (more languages will follow).
-- Sensitive data is encrypted in the database.
-- Strong bot protection is built in.
-- Behind-the-scenes tasks, like sending emails, resizing images, and so on, run
-  reliably.
+- File uploads, reliable and ready for real use.
+- Payments via Mollie (a European processor), ready to go live.
+- Newsletter integration with EmailOctopus (also European), ready to connect.
+- Websites in English, Dutch, Spanish, French, Italian, or German from day one.
+  More languages will follow.
+- Sensitive data encrypted in the database.
+- Strong bot protection.
+- Behind-the-scenes tasks (sending emails, resizing images) running reliably.
 
-Some of these may look simple, but not necessarily. We want Fluck to be easy
-to self-host without being forced to pay for a bunch of external services on
-top of hosting. That means building most of it in-house.
+Some of these look simple but aren't. We want Fluck to be easy to
+self-host without forcing you to pay for a bunch of external services on top.
+That means building most of it in-house.
 
-With all of that in place, we've now started on the part you'll actually see
-and use: the admin interface. So that's for the next update.
+### What's next
 
-## What's next
+Dates may shift a little, but the rough plan:
 
-Here's the rough plan for the coming months. Dates may shift a little, but
-we're on a roll now.
-
-- **End of April**: Core content management, pages, blog posts, portfolio
+- **End of April**: core content management. Pages, blog posts, portfolio
   projects, products.
-- **Mid-May**: The drag-and-drop page builder. The part that makes your site
-  feel like yours.
-- **End of May**: Payments, analytics, newsletter, and shipping all wired
+- **Mid-May**: the drag-and-drop page builder. The part where you get to make
+  your site feel like yours.
+- **End of May**: shop payments, analytics, newsletter, and shipping all wired
   together.
-- **June**: We start using Fluck ourselves to rebuild our own sites. The first
+- **June**: we start using Fluck ourselves to rebuild our own sites. First
   invites go out to the waitlist.
-- **August**: Open beta. No invite needed.
-- **End of 2026**: Version 1.0, plus the first self-hostable release.
+- **August**: open beta, no invite needed.
+- **End of 2026**: version 1.0, plus the first self-hostable release.
 
-## Two small sidenotes
-
-Fluck is officially a company as of 1 April. Not particularly exciting news,
-but for us this makes things real: it's no longer a side project.
-
-You can expect the first screenshots in next month's post. Rough, not final,
-but enough to show where we're heading.
-
-More next month.
+That's it. See you next month.

@@ -1,5 +1,30 @@
 ## Unreleased
 
+## v0.8.0 - 2026-04-19
+
+### Added
+
+- Tag colours on the blog.
+- RSS icon in the social menu.
+- Shift-on-hover effect for only-child links in the prose CSS class.
+
+### Changed
+
+- Swapped About for Home in the main menu, with blog moved to the end.
+- Tweaked reading time calculation and header whitespace.
+- Rewrote and simplified the "Where We Are" post.
+- Updated to the latest Lucky with Bun tweaks and features.
+- LFS-enabled checkout in GitHub Actions.
+
+### Fixed
+
+- Header spacing and alignment.
+- Preload all background SVGs.
+- Width and height set on the mobile Fluck logo.
+- `ul`s in prose respect the max width.
+- Removed leftover newsletter backgrounds.
+- Production builds no longer depend on shard overrides.
+
 ## v0.7.0 - 2026-04-14
 
 ### Added

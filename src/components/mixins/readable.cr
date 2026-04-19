@@ -1,5 +1,5 @@
 module Readable
-  WORDS_PER_MINUTE  = 225
+  WORDS_PER_MINUTE   = 225
   ROUND_UP_TOLERANCE = 0.2
 
   def reading_time_in_minutes(content : String) : Int32

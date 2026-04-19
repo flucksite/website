@@ -82,6 +82,7 @@
   --max-width-breakout: 130rch;
   --max-width-prose: 105rch;
   --max-width-compact: 80rch;
+  --max-width-compressed: 60rch;
   --stroke-dotted: var(--border-mid) dotted currentColor;
   --stroke-mid: var(--border-mid) solid currentColor;
   --stroke-thick: var(--border-thick) solid currentColor;

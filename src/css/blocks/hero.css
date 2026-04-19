@@ -5,12 +5,18 @@
 
 .hero[data-layout='home'] {
   --wrapper-max-width: var(--max-width-breakout);
-}
+  --flow-space: var(--space-xl);
 
-.hero[data-layout='home'] p {
-  max-width: var(--max-width-compact);
-  margin-inline: auto;
-  font-size: var(--step-2);
+  h1 {
+    text-align: center;
+    max-width: none;
+  }
+
+  p {
+    max-width: var(--max-width-compact);
+    margin-inline: auto;
+    font-size: var(--step-2);
+  }
 }
 
 .hero[data-layout='blog'] {

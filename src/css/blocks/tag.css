@@ -20,10 +20,10 @@
   }
 
   &[data-tag='progress'] {
-    background-color: var(--color-accent-1);
+    background-color: var(--color-themeable-icterine);
   }
   &[data-tag='values'] {
-    background-color: var(--color-accent-2);
+    background-color: var(--color-themeable-cotton-candy);
   }
 
   &[data-tag][aria-current='true'],

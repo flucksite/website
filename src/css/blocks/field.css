@@ -1,5 +1,5 @@
 .field > input:focus-visible {
-  --focus-offset: var(--border-thick);
+  --focus-offset: var(--stroke-width-thick);
 }
 
 .field:has(.field__error) > input {
@@ -16,5 +16,5 @@
   font-size: var(--step-0);
   font-weight: bold;
   padding: var(--space-3xs) var(--space-2xs);
-  margin-top: var(--border-thick);
+  margin-top: var(--stroke-width-thick);
 }

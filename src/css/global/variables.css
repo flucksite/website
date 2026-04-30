@@ -69,9 +69,9 @@
   --step-8: clamp(4.0311rem, 3.1048rem + 4.6462vw, 6.7055rem);
 
   /* Defaults */
-  --border-thin: 1px;
-  --border-mid: 2px;
-  --border-thick: 3px;
+  --stroke-width-thin: 1px;
+  --stroke-width-mid: 2px;
+  --stroke-width-thick: 3px;
   --flow-space-default: var(--space-s);
   --flow-space-thick: 10em;
   --gutter-wrapper-inline: var(--space-l);
@@ -83,10 +83,10 @@
   --max-width-prose: 105rch;
   --max-width-compact: 80rch;
   --max-width-compressed: 60rch;
-  --stroke-dotted: var(--border-mid) dotted currentColor;
-  --stroke-mid: var(--border-mid) solid currentColor;
-  --stroke-thick: var(--border-thick) solid currentColor;
-  --stroke: 1px solid currentColor;
+  --stroke-dotted: var(--stroke-width-mid) dotted currentColor;
+  --stroke-mid: var(--stroke-width-mid) solid currentColor;
+  --stroke-thick: var(--stroke-width-thick) solid currentColor;
+  --stroke: var(--stroke-width-thin) solid currentColor;
   --timing-fast: 70ms;
   --timing-medium: calc(var(--timing-fast) * 2);
   --timing-slow: calc(var(--timing-fast) * 3);
@@ -188,10 +188,16 @@
   --translucent-light: rgb(0 0 0 / 0.08);
   --translucent-dark: rgb(255 255 255 / 0.15);
   --picture-opacity-dark: 0.85;
-  --color-accent-1-light: var(--icterine-sl-2);
-  --color-accent-1-dark: var(--icterine-sd-2);
-  --color-accent-2-light: var(--cotton-candy-sl-2);
-  --color-accent-2-dark: var(--cotton-candy-sd-2);
-  --color-accent-3-light: var(--duck-egg-sl-2);
-  --color-accent-3-dark: var(--duck-egg-sd-2);
+  --color-themeable-abyss-light: var(--abyss-sl-2);
+  --color-themeable-abyss-dark: var(--abyss-sd-2);
+  --color-themeable-cotton-candy-light: var(--cotton-candy-sl-2);
+  --color-themeable-cotton-candy-dark: var(--cotton-candy-sd-2);
+  --color-themeable-duck-egg-light: var(--duck-egg-sl-2);
+  --color-themeable-duck-egg-dark: var(--duck-egg-sd-2);
+  --color-themeable-icterine-light: var(--icterine-sl-2);
+  --color-themeable-icterine-dark: var(--icterine-sd-2);
+  --color-themeable-jade-light: var(--jade-sl-2);
+  --color-themeable-jade-dark: var(--jade-sd-2);
+  --color-themeable-raspberry-light: var(--raspberry-sl-2);
+  --color-themeable-raspberry-dark: var(--raspberry-sd-2);
 }

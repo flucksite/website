@@ -12,7 +12,7 @@
 }
 
 .theme-switcher button:focus-visible {
-  outline: var(--border-thick) solid var(--focus-color, currentColor);
+  outline: var(--stroke-width-thick) solid var(--focus-color, currentColor);
   outline-offset: var(--focus-offset, 0.2lh);
 }
 

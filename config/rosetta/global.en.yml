@@ -6,7 +6,7 @@ en:
       skip_link: Skip to main content
     labels:
       honeypot: Please leave this blank
-      website: Website or social profile
+      website: Website or social profile (optional)
     links:
       back_home: ← Head back to home
       back_to_blog: ← Back to Blog

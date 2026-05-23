@@ -1,0 +1,13 @@
+.git
+.github
+.bundle
+vendor/bundle
+node_modules
+log
+tmp
+spec
+public/assets
+public/bun-manifest.json
+.env*.local
+.overmind.sock
+*.tar

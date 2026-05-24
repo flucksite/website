@@ -1,0 +1,29 @@
+<li class="person switcher" id="<%= id %>">
+  <div
+    class="person__image reveal"
+    x-data="reveal"
+    x-intersect.once="show"
+    data-start="<%= image_start %>"
+  >
+    <% %w[light dark].each do |theme| %>
+      <img
+        src="<%= image_src(theme) %>"
+        alt="<%= t(i18n_key(:alt)) %>"
+        class="cutout"
+        data-shape="<%= shape %>"
+        data-for-theme="<%= theme %>"
+      >
+    <% end %>
+  </div>
+  <div
+    class="prose reveal"
+    x-data="reveal"
+    x-intersect.once="show"
+    data-start="<%= text_start %>"
+    data-speed="snail"
+  >
+    <h2><%= t(i18n_key(:title)) %></h2>
+    <p><%= t(i18n_key(:text)) %></p>
+    <%= link_to t(i18n_key(:domain)), domain_url, class: "shift" %>
+  </div>
+</li>

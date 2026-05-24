@@ -8,28 +8,8 @@
 <section>
   <div class="wrapper">
     <ul role="list" class="flow">
-      <% [
-        {id: "mick", domain_url: "https://mickmichel.com"},
-        {id: "wout", domain_url: "https://wout.codes"}
-      ].each_with_index do |person, index| %>
-        <% shape = "circle-0#{index + 1}" %>
-        <% image_start = index.odd? ? "right" : "left" %>
-        <% text_start  = index.odd? ? "left"  : "right" %>
-        <li class="person switcher" id="<%= person[:id] %>">
-          <div class="person__image reveal" x-data="reveal" x-intersect.once="show" data-start="<%= image_start %>">
-            <img src="<%= bun_asset("images/people/#{person[:id]}-light-theme.png") %>"
-                 alt="<%= t(".people.#{person[:id]}.alt") %>"
-                 class="cutout" data-shape="<%= shape %>" data-for-theme="light">
-            <img src="<%= bun_asset("images/people/#{person[:id]}-dark-theme.png") %>"
-                 alt="<%= t(".people.#{person[:id]}.alt") %>"
-                 class="cutout" data-shape="<%= shape %>" data-for-theme="dark">
-          </div>
-          <div class="prose reveal" x-data="reveal" x-intersect.once="show" data-start="<%= text_start %>" data-speed="snail">
-            <h2><%= t(".people.#{person[:id]}.title") %></h2>
-            <p><%= t(".people.#{person[:id]}.text") %></p>
-            <%= link_to t(".people.#{person[:id]}.domain"), person[:domain_url], class: "shift" %>
-          </div>
-        </li>
+      <% %w[mick wout].each_with_index do |id, index| %>
+        <%= scope(:person, id: id, index: index).render("about/person") %>
       <% end %>
     </ul>
   </div>

@@ -41,3 +41,18 @@
     </ul>
   </div>
 </section>
+
+<section class="centered" data-max-width="prose">
+  <aside class="early-access cutout flow" data-shape="rect-02" data-safe="true">
+    <h2><%= t("early_access.title") %></h2>
+    <p><%= t("early_access.text") %></p>
+    <p><strong><%= t("early_access.cta") %></strong></p>
+    <%= scope(:subscription_form,
+              list_tag: "waitlist",
+              email_value: "",
+              website_value: "",
+              email_errors: [],
+              success: false).render("shared/subscription_form") %>
+    <small><%= raw markdown(t("early_access.disclaimer")) %></small>
+  </aside>
+</section>

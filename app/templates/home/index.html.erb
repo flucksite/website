@@ -19,8 +19,14 @@
 </section>
 
 <section class="callout centered" data-max-width="breakout">
-  <div class="cutout switcher reveal" data-shape="rect-01" data-safe="true" data-limit="3"
-       x-data="reveal" x-intersect.once="show">
+  <div
+    class="cutout switcher reveal"
+    data-shape="rect-01"
+    data-safe="true"
+    data-limit="3"
+    x-data="reveal"
+    x-intersect.once="show"
+  >
     <h2><%= t(".creative_culture.title") %></h2>
     <div></div>
     <div><%= t(".creative_culture.text") %></div>
@@ -33,7 +39,12 @@
     <p class="features__text"><%= t(".features.text") %></p>
     <ul role="list" class="grid" data-layout="thirds">
       <% %w[blog portfolio shop languages integrations builder].each do |feature| %>
-        <li class="card reveal" data-underline="true" x-data="reveal" x-intersect.once="show">
+        <li
+          class="card reveal"
+          data-underline="true"
+          x-data="reveal"
+          x-intersect.once="show"
+        >
           <h3><%= t(".features.#{feature}.title") %></h3>
           <p><%= t(".features.#{feature}.text") %></p>
         </li>
@@ -47,12 +58,14 @@
     <h2><%= t("early_access.title") %></h2>
     <p><%= t("early_access.text") %></p>
     <p><strong><%= t("early_access.cta") %></strong></p>
-    <%= scope(:subscription_form,
-              list_tag: "waitlist",
-              email_value: "",
-              website_value: "",
-              email_errors: [],
-              success: false).render("shared/subscription_form") %>
+    <%= scope(
+      :subscription_form,
+      list_tag: "waitlist",
+      email_value: "",
+      website_value: "",
+      email_errors: [],
+      success: false,
+    ).render("shared/subscription_form") %>
     <small><%= raw markdown(t("early_access.disclaimer")) %></small>
   </aside>
 </section>

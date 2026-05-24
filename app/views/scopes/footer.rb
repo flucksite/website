@@ -27,9 +27,7 @@ module FluckWebsite
           ]
         end
 
-        def current_year
-          Time.now.year
-        end
+        def current_year = Time.now.year
       end
     end
   end

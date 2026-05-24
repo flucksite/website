@@ -13,7 +13,6 @@ module FluckWebsite
           current?(tag) ? routes.path(:blog) : "#{routes.path(:blog)}?tag=#{tag}"
         end
 
-        # current_tag and tag may be Hanami::View::Part wrappers; compare strings.
         def current?(tag)
           current_tag.to_s == tag.to_s
         end

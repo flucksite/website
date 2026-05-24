@@ -1,5 +1,5 @@
 ARG RUBY_VERSION=4.0.3
-ARG BUN_VERSION=1
+ARG BUN_VERSION=1.3.14
 
 # Stage 1: install gems + node bin (Bun)
 FROM ruby:${RUBY_VERSION}-slim AS build

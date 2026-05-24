@@ -13,7 +13,7 @@ module FluckWebsite
 
     # Registers a ::Rack::Attack throttle scoped to this action's method+path.
     def self.rate_limit(method:, path:, limit:, period:, by: ->(req) { req.ip })
-      ::Rack::Attack.throttle("#{name}/#{by.object_id}", limit: limit, period: period) do |req|
+      ::Rack::Attack.throttle("#{name}/#{by.object_id}", limit:, period:) do |req|
         by.call(req) if req.request_method.casecmp?(method.to_s) && req.path == path
       end
     end

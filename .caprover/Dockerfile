@@ -31,7 +31,7 @@ FROM ruby:${RUBY_VERSION}-slim AS webserver
 ENV HANAMI_ENV=production \
   BUNDLE_WITHOUT="development:test:cli" \
   BUNDLE_DEPLOYMENT=true \
-  HANAMI_PORT=80
+  HANAMI_PORT=2300
 WORKDIR /app
 RUN apt-get update -qq \
   && DEBIAN_FRONTEND=noninteractive apt-get install -yq --no-install-recommends \
@@ -42,7 +42,7 @@ RUN apt-get update -qq \
 
 COPY --from=build /app /app
 
-EXPOSE 80
+EXPOSE 2300
 HEALTHCHECK --interval=20s --retries=5 \
   CMD curl --fail http://localhost:${HANAMI_PORT}/ops/health || exit 1
 CMD ["bundle", "exec", "puma", "-C", "config/puma.rb"]

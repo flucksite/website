@@ -15,12 +15,8 @@ jobs:
         with:
           ref: refs/heads/staging
 
-      - uses: a7ul/tar-action@v1.1.0
-        with:
-          command: c
-          cwd: ./
-          files: ./
-          outPath: deploy.tar
+      - name: Tar working tree
+        run: tar -cf deploy.tar --exclude=./.git --exclude=./deploy.tar .
 
       - name: Deploy to Caprover
         uses: caprover/deploy-from-github@v1.0.1
@@ -39,12 +35,8 @@ jobs:
         with:
           ref: refs/heads/production
 
-      - uses: a7ul/tar-action@v1.1.0
-        with:
-          command: c
-          cwd: ./
-          files: ./
-          outPath: deploy.tar
+      - name: Tar working tree
+        run: tar -cf deploy.tar --exclude=./.git --exclude=./deploy.tar .
 
       - name: Deploy to Caprover
         uses: caprover/deploy-from-github@v1.0.1

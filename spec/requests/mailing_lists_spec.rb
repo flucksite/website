@@ -36,8 +36,17 @@ RSpec.describe "Mailing lists", type: :request do
       bad["subscription"]["email"] = "not-an-email"
       post "/mailing_lists", bad
       expect(last_response.status).to eq(422)
-      expect(last_response.body).to include("field-errors")
+      expect(last_response.body).to include("field__error")
       expect(email_octopus_stub).not_to have_been_requested
+    end
+
+    it "keeps the waitlist website field visible when re-rendering errors" do
+      bad = params.deep_dup
+      bad["subscription"]["tag"] = "waitlist"
+      bad["subscription"]["email"] = "not-an-email"
+      post "/mailing_lists", bad
+      expect(last_response.status).to eq(422)
+      expect(last_response.body).to include('id="waitlist_website"')
     end
 
     it "throttles requests above 5 per minute from the same IP" do

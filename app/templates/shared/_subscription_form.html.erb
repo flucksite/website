@@ -3,11 +3,15 @@
     <% if success %>
       <div class="subscription-form__success"><%= success_message %></div>
     <% else %>
-      <%= form_for(:subscription, routes.path(:mailing_lists)) do |f| %>
+      <%= form_for(
+        :subscription,
+        routes.path(:mailing_lists),
+        novalidate: true
+      ) do |f| %>
         <%= honeypot_signals %>
         <%= f.hidden_field :tag, id: nil, value: list_tag %>
 
-        <% if list_tag == "waitlist" %>
+        <% if list_tag.to_s == "waitlist" %>
           <div class="field">
             <label for="<%= website_dom_id %>"><%= website_label %></label>
             <%= f.url_field :website, id: website_dom_id, value: website_value %>
@@ -18,12 +22,8 @@
           <div class="field">
             <label for="<%= email_dom_id %>"><%= email_label %></label>
             <%= f.email_field :email, id: email_dom_id, value: email_value, required: true %>
-            <% if email_errors.any? %>
-              <ul class="field-errors">
-                <% email_errors.each do |err| %>
-                  <li><%= err %></li>
-                <% end %>
-              </ul>
+            <% email_errors.each do |err| %>
+              <div class="field__error"><%= err %></div>
             <% end %>
           </div>
           <%= f.submit submit_label, class: "button" %>

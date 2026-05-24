@@ -9,7 +9,7 @@ module FluckWebsite
         include Otori::Hanami::Action
         include Deps[subscribe: "mailing_lists.subscribe"]
 
-        rate_limit method: :post, path: "/mailing_lists", limit: 5, period: 60
+        rate_limit method: :post, path: "/mailing_lists", limit: 10, period: 60
         honeypot "subscription[name]"
 
         params do

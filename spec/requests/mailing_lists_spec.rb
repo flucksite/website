@@ -49,9 +49,9 @@ RSpec.describe "Mailing lists", type: :request do
       expect(last_response.body).to include('id="waitlist_website"')
     end
 
-    it "throttles requests above 5 per minute from the same IP" do
+    it "throttles requests above 10 per minute from the same IP" do
       # one fresh session = one IP for rack-attack's tracker
-      6.times.map do |i|
+      11.times.map do |i|
         p = params.deep_dup
         p["subscription"]["email"] = "rate#{i}@x.com"
         post "/mailing_lists", p

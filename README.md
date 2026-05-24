@@ -2,6 +2,11 @@
 
 This repo holds the [https://fluck.site](https://fluck.site) website.
 
+> [!Note]
+> The original repository is hosted at
+> [Codeberg](https://codeberg.org/fluck/website). The [GitHub
+> repo](https://github.com/flucksite/website) is just a mirror.
+
 ## Stack
 
 A database-less [Hanami 2.3](https://hanamirb.org/) app.

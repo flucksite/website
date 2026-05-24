@@ -20,6 +20,11 @@ WebMock.disable_net_connect!(allow_localhost: true)
 SPEC_ROOT.glob("support/**/*.rb").each { |f| require f }
 
 RSpec.configure do |config|
+  # Force-load actions so rate_limit registers throttles before requests.
+  config.before(:suite) do
+    Hanami.app.keys.grep(/\Aactions\./).each { |k| Hanami.app[k] }
+  end
+
   config.before(:each, type: :request) do
     Rack::Attack.cache.store.instance_variable_get(:@data)&.clear
   end

@@ -1,4 +1,4 @@
-.subscription-form input[type='submit'] {
+.subscription-form button[type='submit'] {
   margin-block-start: 1.5em;
   max-height: 1.5em;
 }
@@ -7,12 +7,12 @@
   animation: shake 0.75s 1;
 }
 
-.subscription-form:has(.field__error) input[type='submit'] {
+.subscription-form:has(.field__error) button[type='submit'] {
   background-color: var(--color-failure-base);
   border-color: var(--color-failure-base);
 }
 
-.subscription-form:has(.field__error) input[type='submit']:hover {
+.subscription-form:has(.field__error) button[type='submit']:hover {
   background-color: var(--color-highlight-text);
 }
 

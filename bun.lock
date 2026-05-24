@@ -10,6 +10,9 @@
         "alpine-turbo-drive-adapter": "^2.2.0",
         "alpinejs": "^3.15.11",
       },
+      "devDependencies": {
+        "prettier": "^3",
+      },
     },
   },
   "packages": {
@@ -24,5 +27,7 @@
     "alpine-turbo-drive-adapter": ["alpine-turbo-drive-adapter@2.2.0", "", {}, "sha512-mf3blh3VE9Gz7XP7c3dhJxSYa34bcNxZq8fFSN9rOoJLp12q0lhnG3TpzyC6lt696xnC37B2p2yKwRRRdHF49A=="],
 
     "alpinejs": ["alpinejs@3.15.12", "", { "dependencies": { "@vue/reactivity": "~3.1.1" } }, "sha512-nJvPAQVNPdZZ0NrExJ/kzQco3ijR8LwvCOadQecllESiqT4NyZ/57sN9V2XyvhlBGAbmlKYgeWZvYdKq99ij/Q=="],
+
+    "prettier": ["prettier@3.8.3", "", { "bin": { "prettier": "bin/prettier.cjs" } }, "sha512-7igPTM53cGHMW8xWuVTydi2KO233VFiTNyF5hLJqpilHfmn8C8gPf+PS7dUT64YcXFbiMGZxS9pCSxL/Dxm/Jw=="],
   }
 }

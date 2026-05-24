@@ -1,0 +1,9 @@
+/* App-level CSS entry, CUBE order: globals, compositions, utilities, blocks. */
+
+/* `not` exclusion keeps global/global-styles last so cascade order is right. */
+@import 'global/**/*.css' not 'global/global-styles';
+@import 'global/global-styles';
+
+@import 'compositions/**/*.css';
+@import 'utilities/**/*.css';
+@import 'blocks/**/*.css';

@@ -1,0 +1,21 @@
+.cutout[data-safe] {
+  padding-block: var(--space-2xl);
+  padding-inline: var(--cutout-padding-inline, var(--space-2xl));
+
+  @media (max-width: 480px) {
+    --cutout-padding-inline: var(--space-l);
+  }
+}
+
+.cutout[data-shape='rect-01'] {
+  clip-path: url('#rect-01');
+}
+.cutout[data-shape='rect-02'] {
+  clip-path: url('#rect-02');
+}
+.cutout[data-shape='circle-01'] {
+  clip-path: url('#circle-01');
+}
+.cutout[data-shape='circle-02'] {
+  clip-path: url('#circle-02');
+}

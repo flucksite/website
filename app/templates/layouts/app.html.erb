@@ -1,11 +1,18 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fluck website</title>
-  </head>
-  <body>
-    <%= yield %>
+<html lang="<%= ::I18n.locale %>">
+  <%= render "shared/layout_head" %>
+  <body
+    data-bg="<%= page_key %>"
+    x-data="theme(<%= current_theme_arg %>)"
+    :data-theme="theme"
+  >
+    <%= link_to t("global.buttons.skip_link"), "#main_content", id: "skip_link" %>
+    <%= inline_svg("clip-path-shapes-03", class: "visually-hidden") %>
+    <%= render "shared/header" %>
+    <%= render "shared/flash_messages" %>
+    <main id="main_content" tabindex="-1">
+      <%= yield %>
+    </main>
+    <%= scope(:footer).render("shared/footer") %>
   </body>
 </html>

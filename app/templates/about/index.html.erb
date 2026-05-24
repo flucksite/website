@@ -1,0 +1,40 @@
+<section class="hero">
+  <div class="wrapper flow">
+    <h1><%= t(".hero.title") %></h1>
+    <p><%= t(".hero.text") %></p>
+  </div>
+</section>
+
+<section>
+  <div class="wrapper">
+    <ul role="list" class="flow">
+      <% [
+        {id: "mick", domain_url: "https://mickmichel.com"},
+        {id: "wout", domain_url: "https://wout.codes"}
+      ].each do |person| %>
+        <li class="person switcher" id="<%= person[:id] %>">
+          <div class="person__image reveal" x-data="reveal" x-intersect.once="show" data-start="right">
+            <img src="<%= bun_asset("images/people/#{person[:id]}-light-theme.png") %>"
+                 alt="<%= t(".people.#{person[:id]}.alt") %>"
+                 class="cutout" data-shape="circle-01" data-for-theme="light">
+            <img src="<%= bun_asset("images/people/#{person[:id]}-dark-theme.png") %>"
+                 alt="<%= t(".people.#{person[:id]}.alt") %>"
+                 class="cutout" data-shape="circle-01" data-for-theme="dark">
+          </div>
+          <div class="prose reveal" x-data="reveal" x-intersect.once="show" data-start="left" data-speed="snail">
+            <h2><%= t(".people.#{person[:id]}.title") %></h2>
+            <p><%= t(".people.#{person[:id]}.text") %></p>
+            <%= link_to t(".people.#{person[:id]}.domain"), person[:domain_url] %>
+          </div>
+        </li>
+      <% end %>
+    </ul>
+  </div>
+</section>
+
+<article class="centered">
+  <div class="prose flow">
+    <h2><%= t(".story.title") %></h2>
+    <%= raw markdown(t(".story.text")) %>
+  </div>
+</article>

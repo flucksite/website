@@ -1,0 +1,19 @@
+#skip_link {
+  position: absolute;
+  top: -30em;
+  left: calc(50vw - 11ch);
+  background-color: var(--color-text);
+  color: var(--color-base);
+  outline-color: var(--color-text);
+  outline-offset: 3px;
+  padding: 2px var(--space-xs);
+  font-family: var(--font-mono);
+  text-transform: uppercase;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+#skip_link:focus-visible {
+  top: var(--space-s);
+  z-index: 10;
+}

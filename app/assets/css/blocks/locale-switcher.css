@@ -1,0 +1,22 @@
+.locale-switcher {
+  --menu-gap: var(--space-xs);
+  display: flex;
+  gap: var(--space-xs);
+}
+
+.locale-switcher a {
+  font-family: var(--font-mono);
+  font-size: var(--step-0);
+  text-transform: uppercase;
+  font-weight: bold;
+  text-decoration-thickness: 2px;
+}
+
+.locale-switcher a[aria-current='true'] {
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
+}
+
+.locale-switcher a:hover {
+  text-underline-offset: auto;
+}

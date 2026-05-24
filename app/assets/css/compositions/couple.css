@@ -1,0 +1,20 @@
+/*
+COUPLE
+A pair of elements sticking together side by side, no matter what.
+*/
+.couple {
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.couple[data-align='center'] {
+  align-items: center; 
+}
+
+.couple[data-align='end'] {
+  align-items: flex-end;
+}
+
+.couple > * {
+  flex-grow: 1;
+}

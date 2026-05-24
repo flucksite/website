@@ -1,0 +1,36 @@
+<turbo-frame id="subscription_form_<%= list_tag %>">
+  <div class="subscription-form">
+    <% if success %>
+      <div class="subscription-form__success"><%= success_message %></div>
+    <% else %>
+      <%= form_for(:subscription, routes.path(:mailing_lists)) do |f| %>
+        <%= honeypot_signals %>
+        <%= f.hidden_field :tag, id: nil, value: list_tag %>
+
+        <% if list_tag == "waitlist" %>
+          <div class="field">
+            <label for="<%= website_dom_id %>"><%= website_label %></label>
+            <%= f.url_field :website, id: website_dom_id, value: website_value %>
+          </div>
+        <% end %>
+
+        <div class="couple">
+          <div class="field">
+            <label for="<%= email_dom_id %>"><%= email_label %></label>
+            <%= f.email_field :email, id: email_dom_id, value: email_value, required: true %>
+            <% if email_errors.any? %>
+              <ul class="field-errors">
+                <% email_errors.each do |err| %>
+                  <li><%= err %></li>
+                <% end %>
+              </ul>
+            <% end %>
+          </div>
+          <%= f.submit submit_label, class: "button" %>
+        </div>
+
+        <%= honeypot_field("subscription[name]", class: "visually-hidden") %>
+      <% end %>
+    <% end %>
+  </div>
+</turbo-frame>

@@ -1,0 +1,8 @@
+.shift {
+  transition-property: transform;
+  transition-duration: var(--timing-fast);
+}
+
+.shift:hover {
+  transform: translateX(3px);
+}

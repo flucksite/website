@@ -1,0 +1,21 @@
+en:
+  global:
+    alts:
+      tem_values: The Ethical Move — honesty + responisbility + trust + transparency + integrity + equity
+    buttons:
+      skip_link: Skip to main content
+    labels:
+      honeypot: Please leave this blank
+      website: Website or social profile
+    links:
+      back_home: ← Head back to home
+      back_to_blog: ← Back to Blog
+      read_more: Read more →
+      older: Previous post »
+      newer: « Next post
+    menu:
+      item:
+        about: About
+        blog: Blog
+        home: Home
+        waitlist: Waitlist

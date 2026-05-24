@@ -1,0 +1,43 @@
+<section class="hero" data-layout="home">
+  <div class="wrapper flow">
+    <h1><%= t(".hero.title") %></h1>
+    <p><%= t(".hero.text") %></p>
+  </div>
+</section>
+
+<section>
+  <div class="wrapper">
+    <ul role="list" class="switcher" data-limit="3">
+      <% %w[artists indie ownership].each do |usp| %>
+        <li class="card reveal" x-data="reveal" x-intersect.once="show">
+          <h2><%= t(".usps.#{usp}.title") %></h2>
+          <p><%= t(".usps.#{usp}.text") %></p>
+        </li>
+      <% end %>
+    </ul>
+  </div>
+</section>
+
+<section class="callout centered" data-max-width="breakout">
+  <div class="cutout switcher reveal" data-shape="rect-01" data-safe="true" data-limit="3"
+       x-data="reveal" x-intersect.once="show">
+    <h2><%= t(".creative_culture.title") %></h2>
+    <div></div>
+    <div><%= t(".creative_culture.text") %></div>
+  </div>
+</section>
+
+<section class="features">
+  <div class="wrapper flow reveal" x-data="reveal" x-intersect.once="show">
+    <h2><%= t(".features.title") %></h2>
+    <p class="features__text"><%= t(".features.text") %></p>
+    <ul role="list" class="grid" data-layout="thirds">
+      <% %w[blog portfolio shop languages integrations builder].each do |feature| %>
+        <li class="card reveal" data-underline="true" x-data="reveal" x-intersect.once="show">
+          <h3><%= t(".features.#{feature}.title") %></h3>
+          <p><%= t(".features.#{feature}.text") %></p>
+        </li>
+      <% end %>
+    </ul>
+  </div>
+</section>

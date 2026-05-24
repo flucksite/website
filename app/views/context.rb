@@ -4,7 +4,17 @@
 module FluckWebsite
   module Views
     class Context < Hanami::View::Context
-      # Define your view context here. See https://guides.hanamirb.org/views/context/ for details.
+      def current_path
+        request&.path
+      end
+
+      def session
+        request&.session
+      end
+
+      def routes
+        Hanami.app["routes"]
+      end
     end
   end
 end

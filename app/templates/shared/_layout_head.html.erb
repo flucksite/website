@@ -1,0 +1,56 @@
+<head>
+  <meta charset="UTF-8">
+  <title><%= title %>
+    – FLUCK</title>
+  <meta name="description" content="<%= description %>">
+  <meta name="robots" content="noai, noimageai">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light dark">
+  <link rel="canonical" href="<%= absolute_url(context.request.path) %>">
+
+  <meta property="og:url" content="<%= absolute_url(context.request.path) %>">
+  <meta property="og:site_name" content="FLUCK">
+  <meta property="og:title" content="<%= title %>">
+  <meta property="og:description" content="<%= description %>">
+  <meta
+    property="og:image"
+    content="<%= absolute_url(bun_asset("images/social/fluck-og-image.png")) %>"
+  >
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <link rel="icon" type="image/x-icon" href="/favicon.ico">
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+  <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="manifest" href="/site.webmanifest">
+
+  <% %w[waitlist about blog home].each do |bg| %>
+    <% %w[light dark].each do |theme| %>
+      <link
+        rel="preload"
+        as="image"
+        type="image/svg+xml"
+        href="<%= bun_asset("images/backgrounds/#{bg}-#{theme}.svg") %>"
+      >
+    <% end %>
+  <% end %>
+  <link
+    rel="preload"
+    as="image"
+    type="image/svg+xml"
+    href="<%= bun_asset("images/backgrounds/error.svg") %>"
+  >
+
+  <%= turbo_view_transition_tag %>
+  <%= turbo_morph_tag %>
+
+  <%= plausible_tag %>
+
+  <noscript><style>.reveal { opacity: 1; transform: none; }</style></noscript>
+
+  <%= bun_css_tag("css/app.css") %>
+  <%= bun_js_tag("js/app.js", defer: true) %>
+  <%= bun_reload_tag %>
+</head>

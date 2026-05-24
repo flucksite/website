@@ -1,0 +1,45 @@
+.menu {
+  list-style: none;
+  padding-inline-start: 0;
+}
+
+.menu[data-direction='horizontal'] {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  gap: var(--menu-gap, var(--space-m));
+}
+
+.menu a {
+  display: flex;
+  align-items: center;
+}
+.menu a {
+  text-decoration-color: transparent;
+  transition-property: text-decoration-color text-underline-offset;
+  transition-duration: var(--timing-fast);
+}
+.menu a:hover,
+.menu a[aria-current='page'] {
+  text-decoration-color: var(--color-text);
+}
+.menu a svg {
+  width: 1.3em;
+  height: auto;
+  margin-inline-end: var(--space-2xs);
+  transition-property: transform;
+  transition-duration: var(--timing-medium);
+}
+.menu a:hover svg {
+  transform: scale(1.1) rotate(-3deg);
+}
+
+.menu li:has(svg) + li {
+  margin-block-start: var(--space-2xs);
+}
+.menu li[data-subject='info'] + li[data-subject='legal'] {
+  margin-block-start: var(--space-s);
+}
+.menu li:has(svg[data-inline-svg='social/codeberg.svg']) {
+  margin-block-start: var(--space-l);
+}

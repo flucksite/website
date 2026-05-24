@@ -1,0 +1,35 @@
+<section class="hero" data-layout="blog">
+  <div class="wrapper flow">
+    <h1><%= t(".hero.title") %></h1>
+    <div><%= raw markdown(t(".hero.text")) %></div>
+    <%= scope(:tag_list, tag_items: tags, current_tag: current_tag).render("shared/tag_list") %>
+  </div>
+</section>
+
+<section>
+  <div class="blog wrapper">
+    <% posts.each do |post| %>
+      <article class="blog__post">
+        <%= link_to(routes.path(:blog_post, slug: post.slug)) do %>
+          <h2><%= post.title %></h2>
+        <% end %>
+        <div class="switcher" data-limit="3">
+          <div class="blog__post-meta switcher" data-limit="2">
+            <time datetime="<%= post.iso_date %>"><%= post.formatted_date %></time>
+            <%= scope(:tag_list, tag_items: post.tags, current_tag: current_tag).render("shared/tag_list") %>
+          </div>
+          <div></div>
+          <div class="blog__post-excerpt flow">
+            <p><%= post.description %></p>
+            <%= link_to(
+              t("global.links.read_more"),
+              routes.path(:blog_post, slug: post.slug),
+              class: "shift",
+            ) %>
+          </div>
+        </div>
+      </article>
+    <% end %>
+  </div>
+  <%= render "shared/paginator", pagination:, page_url: %>
+</section>

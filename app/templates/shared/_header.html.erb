@@ -1,0 +1,19 @@
+<header class="header wrapper">
+  <div class="repel">
+    <%= link_to(
+      routes.path(:root),
+      class: "header__logo",
+      aria: {labelledby: "fluck_logo_label"}
+    ) do %>
+      <span id="fluck_logo_label" class="visually-hidden">Fluck</span>
+      <%= inline_svg("fluck-logo-large-horizontal-transparent") %>
+      <%= inline_svg("fluck-logo-large-vertical-transparent") %>
+    <% end %>
+    <div class="flow">
+      <div class="preferences">
+        <%= render "shared/theme_switcher" %>
+      </div>
+      <%= render "shared/main_menu" %>
+    </div>
+  </div>
+</header>

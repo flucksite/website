@@ -1,0 +1,63 @@
+<footer class="footer wrapper">
+  <div class="footer__content switcher">
+    <div class="couple">
+      <nav class="flow">
+        <h2><%= t("shared.footer.info.title") %></h2>
+        <ul class="menu">
+          <% info_items.each do |key, subject, path| %>
+            <li data-subject="<%= subject %>">
+              <%= nav_link(path) do %>
+                <span class="shift"><%= t("shared.footer.info.#{key}") %></span>
+              <% end %>
+            </li>
+          <% end %>
+        </ul>
+      </nav>
+
+      <nav class="flow">
+        <h2><%= t("shared.footer.social.title") %></h2>
+        <ul class="menu">
+          <% social_menu.each do |key, url| %>
+            <li>
+              <%= link_to(url) do %>
+                <%= inline_svg("social/#{key}") %>
+                <span class="shift"><%= t("shared.footer.social.#{key}") %></span>
+              <% end %>
+            </li>
+          <% end %>
+        </ul>
+      </nav>
+    </div>
+
+    <div class="flow">
+      <h2><%= t("shared.footer.newsletter.title") %></h2>
+      <p><%= raw t("shared.footer.newsletter.text") %></p>
+      <%= scope(
+        :subscription_form,
+        list_tag: "newsletter",
+        email_value: "",
+        website_value: "",
+        email_errors: [],
+        success: false,
+      ).render("shared/subscription_form") %>
+      <small><%= t("shared.footer.newsletter.disclaimer") %></small>
+    </div>
+
+    <p class="footer__badges grid">
+      <%= link_to("https://theethicalmove.org") do %>
+        <% %w[light dark].each do |theme| %>
+          <img
+            src="<%= bun_asset("images/badges/tem_values-#{theme}.png") %>"
+            data-for-theme="<%= theme %>"
+            alt="<%= t("global.alts.tem_values") %>"
+          >
+        <% end %>
+      <% end %>
+    </p>
+  </div>
+
+  <div class="footer__end repel">
+    <p><%= t("shared.footer.copyright", year: current_year) %></p>
+    <p><%= t("shared.footer.principles") %></p>
+  </div>
+</footer>

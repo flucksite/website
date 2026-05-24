@@ -1,0 +1,19 @@
+<% if tag_items.any? %>
+  <ul class="tag-list" role="list">
+    <% tag_items.each do |item| %>
+      <li>
+        <%= link_to(
+          item,
+          href_for(item),
+          class: "tag",
+          data: {
+            tag: slug_for(item),
+          },
+          aria: {
+            current: current?(item).to_s,
+          },
+        ) %>
+      </li>
+    <% end %>
+  </ul>
+<% end %>

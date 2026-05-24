@@ -1,0 +1,10 @@
+<nav class="main-menu" aria-labelledby="main_nav_label">
+  <span hidden id="main_nav_label"><%= t("main_menu.title") %></span>
+  <ul class="menu" data-direction="horizontal">
+    <% [[:root, "home"], [:waitlist, "waitlist"], [:blog, "blog"]].each do |route_name, key| %>
+      <li>
+        <%= nav_link(t("global.menu.item.#{key}"), routes.path(route_name)) %>
+      </li>
+    <% end %>
+  </ul>
+</nav>

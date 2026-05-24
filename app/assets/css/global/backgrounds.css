@@ -1,0 +1,55 @@
+body[data-bg] {
+  --bg-dark: var(--bg-light);
+  background-size: max(100vw, 820px) auto;
+  background-position: center top;
+  background-image: var(--bg-light);
+}
+
+body[data-bg='home'] {
+  --bg-light: url('$/app/assets/images/backgrounds/home-light.svg');
+  --bg-dark: url('$/app/assets/images/backgrounds/home-dark.svg');
+}
+body[data-bg='blog'],
+body[data-bg='post'] {
+  --bg-light: url('$/app/assets/images/backgrounds/blog-light.svg');
+  --bg-dark: url('$/app/assets/images/backgrounds/blog-dark.svg');
+}
+body[data-bg='about'] {
+  --bg-light: url('$/app/assets/images/backgrounds/about-light.svg');
+  --bg-dark: url('$/app/assets/images/backgrounds/about-dark.svg');
+}
+body[data-bg='waitlist'] {
+  --bg-light: url('$/app/assets/images/backgrounds/waitlist-light.svg');
+  --bg-dark: url('$/app/assets/images/backgrounds/waitlist-dark.svg');
+}
+body[data-bg='error'] {
+  --bg-light: url('$/app/assets/images/backgrounds/error.svg');
+}
+
+body[data-theme='dark'][data-bg] {
+  background-image: var(--bg-dark);
+}
+
+@media (prefers-color-scheme: dark) {
+  body[data-bg] {
+    background-image: var(--bg-dark);
+  }
+  body[data-theme='light'][data-bg] {
+    background-image: var(--bg-light);
+  }
+}
+
+@media (forced-colors: none) {
+  body[data-bg] {
+    forced-color-adjust: none;
+    -webkit-forced-color-adjust: none;
+    filter: none !important;
+    -webkit-filter: none !important;
+  }
+}
+
+@media (forced-colors: active) {
+  body[data-bg] {
+    background-image: none !important;
+  }
+}

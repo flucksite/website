@@ -1,0 +1,20 @@
+.error {
+  text-align: center;
+}
+
+.error h1 {
+  font-size: var(--step-4);
+  max-width: none;
+}
+
+.error h2 {
+  font-size: 10em;
+}
+
+body[data-bg='error'] {
+  --color-text: var(--stone-light);
+  --color-base: var(--stone-dark);
+  --color-highlight-base: var(--abyss);
+  --color-highlight-text: var(--icterine);
+  --color-translucent: var(--translucent-dark);
+}

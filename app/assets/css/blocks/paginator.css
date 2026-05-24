@@ -1,0 +1,41 @@
+.paginator {
+  padding-block: var(--space-xl);
+
+  ul {
+    display: flex;
+    justify-content: center;
+    gap: var(--space-xs);
+  }
+
+  li {
+    border: var(--stroke-mid);
+    border-radius: var(--step-3);
+
+    & > * {
+      display: block;
+      width: var(--step-3);
+      height: var(--step-3);
+      text-align: center;
+      line-height: 1.45;
+      font-family: var(--font-mono);
+    }
+
+    & > a {
+      font-weight: bold;
+      text-decoration: none;
+      transition-duration: var(--timing-fast);
+      transition-property: background-color, border-color, color;
+    }
+
+    &:has(a[aria-current]),
+    &:has(a):hover {
+      background-color: var(--color-text);
+      border-color: var(--color-text);
+      color: var(--color-base);
+    }
+
+    &:not(:has(a)) {
+      opacity: 0.33;
+    }
+  }
+}

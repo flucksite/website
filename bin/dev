@@ -1,8 +1,15 @@
 #!/usr/bin/env sh
 
-if ! gem list foreman -i --silent; then
-  echo "Installing foreman..."
-  gem install foreman
+if ! command -v overmind >/dev/null 2>&1; then
+  echo "overmind not found. Install: https://github.com/DarthSim/overmind"
+  echo "  macOS:  brew install overmind"
+  echo "  Arch:   pacman -S overmind"
+  echo "  Other:  download from the releases page"
+  exit 1
 fi
 
-exec foreman start -f Procfile.dev --env=/dev/null "$@"
+if [ -S ./.overmind.sock ] && ! pgrep -f "overmind start" >/dev/null 2>&1; then
+  rm -f ./.overmind.sock
+fi
+
+exec overmind start -f Procfile.dev "$@"

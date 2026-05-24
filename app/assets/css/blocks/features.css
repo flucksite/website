@@ -1,0 +1,11 @@
+.features {
+  --reveal-offset: 2em;
+}
+
+.features__text {
+  max-width: var(--max-width-compact);
+}
+
+.features ul {
+  margin-block-start: var(--space-xl) !important;
+}

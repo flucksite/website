@@ -1,0 +1,10 @@
+<section class="centered">
+  <%= scope(
+    :subscription_form,
+    list_tag: list_tag,
+    email_value: email_value,
+    website_value: website_value,
+    email_errors: email_errors,
+    success: success,
+  ).render("shared/subscription_form") %>
+</section>

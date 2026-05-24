@@ -1,0 +1,22 @@
+.button {
+  all: unset;
+  width: 10rem;
+  text-align: center;
+  padding: 0.5em 0.8em;
+  background-color: var(--color-text);
+  color: var(--color-base);
+  border-bottom: var(--stroke-thick);
+  border-color: var(--color-text);
+  cursor: pointer;
+  font-family: var(--font-mono);
+  font-size: var(--step-1);
+  font-weight: bold;
+  text-transform: uppercase;
+  transition-property: background, color;
+  transition-duration: var(--timing-fast);
+}
+
+.button:hover {
+  background-color: var(--color-highlight-text);
+  color: var(--color-highlight-base);
+}

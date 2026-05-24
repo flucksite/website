@@ -1,0 +1,30 @@
+.person {
+  --switcher-vertical-alignment: center;
+  --flow-space: 7em;
+  --reveal-offset: 5em;
+  --reveal-speed: vat(--timing-snail);
+  max-width: var(--max-width-breakout);
+  margin-inline: auto;
+}
+
+.person:nth-child(even) {
+  flex-direction: row-reverse;
+}
+
+.person__image {
+  display: flex;
+  justify-content: center;
+}
+
+.person__image img {
+  max-width: 13em;
+}
+
+.person a {
+  display: block;
+  color: currentColor;
+}
+
+.person a::before {
+  content: '→ ';
+}

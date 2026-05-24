@@ -1,0 +1,12 @@
+# Inherit Hanami's canonical style (single source of truth across all Fluck
+# repos). Synced upstream from hanakai-rb/repo-sync.
+inherit_from:
+  - https://raw.githubusercontent.com/hanakai-rb/repo-sync/main/rubocop/rubocop.yml
+
+AllCops:
+  TargetRubyVersion: 3.2
+  Exclude:
+    - 'node_modules/**/*'
+    - 'public/**/*'
+    - 'tmp/**/*'
+    - 'vendor/**/*'

@@ -1,0 +1,9 @@
+en:
+  errors:
+    show:
+      not_found: We couldn't find that page.
+      something_wrong: Something went wrong.
+  mailing_lists:
+    create:
+      invalid_email: Please enter a valid email address.
+      subscription_failed: Something went wrong, please try again later.

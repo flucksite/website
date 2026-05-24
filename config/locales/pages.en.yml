@@ -1,0 +1,226 @@
+en:
+  about:
+    index_page:
+      page_title: About us.
+      page_description: >-
+        We are a small team based in Spain. We’re independent and 100%
+        self-funded, with the rather ambitious goal of making artists,
+        designers, and makers less dependent on corporate platforms for their
+        web presence.
+      hero:
+        title: About us
+        text: '%r{about.index_page.page_description}'
+      people:
+        mick:
+          title: Mick
+          text: >-
+            Mick is the creative director and user experience guardian of
+            Fluck. He holds a master’s in semiotics and worked as a freelancer
+            for various agencies. He’s also an artist and ran two art
+            galleries.
+          domain: mickmichel.com
+          alt: Black and white profile of Mick with a course halftone raster.
+        wout:
+          title: Wout
+          text: >-
+            Wout is the designer and lead developer of Fluck. His background is
+            in product design and software development, and he’s been building
+            bespoke e-commerce software since 2004.
+          domain: wout.codes
+          alt: Black and white profile of Wout with a course halftone raster.
+      story:
+        title: Why we’re building Fluck
+        text: >-
+          **For nearly a decade, we’ve carried this idea to create a better
+          website builder for artists and designers.** Every time we needed to
+          set up a website or online shop for a project, it felt harder than it
+          should. The tools were either too complex, too expensive, or simply
+          not the right fit. But each time we sat down to seriously evaluate
+          building a new platform, we bottled it. The effort seemed enormous,
+          and taking on the tech giants felt impossible.
+
+
+          Then things changed.
+
+
+          By 2025, Big Tech had stopped pretending to care. The mask slipped
+          completely, cosying up to authoritarians, accelerating inequality,
+          and turning creativity into content for their algorithms to sell more
+          ads. More and more people began looking for alternatives. That shift
+          in sentiment was our signal to finally build Fluck.
+
+
+          We reject everything Big Tech represents: black boxes, invasive
+          algorithms, prioritizing shareholders over users, and pure corporate
+          greed. We want to help reclaim the web that was once a place of
+          genuine discovery and opportunity, before it became an extraction
+          machine.
+
+
+          Is it still a massive undertaking? Absolutely. Do we still face
+          Goliath-sized competitors? Of course. But now there’s something
+          different: a growing movement of creators who are fed up with being
+          exploited by platforms that don’t understand or respect what they do.
+
+
+          It’s still small, but it’s real, and that’s more than enough to fuel
+          this journey.
+
+
+          Mick and Wout
+  blog:
+    index_page:
+      hero:
+        title: Blog
+        text: >-
+          Here’s where we post more in-dept information about the developments
+          around Fluck. Follow us on
+          [Bluesky](https://bsky.app/profile/fluck.site), or subscribe to our
+          [monthly newsletter](#subscription_form_newsletter) or [RSS
+          feed](/blog.rss) to get notified about new posts.
+    show_page:
+      posted_in: Posted in
+      post_pagination: Post pagination
+      reading_time: '%{count}-minute read'
+      written_by: By
+  newsletter:
+    show_page:
+      pagination: Newsletter pagination
+      newer: « Next
+      older: Previous »
+      back_to_index: ← Back to archive
+      reading_time: '%{count}-minute read'
+  errors:
+    show_page:
+      page_title: We’ve encountered a %{status_code} error
+      page_description: 'This is not right, we’ve got an error: %{message}'
+  home:
+    index_page:
+      page_title: Websites for artists, designers, and makers.
+      page_description: >-
+        Websites for artists, designers, and makers. Ditch corporate platforms
+        and own your online presence.
+      hero:
+        title: 'Your site, your rules'
+        text: >-
+          Websites for artists, designers, and makers. Ditch corporate
+          platforms and own your online presence.
+      usps:
+        artists:
+          title: By artists for artists
+          text: >-
+            Fluck is built specifically for creatives. It’s the website builder
+            we always wished we had ourselves. A comprehensible tool that gets
+            out of your way, without unnecessary fluff.
+        indie:
+          title: Indie and open-source
+          text: >-
+            You’re an independent creator, so why not use an independent
+            website builder? We’re 100% self-funded with no investors, and
+            we’re open-sourcing our code so you’re never locked in.
+        ownership:
+          title: You own everything
+          text: >-
+            Your website, your content, your customers, everything is yours. No
+            commissions, no fees nibbling away at your profits. And freedom of
+            movement with a self-hosting option.
+      creative_culture:
+        title: Supporting creative culture
+        text: >-
+          We want to help artists and designers make their work sustainable. As
+          we grow, we plan to distribute a portion of our profits as grants to
+          support artists and designers. Fluck is just the beginning.
+          Supporting the creative community is the bigger goal.
+      features:
+        title: One package, no add-ons
+        text: >-
+          Everything you need, nothing you don’t. Every Fluck site comes with
+          all the tools you need in a single package.
+        blog:
+          title: Blog big or small
+          text: >-
+            Start a blog to build your audience, or create your own microblog
+            feed to share across socials. Build your following on your own
+            website.
+        portfolio:
+          title: Portfolio pages
+          text: >-
+            Showcase commissioned work, project catalogues, look books, or
+            lifestyle galleries using one or multiple portfolio pages.
+        shop:
+          title: Built-in shop
+          text: >-
+            Sell your work directly with inventory management, multiple payment
+            options, tax handling, and flexible shipping.
+        languages:
+          title: Choose your language
+          text: >-
+            Build your site in the language you're most comfortable with, and
+            expand to other languages when you're ready to reach a wider
+            audience.
+        integrations:
+          title: Analytics & newsletters
+          text: >-
+            Get visitor insights with built-in analytics or connect to
+            Plausible, and integrate with lightweight newsletter services like
+            EmailOctopus or Buttondown.
+        builder:
+          title: Visual page builder
+          text: >-
+            Build and style your site with drag-and-drop editing. Create pages
+            that work on any screen size and are optimized for accessibility.
+  mailing_lists:
+    create_page:
+      page_title: Subscribe to mailinglist
+      page_description: You’ve successfully subscribed to our mailinglist.
+  waitlist:
+    index_page:
+      page_title: Join the waitlist
+      page_description: >-
+        We’re planning to welcome our first users at the beginning of 2026 for a
+        closed beta. Active beta users who provide feedback will receive a
+        lifetime free account.
+      hero:
+        title: Join the waitlist
+        text: >-
+          At the start of 2026, we’ll begin inviting the first people into our
+          closed beta. This won’t be a mass rollout, we’re starting small and
+          deliberate. We’ll work with each person individually to help them get
+          set up, whether you’re building a new site or moving from another
+          platform.
+      subscribe:
+        title: Interested?
+        text: >-
+          Subscribe here, and we’ll notify you when we are ready to get you
+          settled in. Until then, you’ll receive a monthly-ish newsletter for
+          early birds.
+      timeline:
+        title: What’s next?
+        text: >-
+          Here’s our rough timeline. These are targets, not promises, and dates
+          may shift as we go because we’re a small team. The earlier you join,
+          the more influence you’ll have on how Fluck develops. Active beta
+          users who provide feedback will also receive a lifetime free account.
+        spring_2026:
+          title: Spring 2026
+          text: >-
+            **Closed beta begins.** We’ll start sending personal invitations to
+            the first people on the waitlist. It'll be early days, so user 
+            feedback will genuinely shape what we build.
+        summer_2026:
+          title: Summer 2026
+          text: >-
+            **Opening to the public.** The beta opens up, but signups will
+            still be batched so we can monitor our infrastructure and make sure
+            it holds up under load.
+        autumn_2026:
+          title: Autumn 2026
+          text: >-
+            **Bigger batches.** We’ll increase the number of users we invite at
+            once as our systems prove stable.
+        winter_2026:
+          title: Winter 2026
+          text: >-
+            **Version 1.0 launches.** Registration opens to everyone. The
+            self-hostable version becomes available, and Fluck goes fully open
+            source.

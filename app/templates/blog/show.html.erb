@@ -1,0 +1,54 @@
+<article class="post centered flow">
+  <div class="post__header">
+    <h1><%= post.title %></h1>
+    <div class="post__meta switcher" data-limit="2">
+      <div>
+        <time datetime="<%= post.iso_date %>" class="post__date"><%= post.formatted_date %></time>
+        <span class="post__reading-time">
+          —
+          <%= t(".reading_time", count: post.reading_time_minutes) %>
+        </span>
+      </div>
+      <p class="post__author">
+        <% if post.author %>
+          <%= t(".written_by") %>
+          <%= link_to post.author, "#{routes.path(:about)}##{post.author.downcase}" %>
+        <% else %>&nbsp;<% end %>
+      </p>
+    </div>
+  </div>
+
+  <div class="post__content prose flow">
+    <%= raw post.to_html %>
+  </div>
+
+  <div class="post__footer flow">
+    <div class="post__tags">
+      <span><%= t(".posted_in") %></span>
+      <%= scope(:tag_list, tag_items: post.tags, current_tag: nil).render("shared/tag_list") %>
+    </div>
+    <nav
+      class="post__pagination switcher"
+      data-limit="2"
+      aria-labelledby="pagination_label"
+    >
+      <span id="pagination_label" class="visually-hidden">
+        <%= t(".post_pagination") %>
+      </span>
+      <ul class role="list">
+        <li>
+          <% if newer %>
+            <%= link_to t("global.links.newer"), routes.path(:blog_post, slug: newer.slug) %>
+          <% else %>
+            <%= link_to t("global.links.back_to_blog"), routes.path(:blog) %>
+          <% end %>
+        </li>
+        <li>
+          <% if older %>
+            <%= link_to t("global.links.older"), routes.path(:blog_post, slug: older.slug) %>
+          <% else %>&nbsp;<% end %>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</article>

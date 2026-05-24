@@ -1,0 +1,37 @@
+<section class="hero">
+  <div class="wrapper flow">
+    <h1><%= t(".hero.title") %></h1>
+    <p><%= t(".hero.text") %></p>
+  </div>
+</section>
+
+<section class="wrapper centered">
+  <div class="early-access cutout flow" data-theme="light" data-shape="rect-02" data-safe="true">
+    <h2><%= t(".subscribe.title") %></h2>
+    <p><%= t(".subscribe.text") %></p>
+    <%= scope(:subscription_form,
+              list_tag: "waitlist",
+              email_value: "",
+              website_value: "",
+              email_errors: [],
+              success: false).render("shared/subscription_form") %>
+  </div>
+</section>
+
+<section class="timeline wrapper">
+  <div class="timeline__intro flow reveal" x-data="reveal" x-intersect.once="show">
+    <h2><%= t(".timeline.title") %></h2>
+    <p><%= t(".timeline.text") %></p>
+  </div>
+
+  <% %w[spring_2026 summer_2026 autumn_2026 winter_2026].each do |season| %>
+    <div class="timeline__entry flow reveal" x-data="reveal" x-intersect.once="show">
+      <h3><%= t(".timeline.#{season}.title") %></h3>
+      <div><%= raw markdown(t(".timeline.#{season}.text")) %></div>
+    </div>
+  <% end %>
+
+  <div class="timeline__outro reveal" x-data="reveal" x-intersect.once="show">
+    <%= inline_svg("hurricane") %>
+  </div>
+</section>

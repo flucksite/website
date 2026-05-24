@@ -2,19 +2,20 @@
 
 source "https://rubygems.org"
 
+# Base
 gem "hanami", "~> 2.3.0"
 gem "hanami-controller", "~> 2.3.0"
 gem "hanami-router", "~> 2.3.0"
 gem "hanami-validations", "~> 2.3.0"
 gem "hanami-view", "~> 2.3.0"
 
-gem "dry-types", "~> 1.7"
+# Backend
+gem "dry-monads", "~> 1.10"
 gem "dry-operation", ">= 1.0.1"
+gem "dry-types", "~> 1.7"
 gem "puma"
 gem "rake"
 
-<<<<<<< Updated upstream
-=======
 # Frontend
 gem "bun_bun_bundle", "~> 0.13.0"
 
@@ -31,13 +32,13 @@ gem "pagy", "~> 43.5"
 gem "sentry-ruby", "~> 5.21"
 gem "rack-attack", "~> 6.7"
 
->>>>>>> Stashed changes
 group :development do
   gem "hanami-webconsole", "~> 2.3.0"
 end
 
 group :development, :test do
   gem "dotenv"
+  gem "rubocop", "~> 1.21", require: false
 end
 
 group :cli, :development do
@@ -49,7 +50,7 @@ group :cli, :development, :test do
 end
 
 group :test do
-  # Web integration
   gem "capybara"
   gem "rack-test"
+  gem "webmock", "~> 3.24"
 end

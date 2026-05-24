@@ -1,0 +1,7 @@
+<div class="theme-switcher">
+  <button type="button" @click="toggleTheme()">
+    <span class="visually-hidden"><%= ::I18n.t("theme_switcher.toggle") %></span>
+    <%= inline_svg("theme/light") %>
+    <%= inline_svg("theme/dark") %>
+  </button>
+</div>

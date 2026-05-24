@@ -1,0 +1,63 @@
+.prose {
+  --flow-space: var(--space-s);
+}
+
+.prose :is(h1, h2, h3) {
+  overflow-wrap: anywhere;
+  hyphens: auto;
+}
+
+.prose :is(p, ul, dl, figcaption, blockquote) {
+  max-width: var(--max-width-prose);
+  text-wrap: pretty;
+}
+
+.prose p:has(img) {
+  max-width: 100%;
+}
+
+.prose :is(h1, h2, h3, h4) + *:not([class]) {
+  --flow-space: var(--space-xs);
+}
+
+/* Add more space on and around figures and tables */
+.prose :is(figure, table),
+.prose :is(figure, table) + * {
+  --flow-space: var(--space-xl);
+}
+
+/* Add more space to headings on block start */
+.prose * + :is(h1, h2, h3, h4):not([class]) {
+  --flow-space: var(--space-xl);
+}
+
+.prose :is(ul, ol):not([class]) li + li,
+.prose :is(ul, ol):not([class]) li > :is(ol, ul) {
+  --flow-space: var(--space-3xs);
+}
+
+.prose :is(img, picture, video) {
+  /* border: var(--stroke-solid); */
+}
+
+.prose blockquote > p + p {
+  margin-block-start: var(--space-2xs);
+}
+
+.prose hr {
+  --flow-space: var(--space-2xl);
+  border: none;
+  border-top: var(--stroke-dotted);
+}
+
+.prose p > a:only-child {
+  display: inline-block;
+  text-underline-offset: auto;
+  font-weight: bold;
+  transition-property: transform;
+  transition-duration: var(--timing-fast);
+
+  &:hover {
+    transform: translateX(3px);
+  }
+}

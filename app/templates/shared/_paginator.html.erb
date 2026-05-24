@@ -1,0 +1,55 @@
+<% if pagination.pages > 1 %>
+  <nav class="paginator" aria-labelledby="paginator_label">
+    <span id="paginator_label" class="visually-hidden"><%= t("shared.paginator.label") %></span>
+    <span id="paginator_prefix" class="visually-hidden"><%= t("shared.paginator.prefix") %></span>
+    <ul role="list">
+      <li>
+        <span id="paginator_previous" class="visually-hidden"><%= t("shared.paginator.previous") %></span>
+        <% if pagination.previous_page %>
+          <%= link_to(
+            "«",
+            page_url.call(pagination.previous_page),
+            aria: {
+              labelledby: "paginator_previous",
+            },
+          ) %>
+        <% else %>
+          <span>«</span>
+        <% end %>
+      </li>
+
+      <% pagination.series.each do |item| %>
+        <li>
+          <% if item[:gap] %>
+            <span>…</span>
+          <% else %>
+            <%= link_to(
+              item[:number],
+              page_url.call(item[:number]),
+              id: "paginator_page_#{item[:number]}",
+              aria: {
+                labelledby: "paginator_prefix paginator_page_#{item[:number]}",
+                current: ("page"),
+              },
+            ) %>
+          <% end %>
+        </li>
+      <% end %>
+
+      <li>
+        <span id="paginator_next" class="visually-hidden"><%= t("shared.paginator.next") %></span>
+        <% if pagination.next_page %>
+          <%= link_to(
+            "»",
+            page_url.call(pagination.next_page),
+            aria: {
+              labelledby: "paginator_next",
+            },
+          ) %>
+        <% else %>
+          <span>»</span>
+        <% end %>
+      </li>
+    </ul>
+  </nav>
+<% end %>

@@ -1,0 +1,62 @@
+en:
+  early_access:
+    title: Want early access?
+    text: >-
+      We’re planning to welcome our first users at the beginning of 2026 for a
+      closed beta. Active beta users who provide feedback will receive a
+      lifetime free account.
+    cta: >-
+      Interested? Sign up below to get on the waitlist for early access.
+    disclaimer: >-
+      You’ll receive monthly-ish emails related to the *early access waitlist*.
+      No spam.
+  locale_switcher:
+    label: Language switcher
+  main_menu:
+    title: Main
+  shared:
+    footer:
+      copyright: © %{year} Fluck
+      principles: Built in Spain – Hosted in the EU – No investors and AI-free
+      info:
+        about: About us
+        blog: Blog
+        brand: Brand assets
+        code_of_conduct: Code of conduct
+        contact: Contact us
+        privacy_policy: Privacy & Cookie Policy
+        terms_of_service: Terms of Service
+        title: Info
+        waitlist: The waitlist
+      social:
+        bluesky: Bluesky
+        codeberg: Codeberg
+        discord: Discord
+        discourse: Community
+        email: Email
+        github: GitHub
+        linkedin: Linkedin
+        mastodon: Mastodon
+        rss: RSS
+        title: Social
+      newsletter:
+        title: Newsletter
+        text: >-
+          Occasionally we send out updates about progress and noteworthy
+          updates. Concise, digestable emails.
+        disclaimer: >-
+          You’ll receive monthly-ish emails. No tracking, no spam.
+    paginator:
+      label: Blog pagination
+      next: Next
+      prefix: Page
+      previous: Previous
+    subscription_form:
+      button_variants:
+        newsletter: 'Subscribe'
+        waitlist: 'Sign up'
+      success: >-
+        Thank you for subscribing! We’ve sent an email with a link to %{email}
+        to confirm your subscription.
+  theme_switcher:
+    toggle: 'Toggle light or dark theme'

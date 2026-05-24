@@ -1,0 +1,30 @@
+on:
+  push:
+    branches: [staging, production]
+
+jobs:
+  deploy:
+    runs-on: codeberg-small
+    container:
+      image: node:20-alpine
+    steps:
+      - run: apk add --no-cache git
+      - run: git clone --depth 1 --branch ${{ github.ref_name }} ${{ github.server_url }}/${{ github.repository }} .
+
+      # Per-branch secrets: STAGING_* on staging, PRODUCTION_* on production.
+      - name: Resolve target app credentials
+        run: |
+          if [ "${{ github.ref_name }}" = "production" ]; then
+            echo "APP_NAME=${{ secrets.PRODUCTION_APP_NAME }}" >> $GITHUB_ENV
+            echo "APP_TOKEN=${{ secrets.PRODUCTION_APP_TOKEN }}" >> $GITHUB_ENV
+          else
+            echo "APP_NAME=${{ secrets.STAGING_APP_NAME }}" >> $GITHUB_ENV
+            echo "APP_TOKEN=${{ secrets.STAGING_APP_TOKEN }}" >> $GITHUB_ENV
+          fi
+
+      - run: |
+          npx --yes caprover deploy \
+            --caproverUrl "${{ secrets.CAPROVER_SERVER }}" \
+            --appName "$APP_NAME" \
+            --appToken "$APP_TOKEN" \
+            --branch ${{ github.ref_name }}

@@ -8,4 +8,3 @@ A common wrapper/container
   padding-inline: var(--gutter, var(--gutter-wrapper-inline));
   position: relative;
 }
-

@@ -8,7 +8,7 @@ A pair of elements sticking together side by side, no matter what.
 }
 
 .couple[data-align='center'] {
-  align-items: center; 
+  align-items: center;
 }
 
 .couple[data-align='end'] {

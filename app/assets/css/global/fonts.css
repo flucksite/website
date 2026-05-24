@@ -9,7 +9,8 @@
   font-family: 'Untitled Serif';
   font-style: italic;
   font-weight: normal;
-  src: url('$/app/assets/fonts/untitled-serif-regular-italic.woff2') format('woff2');
+  src: url('$/app/assets/fonts/untitled-serif-regular-italic.woff2')
+    format('woff2');
 }
 
 @font-face {
@@ -30,7 +31,8 @@
   font-family: 'PP Fraktion Mono';
   font-style: italic;
   font-weight: normal;
-  src: url('$/app/assets/fonts/PPFraktionMono-RegularItalic.woff2') format('woff2');
+  src: url('$/app/assets/fonts/PPFraktionMono-RegularItalic.woff2')
+    format('woff2');
 }
 
 @font-face {

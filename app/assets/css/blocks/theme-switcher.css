@@ -22,10 +22,10 @@
   stroke-width: 2px;
 }
 
-[data-theme='dark'] [data-inline-svg='theme/dark.svg'],
-[data-theme='auto'] [data-inline-svg='theme/dark.svg'] {
+[data-theme='dark'] [data-inline-svg='theme/dark'],
+[data-theme='auto'] [data-inline-svg='theme/dark'] {
   display: none;
 }
-[data-theme='light'] [data-inline-svg='theme/light.svg'] {
+[data-theme='light'] [data-inline-svg='theme/light'] {
   display: none;
 }

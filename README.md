@@ -1,15 +1,36 @@
-# FluckWebsite
+# Fluck Website
 
-🌸 Welcome to your Hanami app!
+This repo holds the [https://fluck.site](https://fluck.site) website.
 
-## Getting started
+## Stack
 
-- Set up the project with `bin/setup`
-- Run the server with `bin/dev`
-- View the app at [http://localhost:2300](http://localhost:2300)
-- Run the tests with `bundle exec rake`
+A database-less [Hanami 2.3](https://hanamirb.org/) app.
 
-## Useful links
+- Blog posts are static markdown files loaded by [marquery](https://rubygems.org/gems/marquery)
+- Forms are spam-protected by [otori](https://rubygems.org/gems/otori)
+- JS and CSS are bundled by [bun_bun_bundle](https://rubygems.org/gems/bun_bun_bundle).
+- Newsletter signups go to EmailOctopus via a thin HTTP client.
 
-- [Hanami](http://hanamirb.org)
-- [Hanami guides](https://guides.hanamirb.org/)
+## Requirements
+
+- Ruby (see `.ruby-version`)
+- [Bun](https://bun.sh/) for asset bundling
+- [Overmind](https://github.com/DarthSim/overmind) for the dev Procfile
+
+## Setup
+
+```sh
+bin/setup     # bundle install + bun install
+bin/dev       # web server + asset watcher on http://localhost:2300
+```
+
+Copy any secrets into `.env.local` (gitignored). See `.env` for the keys the
+app reads (`SESSION_SECRET`, `EMAIL_OCTOPUS_API_KEY`, `EMAIL_OCTOPUS_LIST_ID`,
+`SENTRY_DSN`, `PLAUSIBLE_DOMAIN`).
+
+## Tests & lint
+
+```sh
+bundle exec rspec       # full spec suite
+bundle exec rubocop     # style checks
+```

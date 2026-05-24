@@ -39,3 +39,12 @@ app reads (`SESSION_SECRET`, `EMAIL_OCTOPUS_API_KEY`, `EMAIL_OCTOPUS_LIST_ID`,
 bundle exec rspec       # full spec suite
 bundle exec rubocop     # style checks
 ```
+
+## Deployment
+
+Each environment (`staging`, `production`) needs these secrets configured
+under **Settings → Environments**:
+
+- `CAPROVER_SERVER`
+- `APP_NAME`
+- `APP_TOKEN`

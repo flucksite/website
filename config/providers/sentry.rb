@@ -14,7 +14,7 @@ Hanami.app.register_provider :sentry do
       config.environment = Hanami.env.to_s
       config.breadcrumbs_logger = [:http_logger]
       config.send_default_pii = false
-      config.enabled_environments = %w[production staging]
+      config.enabled_environments = %w[production]
     end
   end
 end

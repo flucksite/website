@@ -7,7 +7,6 @@ module Blog
   class PostQuery
     include Marquery::Query
 
-    dir "blog_post"
     model Blog::Post
     order_by :date, :desc
 

@@ -19,26 +19,20 @@ module FluckWebsite
       @base_url = base_url
     end
 
-    # Subscribe a contact to the configured list (upsert via PUT).
     def subscribe(email:, tag:, fields: {})
       raise AuthenticationError, "EMAIL_OCTOPUS_API_KEY missing" if @api_key.nil? || @api_key.empty?
       raise ArgumentError, "list_id missing" if @list_id.nil? || @list_id.empty?
 
+      uri = URI.join(@base_url, "/lists/#{@list_id}/contacts")
+      use_ssl = uri.scheme == "https"
       payload = {
         email_address: email,
-        fields: fields,
+        fields:,
         tags: tag.is_a?(Hash) ? tag : {tag.to_s => true}
       }
 
-      uri = URI.join(@base_url, "/lists/#{@list_id}/contacts")
-      request = Net::HTTP::Put.new(uri.request_uri)
-      request["authorization"] = "Bearer #{@api_key}"
-      request["content-type"] = "application/json"
-      request["accept"] = "application/json"
-      request.body = JSON.generate(payload)
-
-      response = Net::HTTP.start(uri.host, uri.port, use_ssl: uri.scheme == "https") do |http|
-        http.request(request)
+      response = Net::HTTP.start(uri.host, uri.port, use_ssl:) do |http|
+        http.request(build_request(uri.request_uri, payload))
       end
 
       handle_response(response)
@@ -46,17 +40,18 @@ module FluckWebsite
 
     private
 
+    def build_request(uri, payload)
+      Net::HTTP::Put.new(uri).tap do |request|
+        request["authorization"] = "Bearer #{@api_key}"
+        request["content-type"] = "application/json"
+        request["accept"] = "application/json"
+        request.body = JSON.generate(payload)
+      end
+    end
+
     def handle_response(response)
       body = response.body.to_s
-      data = if body.empty?
-               {}
-             else
-               begin
-                 JSON.parse(body)
-               rescue StandardError
-                 {}
-               end
-             end
+      data = parse_response_body(body)
 
       case response.code.to_i
       when 200..299
@@ -66,6 +61,14 @@ module FluckWebsite
       else
         raise ApiError, "EmailOctopus #{response.code}: #{data["title"] || body}"
       end
+    end
+
+    def parse_response_body(body)
+      return {} if body.empty?
+
+      JSON.parse(body)
+    rescue StandardError
+      {}
     end
   end
 end

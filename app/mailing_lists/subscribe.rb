@@ -20,8 +20,7 @@ module FluckWebsite
         step validate_email(email)
         step subscribe_contact(tag, email, website, signals_rating)
 
-        # dry-operation wraps this return value in Success
-        {email: email}
+        {email:}
       end
 
       private
@@ -36,7 +35,7 @@ module FluckWebsite
 
       def subscribe_contact(tag, email, website, rating)
         email_octopus.subscribe(
-          email: email,
+          email:,
           tag: {tag => true, "review" => rating < REVIEW_THRESHOLD},
           fields: {"Website" => website, "Signals" => rating.to_s}
         )

@@ -1,4 +1,4 @@
-import {getCookie, setCookie} from '../utils/cookies'
+import {getCookie, setCookie, eraseCookie} from '../utils/cookies'
 
 export default theme => ({
   allowedThemes: /dark|light/,
@@ -16,7 +16,9 @@ export default theme => ({
   setTheme(theme) {
     if (!this.allowedThemes.test(theme)) return
 
-    setCookie(this.cookieName, theme)
+    if (theme == this.preferredTheme()) eraseCookie(this.cookieName)
+    else setCookie(this.cookieName, theme, 365)
+
     this.theme = theme
     Turbo.cache.clear()
   },

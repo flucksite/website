@@ -13,11 +13,5 @@ module FluckWebsite
 
     # Sentry error reporting: SENTRY_DSN (no-op when unset)
     setting :sentry_dsn, constructor: Types::String.optional
-
-    # Plausible analytics: PLAUSIBLE_DOMAIN (script-tag domain, prod-only)
-    setting :plausible_domain, constructor: Types::String.optional
-    setting :plausible_script_src,
-            default: "https://plausible.io/js/script.outbound-links.js",
-            constructor: Types::String
   end
 end

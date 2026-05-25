@@ -46,9 +46,14 @@
   <%= turbo_view_transition_tag %>
   <%= turbo_morph_tag %>
 
-  <%= plausible_tag %>
+  <%= render "shared/plausible" %>
 
-  <noscript><style>.reveal { opacity: 1; transform: none; }</style></noscript>
+  <noscript>
+    <style>
+      .reveal { opacity: 1 !important; transform: none !important; }
+      [data-no-js="hide"] { visibility: hidden !important; }
+    </style>
+  </noscript>
 
   <%= bun_css_tag("css/app.css") %>
   <%= bun_js_tag("js/app.js", defer: true) %>

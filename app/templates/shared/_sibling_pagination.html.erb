@@ -1,0 +1,23 @@
+<nav
+  class="post__pagination switcher"
+  data-limit="2"
+  aria-labelledby="pagination_label"
+>
+  <span id="pagination_label" class="visually-hidden">
+    <%= label %>
+  </span>
+  <ul class role="list">
+    <li>
+      <% if newer %>
+        <%= link_to t("global.links.newer"), routes.path(:blog_post, slug: newer.slug) %>
+      <% else %>
+        <%= link_to t("global.links.view_all"), routes.path(:blog) %>
+      <% end %>
+    </li>
+    <li>
+      <% if older %>
+        <%= link_to t("global.links.older"), routes.path(:blog_post, slug: older.slug) %>
+      <% else %>&nbsp;<% end %>
+    </li>
+  </ul>
+</nav>

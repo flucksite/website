@@ -25,30 +25,11 @@
   <div class="post__footer flow">
     <div class="post__tags">
       <span><%= t(".posted_in") %></span>
-      <%= scope(:tag_list, tag_items: post.tags, current_tag: nil).render("shared/tag_list") %>
+      <%= scope(:tag_list, tag_items: post.tags, current_tag: nil).render(
+        "shared/tag_list",
+      ) %>
     </div>
-    <nav
-      class="post__pagination switcher"
-      data-limit="2"
-      aria-labelledby="pagination_label"
-    >
-      <span id="pagination_label" class="visually-hidden">
-        <%= t(".post_pagination") %>
-      </span>
-      <ul class role="list">
-        <li>
-          <% if newer %>
-            <%= link_to t("global.links.newer"), routes.path(:blog_post, slug: newer.slug) %>
-          <% else %>
-            <%= link_to t("global.links.back_to_blog"), routes.path(:blog) %>
-          <% end %>
-        </li>
-        <li>
-          <% if older %>
-            <%= link_to t("global.links.older"), routes.path(:blog_post, slug: older.slug) %>
-          <% else %>&nbsp;<% end %>
-        </li>
-      </ul>
-    </nav>
+
+    <%= render "shared/sibling_pagination", newer:, older:, label: t(".post_pagination") %>
   </div>
 </article>

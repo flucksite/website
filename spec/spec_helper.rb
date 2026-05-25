@@ -17,12 +17,12 @@ Otori.configure { |c| c.disable_delay = true }
 # Block real HTTP traffic so EmailOctopus requests never escape during tests.
 WebMock.disable_net_connect!(allow_localhost: true)
 
-SPEC_ROOT.glob("support/**/*.rb").each { |f| require f }
+SPEC_ROOT.glob("support/**/*.rb").each { require _1 }
 
 RSpec.configure do |config|
   # Force-load actions so rate_limit registers throttles before requests.
   config.before(:suite) do
-    Hanami.app.keys.grep(/\Aactions\./).each { |k| Hanami.app[k] }
+    Hanami.app.keys.grep(/\Aactions\./).each { Hanami.app[_1] }
   end
 
   config.before(:each, type: :request) do

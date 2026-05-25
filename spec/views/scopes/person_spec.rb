@@ -31,14 +31,14 @@ RSpec.describe FluckWebsite::Views::Scopes::Person, type: :scope do
 
   describe "#i18n_key" do
     it "namespaces under the about page" do
-      expect(scope.i18n_key(:title)).to eq("about.index_page.people.mick.title")
+      expect(scope.i18n_key(:title)).to eq("about.show_page.people.mick.title")
     end
   end
 
   describe "#domain_url" do
     it "prefixes the locale-provided domain with https://" do
       expect(scope.domain_url).to start_with("https://")
-      expect(scope.domain_url).to end_with(I18n.t("about.index_page.people.mick.domain"))
+      expect(scope.domain_url).to end_with(I18n.t("about.show_page.people.mick.domain"))
     end
   end
 end

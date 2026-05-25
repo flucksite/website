@@ -18,7 +18,7 @@ module FluckWebsite
         end
 
         def i18n_key(suffix)
-          "about.index_page.people.#{id}.#{suffix}"
+          "about.show_page.people.#{id}.#{suffix}"
         end
 
         def domain_url

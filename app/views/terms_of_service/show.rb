@@ -3,7 +3,7 @@
 module FluckWebsite
   module Views
     module TermsOfService
-      class Index < FluckWebsite::View
+      class Show < FluckWebsite::View
       end
     end
   end

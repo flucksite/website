@@ -4,10 +4,7 @@ require "fluck_website/error_reporter"
 
 module FluckWebsite
   module MailingLists
-    # Validates input and forwards a subscription to the EmailOctopus client.
-    # Returns `Success(email:)` on success, `Failure(:invalid_email | :invalid_tag |
-    # :subscription_failed)` otherwise. Pure business logic — no HTTP, no params,
-    # no flash. The action does the HTTP translation.
+    # Validates input and forwards a subscription to EmailOctopus.
     class Subscribe < FluckWebsite::Operation
       include Deps["email_octopus"]
 

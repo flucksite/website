@@ -4,7 +4,7 @@
 module FluckWebsite
   module Views
     module Helpers
-      # Thin url/route helpers so templates don't have to remember `routes.path`.
+      # Thin url/route helpers so templates skip `routes.path` boilerplate.
       module Urls
         def url_for(name, **args)
           routes.path(name, **args)

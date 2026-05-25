@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
 module FluckWebsite
-  # Inlines SVG files from search_paths with optional styling strip; cached per path/strip pair.
+  # Inlines SVGs from search_paths; cached per path/strip pair.
   module InlineSvg
     DEFAULT_SVGS_DIR = File.expand_path("../../app/assets/svgs", __dir__).freeze
     STRIP_REGEX = /(class|fill|stroke|stroke-width|style)="[^"]+" ?/

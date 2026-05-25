@@ -5,8 +5,7 @@ require "net/http"
 require "uri"
 
 module FluckWebsite
-  # Minimal EmailOctopus API client. Only the create-or-update contact endpoint is
-  # needed for newsletter and waitlist subscriptions.
+  # Minimal EmailOctopus client; only the upsert-contact endpoint is used.
   class EmailOctopus
     API_BASE = "https://api.emailoctopus.com"
 
@@ -20,8 +19,7 @@ module FluckWebsite
       @base_url = base_url
     end
 
-    # Subscribe a contact to the configured list. EmailOctopus uses upsert via PUT.
-    # Returns the parsed JSON response body.
+    # Subscribe a contact to the configured list (upsert via PUT).
     def subscribe(email:, tag:, fields: {})
       raise AuthenticationError, "EMAIL_OCTOPUS_API_KEY missing" if @api_key.nil? || @api_key.empty?
       raise ArgumentError, "list_id missing" if @list_id.nil? || @list_id.empty?

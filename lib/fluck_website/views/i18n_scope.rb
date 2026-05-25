@@ -4,9 +4,7 @@ require "dry/inflector"
 
 module FluckWebsite
   module Views
-    # Derives i18n scope and default title/description from a view's class name.
-    # The last segment is suffixed with "_page" to match the legacy Lucky/Rosetta naming
-    # (`Views::Blog::Show` -> `blog.show_page`), so translations can be ported verbatim.
+    # Derives i18n scope from a view's class name; last segment gets "_page".
     module I18nScope
       INFLECTOR = Dry::Inflector.new
 

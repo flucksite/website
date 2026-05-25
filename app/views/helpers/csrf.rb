@@ -4,8 +4,7 @@
 module FluckWebsite
   module Views
     module Helpers
-      # Renders Hanami's per-session CSRF token as a hidden form input. Pair with
-      # any non-GET form so the request passes `Hanami::Action::CSRFProtection`.
+      # Renders Hanami's CSRF token as a hidden input; pair with non-GET forms.
       module Csrf
         def csrf_field
           tag.input(

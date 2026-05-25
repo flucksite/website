@@ -3,9 +3,7 @@
 require "fluck_website/types"
 
 module FluckWebsite
-  # Each setting reads the equivalently-named, upcased ENV variable via Hanami's
-  # `EnvStore`. The explicit `constructor:` makes the contract obvious in this
-  # file instead of relying on the implicit ENV lookup.
+  # Settings read uppercased ENV via Hanami's EnvStore; constructor is explicit.
   class Settings < Hanami::Settings
     setting :app_domain, default: "fluck.site", constructor: Types::String
 

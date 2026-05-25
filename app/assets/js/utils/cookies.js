@@ -25,6 +25,6 @@ export function eraseCookie(name) {
 }
 
 function writeCookie(name, value, expires) {
-  if (expires) expires = `expires=${expires};`
-  document.cookie = `${name}=${value};${expires}path=/;SameSite=Lax`
+  const expiresAttr = expires ? `expires=${expires};` : ''
+  document.cookie = `${name}=${value};${expiresAttr}path=/;SameSite=Lax`
 }

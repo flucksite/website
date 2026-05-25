@@ -10,6 +10,8 @@ require "bun_bun_bundle"
 require "hanami"
 require "marquery/asset_handler"
 
+require_relative "log_templates"
+
 module FluckWebsite
   class App < Hanami::App
     BunBunBundle.setup(root: root, hanami: config)
@@ -17,7 +19,7 @@ module FluckWebsite
     # Fonts are embedded as data: URIs in the bundled CSS (woff2 base64).
     config.actions.content_security_policy[:font_src] = "'self' data:"
 
-    # Alpine inline expressions need 'unsafe-eval'; otori's signals + plausible need 'unsafe-inline'.
+    # Alpine needs 'unsafe-eval'; otori + plausible need 'unsafe-inline'.
     config.actions.content_security_policy[:script_src] =
       "'self' 'unsafe-inline' 'unsafe-eval' https://plausible.io"
 
@@ -27,7 +29,7 @@ module FluckWebsite
 
     config.logger.options = {colorize: true}
 
-    # CSRF + otori timestamps need a session. Prod must set SESSION_SECRET; dev/test fall back.
+    # CSRF + otori need a session. Prod must set SESSION_SECRET.
     config.actions.sessions = :cookie, {
       key: "fluck.session",
       secret: ENV.fetch("SESSION_SECRET") {
@@ -48,7 +50,7 @@ module FluckWebsite
     require_relative "rack_attack"
     config.middleware.use Rack::Attack
 
-    # Serves public/ directly. Production should front this with a reverse proxy.
+    # Serves public/ directly; front with a reverse proxy in prod.
     config.middleware.use(
       Rack::Static,
       urls: %w[

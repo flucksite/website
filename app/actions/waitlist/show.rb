@@ -2,8 +2,8 @@
 
 module FluckWebsite
   module Actions
-    module TermsOfService
-      class Index < FluckWebsite::Action
+    module Waitlist
+      class Show < FluckWebsite::Action
       end
     end
   end

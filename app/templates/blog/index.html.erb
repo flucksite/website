@@ -2,9 +2,7 @@
   <div class="wrapper flow">
     <h1><%= t(".hero.title") %></h1>
     <div><%= raw markdown(t(".hero.text")) %></div>
-    <%= scope(:tag_list, tag_items: tags, current_tag: current_tag).render(
-      "shared/tag_list",
-    ) %>
+    <%= scope(:tag_list, tag_items: tags, current_tag:).render("shared/tag_list") %>
   </div>
 </section>
 
@@ -18,9 +16,7 @@
         <div class="switcher" data-limit="3">
           <div class="blog__post-meta switcher" data-limit="2">
             <time datetime="<%= post.iso_date %>"><%= post.formatted_date %></time>
-            <%= scope(:tag_list, tag_items: post.tags, current_tag: current_tag).render(
-              "shared/tag_list",
-            ) %>
+            <%= scope(:tag_list, tag_items: post.tags, current_tag:).render("shared/tag_list") %>
           </div>
           <div></div>
           <div class="blog__post-excerpt flow">

@@ -5,15 +5,7 @@ require "fluck_website/i18n"
 
 module FluckWebsite
   module Actions
-    # Derives an i18n scope from an action's class name and adds a `t` helper
-    # that resolves leading-dot keys against that scope.
-    #
-    #   FluckWebsite::Actions::MailingLists::Create -> "mailing_lists.create"
-    #   FluckWebsite::Actions::Blog::Show           -> "blog.show"
-    #
-    # In templates, leading-dot keys resolve against the *view's* scope (which
-    # appends `_page`). Here they resolve against the action's scope, matching
-    # the way action-level error messages are nested under `actions.en.yml`.
+    # Derives i18n scope from an action's class; `t` resolves leading-dots.
     module I18nScope
       INFLECTOR = Dry::Inflector.new
 
@@ -25,8 +17,7 @@ module FluckWebsite
         parts[(idx + 1)..].map { INFLECTOR.underscore(_1) }.join(".")
       end
 
-      # Hanami freezes action instances post-init, so we can't memoize on @ivars.
-      # Class-level memoization is fine since the scope is fixed per class.
+      # Actions are frozen; memoize on the class since scope is fixed.
       def self.included(base)
         base.singleton_class.attr_accessor :i18n_scope
       end

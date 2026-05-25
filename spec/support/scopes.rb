@@ -5,8 +5,7 @@ require "dry/inflector"
 require "hanami/view/rendering"
 
 module ScopeHelpers
-  # Builds a Hanami::View::Scope with a minimal context that exposes the methods
-  # scope code commonly reaches for (routes, request, t, l). No template rendering.
+  # Builds a Scope with a minimal context (routes, request, t, l).
   def build_scope(klass, locals: {}, path: "/")
     context = test_view_context(path: path)
     rendering = Struct.new(:context, :inflector).new(context, Dry::Inflector.new)

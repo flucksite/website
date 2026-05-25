@@ -7,7 +7,7 @@ module FluckWebsite
   module Views
     module Helpers
       module I18n
-        # Leading-dot keys resolve against the view's i18n_scope; absolute pass through.
+        # Leading-dot keys resolve against the view's i18n_scope.
         def t(key, **opts)
           FluckWebsite::I18n.t(key, **opts) { i18n_scope }
         end

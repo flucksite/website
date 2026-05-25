@@ -20,13 +20,13 @@ module FluckWebsite
             escape_join([
               tag.label(label, for: name),
               tag.input(
-                type: type,
-                name: name,
+                type:,
+                name:,
                 id: name,
-                required: required,
-                autocomplete: autocomplete,
+                required:,
+                autocomplete:,
                 autofocus: autofocus || nil,
-                value: value,
+                value:,
                 **extra_attrs
               ),
               field_error(error)

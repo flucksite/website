@@ -7,7 +7,7 @@
 
 <section class="wrapper centered">
   <div
-    class="early-access cutout flow"
+    class="early-access | cutout flow"
     data-theme="light"
     data-shape="rect-02"
     data-safe="true"
@@ -25,7 +25,7 @@
   </div>
 </section>
 
-<section class="timeline wrapper">
+<section class="timeline | wrapper">
   <div
     class="timeline__intro flow reveal"
     x-data="reveal"
@@ -37,7 +37,7 @@
 
   <% %w[spring_2026 summer_2026 autumn_2026 winter_2026].each do |season| %>
     <div
-      class="timeline__entry flow reveal"
+      class="timeline__entry | flow reveal"
       x-data="reveal"
       x-intersect.once="show"
     >
@@ -46,7 +46,7 @@
     </div>
   <% end %>
 
-  <div class="timeline__outro reveal" x-data="reveal" x-intersect.once="show">
+  <div class="timeline__outro | reveal" x-data="reveal" x-intersect.once="show">
     <%= inline_svg("hurricane") %>
   </div>
 </section>

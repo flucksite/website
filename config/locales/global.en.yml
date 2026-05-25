@@ -9,13 +9,13 @@ en:
       website: Website or social profile
     links:
       back_home: ← Head back to home
-      back_to_blog: ← Back to Blog
+      view_all: ← View all
       read_more: Read more →
-      older: Previous post »
-      newer: « Next post
+      older: Previous »
+      newer: « Next
     menu:
       item:
         about: About
         blog: Blog
-        home: Home
+        root: Home
         waitlist: Waitlist

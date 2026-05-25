@@ -1,6 +1,6 @@
 en:
   about:
-    index_page:
+    show_page:
       page_title: About us.
       page_description: >-
         We are a small team based in Spain. We’re independent and 100%
@@ -178,7 +178,7 @@ en:
       page_title: Subscribe to mailinglist
       page_description: You’ve successfully subscribed to our mailinglist.
   waitlist:
-    index_page:
+    show_page:
       page_title: Join the waitlist
       page_description: >-
         We’re planning to welcome our first users at the beginning of 2026 for a

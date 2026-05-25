@@ -2,8 +2,8 @@
 
 module FluckWebsite
   module Actions
-    module Waitlist
-      class Index < FluckWebsite::Action
+    module CodeOfConduct
+      class Show < FluckWebsite::Action
       end
     end
   end

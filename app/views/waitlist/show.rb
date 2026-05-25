@@ -2,8 +2,8 @@
 
 module FluckWebsite
   module Views
-    module PrivacyPolicy
-      class Index < FluckWebsite::View
+    module Waitlist
+      class Show < FluckWebsite::View
       end
     end
   end

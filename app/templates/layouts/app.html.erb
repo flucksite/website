@@ -9,7 +9,6 @@
     <%= link_to t("global.buttons.skip_link"), "#main_content", id: "skip_link" %>
     <%= inline_svg("clip-path-shapes-03", class: "visually-hidden", aria_hidden: "true") %>
     <%= render "shared/header" %>
-    <%= render "shared/flash_messages" %>
     <main id="main_content" tabindex="-1">
       <%= yield %>
     </main>

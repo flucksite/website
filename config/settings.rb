@@ -3,9 +3,7 @@
 require "fluck_website/types"
 
 module FluckWebsite
-  # Each setting reads the equivalently-named, upcased ENV variable via Hanami's
-  # `EnvStore`. The explicit `constructor:` makes the contract obvious in this
-  # file instead of relying on the implicit ENV lookup.
+  # Settings read uppercased ENV via Hanami's EnvStore; constructor is explicit.
   class Settings < Hanami::Settings
     setting :app_domain, default: "fluck.site", constructor: Types::String
 
@@ -15,11 +13,5 @@ module FluckWebsite
 
     # Sentry error reporting: SENTRY_DSN (no-op when unset)
     setting :sentry_dsn, constructor: Types::String.optional
-
-    # Plausible analytics: PLAUSIBLE_DOMAIN (script-tag domain, prod-only)
-    setting :plausible_domain, constructor: Types::String.optional
-    setting :plausible_script_src,
-            default: "https://plausible.io/js/script.outbound-links.js",
-            constructor: Types::String
   end
 end

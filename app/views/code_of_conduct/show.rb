@@ -1,9 +1,9 @@
 # frozen_string_literal: true
 
 module FluckWebsite
-  module Actions
-    module About
-      class Index < FluckWebsite::Action
+  module Views
+    module CodeOfConduct
+      class Show < FluckWebsite::View
       end
     end
   end

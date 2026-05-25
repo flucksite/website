@@ -2,8 +2,8 @@
 
 module FluckWebsite
   module Actions
-    module CodeOfConduct
-      class Index < FluckWebsite::Action
+    module PrivacyPolicy
+      class Show < FluckWebsite::Action
       end
     end
   end

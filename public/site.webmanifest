@@ -1,6 +1,6 @@
 {
-  "name": "FLUCK",
-  "short_name": "FLUCK",
+  "name": "Fluck",
+  "short_name": "Fluck",
   "icons": [
     {
       "src": "/web-app-manifest-192x192.png",
@@ -19,3 +19,4 @@
   "background_color": "#f8f4ed",
   "display": "standalone"
 }
+
